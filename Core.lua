@@ -27,7 +27,7 @@ local SPEC_TOKENS = {
     [265] = "AFFLICTION",     [266] = "DEMONOLOGY",   [267]  = "DESTRUCTION",     -- Warlock
     [268] = "BREWMASTER",     [269] = "WINDWALKER",   [270]  = "MISTWEAVER",      -- Monk
     [102] = "BALANCE",        [103] = "FERAL",        [104]  = "GUARDIAN",   [105] = "RESTORATION", -- Druid
-    [577] = "HAVOC",          [581] = "VENGEANCE",                                -- Demon Hunter
+    [577] = "HAVOC",          [581] = "VENGEANCE",    [1480] = "DEVOURER",       -- Demon Hunter
     [1467] = "DEVASTATION",   [1468] = "PRESERVATION", [1473] = "AUGMENTATION",   -- Evoker
 }
 local function GetSpecToken()
