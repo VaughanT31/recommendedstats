@@ -17,9 +17,16 @@ local RS = RecommendedStats
 -- Look & feel
 --------------------------------------------------------------------------------
 local PANEL_W   = 280
-local ROW_H     = 20
-local ROW_GAP   = 2
+local ROW_H     = 22
+local ROW_GAP   = 3
 local HEADER_H  = 34
+
+local GOLD = { 1, 0.82, 0.15 }
+
+-- A slot below the "most players agree" line isn't wrong, just less consensus — so it stays
+-- a neutral color rather than reading as a warning the way the stat panel's "too low" does.
+local PCT_HIGH_COLOR = { 0.32, 0.85, 0.48 }
+local PCT_HIGH_THRESHOLD = 65
 
 -- Cosmetic-only slots (SHIRT, TABARD) are in the data but don't affect character
 -- power, so they're left out of the BiS list.
@@ -47,11 +54,11 @@ local BACKDROP = {
     edgeSize = 1,
 }
 
-local function StyleBackdrop(frame, r, g, b, a, er, eg, eb)
+local function StyleBackdrop(frame, r, g, b, a, er, eg, eb, ea)
     if not frame.SetBackdrop then Mixin(frame, BackdropTemplateMixin) end
     frame:SetBackdrop(BACKDROP)
     frame:SetBackdropColor(r, g, b, a)
-    frame:SetBackdropBorderColor(er or 0, eg or 0, eb or 0, 0.55)
+    frame:SetBackdropBorderColor(er or 0, eg or 0, eb or 0, ea or 0.55)
 end
 
 --------------------------------------------------------------------------------
@@ -61,13 +68,20 @@ local function CreateRow(parent)
     local row = CreateFrame("Button", nil, parent)
     row:SetSize(PANEL_W - 24, ROW_H)
 
+    -- quality-tinted ring behind the icon (colored via item:GetItemQuality() once it loads) —
+    -- slightly larger than the icon so it reads as a border, not a background fill
+    row.iconBorder = row:CreateTexture(nil, "BACKGROUND")
+    row.iconBorder:SetSize(20, 20)
+    row.iconBorder:SetPoint("LEFT", 0, 0)
+    row.iconBorder:SetColorTexture(1, 1, 1, 0.25)
+
     row.icon = row:CreateTexture(nil, "ARTWORK")
-    row.icon:SetSize(16, 16)
-    row.icon:SetPoint("LEFT", 0, 0)
+    row.icon:SetSize(18, 18)
+    row.icon:SetPoint("CENTER", row.iconBorder, "CENTER", 0, 0)
     row.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
 
     row.slotLabel = row:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-    row.slotLabel:SetPoint("LEFT", row.icon, "RIGHT", 6, 0)
+    row.slotLabel:SetPoint("LEFT", row.iconBorder, "RIGHT", 8, 0)
     row.slotLabel:SetWidth(56)
     row.slotLabel:SetJustifyH("LEFT")
 
@@ -81,6 +95,11 @@ local function CreateRow(parent)
     row.pct:SetPoint("RIGHT", 0, 0)
     row.pct:SetWidth(34)
     row.pct:SetJustifyH("RIGHT")
+
+    local highlight = row:CreateTexture(nil, "HIGHLIGHT")
+    highlight:SetAllPoints()
+    highlight:SetColorTexture(1, 1, 1, 0.06)
+    row:SetHighlightTexture(highlight)
 
     row:SetScript("OnEnter", function(self)
         if not self.itemID then return end
@@ -110,11 +129,17 @@ local function EnsurePanel()
         -- Fallback if CharacterPanel.lua hasn't built its panel yet (shouldn't happen given TOC load order).
         panel:SetPoint("TOPLEFT", CharacterFrame, "TOPRIGHT", 292, -4)
     end
-    StyleBackdrop(panel, 0.05, 0.05, 0.06, 0.95, 0, 0, 0)
+    StyleBackdrop(panel, 0.043, 0.047, 0.063, 0.97, 0.25, 0.27, 0.33, 0.7)
 
     panel.title = panel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
     panel.title:SetPoint("TOPLEFT", 12, -12)
     panel.title:SetText("BiS Gear")
+    panel.title:SetTextColor(unpack(GOLD))
+
+    panel.subLabel = panel:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+    panel.subLabel:SetPoint("TOPRIGHT", -12, -14)
+    local m = RecommendedStatsData_Meta
+    panel.subLabel:SetText(("%% of top %d"):format(m and m.sampleSize or 0))
 
     local top = -HEADER_H
     for i in ipairs(SLOT_ORDER) do
@@ -142,13 +167,21 @@ end
 local function SetRowItem(row, itemID, pct)
     row.itemID = itemID
     row.pct:SetText(pct and (pct .. "%") or "")
+    if pct and pct >= PCT_HIGH_THRESHOLD then
+        row.pct:SetTextColor(unpack(PCT_HIGH_COLOR))
+    else
+        row.pct:SetTextColor(0.62, 0.62, 0.66)
+    end
     row.itemName:SetText("...")
     row.icon:SetTexture(QUESTION_MARK_ICON)
+    row.iconBorder:SetColorTexture(1, 1, 1, 0.25)
 
     local item = Item:CreateFromItemID(itemID)
     item:ContinueOnItemLoad(function()
         row.itemName:SetText(item:GetItemLink() or item:GetItemName() or ("Item " .. itemID))
         row.icon:SetTexture(item:GetItemIcon())
+        local r, g, b = C_Item.GetItemQualityColor(item:GetItemQuality())
+        if r then row.iconBorder:SetColorTexture(r, g, b, 0.9) end
     end)
 end
 

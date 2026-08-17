@@ -1,11 +1,13 @@
 -- RecommendedStats :: UI/CharacterPanel.lua
--- Drop-in replacement for the earlier stub. Card-style secondary-stat readout
--- anchored to the character window, with a Raid / Mythic+ / PvP dropdown.
+-- Flat, borderless stat readout anchored to the character window, with a Raid / Mythic+
+-- dropdown. Each row shows current vs target with a target-tick on the progress bar so
+-- "how far off" is visible at a glance, not just "over/under".
 --
 -- Depends on Core.lua providing:
 --   RS:Evaluate()  -> { {name,current,target,delta,state}, ... }, key   (state = "under"|"on"|"over")
 --   RS:GetContent() / RS:SetContent(c)                                  (c = "RAID"|"MYTHICPLUS")
 --   RS.listeners (table)  and  RS:Refresh()
+--   RecommendedStatsData_Meta (sampleSize, gamePatch, updated)
 --
 -- NOTE: the dropdown uses the modern (11.x+/12.x) menu system
 -- (DropdownButton + WowStyle1DropdownTemplate + SetupMenu). Verify the template
@@ -16,24 +18,28 @@ local RS = RecommendedStats
 --------------------------------------------------------------------------------
 -- Look & feel
 --------------------------------------------------------------------------------
-local PANEL_W       = 280
-local CARD_W        = 256
-local CARD_H        = 82
-local CARD_GAP      = 8
-local HEADER_H      = 44      -- title + dropdown, side by side on one row
+local PANEL_W   = 300
+local ROW_W     = PANEL_W - 24  -- content width inside the panel's side padding
+local ROW_H     = 78
+local ROW_GAP   = 12
+local HEADER_H  = 46
+local FOOTER_H  = 20
+local BAR_H     = 8
 
+-- A stat sitting slightly over target isn't a problem the way being under is, so it gets a
+-- calm neutral color instead of an alarming one — only "under" reads as urgent (red).
 local COLOR = {
-    under = { 0.85, 0.22, 0.22 },   -- red   : below target (need more)
-    on    = { 0.24, 0.80, 0.36 },   -- green : on target
-    over  = { 0.92, 0.66, 0.13 },   -- amber : above target (excess)
-    dim   = { 0.62, 0.62, 0.66 },
+    under = { 0.92, 0.35, 0.35 },
+    on    = { 0.32, 0.85, 0.48 },
+    over  = { 0.55, 0.66, 0.85 },
+}
+local STATUS_LABEL = {
+    under = "Too low",
+    on    = "On target",
+    over  = "Over \194\183 fine",
 }
 
-local STATUS = {
-    under = { text = "Too low", arrow = "|TInterface\\MoneyFrame\\Arrow-Down-Up:12:12|t" },
-    on    = { text = "On target", arrow = "" },
-    over  = { text = "Excess",  arrow = "|TInterface\\MoneyFrame\\Arrow-Up-Up:12:12|t" },
-}
+local GOLD = { 1, 0.82, 0.15 }
 
 local STAT_LABEL = {
     haste = "Haste", crit = "Critical Strike", mastery = "Mastery", versatility = "Versatility",
@@ -44,6 +50,11 @@ local CONTENTS = {
     { text = "Mythic+",  value = "MYTHICPLUS" },
 }
 
+-- Bar shows target at a fixed position shy of the right edge (not the far end) so "over"
+-- readings have room to visibly extend past the tick instead of clipping at the bar's edge.
+local TARGET_HEADROOM = 1.15
+local TICK_FRAC = 1 / TARGET_HEADROOM
+
 --------------------------------------------------------------------------------
 -- Backdrop helper (works with or without BackdropTemplate available)
 --------------------------------------------------------------------------------
@@ -53,69 +64,71 @@ local BACKDROP = {
     edgeSize = 1,
 }
 
-local function StyleBackdrop(frame, r, g, b, a, er, eg, eb)
+local function StyleBackdrop(frame, r, g, b, a, er, eg, eb, ea)
     if not frame.SetBackdrop then Mixin(frame, BackdropTemplateMixin) end
     frame:SetBackdrop(BACKDROP)
     frame:SetBackdropColor(r, g, b, a)
-    frame:SetBackdropBorderColor(er or 0, eg or 0, eb or 0, 0.55)
+    frame:SetBackdropBorderColor(er or 0, eg or 0, eb or 0, ea or 0.55)
 end
 
 --------------------------------------------------------------------------------
--- Build one stat card
+-- Build one stat row (flat — no per-row box, just generous spacing between rows)
 --------------------------------------------------------------------------------
-local function CreateCard(parent, index)
-    local card = CreateFrame("Frame", nil, parent, "BackdropTemplate")
-    card:SetSize(CARD_W, CARD_H)
-    StyleBackdrop(card, 0.09, 0.09, 0.11, 0.90)
+local function SetFont(fontString, size, flags)
+    fontString:SetFont("Fonts\\FRIZQT__.ttf", size, flags or "")
+end
 
-    -- colored accent strip down the left edge
-    card.accent = card:CreateTexture(nil, "OVERLAY")
-    card.accent:SetPoint("TOPLEFT", 1, -1)
-    card.accent:SetPoint("BOTTOMLEFT", 1, 1)
-    card.accent:SetWidth(3)
-    card.accent:SetColorTexture(1, 1, 1, 1)
+local function CreateRow(parent)
+    local row = CreateFrame("Frame", nil, parent)
+    row:SetSize(ROW_W, ROW_H)
 
-    -- stat name (top-left)
-    card.name = card:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    card.name:SetPoint("TOPLEFT", 12, -8)
+    -- stat name (top-left, prominent)
+    row.name = row:CreateFontString(nil, "OVERLAY")
+    SetFont(row.name, 15, "OUTLINE")
+    row.name:SetPoint("TOPLEFT", 0, 0)
+    row.name:SetTextColor(1, 1, 1)
 
-    -- current value (big, below name)
-    card.current = card:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-    card.current:SetPoint("TOPLEFT", 12, -24)
+    -- status (top-right, colored, small)
+    row.status = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    row.status:SetPoint("TOPRIGHT", 0, -2)
 
-    -- "target : X%" (dim, to the right of current)
-    card.target = card:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-    card.target:SetPoint("LEFT", card.current, "RIGHT", 6, 0)
+    -- current value (big, bold)
+    row.current = row:CreateFontString(nil, "OVERLAY")
+    SetFont(row.current, 22, "OUTLINE")
+    row.current:SetPoint("TOPLEFT", row.name, "BOTTOMLEFT", 0, -6)
+    row.current:SetTextColor(1, 1, 1)
 
-    -- progress bar (near the bottom)
-    card.bar = CreateFrame("StatusBar", nil, card)
-    card.bar:SetPoint("BOTTOMLEFT", 12, 8)
-    card.bar:SetPoint("BOTTOMRIGHT", -12, 8)
-    card.bar:SetHeight(6)
-    card.bar:SetStatusBarTexture("Interface\\TargetingFrame\\UI-StatusBar")
-    card.bar:SetMinMaxValues(0, 1)
+    -- "target X%" (dim, inline after the current value)
+    row.target = row:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+    row.target:SetPoint("LEFT", row.current, "RIGHT", 8, -1)
 
-    card.barBG = card.bar:CreateTexture(nil, "BACKGROUND")
-    card.barBG:SetAllPoints(card.bar)
-    card.barBG:SetColorTexture(0.20, 0.20, 0.22, 0.9)
+    -- progress track + fill
+    row.barBG = row:CreateTexture(nil, "ARTWORK")
+    row.barBG:SetSize(ROW_W, BAR_H)
+    row.barBG:SetPoint("BOTTOMLEFT", 0, 4)
+    row.barBG:SetColorTexture(1, 1, 1, 0.08)
 
-    -- status label (bottom-right, above the bar)
-    card.status = card:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    card.status:SetPoint("BOTTOMRIGHT", -12, 18)
+    row.bar = CreateFrame("StatusBar", nil, row)
+    row.bar:SetAllPoints(row.barBG)
+    row.bar:SetStatusBarTexture("Interface\\Buttons\\WHITE8x8")
+    row.bar:SetMinMaxValues(0, 1)
 
-    -- fill % (bottom-left, above the bar)
-    card.fill = card:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-    card.fill:SetPoint("BOTTOMLEFT", 12, 18)
+    -- target tick — always at the same relative position (TICK_FRAC never changes), so it's
+    -- placed once here rather than recalculated on every render.
+    row.tick = row:CreateTexture(nil, "OVERLAY")
+    row.tick:SetSize(2, BAR_H + 6)
+    row.tick:SetColorTexture(1, 1, 1, 0.9)
+    row.tick:SetPoint("CENTER", row.barBG, "LEFT", ROW_W * TICK_FRAC, 0)
 
-    return card
+    return row
 end
 
 --------------------------------------------------------------------------------
 -- Panel + dropdown (created lazily)
 --------------------------------------------------------------------------------
 local panel, dropdown
-local cards = {}
-local emptyText
+local rows = {}
+local emptyText, footerText
 
 local function ContentLabel()
     local cur = RS:GetContent()
@@ -144,13 +157,19 @@ local function BuildDropdown()
     end)
 end
 
+local function FooterLine()
+    local m = RecommendedStatsData_Meta
+    if not m then return "" end
+    return ("Targets: top %d \194\183 %s \194\183 updated %s"):format(m.sampleSize or 0, m.gamePatch or "?", m.updated or "?")
+end
+
 local function EnsurePanel()
     if panel then return end
 
     panel = CreateFrame("Frame", "RecommendedStatsPanel", CharacterFrame, "BackdropTemplate")
-    panel:SetSize(PANEL_W, HEADER_H + (CARD_H + CARD_GAP) * 4 + 6)
+    panel:SetSize(PANEL_W, HEADER_H + (ROW_H + ROW_GAP) * 4 + FOOTER_H + 6)
     panel:SetPoint("TOPLEFT", CharacterFrame, "TOPRIGHT", 6, -4)
-    StyleBackdrop(panel, 0.05, 0.05, 0.06, 0.95, 0, 0, 0)
+    StyleBackdrop(panel, 0.043, 0.047, 0.063, 0.97, 0.25, 0.27, 0.33, 0.7)
 
     RS.statPanel = panel -- so BiSWindow.lua can dock next to this instead of off-screen to the left
 
@@ -160,15 +179,16 @@ local function EnsurePanel()
     panel.title:SetWidth(PANEL_W - 12 - 120 - 8 - 8) -- leaves room for the dropdown
     panel.title:SetJustifyH("LEFT")
     panel.title:SetText("Recommended Stats")
+    panel.title:SetTextColor(unpack(GOLD))
 
     BuildDropdown()
 
-    -- stat cards
+    -- stat rows
     local top = -HEADER_H
     for i = 1, 4 do
-        local card = CreateCard(panel, i)
-        card:SetPoint("TOPLEFT", 12, top - (i - 1) * (CARD_H + CARD_GAP))
-        cards[i] = card
+        local row = CreateRow(panel)
+        row:SetPoint("TOPLEFT", 12, top - (i - 1) * (ROW_H + ROW_GAP))
+        rows[i] = row
     end
 
     -- empty / no-data message
@@ -177,13 +197,19 @@ local function EnsurePanel()
     emptyText:SetWidth(PANEL_W - 30)
     emptyText:SetJustifyH("CENTER")
     emptyText:Hide()
+
+    -- footer meta line
+    footerText = panel:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+    footerText:SetPoint("BOTTOMLEFT", 12, 8)
+    footerText:SetText(FooterLine())
 end
 
 --------------------------------------------------------------------------------
 -- Render
 --------------------------------------------------------------------------------
 local function ShowEmpty(msg)
-    for _, card in ipairs(cards) do card:Hide() end
+    for _, row in ipairs(rows) do row:Hide() end
+    if footerText then footerText:Hide() end
     emptyText:SetText(msg)
     emptyText:Show()
 end
@@ -202,32 +228,27 @@ local function Render(data, key)
     end
 
     emptyText:Hide()
+    footerText:Show()
+    footerText:SetText(FooterLine())
 
-    for i, card in ipairs(cards) do
-        local row = data[i]
-        if not row then card:Hide()
+    for i, row in ipairs(rows) do
+        local stat = data[i]
+        if not stat then row:Hide()
         else
-            card:Show()
-            local col = COLOR[row.state]
+            row:Show()
+            local col = COLOR[stat.state]
 
-            card.accent:SetColorTexture(col[1], col[2], col[3], 1)
-            card.name:SetText(STAT_LABEL[row.name] or row.name)
-            card.current:SetText(string.format("%.2f%%", row.current))
-            card.target:SetText(string.format("target : %.0f%%", row.target))
+            row.name:SetText(STAT_LABEL[stat.name] or stat.name)
+            row.current:SetText(("%.1f%%"):format(stat.current))
+            row.current:SetTextColor(col[1], col[2], col[3])
+            row.target:SetText(("target %.0f%%"):format(stat.target))
 
-            local frac = row.current / math.max(row.target, 0.01)
-            card.bar:SetValue(math.min(frac, 1))
-            card.bar:SetStatusBarColor(col[1], col[2], col[3])
+            row.status:SetText(STATUS_LABEL[stat.state])
+            row.status:SetTextColor(col[1], col[2], col[3])
 
-            if frac >= 1 and row.state ~= "on" then
-                card.fill:SetText("100%+")
-            else
-                card.fill:SetText(string.format("%d%%", math.floor(math.min(frac, 1) * 100)))
-            end
-
-            local s = STATUS[row.state]
-            card.status:SetText((s.arrow ~= "" and (s.arrow .. " ") or "") .. s.text)
-            card.status:SetTextColor(col[1], col[2], col[3])
+            local barMax = math.max(stat.target * TARGET_HEADROOM, 0.01)
+            row.bar:SetValue(math.min(stat.current, barMax) / barMax)
+            row.bar:SetStatusBarColor(col[1], col[2], col[3])
         end
     end
 end
