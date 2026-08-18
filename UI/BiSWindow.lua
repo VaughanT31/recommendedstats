@@ -118,18 +118,27 @@ end
 local panel, rows = nil, {}
 local emptyText
 
-local function EnsurePanel()
-    if panel then return end
-
-    panel = CreateFrame("Frame", "RecommendedStatsBiSPanel", CharacterFrame, "BackdropTemplate")
-    panel:SetSize(PANEL_W, HEADER_H + (#SLOT_ORDER * (ROW_H + ROW_GAP)) + 14)
+local function DefaultAnchor()
+    panel:ClearAllPoints()
     if RS.statPanel then
         panel:SetPoint("TOPLEFT", RS.statPanel, "TOPRIGHT", 6, 0)
     else
         -- Fallback if CharacterPanel.lua hasn't built its panel yet (shouldn't happen given TOC load order).
         panel:SetPoint("TOPLEFT", CharacterFrame, "TOPRIGHT", 292, -4)
     end
+end
+
+local function EnsurePanel()
+    if panel then return end
+
+    -- Parented to UIParent, same reasoning as the stat panel: don't inherit whatever
+    -- layout surgery Chonky/MyCharacterSheet perform on CharacterFrame. Docks next to
+    -- the stat panel by default but can be dragged off on its own.
+    panel = CreateFrame("Frame", "RecommendedStatsBiSPanel", UIParent, "BackdropTemplate")
+    panel:SetSize(PANEL_W, HEADER_H + (#SLOT_ORDER * (ROW_H + ROW_GAP)) + 14)
     StyleBackdrop(panel, 0.043, 0.047, 0.063, 0.97, 0.25, 0.27, 0.33, 0.7)
+
+    RS:MakeMovable(panel, "bisPanelPos", DefaultAnchor)
 
     panel.title = panel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
     panel.title:SetPoint("TOPLEFT", 12, -12)
@@ -186,7 +195,10 @@ local function SetRowItem(row, itemID, pct)
 end
 
 local function Render()
-    EnsurePanel()
+    -- Recomputed stats/gear must not force the panel into existence — only
+    -- RS:SyncVisibility() (character frame open, minimap toggle, or restoring a
+    -- standalone session) creates/shows it.
+    if not panel then return end
 
     if not RS:SchemaOK() then
         ShowEmpty("Stat data is out of date for this addon version. Please update.")
@@ -217,9 +229,21 @@ end
 table.insert(RS.listeners, Render)
 
 --------------------------------------------------------------------------------
--- Show with the character sheet; refresh on open
+-- Visibility: attach mode + minimap toggle + the "show BiS section" option all
+-- drive this, not the character frame directly (see RS:ShouldShowPanels() in
+-- Core.lua).
 --------------------------------------------------------------------------------
-CharacterFrame:HookScript("OnShow", function()
-    EnsurePanel()
-    Render()
-end)
+local function SyncVisibility()
+    if RS:ShouldShowPanels() and RS:GetShowBiS() then
+        EnsurePanel()
+        RS:RedockIfDefault("bisPanelPos") -- follow the stat panel if it moved, unless dragged elsewhere
+        panel:Show()
+        Render()
+    elseif panel then
+        panel:Hide()
+    end
+end
+table.insert(RS.visibilitySyncers, SyncVisibility)
+
+CharacterFrame:HookScript("OnShow", SyncVisibility)
+CharacterFrame:HookScript("OnHide", SyncVisibility)

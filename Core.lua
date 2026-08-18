@@ -46,6 +46,30 @@ function RS:SetContent(c)
     print("|cff33ff99RecommendedStats|r content set to " .. c)
 end
 
+--------------------------------------------------------------------------------
+-- Options (attach mode, section toggles) — read by UI/OptionsPanel.lua and the
+-- minimap button, applied by UI/CharacterPanel.lua and UI/BiSWindow.lua.
+--------------------------------------------------------------------------------
+function RS:GetAttachMode()
+    RecommendedStatsDB = RecommendedStatsDB or {}
+    return RecommendedStatsDB.attachMode or "ATTACHED"
+end
+function RS:SetAttachMode(mode)
+    RecommendedStatsDB = RecommendedStatsDB or {}
+    RecommendedStatsDB.attachMode = mode
+    RS:SyncVisibility()
+end
+
+function RS:GetShowBiS()
+    RecommendedStatsDB = RecommendedStatsDB or {}
+    return RecommendedStatsDB.showBiS ~= false
+end
+function RS:SetShowBiS(shown)
+    RecommendedStatsDB = RecommendedStatsDB or {}
+    RecommendedStatsDB.showBiS = shown
+    RS:SyncVisibility()
+end
+
 function RS:GetKey()
     local class, spec = GetClassToken(), GetSpecToken()
     if not (class and spec) then return nil end
@@ -89,19 +113,113 @@ function RS:Refresh()
     for _, fn in ipairs(RS.listeners) do fn(data, key) end
 end
 
+--------------------------------------------------------------------------------
+-- Panel visibility (attach mode + minimap toggle)
+--------------------------------------------------------------------------------
+-- The character-sheet panels must never be created/shown just because stats got
+-- recomputed (that happens on login via PLAYER_ENTERING_WORLD, long before the
+-- player has opened anything) — only these explicit triggers should cause a panel
+-- to appear: CharacterFrame showing (attach mode only), the minimap-icon toggle,
+-- or restoring a standalone (unattached) panel that was left open last session.
+-- RS.visibilitySyncers holds one "create-if-needed and apply Show/Hide" closure
+-- per panel, registered by CharacterPanel.lua / BiSWindow.lua.
+RS.visibilitySyncers = {}
+
+function RS:ShouldShowPanels()
+    RecommendedStatsDB = RecommendedStatsDB or {}
+    if RecommendedStatsDB.panelsShown == false then return false end
+    if RS:GetAttachMode() == "FREE" then return true end
+    return CharacterFrame:IsShown()
+end
+
+function RS:SyncVisibility()
+    for _, fn in ipairs(RS.visibilitySyncers) do fn() end
+end
+
+-- Minimap left-click: toggle both panels on/off regardless of attach mode.
+function RS:TogglePanelsShown()
+    RecommendedStatsDB = RecommendedStatsDB or {}
+    RecommendedStatsDB.panelsShown = not (RecommendedStatsDB.panelsShown ~= false)
+    RS:SyncVisibility()
+end
+
+--------------------------------------------------------------------------------
+-- Movable/detachable panel positioning
+--------------------------------------------------------------------------------
+-- Other addons (Chonky Character Sheet's own M+ side panel, MyCharacterSheet's
+-- optional side panel, etc.) may already occupy the space to the right of the
+-- character frame. Panels default to docking there but remember a dragged
+-- position in SavedVariables so they can be fully detached and placed anywhere.
+-- RS.resetters collects one "put me back at the default dock point" closure per
+-- panel so /rs resetpos can restore all of them without those panels exposing
+-- their internals to Core.lua.
+RS.resetters = {}
+
+function RS:MakeMovable(frame, dbKey, applyDefault)
+    RecommendedStatsDB = RecommendedStatsDB or {}
+    RS.resetters[dbKey] = applyDefault
+
+    frame:SetMovable(true)
+    frame:SetClampedToScreen(true)
+    frame:EnableMouse(true)
+    frame:RegisterForDrag("LeftButton")
+    frame:SetScript("OnDragStart", function(self) self:StartMoving() end)
+    frame:SetScript("OnDragStop", function(self)
+        self:StopMovingOrSizing()
+        local point, _, _, x, y = self:GetPoint(1)
+        RecommendedStatsDB[dbKey] = { point = point, x = x, y = y }
+    end)
+
+    local pos = RecommendedStatsDB[dbKey]
+    if pos then
+        frame:ClearAllPoints()
+        frame:SetPoint(pos.point, UIParent, pos.point, pos.x, pos.y)
+    else
+        applyDefault()
+    end
+end
+
+-- Re-applies the default dock point, but only for panels the user hasn't dragged
+-- (an explicit saved position means they've deliberately detached it).
+function RS:RedockIfDefault(dbKey)
+    RecommendedStatsDB = RecommendedStatsDB or {}
+    if not RecommendedStatsDB[dbKey] and RS.resetters[dbKey] then
+        RS.resetters[dbKey]()
+    end
+end
+
 local f = CreateFrame("Frame")
 for _, e in ipairs({ "PLAYER_ENTERING_WORLD", "PLAYER_SPECIALIZATION_CHANGED",
                      "PLAYER_EQUIPMENT_CHANGED", "COMBAT_RATING_UPDATE" }) do
     f:RegisterEvent(e)
 end
-f:SetScript("OnEvent", function() RS:Refresh() end)
+f:SetScript("OnEvent", function(_, event)
+    RS:Refresh()
+    -- Only on login: restores a standalone (unattached) panel left open last session.
+    -- Attach-mode visibility is otherwise driven entirely by CharacterFrame's own
+    -- OnShow/OnHide, not by this stat-recompute event.
+    if event == "PLAYER_ENTERING_WORLD" then RS:SyncVisibility() end
+end)
 
--- Slash command: /rs raid | mythicplus  (or /rs to print status)
+-- Slash command: /rs raid | mythicplus | resetpos | options  (or /rs to print status)
 SLASH_RECSTATS1 = "/rs"
 SlashCmdList.RECSTATS = function(msg)
     msg = (msg or ""):gsub("%s", ""):lower()
     if msg == "m+" or msg == "mplus" then msg = "mythicplus" end
+    if msg == "resetpos" then
+        RecommendedStatsDB = RecommendedStatsDB or {}
+        for dbKey, applyDefault in pairs(RS.resetters) do
+            RecommendedStatsDB[dbKey] = nil
+            applyDefault()
+        end
+        print("|cff33ff99RecommendedStats|r panel positions reset. Drag a panel to move it again.")
+        return
+    end
+    if msg == "options" or msg == "config" then
+        if RS.OpenOptions then RS:OpenOptions() end
+        return
+    end
     local map = { raid="RAID", mythicplus="MYTHICPLUS" }
     if map[msg] then RS:SetContent(map[msg])
-    else print("|cff33ff99RecommendedStats|r content = " .. RS:GetContent() .. "  (use /rs raid|mythicplus)") end
+    else print("|cff33ff99RecommendedStats|r content = " .. RS:GetContent() .. "  (use /rs raid|mythicplus|resetpos|options)") end
 end

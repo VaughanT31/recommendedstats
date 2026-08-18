@@ -170,10 +170,18 @@ end
 local function EnsurePanel()
     if panel then return end
 
-    panel = CreateFrame("Frame", "RecommendedStatsPanel", CharacterFrame, "BackdropTemplate")
+    -- Parented to UIParent (not CharacterFrame) so the panel's own layout doesn't get
+    -- dragged around by whatever CharacterFrame reskins/resizes are doing underneath
+    -- (Chonky Character Sheet, MyCharacterSheet, etc.) — it just docks beside it by
+    -- default and can be dragged anywhere, remembering the position in the DB.
+    panel = CreateFrame("Frame", "RecommendedStatsPanel", UIParent, "BackdropTemplate")
     panel:SetSize(PANEL_W, HEADER_H + (ROW_H + ROW_GAP) * 4 + FOOTER_H + 6)
-    panel:SetPoint("TOPLEFT", CharacterFrame, "TOPRIGHT", 6, -4)
     StyleBackdrop(panel, 0.043, 0.047, 0.063, 0.97, 0.25, 0.27, 0.33, 0.7)
+
+    RS:MakeMovable(panel, "panelPos", function()
+        panel:ClearAllPoints()
+        panel:SetPoint("TOPLEFT", CharacterFrame, "TOPRIGHT", 6, -4)
+    end)
 
     RS.statPanel = panel -- so BiSWindow.lua can dock next to this instead of off-screen to the left
 
@@ -219,7 +227,10 @@ local function ShowEmpty(msg)
 end
 
 local function Render(data, key)
-    EnsurePanel()
+    -- Recomputed stats (e.g. on login, gear change) must not force the panel into
+    -- existence — only RS:SyncVisibility() (character frame open, minimap toggle,
+    -- or restoring a standalone session) creates/shows it.
+    if not panel then return end
     if dropdown then dropdown:SetDefaultText(ContentLabel()) end
 
     if not data then
@@ -266,9 +277,20 @@ end
 table.insert(RS.listeners, Render)
 
 --------------------------------------------------------------------------------
--- Show with the character sheet; refresh on open
+-- Visibility: attach mode + minimap toggle drive this, not the character frame
+-- directly (see RS:ShouldShowPanels() in Core.lua).
 --------------------------------------------------------------------------------
-CharacterFrame:HookScript("OnShow", function()
-    EnsurePanel()
-    RS:Refresh()
-end)
+local function SyncVisibility()
+    if RS:ShouldShowPanels() then
+        EnsurePanel()
+        RS:RedockIfDefault("panelPos") -- follow CharacterFrame if it moved, unless the user dragged us elsewhere
+        panel:Show()
+        RS:Refresh()
+    elseif panel then
+        panel:Hide()
+    end
+end
+table.insert(RS.visibilitySyncers, SyncVisibility)
+
+CharacterFrame:HookScript("OnShow", SyncVisibility)
+CharacterFrame:HookScript("OnHide", SyncVisibility)
