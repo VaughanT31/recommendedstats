@@ -2,13 +2,14 @@
 ## Title: RecommendedStats
 ## Notes: Your secondary stats vs top-player targets, with BiS.
 ## Author: CtrlShift_Zed
-## Version: 2026-08-18
+## Version: 2026-08-20
 ## SavedVariables: RecommendedStatsDB
 ## X-License: MIT
 
 Data\Meta.lua
 Data\StatTargets.lua
 Data\BiS.lua
+Data\RaidDifficulty.lua
 Core.lua
 UI\CharacterPanel.lua
 UI\BiSWindow.lua

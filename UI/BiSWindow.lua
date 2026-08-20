@@ -8,6 +8,11 @@
 -- Depends on Core.lua providing:
 --   RS:GetKey() / RS:SchemaOK() / RS.listeners / RS:Refresh()
 --   RecommendedStatsData_BiS[key] = { [SLOT] = { itemID=, pct= }, ... }
+--   RecommendedStatsData_RaidDifficulty[key] = "mythic"|"heroic"|"normal", RAID keys only —
+--     which difficulty's clears the BiS set for that key actually came from. A raid can go
+--     days without a single Mythic guild yet (most visible right after it unlocks), so the
+--     node-side build falls back to Heroic/Normal rather than leaving the key empty; this is
+--     how the panel tells players their BiS list isn't Mythic-sourced when that happens.
 -- Depends on CharacterPanel.lua providing:
 --   RS.statPanel (the stat panel frame, to dock alongside)
 
@@ -44,6 +49,12 @@ local SLOT_LABEL = {
 }
 
 local QUESTION_MARK_ICON = 134400 -- INV_Misc_QuestionMark, placeholder while the item loads
+
+-- Shown next to the "% of top N" line only when a RAID key's BiS set didn't come from Mythic
+-- clears (see RecommendedStatsData_RaidDifficulty in the header comment above) — same amber as
+-- the stat panel's "too low" state, since it's the same kind of "heads up, not the real target" cue.
+local DIFFICULTY_LABEL = { heroic = "Heroic", normal = "Normal" }
+local FALLBACK_COLOR = { 0.95, 0.65, 0.3 }
 
 --------------------------------------------------------------------------------
 -- Backdrop helper (same pattern as CharacterPanel.lua)
@@ -146,9 +157,7 @@ local function EnsurePanel()
     panel.title:SetTextColor(unpack(GOLD))
 
     panel.subLabel = panel:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-    panel.subLabel:SetPoint("TOPRIGHT", -12, -14)
-    local m = RecommendedStatsData_Meta
-    panel.subLabel:SetText(("%% of top %d"):format(m and m.sampleSize or 0))
+    panel.subLabel:SetPoint("TOPRIGHT", -12, -14) -- text set by Render(), which always runs right after this
 
     local top = -HEADER_H
     for i in ipairs(SLOT_ORDER) do
@@ -210,6 +219,17 @@ local function Render()
     if not bis then
         ShowEmpty("No BiS data for your current spec + content yet.")
         return
+    end
+
+    local m = RecommendedStatsData_Meta
+    local difficulty = RecommendedStatsData_RaidDifficulty and RecommendedStatsData_RaidDifficulty[key]
+    local fallbackLabel = difficulty and DIFFICULTY_LABEL[difficulty]
+    if fallbackLabel then
+        panel.subLabel:SetFormattedText("%% of top %d \194\183 %s (no Mythic logs yet)", m and m.sampleSize or 0, fallbackLabel)
+        panel.subLabel:SetTextColor(unpack(FALLBACK_COLOR))
+    else
+        panel.subLabel:SetFormattedText("%% of top %d", m and m.sampleSize or 0)
+        panel.subLabel:SetTextColor(0.62, 0.62, 0.66)
     end
 
     emptyText:Hide()
