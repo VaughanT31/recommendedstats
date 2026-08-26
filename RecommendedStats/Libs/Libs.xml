@@ -1,0 +1,13 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <!-- Vendored third-party libraries, in dependency order, giving UI/MinimapButton.lua a real
+         LibDataBroker-1.1 + LibDBIcon-1.0 minimap button instead of a hand-rolled one, so this
+         addon's icon is recognized/movable by minimap-button-organizer addons the way any other
+         LDB launcher is. Sourced verbatim from Questie/Questie's Libs/ folder (a large,
+         actively-maintained addon vendoring the same libraries) — do not hand-edit; replace the
+         whole file wholesale when updating. -->
+    <Script file="LibStub\LibStub.lua"/>
+    <Include file="CallbackHandler-1.0\CallbackHandler-1.0.xml"/>
+    <Script file="LibDataBroker-1.1\LibDataBroker-1.1.lua"/>
+    <Include file="LibDBIcon-1.0\lib.xml"/>
+</Ui>
