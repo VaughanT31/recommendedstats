@@ -2,7 +2,7 @@
 ## Title: RecommendedStats
 ## Notes: Your secondary stats vs top-player targets, with BiS.
 ## Author: CtrlShift_Zed
-## Version: 2026-08-28
+## Version: 2026-08-30
 ## SavedVariables: RecommendedStatsDB
 ## SavedVariablesPerCharacter: RecommendedStatsDBChar
 ## X-License: MIT

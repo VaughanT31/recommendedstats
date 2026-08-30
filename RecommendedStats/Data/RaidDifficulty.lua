@@ -1,4 +1,4 @@
--- GENERATED 2026-08-28 - do not hand-edit
+-- GENERATED 2026-08-30 - do not hand-edit
 RecommendedStatsData_RaidDifficulty = {
     ["SHAMAN_ENHANCEMENT_RAID"] = "mythic",
     ["MONK_MISTWEAVER_RAID"] = "mythic",
