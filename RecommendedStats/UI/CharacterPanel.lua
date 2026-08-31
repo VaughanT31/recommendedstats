@@ -32,14 +32,26 @@ local RS = RecommendedStats
 local PANEL_W   = 360 -- shared with BiS Gear's row width requirements (see UI/BiSWindow.lua)
 local ROW_W     = PANEL_W - 24  -- content width inside the panel's side padding
 -- The bar is anchored directly below the current-value text (see CreateRow's BAR_GAP), not
--- pinned to this row height's bottom edge, so ROW_H only needs to be "tall enough to hold name +
--- current-value + BAR_GAP + bar + a little breathing room" — it's the row-to-row stride, not a
--- box the content is stretched to fill.
-local ROW_H     = 66
+-- pinned to this row height's bottom edge, so a size's ROW_H only needs to be "tall enough to
+-- hold its content + a little breathing room" — it's the row-to-row stride, not a box the
+-- content is stretched to fill.
 local ROW_GAP   = 8
 local FOOTER_H  = 20
 local BAR_H     = 8
-local BAR_GAP   = 6 -- vertical gap between the current-value text and the bar below it
+local BAR_GAP   = 6 -- vertical gap between the current-value text (or combined line) and the bar below it
+
+-- Row density, set from UI/OptionsPanel.lua (RS:GetStatsSize()/RS:SetStatsSize()):
+--   DEFAULT — name + big value + bar (today's look)
+--   SMALL   — one line, no bar at all
+--   MEDIUM  — one line, with the bar directly beneath it
+--   LARGE   — DEFAULT plus a "+X.X% from target" delta line under the bar
+local ROW_H_BY_SIZE = { DEFAULT = 66, SMALL = 20, MEDIUM = 32, LARGE = 84 }
+local function CurrentRowH()
+    return ROW_H_BY_SIZE[RS:GetStatsSize()] or ROW_H_BY_SIZE.DEFAULT
+end
+local function StatsContentH()
+    return (CurrentRowH() + ROW_GAP) * 4 + FOOTER_H + 6
+end
 
 -- Shared header: 8px top pad + tab row + gap + dropdown row + 8px bottom pad. Both pages
 -- (statsPage here, RS.bisPage from BiSWindow.lua) anchor their own top-left below this.
@@ -48,7 +60,6 @@ local TAB_GAP        = 4
 local DROPDOWN_ROW_H = 20
 local HEADER_H       = 8 + TAB_H + 6 + DROPDOWN_ROW_H + 8
 
-local STATS_CONTENT_H = (ROW_H + ROW_GAP) * 4 + FOOTER_H + 6
 -- Matches UI/BiSWindow.lua's own row math (16 rows + its small sub-header) — kept in sync by
 -- hand since each UI file already owns its own layout constants independently in this addon;
 -- a little slack is fine since bisPage is just a plain container.
@@ -96,7 +107,17 @@ local BACKDROP = {
 
 local function StyleBackdrop(frame, r, g, b, a, er, eg, eb, ea)
     if not frame.SetBackdrop then Mixin(frame, BackdropTemplateMixin) end
-    frame:SetBackdrop(BACKDROP)
+    -- A fresh table every call, not the shared BACKDROP local: Blizzard's SetBackdrop skips
+    -- recomputing border geometry when handed the same backdropInfo table reference as last
+    -- time. Panel starts at the taller BiS-tab height, then SyncTabUI immediately shrinks it to
+    -- the Stats-tab height on first show (default active tab) and reapplies this same BACKDROP
+    -- table — which used to be a silent no-op, leaving the border geometry stuck at the tall
+    -- size and the bottom edge never redrawn for the shorter one.
+    frame:SetBackdrop({
+        bgFile   = BACKDROP.bgFile,
+        edgeFile = BACKDROP.edgeFile,
+        edgeSize = BACKDROP.edgeSize,
+    })
     frame:SetBackdropColor(r, g, b, a)
     frame:SetBackdropBorderColor(er or 0, eg or 0, eb or 0, ea or 0.55)
 end
@@ -168,7 +189,7 @@ end
 
 local function CreateRow(parent)
     local row = CreateFrame("Frame", nil, parent)
-    row:SetSize(ROW_W, ROW_H)
+    row:SetSize(ROW_W, ROW_H_BY_SIZE.DEFAULT)
 
     -- stat name (top-left, prominent)
     row.name = row:CreateFontString(nil, "OVERLAY")
@@ -214,13 +235,72 @@ local function CreateRow(parent)
     row.tick:SetColorTexture(tickColor[1], tickColor[2], tickColor[3], 0.9)
     row.tick:SetPoint("CENTER", row.barBG, "LEFT", ROW_W * TICK_FRAC, 0)
 
+    -- SMALL/MEDIUM's single-line readout ("Haste  36.3% \194\183 target 30% \194\183 On target") —
+    -- built and populated unconditionally in Render() below regardless of which size is active;
+    -- ApplyRowSize (below) is solely what shows/hides/positions it, so Render() never needs to
+    -- know or branch on the current size.
+    row.combined = row:CreateFontString(nil, "OVERLAY")
+    SetFont(row.combined, 13, "")
+    row.combined:SetJustifyH("LEFT")
+    row.combined:SetTextColor(1, 1, 1)
+    row.combined:Hide()
+
+    -- LARGE's extra "+X.X% from target" line under the bar.
+    row.delta = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    row.delta:SetJustifyH("LEFT")
+    row.delta:Hide()
+
     return row
+end
+
+-- Shows/hides/positions each row's elements for the given size — pure layout, no data. Content
+-- is always filled in by Render() regardless of which elements are currently shown, so a size
+-- change never needs to re-fetch RS:Evaluate() to look right.
+local function ApplyRowSize(row, size)
+    row.name:ClearAllPoints()
+    row.status:ClearAllPoints()
+    row.current:ClearAllPoints()
+    row.target:ClearAllPoints()
+    row.barBG:ClearAllPoints()
+    row.combined:ClearAllPoints()
+    row.delta:ClearAllPoints()
+
+    if size == "SMALL" or size == "MEDIUM" then
+        row.name:Hide(); row.current:Hide(); row.target:Hide(); row.status:Hide(); row.delta:Hide()
+        row.combined:Show()
+        row.combined:SetWidth(ROW_W)
+        row.combined:SetPoint("TOPLEFT", 0, 0)
+
+        if size == "SMALL" then
+            row.barBG:Hide(); row.bar:Hide(); row.tick:Hide()
+        else -- MEDIUM
+            row.barBG:Show(); row.bar:Show(); row.tick:Show()
+            row.barBG:SetPoint("TOPLEFT", row.combined, "BOTTOMLEFT", 0, -BAR_GAP)
+        end
+    else -- DEFAULT / LARGE
+        row.combined:Hide()
+        row.name:Show(); row.current:Show(); row.target:Show(); row.status:Show()
+        row.barBG:Show(); row.bar:Show(); row.tick:Show()
+
+        row.name:SetPoint("TOPLEFT", 0, 0)
+        row.status:SetPoint("TOPRIGHT", 0, -2)
+        row.current:SetPoint("TOPLEFT", row.name, "BOTTOMLEFT", 0, -4)
+        row.target:SetPoint("LEFT", row.current, "RIGHT", 8, -1)
+        row.barBG:SetPoint("TOPLEFT", row.current, "BOTTOMLEFT", 0, -BAR_GAP)
+
+        if size == "LARGE" then
+            row.delta:Show()
+            row.delta:SetPoint("TOPLEFT", row.barBG, "BOTTOMLEFT", 0, -4)
+        else
+            row.delta:Hide()
+        end
+    end
 end
 
 --------------------------------------------------------------------------------
 -- Panel + dropdown + tabs (created lazily)
 --------------------------------------------------------------------------------
-local panel, dropdown, statsTab, bisTab, statsPage
+local panel, dropdown, sizeDropdown, statsTab, bisTab, statsPage
 local rows = {}
 local emptyText, footerText
 
@@ -253,6 +333,44 @@ local function BuildDropdown()
     end)
 end
 
+-- Row-size shortcut (same setting as UI/OptionsPanel.lua's dropdown, RS:GetStatsSize()/
+-- RS:SetStatsSize()) — sits left of the Raid/Mythic+ dropdown so it's a one-click change without
+-- leaving the panel. Only relevant to the Stats page, so SyncTabUI hides it while BiS Gear is
+-- active (see below); ApplyStatsSizeToPanel keeps its label in sync when changed from Options.
+local SIZES = {
+    { text = "Default", value = "DEFAULT" },
+    { text = "Small",   value = "SMALL" },
+    { text = "Medium",  value = "MEDIUM" },
+    { text = "Large",   value = "LARGE" },
+}
+
+local function SizeLabel()
+    local cur = RS:GetStatsSize()
+    for _, s in ipairs(SIZES) do if s.value == cur then return s.text end end
+    return "Select"
+end
+
+local function BuildSizeDropdown()
+    sizeDropdown = CreateFrame("DropdownButton", "RecommendedStatsPanelSizeDropdown", panel, "WowStyle1DropdownTemplate")
+    sizeDropdown:SetWidth(90)
+    sizeDropdown:SetPoint("RIGHT", dropdown, "LEFT", -8, 0)
+    sizeDropdown:SetDefaultText(SizeLabel())
+
+    sizeDropdown:SetupMenu(function(_, root)
+        for _, s in ipairs(SIZES) do
+            root:CreateRadio(
+                s.text,
+                function() return RS:GetStatsSize() == s.value end,
+                function()
+                    RS:SetStatsSize(s.value)
+                    sizeDropdown:SetDefaultText(SizeLabel())
+                    return MenuResponse.Refresh
+                end
+            )
+        end
+    end)
+end
+
 local STALE_COLOR = { 0.95, 0.65, 0.3 } -- same amber as BiSWindow.lua's "no Mythic logs yet" hint
 
 -- "X of Y players" when Data/SampleSize.lua has this key (RS:GetSampleSizeFor) — the real count
@@ -276,6 +394,20 @@ local function ApplyFooterColor(key)
     end
 end
 
+-- Re-strides/resizes the 4 stat rows and statsPage for the current RS:GetStatsSize() — called
+-- once at panel creation and again from RS.statsSizeListeners whenever the option changes.
+local function LayoutRows()
+    local size = RS:GetStatsSize()
+    local rowH = CurrentRowH()
+    for i, row in ipairs(rows) do
+        row:SetSize(ROW_W, rowH)
+        row:ClearAllPoints()
+        row:SetPoint("TOPLEFT", 12, -(i - 1) * (rowH + ROW_GAP))
+        ApplyRowSize(row, size)
+    end
+    if statsPage then statsPage:SetHeight(StatsContentH()) end
+end
+
 local function EnsurePanel()
     if panel then return end
 
@@ -284,7 +416,7 @@ local function EnsurePanel()
     -- (Chonky Character Sheet, MyCharacterSheet, etc.) — it just docks beside it by
     -- default and can be dragged anywhere, remembering the position in the DB.
     panel = CreateFrame("Frame", "RecommendedStatsPanel", UIParent, "BackdropTemplate")
-    panel:SetSize(PANEL_W, HEADER_H + math.max(STATS_CONTENT_H, BIS_CONTENT_H) + 10)
+    panel:SetSize(PANEL_W, HEADER_H + math.max(StatsContentH(), BIS_CONTENT_H) + 10)
     local border = BorderColor()
     StyleBackdrop(panel, 0.043, 0.047, 0.063, 0.97, border[1], border[2], border[3], 0.7)
 
@@ -315,20 +447,19 @@ local function EnsurePanel()
     bisTab:SetPoint("TOPLEFT", statsTab, "TOPRIGHT", TAB_GAP, 0)
 
     BuildDropdown()
+    BuildSizeDropdown()
 
     -- "Recommended Stats" page: 4 stat rows + footer, all parented here so the whole
     -- section shows/hides as one unit when the tab switches (see SyncTabUI below).
     statsPage = CreateFrame("Frame", nil, panel)
     statsPage:SetPoint("TOPLEFT", 0, -HEADER_H)
     statsPage:SetPoint("TOPRIGHT", 0, -HEADER_H)
-    statsPage:SetHeight(STATS_CONTENT_H)
+    statsPage:SetHeight(StatsContentH())
 
-    local top = 0
     for i = 1, 4 do
-        local row = CreateRow(statsPage)
-        row:SetPoint("TOPLEFT", 12, top - (i - 1) * (ROW_H + ROW_GAP))
-        rows[i] = row
+        rows[i] = CreateRow(statsPage)
     end
+    LayoutRows()
 
     emptyText = statsPage:CreateFontString(nil, "OVERLAY", "GameFontDisable")
     emptyText:SetPoint("TOP", 0, -20)
@@ -357,6 +488,12 @@ local function ShowEmpty(msg)
     if footerText then footerText:Hide() end
     emptyText:SetText(msg)
     emptyText:Show()
+end
+
+local function ColorHex(col)
+    return ("|cff%02x%02x%02x"):format(
+        math.floor(col[1] * 255 + 0.5), math.floor(col[2] * 255 + 0.5), math.floor(col[3] * 255 + 0.5)
+    )
 end
 
 local function Render(data, key)
@@ -404,6 +541,24 @@ local function Render(data, key)
             row.bar:SetMinMaxValues(0, barMax)
             row.bar:SetValue(stat.current)
             row.bar:SetStatusBarColor(col[1], col[2], col[3])
+
+            -- SMALL/MEDIUM's single-line readout — always filled in regardless of which size is
+            -- active (ApplyRowSize is what decides whether it's actually shown), same sanctioned
+            -- SetFormattedText sink as row.current above since stat.current may be secret.
+            row.combined:SetFormattedText(
+                "%s   %.1f%%  \194\183  target %.0f%%  \194\183  " .. ColorHex(col) .. "%s|r",
+                STAT_LABEL[stat.name] or stat.name, stat.current, stat.target, STATUS_LABEL[stat.state]
+            )
+
+            -- LARGE's delta line. stat.delta is only nil for state == "secret" (Core.lua never
+            -- computes a delta it can't subtract) — a plain already-resolved number otherwise, so
+            -- no secret-sink concerns here, unlike stat.current above.
+            if stat.delta then
+                row.delta:SetFormattedText("%+.1f%% from target", stat.delta)
+                row.delta:SetTextColor(col[1], col[2], col[3])
+            else
+                row.delta:SetText("")
+            end
         end
     end
 end
@@ -439,19 +594,32 @@ local function SyncTabUI()
     ApplyTabVisual(statsTab, active == "STATS")
     ApplyTabVisual(bisTab, active == "BIS")
     statsPage:SetShown(active == "STATS" and RS:GetShowStats())
+    if sizeDropdown then sizeDropdown:SetShown(active == "STATS" and RS:GetShowStats()) end
     -- The window used to always stand as tall as the taller of the two tabs (BiS Gear's 16
     -- rows), which left a dead gap below the Stats tab's shorter content whenever it was the
     -- active one — resize to whichever tab is actually showing instead. Top-left stays anchored
     -- (RS:MakeMovable), so this only ever moves the bottom edge.
-    panel:SetHeight(HEADER_H + (active == "BIS" and BIS_CONTENT_H or STATS_CONTENT_H) + 10)
+    panel:SetHeight(HEADER_H + (active == "BIS" and BIS_CONTENT_H or StatsContentH()) + 10)
     -- Re-applying the backdrop after every resize, not just at creation: a plain SetHeight() on
-    -- this frame was leaving the bottom edge texture stale/undrawn (visible as a missing bottom
-    -- border on the shorter Stats tab) — forcing a fresh SetBackdrop pass at the new size is a
-    -- known-safe way to clear that regardless of the exact underlying cause.
+    -- this frame leaves the border geometry stale unless StyleBackdrop is called again with a
+    -- fresh backdrop table (see its own comment — SetBackdrop no-ops on a repeated table
+    -- reference), which is what actually redraws the bottom edge at the new size.
     local border = BorderColor()
     StyleBackdrop(panel, 0.043, 0.047, 0.063, 0.97, border[1], border[2], border[3], 0.7)
 end
 table.insert(RS.tabSyncers, SyncTabUI)
+
+-- Re-strides the rows and resizes the panel when RS:SetStatsSize() changes — fires whether the
+-- change came from this panel's own sizeDropdown or UI/OptionsPanel.lua's, so both stay in sync.
+-- If the panel hasn't been created yet, EnsurePanel's own LayoutRows() call will already pick up
+-- whatever size is current at build time, so there's nothing to redo here.
+local function ApplyStatsSizeToPanel()
+    if not panel then return end
+    LayoutRows()
+    SyncTabUI() -- resizes the panel to the new StatsContentH() and redraws the border at that size
+    if sizeDropdown then sizeDropdown:SetDefaultText(SizeLabel()) end
+end
+table.insert(RS.statsSizeListeners, ApplyStatsSizeToPanel)
 
 -- Re-tints already-built chrome in place when the skin setting changes (UI/OptionsPanel.lua).
 -- If the panel hasn't been created yet, there's nothing to re-tint — EnsurePanel/CreateRow

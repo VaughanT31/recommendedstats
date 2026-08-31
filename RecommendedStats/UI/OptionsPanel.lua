@@ -7,6 +7,7 @@
 --   RS:GetShowBiS() / RS:SetShowBiS(shown)
 --   RS:GetShowStats() / RS:SetShowStats(shown)
 --   RS:GetShowMinimapIcon() / RS:SetShowMinimapIcon(shown)
+--   RS:GetStatsSize() / RS:SetStatsSize(size)     ("DEFAULT" | "SMALL" | "MEDIUM" | "LARGE")
 
 local RS = RecommendedStats
 
@@ -72,6 +73,46 @@ minimapCheck:SetScript("OnClick", function(self)
 end)
 
 --------------------------------------------------------------------------------
+-- Row size — how much detail the "Recommended Stats" tab's 4 stat rows show, from a single
+-- compact line (no bar) up to today's look plus a delta-from-target line. See
+-- UI/CharacterPanel.lua's ROW_H_BY_SIZE/ApplyRowSize for what each option actually renders.
+--------------------------------------------------------------------------------
+local SIZES = {
+    { text = "Default", value = "DEFAULT" },
+    { text = "Small",   value = "SMALL" },
+    { text = "Medium",  value = "MEDIUM" },
+    { text = "Large",   value = "LARGE" },
+}
+
+local function SizeLabel()
+    local cur = RS:GetStatsSize()
+    for _, s in ipairs(SIZES) do if s.value == cur then return s.text end end
+    return "Select"
+end
+
+local sizeLabel = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
+sizeLabel:SetPoint("TOPLEFT", minimapCheck, "BOTTOMLEFT", 2, -16)
+sizeLabel:SetText("Recommended Stats row size")
+
+local sizeDropdown = CreateFrame("DropdownButton", "RecommendedStatsSizeDropdown", panel, "WowStyle1DropdownTemplate")
+sizeDropdown:SetWidth(240)
+sizeDropdown:SetPoint("TOPLEFT", sizeLabel, "BOTTOMLEFT", 0, -6)
+sizeDropdown:SetDefaultText(SizeLabel())
+sizeDropdown:SetupMenu(function(_, root)
+    for _, s in ipairs(SIZES) do
+        root:CreateRadio(
+            s.text,
+            function() return RS:GetStatsSize() == s.value end,
+            function()
+                RS:SetStatsSize(s.value)
+                sizeDropdown:SetDefaultText(SizeLabel())
+                return MenuResponse.Refresh
+            end
+        )
+    end
+end)
+
+--------------------------------------------------------------------------------
 -- Skin — accent color for chrome only (active tab text, target tick, panel border,
 -- minimap ring). Never affects the stat bar under/on/over colors — see Core.lua's
 -- RS:GetAccentColor() for why that's deliberate.
@@ -89,7 +130,7 @@ local function SkinLabel()
 end
 
 local skinLabel = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
-skinLabel:SetPoint("TOPLEFT", minimapCheck, "BOTTOMLEFT", 2, -16)
+skinLabel:SetPoint("TOPLEFT", sizeDropdown, "BOTTOMLEFT", -2, -16)
 skinLabel:SetText("Skin")
 
 local skinDropdown = CreateFrame("DropdownButton", "RecommendedStatsSkinDropdown", panel, "WowStyle1DropdownTemplate")
@@ -171,11 +212,22 @@ importBtn:SetPoint("LEFT", exportBtn, "RIGHT", 8, 0)
 importBtn:SetText("Import Skin")
 importBtn:SetScript("OnClick", function() if RS.ShowSkinImport then RS:ShowSkinImport() end end)
 
+--------------------------------------------------------------------------------
+-- Disclaimer — sets expectations up front: this is a stat-weight reference, not a DPS
+-- increase in itself. Placed last so it reads as a closing note under all the actual settings.
+--------------------------------------------------------------------------------
+local disclaimer = panel:CreateFontString(nil, "ARTWORK", "GameFontDisableSmall")
+disclaimer:SetPoint("TOPLEFT", exportBtn, "BOTTOMLEFT", 2, -20)
+disclaimer:SetWidth(420)
+disclaimer:SetJustifyH("LEFT")
+disclaimer:SetText("Recommended Stats won't make you do more DPS by itself — it just helps you hit the correct stat weights for your spec.")
+
 panel:SetScript("OnShow", function()
     attachDropdown:SetDefaultText(AttachModeLabel())
     statsCheck:SetChecked(RS:GetShowStats())
     bisCheck:SetChecked(RS:GetShowBiS())
     minimapCheck:SetChecked(RS:GetShowMinimapIcon())
+    sizeDropdown:SetDefaultText(SizeLabel())
     skinDropdown:SetDefaultText(SkinLabel())
     RefreshSwatchColor()
     UpdateCustomSwatchShown()

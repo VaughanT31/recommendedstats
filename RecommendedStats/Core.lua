@@ -82,6 +82,22 @@ function RS:SetShowStats(shown)
     RS:SyncVisibility()
 end
 
+-- Row density for the "Recommended Stats" tab — DEFAULT (name/value/bar, current look),
+-- SMALL (one line, no bar), MEDIUM (one line + bar), LARGE (DEFAULT plus a delta-from-target
+-- line). Read/applied by UI/CharacterPanel.lua via RS.statsSizeListeners, mirroring the
+-- RS.skinListeners pattern below since this file doesn't know what UI (if any) exists yet.
+function RS:GetStatsSize()
+    RecommendedStatsDB = RecommendedStatsDB or {}
+    return RecommendedStatsDB.statsSize or "DEFAULT"
+end
+
+RS.statsSizeListeners = {}
+function RS:SetStatsSize(size)
+    RecommendedStatsDB = RecommendedStatsDB or {}
+    RecommendedStatsDB.statsSize = size
+    for _, fn in ipairs(RS.statsSizeListeners) do fn() end
+end
+
 -- Minimap icon itself (distinct from the panels it toggles) — read by UI/MinimapButton.lua.
 function RS:GetShowMinimapIcon()
     RecommendedStatsDB = RecommendedStatsDB or {}
