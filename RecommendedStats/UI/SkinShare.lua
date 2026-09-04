@@ -7,6 +7,7 @@
 -- RS:SetCustomColor() -- and UI/CopyPopup.lua providing RS:ShowCopyPopup().
 
 local RS = RecommendedStats
+local L = RecommendedStats_Locale
 
 local PREFIX = "RSSKIN1"
 
@@ -38,35 +39,35 @@ end
 function RS:ImportSkinString(str)
     str = (str or ""):gsub("%s", "")
     local skin, hex = str:match("^" .. PREFIX .. ":([%u]+):?(%x*)$")
-    if not skin then return false, "Not a RecommendedStats skin code." end
+    if not skin then return false, L.SKIN_ERR_NOT_A_CODE end
 
     if skin == "CUSTOM" then
         local r, g, b = FromHex(hex)
-        if not r then return false, "Custom skin code is missing/invalid color data." end
+        if not r then return false, L.SKIN_ERR_BAD_COLOR end
         RS:SetCustomColor(r, g, b)
         RS:SetSkin("CUSTOM")
     elseif skin == "CLASS" or skin == "DEFAULT" then
         RS:SetSkin(skin)
     else
-        return false, ("Unrecognized skin \"%s\"."):format(skin)
+        return false, L.SKIN_ERR_UNRECOGNIZED:format(skin)
     end
-    return true, "Skin applied."
+    return true, L.SKIN_APPLIED
 end
 
 function RS:ShowSkinExport()
     RS:ShowCopyPopup({
-        title = "Export Skin",
-        hint = "Copy this code and share it (Ctrl+A, Ctrl+C):",
+        title = L.SKIN_EXPORT_TITLE,
+        hint = L.SKIN_EXPORT_HINT,
         text = RS:ExportSkinString(),
     })
 end
 
 function RS:ShowSkinImport()
     RS:ShowCopyPopup({
-        title = "Import Skin",
-        hint = "Paste a RecommendedStats skin code:",
+        title = L.SKIN_IMPORT_TITLE,
+        hint = L.SKIN_IMPORT_HINT,
         editable = true,
-        buttonText = "Apply",
+        buttonText = L.COPY_APPLY,
         onAction = function(text) return RS:ImportSkinString(text) end,
     })
 end

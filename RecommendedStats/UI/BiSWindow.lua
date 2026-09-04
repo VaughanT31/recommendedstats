@@ -27,14 +27,20 @@
 --   RS.bisPage (this file's content parent, sized and positioned by that file)
 
 local RS = RecommendedStats
+local L = RecommendedStats_Locale
 
 --------------------------------------------------------------------------------
 -- Look & feel
 --------------------------------------------------------------------------------
-local PANEL_W    = 360 -- must match CharacterPanel.lua's PANEL_W (RS.bisPage spans the full window width)
-local ROW_H      = 22
+local PANEL_W    = 400 -- must match CharacterPanel.lua's PANEL_W (RS.bisPage spans the full window width)
+-- 32, not the original 22 — leaves room for the enchant/gem sub-line under the item name
+-- (row.subLine, see CreateRow/SetRowItem below). CharacterPanel.lua no longer hand-syncs a
+-- duplicate constant for this — see RS:GetBisContentHeight() below, which computes it from
+-- ROW_H/ROW_GAP/SLOT_ORDER directly so the two files can't drift out of sync again the way they
+-- did the first time this row height changed (see the original hand-synced BIS_CONTENT_H bug).
+local ROW_H      = 32
 local ROW_GAP    = 3
-local SUBLABEL_H = 18 -- small header row for the "% of top N" line (no title here — the tab button already reads "BiS Gear")
+local SUBLABEL_H = 18 -- small header row for the "% of top N" / tier-set line (no title here — the tab button already reads "BiS Gear")
 
 local GOLD = { 1, 0.82, 0.15 }
 
@@ -52,11 +58,21 @@ local SLOT_ORDER = {
     "MAIN_HAND", "OFF_HAND",
 }
 local SLOT_LABEL = {
-    HEAD = "Head", NECK = "Neck", SHOULDER = "Shoulder", BACK = "Back", CHEST = "Chest",
-    WRIST = "Wrist", HANDS = "Hands", WAIST = "Waist", LEGS = "Legs", FEET = "Feet",
-    FINGER_1 = "Ring 1", FINGER_2 = "Ring 2", TRINKET_1 = "Trinket 1", TRINKET_2 = "Trinket 2",
-    MAIN_HAND = "Main Hand", OFF_HAND = "Off Hand",
+    HEAD = L.SLOT_HEAD, NECK = L.SLOT_NECK, SHOULDER = L.SLOT_SHOULDER, BACK = L.SLOT_BACK, CHEST = L.SLOT_CHEST,
+    WRIST = L.SLOT_WRIST, HANDS = L.SLOT_HANDS, WAIST = L.SLOT_WAIST, LEGS = L.SLOT_LEGS, FEET = L.SLOT_FEET,
+    FINGER_1 = L.SLOT_FINGER_1, FINGER_2 = L.SLOT_FINGER_2, TRINKET_1 = L.SLOT_TRINKET_1, TRINKET_2 = L.SLOT_TRINKET_2,
+    MAIN_HAND = L.SLOT_MAIN_HAND, OFF_HAND = L.SLOT_OFF_HAND,
 }
+
+-- Exact content height needed for every SLOT_ORDER row plus the sub-header row — called by
+-- CharacterPanel.lua (which owns RS.bisPage's actual frame/SetHeight) instead of that file
+-- hand-typing its own copy of this arithmetic, which is what let the two drift out of sync the
+-- first time ROW_H changed above. Safe to call from another file at runtime despite this file
+-- loading after CharacterPanel.lua in the .toc — CharacterPanel.lua only ever calls this from
+-- inside EnsurePanel/SyncTabUI, which don't run until well after every file has finished loading.
+function RS:GetBisContentHeight()
+    return SUBLABEL_H + (#SLOT_ORDER * (ROW_H + ROW_GAP)) + 8
+end
 
 local QUESTION_MARK_ICON = 134400 -- INV_Misc_QuestionMark, placeholder while the item loads
 
@@ -70,14 +86,30 @@ local SLOT_TO_INVSLOT = {
     MAIN_HAND = 16, OFF_HAND = 17,
 }
 
--- Status dot: green if the player has the #1 BiS pick equipped, yellow for the runner-up
--- (entry.altItemID — see aggregate.js), red for neither. Base itemID only, ignoring upgrade
--- rank — that distinction already lives in the pct/ilvl shown elsewhere on the row.
+-- Status dot: green if the player has the #1 BiS pick equipped. Yellow covers two cases now —
+-- the runner-up (entry.altItemID, aggregate.js) OR the player's own item being at least as
+-- strong by ilvl (entry.ilvl, a real top player's equipped copy) even though it's a different
+-- itemID — this used to be exact-itemID-only, which read a same-or-better item in a different
+-- form as "missing". Red is neither. See SetRowItem below for where the ilvl comparison happens.
 local DOT_TEXTURE = {
     bis = "Interface\\COMMON\\Indicator-Green",
     alt = "Interface\\COMMON\\Indicator-Yellow",
     missing = "Interface\\COMMON\\Indicator-Red",
 }
+-- Colorblind mode (RS:GetColorblindMode(), Core.lua): shape-distinct textures instead of
+-- color-only dots. These are long-established Blizzard raid-frame ready-check textures (still
+-- colored, just also shaped) rather than a custom asset that would need its own verification.
+local DOT_TEXTURE_CB = {
+    bis = "Interface\\RaidFrame\\ReadyCheck-Ready",
+    alt = "Interface\\RaidFrame\\ReadyCheck-Waiting",
+    missing = "Interface\\RaidFrame\\ReadyCheck-NotReady",
+}
+
+-- Enchant/gem sub-line colors — green/red mirror the stat panel's on/under colors
+-- (CharacterPanel.lua's COLOR table) for the same "good/needs attention" meaning; grey is used
+-- when the slot has no enchant/gem recommendation to compare against at all.
+local SUBLINE_OK_COLOR      = { 0.32, 0.85, 0.48 }
+local SUBLINE_MISSING_COLOR = { 0.92, 0.35, 0.35 }
 
 -- How recently a slot's #1 pick must have changed (Data/BiS.lua's entry.changedAt, stamped by
 -- the Node build's bisHistory.js) to still show the "NEW" tag.
@@ -86,7 +118,7 @@ local NEW_TAG_DAYS = 7
 -- Shown next to the "% of top N" line only when a RAID key's BiS set didn't come from Mythic
 -- clears (see RecommendedStatsData_RaidDifficulty in the header comment above) — same amber as
 -- the stat panel's "too low" state, since it's the same kind of "heads up, not the real target" cue.
-local DIFFICULTY_LABEL = { heroic = "Heroic", normal = "Normal" }
+local DIFFICULTY_LABEL = { heroic = L.DIFFICULTY_HEROIC, normal = L.DIFFICULTY_NORMAL }
 local FALLBACK_COLOR = { 0.95, 0.65, 0.3 }
 
 -- "the-tidebound-grotto" -> "The Tidebound Grotto" — entry.source.raidSlug/raidDifficulty
@@ -133,18 +165,31 @@ local function CreateRow(parent)
     row.slotLabel:SetJustifyH("LEFT")
 
     row.itemName = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    row.itemName:SetPoint("LEFT", row.slotLabel, "RIGHT", 4, 0)
+    -- TOPRIGHT, not TOP: "TOP" anchors to slotLabel's horizontal CENTER, not its right edge —
+    -- that put itemName's left edge halfway through slotLabel's own text, rendering them
+    -- overlapping/on top of each other instead of side by side. Confirmed live.
+    row.itemName:SetPoint("TOPLEFT", row.slotLabel, "TOPRIGHT", 4, 6)
     row.itemName:SetPoint("RIGHT", row, "RIGHT", -64, 0)
     row.itemName:SetJustifyH("LEFT")
     row.itemName:SetWordWrap(false)
 
+    -- Enchant/gem status, e.g. "Enchant +  \194\183  Gem x" — populated by SetRowItem below,
+    -- hidden entirely when the slot has neither an enchant nor a gem recommendation to compare
+    -- against (RecommendedStatsData_BiS[key][slot].enchantID/.gemID).
+    row.subLine = row:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+    row.subLine:SetPoint("TOPLEFT", row.itemName, "BOTTOMLEFT", 0, -2)
+    row.subLine:SetJustifyH("LEFT")
+
     -- Short-lived tag for a slot whose #1 pick changed recently (entry.changedAt) — see
-    -- NEW_TAG_DAYS above.
+    -- NEW_TAG_DAYS above. Width bumped from the original 24 to 30: "NEW" at this font size was
+    -- getting clipped to "N..." — confirmed live once a fresh full data rebuild left every row
+    -- flagged as recently-changed at once, which is when a too-narrow width like this actually
+    -- shows up (a single stray NEW tag is easy to miss; every row at once isn't).
     row.newTag = row:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
     row.newTag:SetPoint("RIGHT", row, "RIGHT", -38, 0)
-    row.newTag:SetWidth(24)
+    row.newTag:SetWidth(30)
     row.newTag:SetJustifyH("RIGHT")
-    row.newTag:SetText("NEW")
+    row.newTag:SetText(L.NEW_TAG)
     row.newTag:SetTextColor(unpack(GOLD))
     row.newTag:Hide()
 
@@ -204,6 +249,14 @@ local function EnsureContent()
     page.subLabel = page:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
     page.subLabel:SetPoint("TOPRIGHT", -12, -2) -- text set by Render(), which always runs right after this
 
+    -- Tier-set 2pc/4pc line, top-left of the same header row as subLabel above (no extra vertical
+    -- space needed — SUBLABEL_H's 18px already fits both). Hidden when RecommendedStatsData_TierSet
+    -- has nothing for this key (config.tierSetItemIDs not yet populated for this class, see
+    -- RecommendedStatsNode/config.js) — see Render() below for where it's populated.
+    page.tierLine = page:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+    page.tierLine:SetPoint("TOPLEFT", 12, -2)
+    page.tierLine:Hide()
+
     local top = -SUBLABEL_H
     for i in ipairs(SLOT_ORDER) do
         local row = CreateRow(page)
@@ -225,6 +278,22 @@ local function ShowEmpty(msg)
     for _, row in ipairs(rows) do row:Hide() end
     emptyText:SetText(msg)
     emptyText:Show()
+end
+
+-- Counts how many of the current tier set's itemIDs (RecommendedStatsData_TierSet[key].itemIDs,
+-- RecommendedStatsNode/config.js's tierSetItemIDs) the player currently has equipped, across
+-- every inventory slot rather than just the armor slots BiS tracks — a tier token could in
+-- principle occupy any of them.
+local function CountEquippedTierPieces(itemIDs)
+    if not itemIDs or #itemIDs == 0 then return 0 end
+    local set = {}
+    for _, id in ipairs(itemIDs) do set[id] = true end
+    local count = 0
+    for invSlot = 1, 19 do
+        local id = GetInventoryItemID("player", invSlot)
+        if id and set[id] then count = count + 1 end
+    end
+    return count
 end
 
 -- itemID alone always resolves to an item's raw base template in retail (its lowest possible ilvl,
@@ -257,6 +326,57 @@ local function BuildDecoratedLink(itemLink, name, quality)
     return "|c" .. hex .. "|H" .. itemLink .. "|h[" .. name .. "]|h|r"
 end
 
+local function ColorHex(col)
+    return ("|cff%02x%02x%02x"):format(
+        math.floor(col[1] * 255 + 0.5), math.floor(col[2] * 255 + 0.5), math.floor(col[3] * 255 + 0.5)
+    )
+end
+
+-- Reads the enchant/gem IDs actually applied to the player's own equipped item, straight off its
+-- itemString (item:itemID:enchantID:gem1:gem2:gem3:gem4:...) — this field order has been stable
+-- since the itemString format was introduced, unlike e.g. bonusIDs' meaning which shifts with
+-- upgrade systems, so this doesn't need a ⚠ VERIFY the way newer fields elsewhere in this addon do.
+local function ParseEquippedEnchantAndGems(itemLink)
+    if not itemLink then return nil, nil end
+    local itemString = itemLink:match("item[%-?%d:]+")
+    if not itemString then return nil, nil end
+    local fields = {}
+    for field in itemString:gmatch("[^:]+") do fields[#fields + 1] = field end
+    local enchantID = tonumber(fields[3])
+    local gemIDs = {}
+    for i = 4, 7 do
+        local g = tonumber(fields[i])
+        if g and g > 0 then gemIDs[#gemIDs + 1] = g end
+    end
+    return (enchantID and enchantID > 0) and enchantID or nil, gemIDs
+end
+
+-- Builds the "Enchant + \194\183 Gem x" sub-line — green "+" when the player's own equipped item
+-- matches the recommended enchant/gem for this slot (entry.enchantID/entry.gemID, aggregate.js's
+-- per-slot popularity vote — see that file for why it's tracked per slot rather than tied to the
+-- specific BiS item), red "x" otherwise. Plain ASCII, not a Unicode check/x mark: WoW's default
+-- client fonts don't cover that block (confirmed live — it rendered as a tofu box), the same
+-- issue as CharacterPanel.lua's colorblind status glyphs. A slot with no recommendation for one
+-- or the other (e.g. no gem socket exists) simply omits that half rather than showing red.
+local function BuildSubLine(entry, equippedEnchantID, equippedGemIDs)
+    local parts = {}
+    if entry.enchantID then
+        local has = equippedEnchantID == entry.enchantID
+        parts[#parts + 1] = ColorHex(has and SUBLINE_OK_COLOR or SUBLINE_MISSING_COLOR)
+            .. L.BIS_ENCHANT_LABEL .. (has and "+" or "x") .. "|r"
+    end
+    if entry.gemID then
+        local has = false
+        for _, g in ipairs(equippedGemIDs or {}) do
+            if g == entry.gemID then has = true; break end
+        end
+        parts[#parts + 1] = ColorHex(has and SUBLINE_OK_COLOR or SUBLINE_MISSING_COLOR)
+            .. L.BIS_GEM_LABEL .. (has and "+" or "x") .. "|r"
+    end
+    if #parts == 0 then return nil end
+    return table.concat(parts, "  \194\183  ")
+end
+
 local function SetRowItem(row, slot, entry)
     local itemID, pct = entry.itemID, entry.pct
     row.itemID = itemID
@@ -272,25 +392,42 @@ local function SetRowItem(row, slot, entry)
     row.icon:SetTexture(QUESTION_MARK_ICON)
     row.iconBorder:SetColorTexture(1, 1, 1, 0.25)
 
-    -- Status dot: compare the player's currently equipped item in this slot against the #1 pick
-    -- (green) or the runner-up (yellow, entry.altItemID from aggregate.js) — base itemID only,
-    -- ignoring upgrade rank, which is a separate concern already shown via pct/tooltip ilvl.
+    -- Status dot: green for the exact #1 pick. Yellow covers the runner-up (entry.altItemID) OR
+    -- the player's own item being at least as strong by ilvl (entry.ilvl, aggregate.js) even
+    -- though it's a different itemID — widened from an exact-itemID-only check, which used to
+    -- read a same-or-better item in a different form (a crafted/catalyst copy, a higher upgrade
+    -- rank of something else) as "missing". Red is neither.
     local invSlot = SLOT_TO_INVSLOT[slot]
     local equippedID = invSlot and GetInventoryItemID("player", invSlot)
+    local equippedLink = invSlot and GetInventoryItemLink("player", invSlot)
+    local dotTex = RS:GetColorblindMode() and DOT_TEXTURE_CB or DOT_TEXTURE
     if equippedID == itemID then
-        row.statusDot:SetTexture(DOT_TEXTURE.bis)
+        row.statusDot:SetTexture(dotTex.bis)
     elseif entry.altItemID and equippedID == entry.altItemID then
-        row.statusDot:SetTexture(DOT_TEXTURE.alt)
+        row.statusDot:SetTexture(dotTex.alt)
+    elseif equippedID and equippedID ~= 0 and entry.ilvl and equippedLink
+        and (select(1, GetDetailedItemLevelInfo(equippedLink)) or 0) >= entry.ilvl then
+        row.statusDot:SetTexture(dotTex.alt)
     else
-        row.statusDot:SetTexture(DOT_TEXTURE.missing)
+        row.statusDot:SetTexture(dotTex.missing)
     end
+
+    -- Enchant/gem sub-line (see BuildSubLine above) — reads what's actually applied to the
+    -- player's own equipped item, not the BiS item's own enchant/gem, since the whole point is
+    -- comparing the two.
+    local equippedEnchantID, equippedGemIDs = ParseEquippedEnchantAndGems(equippedLink)
+    local subLine = BuildSubLine(entry, equippedEnchantID, equippedGemIDs)
+    row.subLine:SetShown(subLine ~= nil)
+    if subLine then row.subLine:SetText(subLine) end
 
     local age = entry.changedAt and RS:DaysSince(entry.changedAt)
     row.newTag:SetShown(age ~= nil and age <= NEW_TAG_DAYS)
 
     if entry.source then
-        row.sourceText = "Source: " .. TitleCase(entry.source.raidSlug) ..
-            (entry.source.raidDifficulty and (" (" .. TitleCase(entry.source.raidDifficulty) .. ")") or "")
+        local raidName = TitleCase(entry.source.raidSlug)
+        row.sourceText = L.BIS_SOURCE_PREFIX .. (entry.source.raidDifficulty
+            and L.BIS_SOURCE_WITH_DIFFICULTY:format(raidName, TitleCase(entry.source.raidDifficulty))
+            or raidName)
     else
         row.sourceText = nil
     end
@@ -314,7 +451,7 @@ local function Render()
     if not page then return end
 
     if not RS:SchemaOK() then
-        ShowEmpty("Stat data is out of date for this addon version. Please update.")
+        ShowEmpty(L.SCHEMA_OUT_OF_DATE)
         return
     end
 
@@ -324,7 +461,7 @@ local function Render()
     -- it but couldn't extract gear for any of them (see RecommendedStatsNode's dropStaleGear) —
     -- `not bis` alone misses that case, since an empty table is still truthy in Lua.
     if not bis or not next(bis) then
-        ShowEmpty("No BiS data for your current spec + content yet.")
+        ShowEmpty(L.NO_BIS_DATA_YET)
         return
     end
 
@@ -338,14 +475,24 @@ local function Render()
     local difficulty = RecommendedStatsData_RaidDifficulty and RecommendedStatsData_RaidDifficulty[key]
     local fallbackLabel = difficulty and DIFFICULTY_LABEL[difficulty]
     if fallbackLabel then
-        page.subLabel:SetFormattedText("%% of top %d \194\183 %s (no Mythic logs yet)", n, fallbackLabel)
+        page.subLabel:SetFormattedText(L.BIS_PCT_FALLBACK, n, fallbackLabel)
         page.subLabel:SetTextColor(unpack(FALLBACK_COLOR))
     elseif RS:IsSampleSizeLow(key) then
-        page.subLabel:SetFormattedText("%% of top %d (fewer than usual)", n)
+        page.subLabel:SetFormattedText(L.BIS_PCT_LOW_SAMPLE, n)
         page.subLabel:SetTextColor(unpack(FALLBACK_COLOR))
     else
-        page.subLabel:SetFormattedText("%% of top %d", n)
+        page.subLabel:SetFormattedText(L.BIS_PCT_PLAIN, n)
         page.subLabel:SetTextColor(0.62, 0.62, 0.66)
+    end
+
+    local tierData = RecommendedStatsData_TierSet and RecommendedStatsData_TierSet[key]
+    if tierData and tierData.itemIDs and #tierData.itemIDs > 0 then
+        local owned = CountEquippedTierPieces(tierData.itemIDs)
+        page.tierLine:SetFormattedText(L.BIS_TIER_LINE, owned, tierData.pct4pc or 0)
+        page.tierLine:SetTextColor(0.62, 0.62, 0.66)
+        page.tierLine:Show()
+    else
+        page.tierLine:Hide()
     end
 
     emptyText:Hide()

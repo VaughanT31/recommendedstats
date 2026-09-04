@@ -2,7 +2,7 @@
 
 A World of Warcraft addon that shows your secondary stats (Haste, Critical Strike, Mastery, Versatility) against targets pulled from top players for your class and spec, plus a best-in-slot gear list, right on the character screen.
 
-![Recommended Stats and BiS Gear panels for a Paladin in Raid](docs/screenshot_raid_paladin.png)
+![Recommended Stats panel for a Druid, Mythic+, colorblind-friendly mode enabled](docs/screenshot_druid.png)
 
 ## Features
 
@@ -15,10 +15,23 @@ A World of Warcraft addon that shows your secondary stats (Haste, Critical Strik
 
 ## Screenshots
 
-| Raid | Mythic+ |
+**BiS Gear**, with enchant/gem indicators and item-level-aware status dots:
+
+| Mythic+ | Raid |
 |---|---|
-| ![Paladin, Raid](docs/screenshot_raid_paladin.png) | ![Paladin, Mythic+](docs/screenshot_paladin.png) |
-| ![Druid, Raid](docs/screenshot_raid_druid.png) | ![Druid, Mythic+](docs/screenshot_druid.png) |
+| ![BiS Gear, Mythic+](docs/screenshot_druid_mythicplus_bis_gear.png) | ![BiS Gear, Raid](docs/screenshot_druid_raid_bis_gear.png) |
+
+**Row size**, from a single compact line up to a full readout with a delta-from-target line, picked from the dropdown next to the Raid/Mythic+ toggle or from Options:
+
+| Small | Medium |
+|---|---|
+| ![Small row size](docs/screenshot_druid_small.png) | ![Medium row size](docs/screenshot_druid_medium.png) |
+
+| Large | Picking a size |
+|---|---|
+| ![Large row size](docs/screenshot_druid_large.png) | ![Row size dropdown open](docs/screenshot_druid_menu.png) |
+
+![Large row size for a Death Knight, Mythic+](docs/screenshot_mythicplus_deathknight.png)
 
 ## Installation
 
@@ -71,6 +84,17 @@ All current class/spec combinations are supported. If you find a spec with no da
 ## Feedback and issues
 
 Found a bug, a spec with missing data, or a suggestion? Open an issue on this repo.
+
+## Contributing a translation
+
+RecommendedStats doesn't have a translation for your language yet? Contributions are welcome.
+
+1. Copy `RecommendedStats/Locale/enUS.lua` as your starting point.
+2. Change the locale guard at the top of the copy to your client's locale code (e.g. `deDE`, `frFR`, `zhCN`) and translate the text on the right-hand side of each `L.KEY = "..."` line — leave the keys themselves untouched.
+3. Every `%s`, `%d`, `%.0f%%`, etc. in a line has to appear the same number of times, in the same order, as the English original. These get filled in with real values (dates, percentages, item names) at runtime, and a missing or mismatched one causes an in-game error rather than a display glitch.
+4. Send the finished file as an issue or PR on this repo, or reach out directly.
+
+New locale files only activate for players running that client locale, so a translation can never affect anyone using a different one.
 
 ## License
 

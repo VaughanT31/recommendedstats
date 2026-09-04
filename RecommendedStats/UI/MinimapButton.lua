@@ -11,6 +11,7 @@
 --   RS.skinListeners (table) -- re-tints the icon on a skin change
 
 local RS = RecommendedStats
+local L = RecommendedStats_Locale
 
 local LDB = LibStub("LibDataBroker-1.1")
 local icon = LibStub("LibDBIcon-1.0")
@@ -26,9 +27,9 @@ local dataObject = LDB:NewDataObject("RecommendedStats", {
         end
     end,
     OnTooltipShow = function(tooltip)
-        tooltip:AddLine("Recommended Stats")
-        tooltip:AddLine("Left-click: show/hide panels", 0.9, 0.9, 0.9)
-        tooltip:AddLine("Right-click: options", 0.9, 0.9, 0.9)
+        tooltip:AddLine(L.ADDON_TITLE)
+        tooltip:AddLine(L.MINIMAP_TOOLTIP_LEFT, 0.9, 0.9, 0.9)
+        tooltip:AddLine(L.MINIMAP_TOOLTIP_RIGHT, 0.9, 0.9, 0.9)
     end,
 })
 

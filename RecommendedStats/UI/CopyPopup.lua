@@ -5,6 +5,7 @@
 -- rather than being duplicated per feature.
 
 local RS = RecommendedStats
+local L = RecommendedStats_Locale
 
 local popup
 
@@ -86,15 +87,15 @@ function RS:ShowCopyPopup(opts)
 
     if opts.editable then
         popup.editBox:SetText("")
-        popup.actionBtn:SetText(opts.buttonText or "Apply")
+        popup.actionBtn:SetText(opts.buttonText or L.COPY_APPLY)
         popup.actionBtn:Show()
 
         local function Run()
             local ok, message = opts.onAction(popup.editBox:GetText())
             if ok then
-                popup.status:SetText("|cff33ff99" .. (message or "Applied.") .. "|r")
+                popup.status:SetText("|cff33ff99" .. (message or L.COPY_APPLIED) .. "|r")
             else
-                popup.status:SetText("|cffef5c5c" .. (message or "Something went wrong.") .. "|r")
+                popup.status:SetText("|cffef5c5c" .. (message or L.COPY_SOMETHING_WRONG) .. "|r")
             end
         end
         popup.actionBtn:SetScript("OnClick", Run)

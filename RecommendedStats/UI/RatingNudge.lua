@@ -6,6 +6,7 @@
 -- open a browser directly.
 
 local RS = RecommendedStats
+local L = RecommendedStats_Locale
 
 local LOGIN_THRESHOLD = 5
 local CURSEFORGE_URL = "https://www.curseforge.com/wow/addons/recommended-stats"
@@ -21,10 +22,10 @@ local function MaybeShow()
     if (RecommendedStatsDB.loginCount or 0) < LOGIN_THRESHOLD then return end
 
     RS:ShowCopyPopup({
-        title = "Enjoying RecommendedStats?",
-        hint = "If it's been useful, a rating on CurseForge helps a lot:",
+        title = L.RATING_NUDGE_TITLE,
+        hint = L.RATING_NUDGE_HINT,
         text = CURSEFORGE_URL,
-        buttonText = "Got it",
+        buttonText = L.GOT_IT,
         onAction = MarkSeen,
         onClose = MarkSeen, -- dismissing via X/Escape counts as "seen" too, not just the button
     })

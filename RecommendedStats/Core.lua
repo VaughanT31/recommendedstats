@@ -1,6 +1,7 @@
 local ADDON = ...
 RecommendedStats = RecommendedStats or {}
 local RS = RecommendedStats
+local L = RecommendedStats_Locale
 local EXPECTED_SCHEMA = 1
 
 -- ⚠ VERIFY these return PERCENT (not rating) on live 12.1 before shipping (see scope.md §11).
@@ -43,7 +44,7 @@ function RS:SetContent(c)
     RecommendedStatsDB = RecommendedStatsDB or {}
     RecommendedStatsDB.content = c
     RS:Refresh()
-    print("|cff33ff99RecommendedStats|r content set to " .. c)
+    print(L.CHAT_PREFIX .. L.MSG_CONTENT_SET:format(c))
 end
 
 --------------------------------------------------------------------------------
@@ -99,6 +100,21 @@ function RS:SetStatsSize(size)
 end
 
 -- Minimap icon itself (distinct from the panels it toggles) — read by UI/MinimapButton.lua.
+-- Adds a shape/icon cue alongside the existing red/green/blue state colors (under/on/over/secret
+-- in the stat panel, bis/alt/missing in the BiS dot) — those states are color-only today, which
+-- is a real gap for colorblind players. Read by UI/CharacterPanel.lua and UI/BiSWindow.lua,
+-- toggled from UI/OptionsPanel.lua, same accessor pattern as RS:GetShowBiS()/RS:SetShowBiS().
+function RS:GetColorblindMode()
+    RecommendedStatsDB = RecommendedStatsDB or {}
+    return RecommendedStatsDB.colorblindMode == true
+end
+function RS:SetColorblindMode(enabled)
+    RecommendedStatsDB = RecommendedStatsDB or {}
+    RecommendedStatsDB.colorblindMode = enabled
+    RS:Refresh()
+    RS:SyncTabs()
+end
+
 function RS:GetShowMinimapIcon()
     RecommendedStatsDB = RecommendedStatsDB or {}
     return RecommendedStatsDB.showMinimapIcon ~= false
@@ -196,7 +212,7 @@ function RS:AnnounceDataUpdateIfNew()
 
     RecommendedStatsDB = RecommendedStatsDB or {}
     RecommendedStatsDB.lastSeenDataUpdate = updated
-    print(("|cff33ff99RecommendedStats|r stat targets and BiS gear were refreshed on %s (top %d players, patch %s)."):format(
+    print(L.CHAT_PREFIX .. L.MSG_DATA_REFRESHED:format(
         updated, m.sampleSize or 0, m.gamePatch or "?"
     ))
 end
@@ -476,7 +492,7 @@ SlashCmdList.RECSTATS = function(msg)
             RecommendedStatsDBChar[dbKey] = nil
             applyDefault()
         end
-        print("|cff33ff99RecommendedStats|r panel positions reset. Drag a panel to move it again.")
+        print(L.CHAT_PREFIX .. L.MSG_POSITIONS_RESET)
         return
     end
     if msg == "options" or msg == "config" then
@@ -496,5 +512,5 @@ SlashCmdList.RECSTATS = function(msg)
     end
     local map = { raid="RAID", mythicplus="MYTHICPLUS" }
     if map[msg] then RS:SetContent(map[msg])
-    else print("|cff33ff99RecommendedStats|r content = " .. RS:GetContent() .. "  (use /rs raid|mythicplus|resetpos|options|skin export|skin import)") end
+    else print(L.CHAT_PREFIX .. L.MSG_CONTENT_STATUS:format(RS:GetContent())) end
 end

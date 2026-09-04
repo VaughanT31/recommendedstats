@@ -6,6 +6,7 @@
 -- dismissed, so routine data-only builds (which never touch this file) can't re-trigger it.
 
 local RS = RecommendedStats
+local L = RecommendedStats_Locale
 
 local ANNOUNCEMENTS = {
     {
@@ -81,7 +82,7 @@ local function EnsurePopup()
     popup.gotIt = CreateFrame("Button", nil, popup, "UIPanelButtonTemplate")
     popup.gotIt:SetSize(80, 22)
     popup.gotIt:SetPoint("BOTTOM", 0, 12)
-    popup.gotIt:SetText("Got it")
+    popup.gotIt:SetText(L.GOT_IT)
 
     local function Dismiss()
         MarkSeen(LatestAnnouncement().id)

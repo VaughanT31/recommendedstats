@@ -25,11 +25,15 @@
 -- same menu system — verify it actually dims/blocks the click in your client too.
 
 local RS = RecommendedStats
+local L = RecommendedStats_Locale
 
 --------------------------------------------------------------------------------
 -- Look & feel
 --------------------------------------------------------------------------------
-local PANEL_W   = 360 -- shared with BiS Gear's row width requirements (see UI/BiSWindow.lua)
+-- 400, not the original 360 — BiS Gear's item names were truncating hard against the row's
+-- fixed 64px-reserved-right-edge budget, more noticeable now that a second line (enchant/gem)
+-- sits right underneath drawing the eye there. Shared with BiS Gear's row width (UI/BiSWindow.lua).
+local PANEL_W   = 400
 local ROW_W     = PANEL_W - 24  -- content width inside the panel's side padding
 -- The bar is anchored directly below the current-value text (see CreateRow's BAR_GAP), not
 -- pinned to this row height's bottom edge, so a size's ROW_H only needs to be "tall enough to
@@ -37,6 +41,9 @@ local ROW_W     = PANEL_W - 24  -- content width inside the panel's side padding
 -- content is stretched to fill.
 local ROW_GAP   = 8
 local FOOTER_H  = 20
+-- Extra row for the stat-priority line (RecommendedStatsData_StatWeights, from
+-- RecommendedStatsNode/src/bloodmallet.js) — see StatsContentH()/EnsurePanel below.
+local PRIORITY_H = 16
 local BAR_H     = 8
 local BAR_GAP   = 6 -- vertical gap between the current-value text (or combined line) and the bar below it
 
@@ -50,7 +57,7 @@ local function CurrentRowH()
     return ROW_H_BY_SIZE[RS:GetStatsSize()] or ROW_H_BY_SIZE.DEFAULT
 end
 local function StatsContentH()
-    return (CurrentRowH() + ROW_GAP) * 4 + FOOTER_H + 6
+    return (CurrentRowH() + ROW_GAP) * 4 + PRIORITY_H + FOOTER_H + 6
 end
 
 -- Shared header: 8px top pad + tab row + gap + dropdown row + 8px bottom pad. Both pages
@@ -60,10 +67,14 @@ local TAB_GAP        = 4
 local DROPDOWN_ROW_H = 20
 local HEADER_H       = 8 + TAB_H + 6 + DROPDOWN_ROW_H + 8
 
--- Matches UI/BiSWindow.lua's own row math (16 rows + its small sub-header) — kept in sync by
--- hand since each UI file already owns its own layout constants independently in this addon;
--- a little slack is fine since bisPage is just a plain container.
-local BIS_CONTENT_H = 430
+-- No more hand-typed height constant here — RS:GetBisContentHeight() (UI/BiSWindow.lua) computes
+-- this from that file's own ROW_H/ROW_GAP/SLOT_ORDER directly. A hand-synced duplicate constant
+-- used to live here and drifted out of sync the first time BiSWindow.lua's ROW_H changed (a
+-- clipped bottom row / missing bottom border, confirmed live) — computing it removes that whole
+-- class of bug instead of just re-guessing a bigger magic number.
+local function BisContentH()
+    return RS:GetBisContentHeight()
+end
 
 -- A stat sitting slightly over target isn't a problem the way being under is, so it gets a
 -- calm neutral color instead of an alarming one — only "under" reads as urgent (red).
@@ -74,21 +85,41 @@ local COLOR = {
     secret = { 0.62, 0.62, 0.66 },
 }
 local STATUS_LABEL = {
-    under  = "Too low",
-    on     = "On target",
-    over   = "Over \194\183 fine",
+    under  = L.STATUS_UNDER,
+    on     = L.STATUS_ON,
+    over   = L.STATUS_OVER,
     -- Core.lua sets this when Blizzard's Secret Values system blocks comparing this stat to its
     -- target (happens in instances/combat) — the bar and % still render, just without a verdict.
-    secret = "Can't compare here",
+    secret = L.STATUS_SECRET,
 }
+-- Colorblind mode (RS:GetColorblindMode(), Core.lua) variant — a shape glyph prefix so the state
+-- doesn't rely on the COLOR table above alone. No new frame elements needed: Render() below just
+-- picks this table instead of STATUS_LABEL, so it flows through row.status/row.combined exactly
+-- like the plain-English labels do.
+local STATUS_LABEL_CB = {
+    under  = L.STATUS_UNDER_CB,
+    on     = L.STATUS_ON_CB,
+    over   = L.STATUS_OVER_CB,
+    secret = L.STATUS_SECRET_CB,
+}
+local function StatusLabels()
+    return RS:GetColorblindMode() and STATUS_LABEL_CB or STATUS_LABEL
+end
 
 local STAT_LABEL = {
-    haste = "Haste", crit = "Critical Strike", mastery = "Mastery", versatility = "Versatility",
+    haste = L.STAT_HASTE, crit = L.STAT_CRIT, mastery = L.STAT_MASTERY, versatility = L.STAT_VERSATILITY,
 }
+local SHORT_STAT_LABEL = {
+    haste = L.STAT_HASTE_SHORT, crit = L.STAT_CRIT_SHORT, mastery = L.STAT_MASTERY_SHORT, versatility = L.STAT_VERSATILITY_SHORT,
+}
+-- Order the priority line's underlying weights are read in — RecommendedStatsData_StatWeights[key]
+-- (RecommendedStatsNode/src/bloodmallet.js) is a flat {haste,crit,mastery,versatility} table with
+-- no inherent order, sorted descending by weight at render time (see Render()'s priorityText block).
+local PRIORITY_STATS = { "haste", "crit", "mastery", "versatility" }
 
 local CONTENTS = {
-    { text = "Raid",     value = "RAID" },
-    { text = "Mythic+",  value = "MYTHICPLUS" },
+    { text = L.CONTENT_RAID,       value = "RAID" },
+    { text = L.CONTENT_MYTHICPLUS, value = "MYTHICPLUS" },
 }
 
 -- Bar shows target at a fixed position shy of the right edge (not the far end) so "over"
@@ -183,8 +214,14 @@ end
 --------------------------------------------------------------------------------
 -- Build one stat row (flat — no per-row box, just generous spacing between rows)
 --------------------------------------------------------------------------------
+-- Reads the font PATH off GameFontNormal rather than hardcoding "Fonts\FRIZQT__.ttf" — that's
+-- the Latin-only default font, so hardcoding it broke CJK stat names (row.name, e.g. "加速")
+-- under a zhTW/zhCN client: Blizzard swaps GameFontNormal's underlying font to a CJK-capable one
+-- per locale (that's how its own default UI renders correctly in every locale it ships), but a
+-- literal path bypasses that entirely and always gets the Latin-only file regardless of locale.
 local function SetFont(fontString, size, flags)
-    fontString:SetFont("Fonts\\FRIZQT__.ttf", size, flags or "")
+    local fontPath = select(1, GameFontNormal:GetFont()) or "Fonts\\FRIZQT__.ttf"
+    fontString:SetFont(fontPath, size, flags or "")
 end
 
 local function CreateRow(parent)
@@ -302,12 +339,12 @@ end
 --------------------------------------------------------------------------------
 local panel, dropdown, sizeDropdown, statsTab, bisTab, statsPage
 local rows = {}
-local emptyText, footerText
+local emptyText, footerText, priorityText
 
 local function ContentLabel()
     local cur = RS:GetContent()
     for _, c in ipairs(CONTENTS) do if c.value == cur then return c.text end end
-    return "Select"
+    return L.SELECT
 end
 
 local function BuildDropdown()
@@ -338,16 +375,16 @@ end
 -- leaving the panel. Only relevant to the Stats page, so SyncTabUI hides it while BiS Gear is
 -- active (see below); ApplyStatsSizeToPanel keeps its label in sync when changed from Options.
 local SIZES = {
-    { text = "Default", value = "DEFAULT" },
-    { text = "Small",   value = "SMALL" },
-    { text = "Medium",  value = "MEDIUM" },
-    { text = "Large",   value = "LARGE" },
+    { text = L.SIZE_DEFAULT, value = "DEFAULT" },
+    { text = L.SIZE_SMALL,   value = "SMALL" },
+    { text = L.SIZE_MEDIUM,  value = "MEDIUM" },
+    { text = L.SIZE_LARGE,   value = "LARGE" },
 }
 
 local function SizeLabel()
     local cur = RS:GetStatsSize()
     for _, s in ipairs(SIZES) do if s.value == cur then return s.text end end
-    return "Select"
+    return L.SELECT
 end
 
 local function BuildSizeDropdown()
@@ -380,9 +417,9 @@ local function FooterLine(key)
     local m = RecommendedStatsData_Meta
     if not m then return "" end
     local n = RS:GetSampleSizeFor(key)
-    local sampleText = n and ("%d of %d players"):format(n, m.sampleSize or 0) or ("top %d players"):format(m.sampleSize or 0)
-    local line = ("Targets: %s \194\183 %s \194\183 updated %s"):format(sampleText, m.gamePatch or "?", m.updated or "?")
-    if RS:IsDataStale() then line = line .. " (may be stale)" end
+    local sampleText = n and L.FOOTER_SAMPLE_OF_TARGET:format(n, m.sampleSize or 0) or L.FOOTER_TOP_N:format(m.sampleSize or 0)
+    local line = L.FOOTER_LINE:format(sampleText, m.gamePatch or "?", m.updated or "?")
+    if RS:IsDataStale() then line = line .. L.FOOTER_MAYBE_STALE end
     return line
 end
 
@@ -416,7 +453,7 @@ local function EnsurePanel()
     -- (Chonky Character Sheet, MyCharacterSheet, etc.) — it just docks beside it by
     -- default and can be dragged anywhere, remembering the position in the DB.
     panel = CreateFrame("Frame", "RecommendedStatsPanel", UIParent, "BackdropTemplate")
-    panel:SetSize(PANEL_W, HEADER_H + math.max(StatsContentH(), BIS_CONTENT_H) + 10)
+    panel:SetSize(PANEL_W, HEADER_H + math.max(StatsContentH(), BisContentH()) + 10)
     local border = BorderColor()
     StyleBackdrop(panel, 0.043, 0.047, 0.063, 0.97, border[1], border[2], border[3], 0.7)
 
@@ -437,12 +474,12 @@ local function EnsurePanel()
     end)
 
     -- Tabs replace the old static title — each label doubles as the section name.
-    statsTab = CreateTabButton(panel, "Recommended Stats", "STATS")
+    statsTab = CreateTabButton(panel, L.TAB_STATS, "STATS")
     local tabW = (PANEL_W - 24 - TAB_GAP) / 2
     statsTab:SetSize(tabW, TAB_H)
     statsTab:SetPoint("TOPLEFT", 12, -8)
 
-    bisTab = CreateTabButton(panel, "BiS Gear", "BIS")
+    bisTab = CreateTabButton(panel, L.TAB_BIS, "BIS")
     bisTab:SetSize(tabW, TAB_H)
     bisTab:SetPoint("TOPLEFT", statsTab, "TOPRIGHT", TAB_GAP, 0)
 
@@ -471,12 +508,19 @@ local function EnsurePanel()
     footerText:SetPoint("BOTTOMLEFT", statsPage, "BOTTOMLEFT", 12, 0)
     footerText:SetText(FooterLine())
 
+    -- Stat-priority line (RecommendedStatsData_StatWeights, from bloodmallet — see Render()) sits
+    -- just above the footer; hidden by default since most keys won't have this data until a
+    -- rebuild resolves it (or ever, for a spec/patch bloodmallet doesn't cover).
+    priorityText = statsPage:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+    priorityText:SetPoint("BOTTOMLEFT", footerText, "TOPLEFT", 0, 4)
+    priorityText:Hide()
+
     -- "BiS Gear" page: an empty container UI/BiSWindow.lua populates with its own rows the
     -- first time this merged window is created (see that file's SyncVisibility/EnsureContent).
     local bisPage = CreateFrame("Frame", nil, panel)
     bisPage:SetPoint("TOPLEFT", 0, -HEADER_H)
     bisPage:SetPoint("TOPRIGHT", 0, -HEADER_H)
-    bisPage:SetHeight(BIS_CONTENT_H)
+    bisPage:SetHeight(BisContentH())
     RS.bisPage = bisPage
 end
 
@@ -486,6 +530,7 @@ end
 local function ShowEmpty(msg)
     for _, row in ipairs(rows) do row:Hide() end
     if footerText then footerText:Hide() end
+    if priorityText then priorityText:Hide() end
     emptyText:SetText(msg)
     emptyText:Show()
 end
@@ -505,9 +550,9 @@ local function Render(data, key)
 
     if not data then
         if key == "schema" then
-            ShowEmpty("Stat data is out of date for this addon version. Please update.")
+            ShowEmpty(L.SCHEMA_OUT_OF_DATE)
         else
-            ShowEmpty("No stat targets for your current spec + content yet.")
+            ShowEmpty(L.NO_TARGETS_YET)
         end
         return
     end
@@ -517,6 +562,24 @@ local function Render(data, key)
     footerText:SetText(FooterLine(key))
     ApplyFooterColor(key)
 
+    -- Additive alongside the % targets above, not a replacement — see RecommendedStatsNode/
+    -- src/bloodmallet.js's own header comment for why this is a rank ORDER, not a true per-player
+    -- marginal value. Hidden whenever this key has no resolved weights (bloodmallet fetch failed/
+    -- skipped for this spec, or hasn't run yet) rather than showing a misleading default order.
+    local weights = RecommendedStatsData_StatWeights and RecommendedStatsData_StatWeights[key]
+    if weights then
+        local order = {}
+        for _, name in ipairs(PRIORITY_STATS) do order[#order + 1] = { name = name, w = weights[name] or 0 } end
+        table.sort(order, function(a, b) return a.w > b.w end)
+        local labels = {}
+        for _, o in ipairs(order) do labels[#labels + 1] = SHORT_STAT_LABEL[o.name] or o.name end
+        priorityText:SetText(L.PRIORITY_LINE:format(table.concat(labels, " > ")))
+        priorityText:Show()
+    else
+        priorityText:Hide()
+    end
+
+    local statusLabel = StatusLabels()
     for i, row in ipairs(rows) do
         local stat = data[i]
         if not stat then row:Hide()
@@ -530,9 +593,9 @@ local function Render(data, key)
             -- exactly like the delta calc in Core.lua) — safe here whether stat.current is secret or not.
             row.current:SetFormattedText("%.1f%%", stat.current)
             row.current:SetTextColor(col[1], col[2], col[3])
-            row.target:SetText(("target %.0f%%"):format(stat.target)) -- stat.target is always our own data, never secret
+            row.target:SetText(L.TARGET_INLINE:format(stat.target)) -- stat.target is always our own data, never secret
 
-            row.status:SetText(STATUS_LABEL[stat.state])
+            row.status:SetText(statusLabel[stat.state])
             row.status:SetTextColor(col[1], col[2], col[3])
 
             -- SetMinMaxValues + SetValue let the StatusBar do its own clamping/fill math natively
@@ -547,14 +610,14 @@ local function Render(data, key)
             -- SetFormattedText sink as row.current above since stat.current may be secret.
             row.combined:SetFormattedText(
                 "%s   %.1f%%  \194\183  target %.0f%%  \194\183  " .. ColorHex(col) .. "%s|r",
-                STAT_LABEL[stat.name] or stat.name, stat.current, stat.target, STATUS_LABEL[stat.state]
+                STAT_LABEL[stat.name] or stat.name, stat.current, stat.target, statusLabel[stat.state]
             )
 
             -- LARGE's delta line. stat.delta is only nil for state == "secret" (Core.lua never
             -- computes a delta it can't subtract) — a plain already-resolved number otherwise, so
             -- no secret-sink concerns here, unlike stat.current above.
             if stat.delta then
-                row.delta:SetFormattedText("%+.1f%% from target", stat.delta)
+                row.delta:SetFormattedText(L.DELTA_FROM_TARGET, stat.delta)
                 row.delta:SetTextColor(col[1], col[2], col[3])
             else
                 row.delta:SetText("")
@@ -599,7 +662,7 @@ local function SyncTabUI()
     -- rows), which left a dead gap below the Stats tab's shorter content whenever it was the
     -- active one — resize to whichever tab is actually showing instead. Top-left stays anchored
     -- (RS:MakeMovable), so this only ever moves the bottom edge.
-    panel:SetHeight(HEADER_H + (active == "BIS" and BIS_CONTENT_H or StatsContentH()) + 10)
+    panel:SetHeight(HEADER_H + (active == "BIS" and BisContentH() or StatsContentH()) + 10)
     -- Re-applying the backdrop after every resize, not just at creation: a plain SetHeight() on
     -- this frame leaves the border geometry stale unless StyleBackdrop is called again with a
     -- fresh backdrop table (see its own comment — SetBackdrop no-ops on a repeated table

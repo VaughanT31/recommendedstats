@@ -10,28 +10,29 @@
 --   RS:GetStatsSize() / RS:SetStatsSize(size)     ("DEFAULT" | "SMALL" | "MEDIUM" | "LARGE")
 
 local RS = RecommendedStats
+local L = RecommendedStats_Locale
 
 local ATTACH_MODES = {
-    { text = "Attach to Character Screen", value = "ATTACHED" },
-    { text = "Not attached (move freely)", value = "FREE" },
+    { text = L.ATTACH_MODE_ATTACHED, value = "ATTACHED" },
+    { text = L.ATTACH_MODE_FREE,     value = "FREE" },
 }
 
 local function AttachModeLabel()
     local cur = RS:GetAttachMode()
     for _, m in ipairs(ATTACH_MODES) do if m.value == cur then return m.text end end
-    return "Select"
+    return L.SELECT
 end
 
 local panel = CreateFrame("Frame")
-panel.name = "RecommendedStats"
+panel.name = L.ADDON_TITLE
 
 local title = panel:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
 title:SetPoint("TOPLEFT", 16, -16)
-title:SetText("Recommended Stats")
+title:SetText(L.ADDON_TITLE)
 
 local attachLabel = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
 attachLabel:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -24)
-attachLabel:SetText("Window position")
+attachLabel:SetText(L.OPTIONS_WINDOW_POSITION)
 
 local attachDropdown = CreateFrame("DropdownButton", "RecommendedStatsAttachDropdown", panel, "WowStyle1DropdownTemplate")
 attachDropdown:SetWidth(240)
@@ -53,23 +54,32 @@ end)
 
 local statsCheck = CreateFrame("CheckButton", "RecommendedStatsShowStatsCheck", panel, "UICheckButtonTemplate")
 statsCheck:SetPoint("TOPLEFT", attachDropdown, "BOTTOMLEFT", -2, -20)
-statsCheck.Text:SetText("Show \"Recommended Stats\" tab")
+statsCheck.Text:SetText(L.OPTIONS_SHOW_STATS_TAB)
 statsCheck:SetScript("OnClick", function(self)
     RS:SetShowStats(self:GetChecked())
 end)
 
 local bisCheck = CreateFrame("CheckButton", "RecommendedStatsShowBiSCheck", panel, "UICheckButtonTemplate")
 bisCheck:SetPoint("TOPLEFT", statsCheck, "BOTTOMLEFT", 0, -4)
-bisCheck.Text:SetText("Show \"BiS Gear\" tab")
+bisCheck.Text:SetText(L.OPTIONS_SHOW_BIS_TAB)
 bisCheck:SetScript("OnClick", function(self)
     RS:SetShowBiS(self:GetChecked())
 end)
 
 local minimapCheck = CreateFrame("CheckButton", "RecommendedStatsShowMinimapCheck", panel, "UICheckButtonTemplate")
 minimapCheck:SetPoint("TOPLEFT", bisCheck, "BOTTOMLEFT", 0, -4)
-minimapCheck.Text:SetText("Show minimap icon")
+minimapCheck.Text:SetText(L.OPTIONS_SHOW_MINIMAP)
 minimapCheck:SetScript("OnClick", function(self)
     RS:SetShowMinimapIcon(self:GetChecked())
+end)
+
+-- Shape/icon cues alongside the existing red/green/blue state colors (stat panel's under/on/over,
+-- BiS gear's status dot) — see Core.lua's RS:GetColorblindMode()/RS:SetColorblindMode().
+local colorblindCheck = CreateFrame("CheckButton", "RecommendedStatsColorblindCheck", panel, "UICheckButtonTemplate")
+colorblindCheck:SetPoint("TOPLEFT", minimapCheck, "BOTTOMLEFT", 0, -4)
+colorblindCheck.Text:SetText(L.OPTIONS_COLORBLIND)
+colorblindCheck:SetScript("OnClick", function(self)
+    RS:SetColorblindMode(self:GetChecked())
 end)
 
 --------------------------------------------------------------------------------
@@ -78,21 +88,21 @@ end)
 -- UI/CharacterPanel.lua's ROW_H_BY_SIZE/ApplyRowSize for what each option actually renders.
 --------------------------------------------------------------------------------
 local SIZES = {
-    { text = "Default", value = "DEFAULT" },
-    { text = "Small",   value = "SMALL" },
-    { text = "Medium",  value = "MEDIUM" },
-    { text = "Large",   value = "LARGE" },
+    { text = L.SIZE_DEFAULT, value = "DEFAULT" },
+    { text = L.SIZE_SMALL,   value = "SMALL" },
+    { text = L.SIZE_MEDIUM,  value = "MEDIUM" },
+    { text = L.SIZE_LARGE,   value = "LARGE" },
 }
 
 local function SizeLabel()
     local cur = RS:GetStatsSize()
     for _, s in ipairs(SIZES) do if s.value == cur then return s.text end end
-    return "Select"
+    return L.SELECT
 end
 
 local sizeLabel = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
-sizeLabel:SetPoint("TOPLEFT", minimapCheck, "BOTTOMLEFT", 2, -16)
-sizeLabel:SetText("Recommended Stats row size")
+sizeLabel:SetPoint("TOPLEFT", colorblindCheck, "BOTTOMLEFT", 2, -16)
+sizeLabel:SetText(L.OPTIONS_ROW_SIZE)
 
 local sizeDropdown = CreateFrame("DropdownButton", "RecommendedStatsSizeDropdown", panel, "WowStyle1DropdownTemplate")
 sizeDropdown:SetWidth(240)
@@ -118,20 +128,20 @@ end)
 -- RS:GetAccentColor() for why that's deliberate.
 --------------------------------------------------------------------------------
 local SKINS = {
-    { text = "Default",      value = "DEFAULT" },
-    { text = "Class Color",  value = "CLASS" },
-    { text = "Custom Color", value = "CUSTOM" },
+    { text = L.SKIN_DEFAULT, value = "DEFAULT" },
+    { text = L.SKIN_CLASS,   value = "CLASS" },
+    { text = L.SKIN_CUSTOM,  value = "CUSTOM" },
 }
 
 local function SkinLabel()
     local cur = RS:GetSkin()
     for _, s in ipairs(SKINS) do if s.value == cur then return s.text end end
-    return "Select"
+    return L.SELECT
 end
 
 local skinLabel = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
 skinLabel:SetPoint("TOPLEFT", sizeDropdown, "BOTTOMLEFT", -2, -16)
-skinLabel:SetText("Skin")
+skinLabel:SetText(L.OPTIONS_SKIN)
 
 local skinDropdown = CreateFrame("DropdownButton", "RecommendedStatsSkinDropdown", panel, "WowStyle1DropdownTemplate")
 skinDropdown:SetWidth(240)
@@ -203,13 +213,13 @@ end)
 local exportBtn = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
 exportBtn:SetSize(110, 22)
 exportBtn:SetPoint("TOPLEFT", skinDropdown, "BOTTOMLEFT", 0, -10)
-exportBtn:SetText("Export Skin")
+exportBtn:SetText(L.OPTIONS_EXPORT_SKIN)
 exportBtn:SetScript("OnClick", function() if RS.ShowSkinExport then RS:ShowSkinExport() end end)
 
 local importBtn = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
 importBtn:SetSize(110, 22)
 importBtn:SetPoint("LEFT", exportBtn, "RIGHT", 8, 0)
-importBtn:SetText("Import Skin")
+importBtn:SetText(L.OPTIONS_IMPORT_SKIN)
 importBtn:SetScript("OnClick", function() if RS.ShowSkinImport then RS:ShowSkinImport() end end)
 
 --------------------------------------------------------------------------------
@@ -220,13 +230,14 @@ local disclaimer = panel:CreateFontString(nil, "ARTWORK", "GameFontDisableSmall"
 disclaimer:SetPoint("TOPLEFT", exportBtn, "BOTTOMLEFT", 2, -20)
 disclaimer:SetWidth(420)
 disclaimer:SetJustifyH("LEFT")
-disclaimer:SetText("Recommended Stats won't make you do more DPS by itself — it just helps you hit the correct stat weights for your spec.")
+disclaimer:SetText(L.OPTIONS_DISCLAIMER)
 
 panel:SetScript("OnShow", function()
     attachDropdown:SetDefaultText(AttachModeLabel())
     statsCheck:SetChecked(RS:GetShowStats())
     bisCheck:SetChecked(RS:GetShowBiS())
     minimapCheck:SetChecked(RS:GetShowMinimapIcon())
+    colorblindCheck:SetChecked(RS:GetColorblindMode())
     sizeDropdown:SetDefaultText(SizeLabel())
     skinDropdown:SetDefaultText(SkinLabel())
     RefreshSwatchColor()
