@@ -14,6 +14,22 @@ local function ReadStats()
     }
 end
 
+-- Raw combat rating alongside the percent above — gear/enchants/gems are itemized in rating, not
+-- percent (see UI/BiSWindow.lua's own rating readouts), so the stat panel shows both. Same
+-- CR_HASTE_MELEE/CR_CRIT_MELEE constants BiSWindow.lua already uses for its own rating-to-percent
+-- conversion estimate — melee/ranged/spell combat ratings are the same underlying gear stat, this
+-- just reads whichever one happens to share a name with the unified percent getters above.
+local RATING_TYPE = {
+    haste = CR_HASTE_MELEE, crit = CR_CRIT_MELEE, mastery = CR_MASTERY, versatility = CR_VERSATILITY_DAMAGE_DONE,
+}
+local function ReadRatings()
+    local out = {}
+    for stat, ratingType in pairs(RATING_TYPE) do
+        out[stat] = GetCombatRating and ratingType and GetCombatRating(ratingType)
+    end
+    return out
+end
+
 local function GetClassToken() local _, c = UnitClass("player"); return c end
 
 local SPEC_TOKENS = {
@@ -294,7 +310,7 @@ function RS:Evaluate()
     local key = RS:GetKey()
     local targets = key and RecommendedStatsData_Targets[key]
     if not targets then return nil, key end
-    local cur, out = ReadStats(), {}
+    local cur, ratings, out = ReadStats(), ReadRatings(), {}
     for _, name in ipairs({ "haste", "crit", "mastery", "versatility" }) do
         local c, t = cur[name], targets[name]
         if t and c ~= nil then
@@ -303,12 +319,27 @@ function RS:Evaluate()
             -- becomes an opaque value addon code cannot subtract or compare — only hand off to
             -- sanctioned sinks (SetFormattedText, StatusBar:SetValue). state="secret" tells the
             -- UI to still render the bar/percentage via those, just without a verdict.
+            -- `rating` (raw combat rating, ReadRatings above) gets the same treatment — passed
+            -- through to SetFormattedText untouched rather than compared/subtracted, since
+            -- GetCombatRating is presumably restricted under the same rule as the percent getters.
             if issecretvalue(c) then
-                out[#out+1] = { name = name, current = c, target = t, delta = nil, state = "secret" }
+                out[#out+1] = { name = name, current = c, target = t, delta = nil, state = "secret", rating = ratings[name] }
             else
                 local delta = c - t
                 local state = (math.abs(delta) < 0.5) and "on" or (delta < 0) and "under" or "over"
-                out[#out+1] = { name = name, current = c, target = t, delta = delta, state = state }
+                local r = ratings[name]
+                -- Estimated rating-per-percent, derived from the player's own current rating/percent
+                -- (same technique as BiSWindow.lua's RatingConversion) — computed here rather than in
+                -- the UI layer since `c` is only safe to divide in this non-secret branch. Used to show
+                -- the target and delta in rating terms too, not just percent. nil (not a guessed 0)
+                -- when `c` is 0 (nothing to derive a rate from) so callers fall back to percent-only.
+                local ratingPerPercent = (r and c ~= 0) and (r / c) or nil
+                local targetRating = ratingPerPercent and (t * ratingPerPercent) or nil
+                local deltaRating = ratingPerPercent and (delta * ratingPerPercent) or nil
+                out[#out+1] = {
+                    name = name, current = c, target = t, delta = delta, state = state, rating = r,
+                    targetRating = targetRating, deltaRating = deltaRating,
+                }
             end
         end
     end

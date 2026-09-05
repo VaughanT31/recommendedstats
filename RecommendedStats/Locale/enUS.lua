@@ -71,8 +71,12 @@ L.FOOTER_SAMPLE_OF_TARGET = "%d of %d players"
 L.FOOTER_TOP_N            = "top %d players"
 L.FOOTER_LINE             = "Targets: %s \194\183 %s \194\183 updated %s"
 L.FOOTER_MAYBE_STALE      = " (may be stale)"
+L.CURRENT_VALUE           = "%.1f%%"
+L.CURRENT_VALUE_WITH_RATING = "%d (%.1f%%)"
 L.TARGET_INLINE           = "target %.0f%%"
+L.TARGET_WITH_RATING      = "target %.0f (%.0f%%)"
 L.DELTA_FROM_TARGET       = "%+.1f%% from target"
+L.DELTA_FROM_TARGET_WITH_RATING = "%+.0f (%+.1f%%) from target"
 L.PRIORITY_LINE           = "Priority: %s"
 
 --------------------------------------------------------------------------------

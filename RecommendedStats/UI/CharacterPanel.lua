@@ -591,9 +591,24 @@ local function Render(data, key)
             -- SetFormattedText is a sanctioned direct sink for secret values (unlike ("%s"):format
             -- or string.format called ourselves, which are arithmetic-adjacent and would taint-error
             -- exactly like the delta calc in Core.lua) — safe here whether stat.current is secret or not.
-            row.current:SetFormattedText("%.1f%%", stat.current)
+            -- stat.rating (Core.lua's ReadRatings) is the raw combat rating alongside the percent —
+            -- gear/enchants/gems are itemized in rating (see BiSWindow.lua's own readouts), so this
+            -- shows both rather than percent alone. Omitted only if GetCombatRating itself came back
+            -- nil, not expected in practice at the levels this addon targets.
+            if stat.rating then
+                row.current:SetFormattedText(L.CURRENT_VALUE_WITH_RATING, stat.rating, stat.current)
+            else
+                row.current:SetFormattedText(L.CURRENT_VALUE, stat.current)
+            end
             row.current:SetTextColor(col[1], col[2], col[3])
-            row.target:SetText(L.TARGET_INLINE:format(stat.target)) -- stat.target is always our own data, never secret
+            -- stat.targetRating (Core.lua) is an ESTIMATE (target % converted via the player's own
+            -- current rating/percent ratio), unlike stat.rating above which is exact — nil whenever
+            -- that ratio wasn't available (secret state, or 0% current), falls back to percent-only.
+            if stat.targetRating then
+                row.target:SetText(L.TARGET_WITH_RATING:format(stat.targetRating, stat.target))
+            else
+                row.target:SetText(L.TARGET_INLINE:format(stat.target))
+            end
 
             row.status:SetText(statusLabel[stat.state])
             row.status:SetTextColor(col[1], col[2], col[3])
@@ -607,16 +622,33 @@ local function Render(data, key)
 
             -- SMALL/MEDIUM's single-line readout — always filled in regardless of which size is
             -- active (ApplyRowSize is what decides whether it's actually shown), same sanctioned
-            -- SetFormattedText sink as row.current above since stat.current may be secret.
-            row.combined:SetFormattedText(
-                "%s   %.1f%%  \194\183  target %.0f%%  \194\183  " .. ColorHex(col) .. "%s|r",
-                STAT_LABEL[stat.name] or stat.name, stat.current, stat.target, statusLabel[stat.state]
-            )
+            -- SetFormattedText sink as row.current above since stat.current may be secret. Same
+            -- rating-alongside-percent treatment as row.current above.
+            if stat.rating and stat.targetRating then
+                row.combined:SetFormattedText(
+                    "%s   %d (%.1f%%)  \194\183  target %.0f (%.0f%%)  \194\183  " .. ColorHex(col) .. "%s|r",
+                    STAT_LABEL[stat.name] or stat.name, stat.rating, stat.current, stat.targetRating, stat.target, statusLabel[stat.state]
+                )
+            elseif stat.rating then
+                row.combined:SetFormattedText(
+                    "%s   %d (%.1f%%)  \194\183  target %.0f%%  \194\183  " .. ColorHex(col) .. "%s|r",
+                    STAT_LABEL[stat.name] or stat.name, stat.rating, stat.current, stat.target, statusLabel[stat.state]
+                )
+            else
+                row.combined:SetFormattedText(
+                    "%s   %.1f%%  \194\183  target %.0f%%  \194\183  " .. ColorHex(col) .. "%s|r",
+                    STAT_LABEL[stat.name] or stat.name, stat.current, stat.target, statusLabel[stat.state]
+                )
+            end
 
             -- LARGE's delta line. stat.delta is only nil for state == "secret" (Core.lua never
             -- computes a delta it can't subtract) — a plain already-resolved number otherwise, so
-            -- no secret-sink concerns here, unlike stat.current above.
-            if stat.delta then
+            -- no secret-sink concerns here, unlike stat.current above. stat.deltaRating is the same
+            -- estimate as stat.targetRating above, nil under the same conditions.
+            if stat.deltaRating then
+                row.delta:SetFormattedText(L.DELTA_FROM_TARGET_WITH_RATING, stat.deltaRating, stat.delta)
+                row.delta:SetTextColor(col[1], col[2], col[3])
+            elseif stat.delta then
                 row.delta:SetFormattedText(L.DELTA_FROM_TARGET, stat.delta)
                 row.delta:SetTextColor(col[1], col[2], col[3])
             else
