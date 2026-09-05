@@ -108,6 +108,13 @@ L.BIS_SOURCE_PREFIX  = "Source: "
 L.BIS_SOURCE_WITH_DIFFICULTY = "%s (%s)"
 L.BIS_ENCHANT_LABEL = "Enchant "
 L.BIS_GEM_LABEL     = "Gem "
+-- Rating readouts, e.g. "+56 Haste (5.0%)" — used for the item's own granted stats, and for
+-- what the recommended enchant/gem itself grants. The no-percent variant is the fallback when a
+-- rating-to-percent conversion rate isn't available this render (see BiSWindow.lua's
+-- RatingConversion — nil when the player has zero of that rating equipped, or its value is a
+-- Secret this instant per Blizzard's Secret Values system).
+L.RATING_WITH_PCT = "+%d %s (%.1f%%)"
+L.RATING_NO_PCT   = "+%d %s"
 
 --------------------------------------------------------------------------------
 -- UI/OptionsPanel.lua

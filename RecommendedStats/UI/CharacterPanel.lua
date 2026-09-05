@@ -30,10 +30,10 @@ local L = RecommendedStats_Locale
 --------------------------------------------------------------------------------
 -- Look & feel
 --------------------------------------------------------------------------------
--- 400, not the original 360 — BiS Gear's item names were truncating hard against the row's
--- fixed 64px-reserved-right-edge budget, more noticeable now that a second line (enchant/gem)
--- sits right underneath drawing the eye there. Shared with BiS Gear's row width (UI/BiSWindow.lua).
-local PANEL_W   = 400
+-- 440, not the original 360 — grew once for BiS Gear's item-name truncation, then again for the
+-- enchant/gem icon block between the slot label and the item. Shared with BiS Gear's row width
+-- (UI/BiSWindow.lua).
+local PANEL_W   = 440
 local ROW_W     = PANEL_W - 24  -- content width inside the panel's side padding
 -- The bar is anchored directly below the current-value text (see CreateRow's BAR_GAP), not
 -- pinned to this row height's bottom edge, so a size's ROW_H only needs to be "tall enough to

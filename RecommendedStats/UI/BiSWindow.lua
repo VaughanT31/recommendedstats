@@ -32,10 +32,11 @@ local L = RecommendedStats_Locale
 --------------------------------------------------------------------------------
 -- Look & feel
 --------------------------------------------------------------------------------
-local PANEL_W    = 400 -- must match CharacterPanel.lua's PANEL_W (RS.bisPage spans the full window width)
--- 32, not the original 22 — leaves room for the enchant/gem sub-line under the item name
--- (row.subLine, see CreateRow/SetRowItem below). CharacterPanel.lua no longer hand-syncs a
--- duplicate constant for this — see RS:GetBisContentHeight() below, which computes it from
+local PANEL_W    = 440 -- must match CharacterPanel.lua's PANEL_W (RS.bisPage spans the full window width)
+-- 32, not the original 22 — leaves room for a second line under both the item name (its own
+-- rating readout, row.subLine) and the enchant/gem icon block (their own rating readout,
+-- row.gearModsRating) — see CreateRow/SetRowItem below. CharacterPanel.lua no longer hand-syncs
+-- a duplicate constant for this — see RS:GetBisContentHeight() below, which computes it from
 -- ROW_H/ROW_GAP/SLOT_ORDER directly so the two files can't drift out of sync again the way they
 -- did the first time this row height changed (see the original hand-synced BIS_CONTENT_H bug).
 local ROW_H      = 32
@@ -62,6 +63,14 @@ local SLOT_LABEL = {
     WRIST = L.SLOT_WRIST, HANDS = L.SLOT_HANDS, WAIST = L.SLOT_WAIST, LEGS = L.SLOT_LEGS, FEET = L.SLOT_FEET,
     FINGER_1 = L.SLOT_FINGER_1, FINGER_2 = L.SLOT_FINGER_2, TRINKET_1 = L.SLOT_TRINKET_1, TRINKET_2 = L.SLOT_TRINKET_2,
     MAIN_HAND = L.SLOT_MAIN_HAND, OFF_HAND = L.SLOT_OFF_HAND,
+}
+
+-- Rating readouts (item's own stats, and what a recommended enchant/gem itself grants) — this
+-- file owns its own copy of these rather than importing CharacterPanel.lua's, same "each file
+-- owns its own layout locals independently" convention as PANEL_W above.
+local STAT_ORDER = { "haste", "crit", "mastery", "versatility" }
+local SHORT_STAT_LABEL = {
+    haste = L.STAT_HASTE_SHORT, crit = L.STAT_CRIT_SHORT, mastery = L.STAT_MASTERY_SHORT, versatility = L.STAT_VERSATILITY_SHORT,
 }
 
 -- Exact content height needed for every SLOT_ORDER row plus the sub-header row — called by
@@ -105,12 +114,6 @@ local DOT_TEXTURE_CB = {
     missing = "Interface\\RaidFrame\\ReadyCheck-NotReady",
 }
 
--- Enchant/gem sub-line colors — green/red mirror the stat panel's on/under colors
--- (CharacterPanel.lua's COLOR table) for the same "good/needs attention" meaning; grey is used
--- when the slot has no enchant/gem recommendation to compare against at all.
-local SUBLINE_OK_COLOR      = { 0.32, 0.85, 0.48 }
-local SUBLINE_MISSING_COLOR = { 0.92, 0.35, 0.35 }
-
 -- How recently a slot's #1 pick must have changed (Data/BiS.lua's entry.changedAt, stamped by
 -- the Node build's bisHistory.js) to still show the "NEW" tag.
 local NEW_TAG_DAYS = 7
@@ -132,6 +135,190 @@ local function TitleCase(slug)
         words[#words + 1] = w:sub(1, 1):upper() .. w:sub(2)
     end
     return table.concat(words, " ")
+end
+
+--------------------------------------------------------------------------------
+-- Rating readouts — the item's own granted stats, and what a recommended enchant/gem itself
+-- grants (RecommendedStatsData_BiS[key][slot].enchantID/.gemID, aggregate.js's per-slot vote).
+-- This is the addon's answer to "just show me the rating, gear is itemized in rating, not %" —
+-- the existing % targets stay the primary readout on the Stats tab, this is additive detail here.
+--------------------------------------------------------------------------------
+
+-- ⚠ VERIFY these exact key names live — Blizzard's internal ITEM_MOD_*_SHORT field names have
+-- shifted before across expansions. Versatility lists two candidates since tooltips only ever
+-- show one "Versatility" stat but C_Item.GetItemStats may expose it under either name depending
+-- on client version; first present key wins. Any stat whose key doesn't match here is simply
+-- omitted from the readout rather than shown as a wrong/zero value.
+local ITEM_STAT_KEYS = {
+    haste       = { "ITEM_MOD_HASTE_RATING_SHORT" },
+    crit        = { "ITEM_MOD_CRIT_RATING_SHORT" },
+    mastery     = { "ITEM_MOD_MASTERY_RATING_SHORT" },
+    versatility = { "ITEM_MOD_VERSATILITY", "ITEM_MOD_VERSATILITY_DAMAGE_DONE_SHORT" },
+}
+
+-- Maps a tooltip-scanned stat NAME (localized text, e.g. "Critical Strike") back to our internal
+-- stat key — built lazily so it picks up L's real values rather than evaluating at file-load
+-- order time.
+local STAT_NAME_TO_KEY
+local function StatKeyFromName(name)
+    if not name then return nil end
+    STAT_NAME_TO_KEY = STAT_NAME_TO_KEY or {
+        [L.STAT_HASTE] = "haste", [L.STAT_CRIT] = "crit",
+        [L.STAT_MASTERY] = "mastery", [L.STAT_VERSATILITY] = "versatility",
+    }
+    return STAT_NAME_TO_KEY[name]
+end
+
+-- One hidden scanning tooltip, reused for every enchant/item/gem lookup below rather than
+-- touching the real GameTooltip — the standard technique for reading tooltip text off an addon.
+local scanTip = CreateFrame("GameTooltip", "RecommendedStatsEnchantScanTooltip", nil, "GameTooltipTemplate")
+scanTip:SetOwner(UIParent, "ANCHOR_NONE")
+
+-- Scans a real item's own tooltip for every "+<rating> <Stat Name>" line it displays — confirmed
+-- live as the ONLY way to read a GEM's own granted stat: unlike normal equippable gear (which
+-- C_Item.GetItemStats reads fine), a gem item apparently doesn't expose its rating through that
+-- API at all, even though its tooltip shows the exact same "+rating stat" line format as
+-- everything else. Used as ItemRatings' fallback below, so this only ever runs when the faster
+-- API path came back empty. Starts from line 1 (unlike GetEnchantInfo's scan) since a plain item
+-- link's line 1 is the item name, not a stat — no name to skip past here.
+local function ScanItemTooltipRatings(itemLink)
+    if not itemLink then return nil end
+    scanTip:ClearLines()
+    local ok = pcall(scanTip.SetHyperlink, scanTip, itemLink)
+    if not ok then return nil end
+
+    local out = {}
+    for i = 1, scanTip:NumLines() do
+        local line = _G["RecommendedStatsEnchantScanTooltipTextLeft" .. i]
+        local text = line and line:GetText()
+        if text then
+            local r, s = text:match("^%+(%d+) (.+)$")
+            local stat = r and StatKeyFromName(s)
+            if stat then out[stat] = tonumber(r) end
+        end
+    end
+    return next(out) and out or nil
+end
+
+-- {haste=rating, ...} for whichever secondary stats the item link actually rolls, or nil if
+-- nothing matched via either path. Tries the fast API first (C_Item.GetItemStats — works for
+-- normal gear) and falls back to a tooltip scan only if that comes back empty (needed for gems —
+-- see ScanItemTooltipRatings above).
+local function ItemRatings(itemLink)
+    if not itemLink then return nil end
+    local stats = C_Item and C_Item.GetItemStats and C_Item.GetItemStats(itemLink)
+    if stats then
+        local out = {}
+        for stat, keys in pairs(ITEM_STAT_KEYS) do
+            for _, key in ipairs(keys) do
+                local v = stats[key]
+                if v and v > 0 then out[stat] = v; break end
+            end
+        end
+        if next(out) then return out end
+    end
+    return ScanItemTooltipRatings(itemLink)
+end
+
+-- Player's own current (rating -> percent) conversion rate per stat, derived from their actual
+-- equipped totals (GetCombatRating vs. the matching percent getter) rather than a hardcoded
+-- formula — the real formula changes with level and has soft/hard caps, so "current percent per
+-- current rating" is an ESTIMATE that holds well near the player's own stat level but can drift
+-- at extreme values. Computed once per Render() pass, not per row. A stat is simply left out of
+-- the returned table (not zero) when the player has none of it equipped, or its value is a
+-- Secret this instant (Core.lua's issecretvalue — in an instance/combat) — callers fall back to
+-- showing the plain rating with no percent rather than a wrong one.
+local function RatingConversion()
+    local conv = {}
+    local specs = {
+        haste       = { CR_HASTE_MELEE, GetHaste },
+        crit        = { CR_CRIT_MELEE, GetCritChance },
+        mastery     = { CR_MASTERY, GetMasteryEffect },
+        versatility = { CR_VERSATILITY_DAMAGE_DONE, function() return GetCombatRatingBonus(CR_VERSATILITY_DAMAGE_DONE) end },
+    }
+    for stat, spec in pairs(specs) do
+        local ratingType, pctFn = spec[1], spec[2]
+        local rating = ratingType and GetCombatRating and GetCombatRating(ratingType)
+        local pct = pctFn and pctFn()
+        local secret = issecretvalue and (issecretvalue(rating) or issecretvalue(pct))
+        if rating and pct and rating > 0 and not secret then
+            conv[stat] = pct / rating
+        end
+    end
+    return conv
+end
+
+local function FormatRating(stat, rating, conversion)
+    local label = SHORT_STAT_LABEL[stat] or stat
+    local rate = conversion[stat]
+    if rate then
+        return L.RATING_WITH_PCT:format(rating, label, rating * rate)
+    end
+    return L.RATING_NO_PCT:format(rating, label)
+end
+
+local function FormatRatingsLine(ratingsTable, conversion)
+    if not ratingsTable then return nil end
+    local parts = {}
+    for _, stat in ipairs(STAT_ORDER) do
+        if ratingsTable[stat] then parts[#parts + 1] = FormatRating(stat, ratingsTable[stat], conversion) end
+    end
+    if #parts == 0 then return nil end
+    return table.concat(parts, "  ")
+end
+
+-- An enchant ISN'T an item, so there's no icon or standalone GetItemStats for it. The original
+-- approach here read a dedicated "enchant:<id>" hyperlink's own tooltip — confirmed live NOT to
+-- work (the enchant icon never showed at all), so this instead attaches the enchant to the
+-- item's own itemString (item:<itemID>:<enchantID> — a minimal but valid link, same "item:"
+-- hyperlink type already confirmed working for the item/gem rating readouts above, not a new
+-- unverified one) and diffs its stats against the same item WITHOUT the enchant. Whatever
+-- changed is exactly the enchant's own contribution, however many stats it touches — this
+-- sidesteps needing to parse any enchant-specific tooltip line format at all. The enchant's own
+-- display name still needs a tooltip line, but reads it off that same real "item:" link's
+-- well-established "Enchanted: <Name>" convention, not a guess at unfamiliar hyperlink text.
+local function BuildEnchantHostLink(itemID, enchantID)
+    return ("item:%d:%d"):format(itemID, enchantID)
+end
+
+local function GetEnchantName(itemID, enchantID)
+    scanTip:ClearLines()
+    local ok = pcall(scanTip.SetHyperlink, scanTip, BuildEnchantHostLink(itemID, enchantID))
+    if not ok then return nil end
+    for i = 1, scanTip:NumLines() do
+        local line = _G["RecommendedStatsEnchantScanTooltipTextLeft" .. i]
+        local text = line and line:GetText()
+        local name = text and text:match("^Enchanted: (.+)$")
+        if name then return name end
+    end
+    return nil
+end
+
+local enchantInfoCache = {}
+local function GetEnchantInfo(itemID, enchantID)
+    if enchantInfoCache[enchantID] ~= nil then return enchantInfoCache[enchantID] or nil end
+
+    local withEnchant = ItemRatings(BuildEnchantHostLink(itemID, enchantID))
+    local base = ItemRatings(("item:%d"):format(itemID))
+    local ratings
+    if withEnchant then
+        local diff = {}
+        for stat, v in pairs(withEnchant) do
+            local d = v - ((base and base[stat]) or 0)
+            if d > 0 then diff[stat] = d end
+        end
+        if next(diff) then ratings = diff end
+    end
+
+    local name = GetEnchantName(itemID, enchantID)
+    if not name and not ratings then
+        enchantInfoCache[enchantID] = false
+        return nil
+    end
+
+    local info = { name = name, ratings = ratings }
+    enchantInfoCache[enchantID] = info
+    return info
 end
 
 --------------------------------------------------------------------------------
@@ -164,18 +351,61 @@ local function CreateRow(parent)
     row.slotLabel:SetWidth(51)
     row.slotLabel:SetJustifyH("LEFT")
 
+    -- Enchant/gem icon block — sits between the slot label and the item itself. Purely
+    -- informational (what's recommended + what it grants), not a comparison against the player's
+    -- own equipped enchant/gem — the ilvl-aware status dot already covers "do you have an
+    -- appropriate item here" at the whole-item level. A gem is a real WoW item, so its icon/name
+    -- come straight off it (SetRowItem below); an enchant isn't, so it gets a fixed generic icon
+    -- and its name comes from GetEnchantInfo's tooltip scan instead.
+    -- 13, not 14: the icon-block rating line below needs every spare pixel of vertical room it
+    -- can get within ROW_H (an icon is taller than a line of text, so this stack is tighter than
+    -- the item name/rating stack on the right even at the same row height).
+    local ICON_SZ = 13
+    row.gearMods = CreateFrame("Frame", nil, row)
+    row.gearMods:SetSize(44, ROW_H)
+    row.gearMods:SetPoint("TOPLEFT", row.slotLabel, "TOPRIGHT", 4, 0)
+
+    row.enchantIcon = CreateFrame("Button", nil, row.gearMods)
+    row.enchantIcon:SetSize(ICON_SZ, ICON_SZ)
+    row.enchantIcon:SetPoint("TOPLEFT", row.gearMods, "TOPLEFT", 0, 6)
+    row.enchantIcon.tex = row.enchantIcon:CreateTexture(nil, "ARTWORK")
+    row.enchantIcon.tex:SetAllPoints()
+    row.enchantIcon:Hide()
+
+    row.gemIcon = CreateFrame("Button", nil, row.gearMods)
+    row.gemIcon:SetSize(ICON_SZ, ICON_SZ)
+    row.gemIcon:SetPoint("LEFT", row.enchantIcon, "RIGHT", 2, 0)
+    row.gemIcon.tex = row.gemIcon:CreateTexture(nil, "ARTWORK")
+    row.gemIcon.tex:SetAllPoints()
+    row.gemIcon:Hide()
+
+    for _, iconBtn in ipairs({ row.enchantIcon, row.gemIcon }) do
+        iconBtn:SetScript("OnEnter", function(self)
+            if not self.tooltipName then return end
+            GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+            GameTooltip:SetText(self.tooltipName, 1, 1, 1)
+            if self.tooltipRatingText then GameTooltip:AddLine(self.tooltipRatingText, 0.8, 0.8, 0.8) end
+            GameTooltip:Show()
+        end)
+        iconBtn:SetScript("OnLeave", function() GameTooltip:Hide() end)
+    end
+
+    -- What the enchant/gem itself grants, e.g. "+56 Haste (5.0%)  +23 Vers (2.0%)".
+    row.gearModsRating = row.gearMods:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+    row.gearModsRating:SetPoint("TOPLEFT", row.enchantIcon, "BOTTOMLEFT", 0, -1)
+    row.gearModsRating:SetJustifyH("LEFT")
+
     row.itemName = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    -- TOPRIGHT, not TOP: "TOP" anchors to slotLabel's horizontal CENTER, not its right edge —
-    -- that put itemName's left edge halfway through slotLabel's own text, rendering them
-    -- overlapping/on top of each other instead of side by side. Confirmed live.
-    row.itemName:SetPoint("TOPLEFT", row.slotLabel, "TOPRIGHT", 4, 6)
+    -- TOPRIGHT, not TOP: "TOP" anchors to a frame's horizontal CENTER, not its right edge — that
+    -- put itemName's left edge overlapping the previous element instead of starting after it.
+    -- Confirmed live once already (against slotLabel); same rule applies here against gearMods.
+    row.itemName:SetPoint("TOPLEFT", row.gearMods, "TOPRIGHT", 4, 6)
     row.itemName:SetPoint("RIGHT", row, "RIGHT", -64, 0)
     row.itemName:SetJustifyH("LEFT")
     row.itemName:SetWordWrap(false)
 
-    -- Enchant/gem status, e.g. "Enchant +  \194\183  Gem x" — populated by SetRowItem below,
-    -- hidden entirely when the slot has neither an enchant nor a gem recommendation to compare
-    -- against (RecommendedStatsData_BiS[key][slot].enchantID/.gemID).
+    -- The item's OWN secondary-stat rating(s), e.g. "+56 Haste (5.0%)  +56 Vers (5.0%)" — this
+    -- used to be the enchant/gem match indicator, which moved to the icon block above.
     row.subLine = row:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
     row.subLine:SetPoint("TOPLEFT", row.itemName, "BOTTOMLEFT", 0, -2)
     row.subLine:SetJustifyH("LEFT")
@@ -326,58 +556,7 @@ local function BuildDecoratedLink(itemLink, name, quality)
     return "|c" .. hex .. "|H" .. itemLink .. "|h[" .. name .. "]|h|r"
 end
 
-local function ColorHex(col)
-    return ("|cff%02x%02x%02x"):format(
-        math.floor(col[1] * 255 + 0.5), math.floor(col[2] * 255 + 0.5), math.floor(col[3] * 255 + 0.5)
-    )
-end
-
--- Reads the enchant/gem IDs actually applied to the player's own equipped item, straight off its
--- itemString (item:itemID:enchantID:gem1:gem2:gem3:gem4:...) — this field order has been stable
--- since the itemString format was introduced, unlike e.g. bonusIDs' meaning which shifts with
--- upgrade systems, so this doesn't need a ⚠ VERIFY the way newer fields elsewhere in this addon do.
-local function ParseEquippedEnchantAndGems(itemLink)
-    if not itemLink then return nil, nil end
-    local itemString = itemLink:match("item[%-?%d:]+")
-    if not itemString then return nil, nil end
-    local fields = {}
-    for field in itemString:gmatch("[^:]+") do fields[#fields + 1] = field end
-    local enchantID = tonumber(fields[3])
-    local gemIDs = {}
-    for i = 4, 7 do
-        local g = tonumber(fields[i])
-        if g and g > 0 then gemIDs[#gemIDs + 1] = g end
-    end
-    return (enchantID and enchantID > 0) and enchantID or nil, gemIDs
-end
-
--- Builds the "Enchant + \194\183 Gem x" sub-line — green "+" when the player's own equipped item
--- matches the recommended enchant/gem for this slot (entry.enchantID/entry.gemID, aggregate.js's
--- per-slot popularity vote — see that file for why it's tracked per slot rather than tied to the
--- specific BiS item), red "x" otherwise. Plain ASCII, not a Unicode check/x mark: WoW's default
--- client fonts don't cover that block (confirmed live — it rendered as a tofu box), the same
--- issue as CharacterPanel.lua's colorblind status glyphs. A slot with no recommendation for one
--- or the other (e.g. no gem socket exists) simply omits that half rather than showing red.
-local function BuildSubLine(entry, equippedEnchantID, equippedGemIDs)
-    local parts = {}
-    if entry.enchantID then
-        local has = equippedEnchantID == entry.enchantID
-        parts[#parts + 1] = ColorHex(has and SUBLINE_OK_COLOR or SUBLINE_MISSING_COLOR)
-            .. L.BIS_ENCHANT_LABEL .. (has and "+" or "x") .. "|r"
-    end
-    if entry.gemID then
-        local has = false
-        for _, g in ipairs(equippedGemIDs or {}) do
-            if g == entry.gemID then has = true; break end
-        end
-        parts[#parts + 1] = ColorHex(has and SUBLINE_OK_COLOR or SUBLINE_MISSING_COLOR)
-            .. L.BIS_GEM_LABEL .. (has and "+" or "x") .. "|r"
-    end
-    if #parts == 0 then return nil end
-    return table.concat(parts, "  \194\183  ")
-end
-
-local function SetRowItem(row, slot, entry)
+local function SetRowItem(row, slot, entry, conversion)
     local itemID, pct = entry.itemID, entry.pct
     row.itemID = itemID
     row.itemLink = BuildItemLink(itemID, entry.bonusIDs)
@@ -412,13 +591,62 @@ local function SetRowItem(row, slot, entry)
         row.statusDot:SetTexture(dotTex.missing)
     end
 
-    -- Enchant/gem sub-line (see BuildSubLine above) — reads what's actually applied to the
-    -- player's own equipped item, not the BiS item's own enchant/gem, since the whole point is
-    -- comparing the two.
-    local equippedEnchantID, equippedGemIDs = ParseEquippedEnchantAndGems(equippedLink)
-    local subLine = BuildSubLine(entry, equippedEnchantID, equippedGemIDs)
-    row.subLine:SetShown(subLine ~= nil)
-    if subLine then row.subLine:SetText(subLine) end
+    -- Enchant/gem icon block — icon + name/rating-on-hover, informational (see the block's own
+    -- header comment in CreateRow for why this doesn't compare against the player's own gear).
+    -- The rating line below the icons is rebuilt from whichever of enchantPart/gemPart have
+    -- resolved so far, since the gem's half only arrives once its item data finishes loading
+    -- (see the ContinueOnItemLoad below — calling C_Item.GetItemStats before an item is
+    -- confirmed loaded returned nothing for most items, the same reason icon/name already wait
+    -- for this elsewhere in this function; the fix here is applying that same wait to ratings).
+    local enchantPart, gemPart
+    local function RefreshGearModsRating()
+        local parts = {}
+        if enchantPart then parts[#parts + 1] = enchantPart end
+        if gemPart then parts[#parts + 1] = gemPart end
+        row.gearModsRating:SetText(table.concat(parts, "  "))
+    end
+
+    if entry.gemID then
+        local gemLink = "item:" .. entry.gemID
+        local gemItem = Item:CreateFromItemID(entry.gemID)
+        row.gemIcon:Show()
+        row.gemIcon.tex:SetTexture(QUESTION_MARK_ICON)
+        row.gemIcon.tooltipName, row.gemIcon.tooltipRatingText = nil, nil
+        gemItem:ContinueOnItemLoad(function()
+            row.gemIcon.tex:SetTexture(gemItem:GetItemIcon())
+            row.gemIcon.tooltipName = gemItem:GetItemName()
+            gemPart = FormatRatingsLine(ItemRatings(gemLink), conversion)
+            row.gemIcon.tooltipRatingText = gemPart
+            RefreshGearModsRating()
+        end)
+    else
+        row.gemIcon:Hide()
+        row.gemIcon.tooltipName, row.gemIcon.tooltipRatingText = nil, nil
+    end
+
+    -- Unlike the gem, an enchant's info comes from GetEnchantInfo's item-link diff (see its own
+    -- header comment), not an item load, so it's already available synchronously here — no
+    -- waiting needed for this half.
+    local enchantInfo = entry.enchantID and GetEnchantInfo(itemID, entry.enchantID)
+    if enchantInfo then
+        row.enchantIcon:Show()
+        row.enchantIcon.tex:SetTexture("Interface\\Icons\\INV_Enchant_Disenchant")
+        -- Falls back to the generic label rather than leaving this nil: if only the ratings-diff
+        -- half resolved (or vice versa), the tooltip should still show whatever it has instead
+        -- of not showing at all (the OnEnter handler bails out entirely when tooltipName is nil).
+        row.enchantIcon.tooltipName = enchantInfo.name or L.BIS_ENCHANT_LABEL
+        enchantPart = FormatRatingsLine(enchantInfo.ratings, conversion)
+        row.enchantIcon.tooltipRatingText = enchantPart
+    else
+        row.enchantIcon:Hide()
+        row.enchantIcon.tooltipName, row.enchantIcon.tooltipRatingText = nil, nil
+    end
+    RefreshGearModsRating() -- shows the enchant half immediately; the gem half (if any) fills in above once loaded
+
+    -- The item's OWN secondary-stat rating(s) is populated inside item:ContinueOnItemLoad below,
+    -- same reasoning as the gem above — hidden until then so it never shows a stale value from a
+    -- previous key/spec this row was last rendered for.
+    row.subLine:Hide()
 
     local age = entry.changedAt and RS:DaysSince(entry.changedAt)
     row.newTag:SetShown(age ~= nil and age <= NEW_TAG_DAYS)
@@ -432,6 +660,7 @@ local function SetRowItem(row, slot, entry)
         row.sourceText = nil
     end
 
+    local itemLinkForStats = row.itemLink or ("item:" .. itemID)
     local item = row.itemLink and Item:CreateFromItemLink(row.itemLink) or Item:CreateFromItemID(itemID)
     item:ContinueOnItemLoad(function()
         local name = item:GetItemName() or ("Item " .. itemID)
@@ -441,6 +670,14 @@ local function SetRowItem(row, slot, entry)
         row.icon:SetTexture(item:GetItemIcon())
         local r, g, b = C_Item.GetItemQualityColor(quality)
         if r then row.iconBorder:SetColorTexture(r, g, b, 0.9) end
+
+        -- The item's OWN secondary-stat rating(s) — a bare "item:<id>" link (when entry.bonusIDs
+        -- is empty, BuildItemLink's fallback) reads the item's base-template stats rather than a
+        -- specific drop's real roll, the same base-template caveat BuildItemLink's own comment
+        -- documents — still real numbers, just not necessarily this exact drop's exact roll.
+        local ratingsLine = FormatRatingsLine(ItemRatings(itemLinkForStats), conversion)
+        row.subLine:SetShown(ratingsLine ~= nil)
+        if ratingsLine then row.subLine:SetText(ratingsLine) end
     end)
 end
 
@@ -496,6 +733,9 @@ local function Render()
     end
 
     emptyText:Hide()
+    -- Computed once per pass, not per row — see RatingConversion's own comment for why this is
+    -- an estimate derived from the player's current equipped totals.
+    local conversion = RatingConversion()
     for i, slot in ipairs(SLOT_ORDER) do
         local row = rows[i]
         local entry = bis[slot]
@@ -504,7 +744,7 @@ local function Render()
         else
             row:Show()
             row.slotLabel:SetText(SLOT_LABEL[slot] or slot)
-            SetRowItem(row, slot, entry)
+            SetRowItem(row, slot, entry, conversion)
         end
     end
 end
