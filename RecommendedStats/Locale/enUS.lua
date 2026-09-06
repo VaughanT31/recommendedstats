@@ -75,6 +75,13 @@ L.CURRENT_VALUE           = "%.1f%%"
 L.CURRENT_VALUE_WITH_RATING = "%d (%.1f%%)"
 L.TARGET_INLINE           = "target %.0f%%"
 L.TARGET_WITH_RATING      = "target %.0f (%.0f%%)"
+-- "high" is the 90th-percentile reading among top players (RecommendedStatsNode's aggregate.js),
+-- shown alongside the median target so a player can see how spread out top players actually are
+-- rather than just chasing a single number — e.g. mastery can have a wide real spread even though
+-- the median target looks tight. Omitted (falls back to TARGET_INLINE/TARGET_WITH_RATING above)
+-- whenever a key has no "*High" field yet (data built before this existed).
+L.TARGET_WITH_HIGH        = "target %.0f%% \194\183 top %.0f%%"
+L.TARGET_WITH_RATING_AND_HIGH = "target %.0f (%.0f%%) \194\183 top %.0f%%"
 L.DELTA_FROM_TARGET       = "%+.1f%% from target"
 L.DELTA_FROM_TARGET_WITH_RATING = "%+.0f (%+.1f%%) from target"
 L.PRIORITY_LINE           = "Priority: %s"

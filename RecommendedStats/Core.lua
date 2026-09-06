@@ -313,6 +313,10 @@ function RS:Evaluate()
     local cur, ratings, out = ReadStats(), ReadRatings(), {}
     for _, name in ipairs({ "haste", "crit", "mastery", "versatility" }) do
         local c, t = cur[name], targets[name]
+        -- 90th-percentile reading among top players (RecommendedStatsNode's aggregate.js), stored
+        -- alongside the median target as e.g. targets.hasteHigh — nil for data built before this
+        -- field existed, so callers below must treat it as optional, same as targetRating.
+        local high = targets[name .. "High"]
         if t and c ~= nil then
             -- Blizzard's Secret Values system (Patch 12.0+) marks these getters
             -- SecretWhenUnitStatsRestricted: while inside an instance and/or in combat, `c`
@@ -323,7 +327,7 @@ function RS:Evaluate()
             -- through to SetFormattedText untouched rather than compared/subtracted, since
             -- GetCombatRating is presumably restricted under the same rule as the percent getters.
             if issecretvalue(c) then
-                out[#out+1] = { name = name, current = c, target = t, delta = nil, state = "secret", rating = ratings[name] }
+                out[#out+1] = { name = name, current = c, target = t, delta = nil, state = "secret", rating = ratings[name], high = high }
             else
                 local delta = c - t
                 local state = (math.abs(delta) < 0.5) and "on" or (delta < 0) and "under" or "over"
@@ -340,9 +344,13 @@ function RS:Evaluate()
                 local ratingPerPercent = (r and not rSecret and c ~= 0) and (r / c) or nil
                 local targetRating = ratingPerPercent and (t * ratingPerPercent) or nil
                 local deltaRating = ratingPerPercent and (delta * ratingPerPercent) or nil
+                -- Same estimated rating-per-percent conversion as targetRating above, applied to
+                -- the p90 "high" reading instead of the median target — nil under the same
+                -- conditions (secret rating, or a 0% current reading with nothing to derive from).
+                local highRating = (high and ratingPerPercent) and (high * ratingPerPercent) or nil
                 out[#out+1] = {
                     name = name, current = c, target = t, delta = delta, state = state, rating = r,
-                    targetRating = targetRating, deltaRating = deltaRating,
+                    targetRating = targetRating, deltaRating = deltaRating, high = high, highRating = highRating,
                 }
             end
         end

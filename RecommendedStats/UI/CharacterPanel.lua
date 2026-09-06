@@ -604,8 +604,15 @@ local function Render(data, key)
             -- stat.targetRating (Core.lua) is an ESTIMATE (target % converted via the player's own
             -- current rating/percent ratio), unlike stat.rating above which is exact — nil whenever
             -- that ratio wasn't available (secret state, or 0% current), falls back to percent-only.
-            if stat.targetRating then
+            -- stat.high (Core.lua) is the 90th-percentile reading among top players, alongside the
+            -- median target — nil for data built before this field existed, so this falls back to
+            -- the plain target-only strings above rather than ever showing a blank "top" reading.
+            if stat.targetRating and stat.high then
+                row.target:SetText(L.TARGET_WITH_RATING_AND_HIGH:format(stat.targetRating, stat.target, stat.high))
+            elseif stat.targetRating then
                 row.target:SetText(L.TARGET_WITH_RATING:format(stat.targetRating, stat.target))
+            elseif stat.high then
+                row.target:SetText(L.TARGET_WITH_HIGH:format(stat.target, stat.high))
             else
                 row.target:SetText(L.TARGET_INLINE:format(stat.target))
             end
