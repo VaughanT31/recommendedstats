@@ -333,7 +333,11 @@ function RS:Evaluate()
                 -- the UI layer since `c` is only safe to divide in this non-secret branch. Used to show
                 -- the target and delta in rating terms too, not just percent. nil (not a guessed 0)
                 -- when `c` is 0 (nothing to derive a rate from) so callers fall back to percent-only.
-                local ratingPerPercent = (r and c ~= 0) and (r / c) or nil
+                -- `r` is checked for secrecy independently of `c` (confirmed live: GetCombatRating can
+                -- be secret) — and that check must short-circuit BEFORE `r / c` below, not alongside
+                -- it, the same ordering bug BiSWindow.lua's own copy of this pattern hit live.
+                local rSecret = r and issecretvalue and issecretvalue(r)
+                local ratingPerPercent = (r and not rSecret and c ~= 0) and (r / c) or nil
                 local targetRating = ratingPerPercent and (t * ratingPerPercent) or nil
                 local deltaRating = ratingPerPercent and (delta * ratingPerPercent) or nil
                 out[#out+1] = {

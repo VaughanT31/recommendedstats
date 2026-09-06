@@ -240,9 +240,16 @@ local function RatingConversion()
         local ratingType, pctFn = spec[1], spec[2]
         local rating = ratingType and GetCombatRating and GetCombatRating(ratingType)
         local pct = pctFn and pctFn()
-        local secret = issecretvalue and (issecretvalue(rating) or issecretvalue(pct))
-        if rating and pct and rating > 0 and not secret then
-            conv[stat] = pct / rating
+        if rating and pct then
+            -- Secrecy MUST be checked, and short-circuit, before `rating > 0` below — Lua's `and`
+            -- evaluates left to right, so putting `not secret` after the comparison (as this
+            -- originally did) still ran the comparison on a secret `rating` first and tainted the
+            -- whole call. Confirmed live: GetCombatRating is secret-restricted in combat/instances
+            -- just like the percent getters, not just presumed as this file originally guessed.
+            local secret = issecretvalue and (issecretvalue(rating) or issecretvalue(pct))
+            if not secret and rating > 0 then
+                conv[stat] = pct / rating
+            end
         end
     end
     return conv
