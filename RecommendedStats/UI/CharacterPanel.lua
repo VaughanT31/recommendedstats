@@ -261,16 +261,31 @@ local function CreateRow(parent)
     row.bar:SetStatusBarTexture("Interface\\Buttons\\WHITE8x8")
     row.bar:SetMinMaxValues(0, 1)
 
-    -- target tick — always at the same relative position (TICK_FRAC never changes), so it's
-    -- placed once here rather than recalculated on every render. Colored via TickColor() (white
-    -- under the Default skin, matching this addon's original look, or the skin accent under
-    -- Class/Custom); re-tinted in place on a skin change by the RS.skinListeners registration
-    -- at the bottom of this file.
+    -- target tick — positioned here at the TICK_FRAC fallback spot (matches what Render() computes
+    -- whenever a key has no "high" reading yet, see stat.high handling there) purely so it isn't
+    -- sitting at 0,0 for the one frame before the first Render call. Every real render repositions
+    -- it based on that key's actual target/barMax ratio, which varies once a "high" reading is
+    -- present (see barMax below) — it's no longer a fixed fraction across every row. Colored via
+    -- TickColor() (white under the Default skin, matching this addon's original look, or the skin
+    -- accent under Class/Custom); re-tinted in place on a skin change by the RS.skinListeners
+    -- registration at the bottom of this file.
     local tickColor = TickColor()
     row.tick = row:CreateTexture(nil, "OVERLAY")
     row.tick:SetSize(2, BAR_H + 6)
     row.tick:SetColorTexture(tickColor[1], tickColor[2], tickColor[3], 0.9)
     row.tick:SetPoint("CENTER", row.barBG, "LEFT", ROW_W * TICK_FRAC, 0)
+
+    -- "high" tick — the 90th-percentile reading among top players (RecommendedStatsNode's
+    -- aggregate.js, stat.high in Core.lua), marking the far edge of what's actually a "safe" zone
+    -- past the median target rather than the bar simply reading full the moment you clear it. Same
+    -- color as the target tick but dimmer, so the two read as "primary target" vs. "still normal
+    -- past here" rather than two equally-weighted lines. Hidden by default/whenever a key has no
+    -- resolved high reading (Render() below only shows it when stat.high is present and above
+    -- target) — never guessed or defaulted to the target position.
+    row.highTick = row:CreateTexture(nil, "OVERLAY")
+    row.highTick:SetSize(2, BAR_H + 6)
+    row.highTick:SetColorTexture(tickColor[1], tickColor[2], tickColor[3], 0.45)
+    row.highTick:Hide()
 
     -- SMALL/MEDIUM's single-line readout ("Haste  36.3% \194\183 target 30% \194\183 On target") —
     -- built and populated unconditionally in Render() below regardless of which size is active;
@@ -309,15 +324,18 @@ local function ApplyRowSize(row, size)
         row.combined:SetPoint("TOPLEFT", 0, 0)
 
         if size == "SMALL" then
-            row.barBG:Hide(); row.bar:Hide(); row.tick:Hide()
+            row.barBG:Hide(); row.bar:Hide(); row.tick:Hide(); row.highTick:Hide()
         else -- MEDIUM
             row.barBG:Show(); row.bar:Show(); row.tick:Show()
+            -- row.highTick is left alone here — Render() is the sole authority on whether it's
+            -- actually shown (only when stat.high is present), not this pure-layout function.
             row.barBG:SetPoint("TOPLEFT", row.combined, "BOTTOMLEFT", 0, -BAR_GAP)
         end
     else -- DEFAULT / LARGE
         row.combined:Hide()
         row.name:Show(); row.current:Show(); row.target:Show(); row.status:Show()
         row.barBG:Show(); row.bar:Show(); row.tick:Show()
+        -- row.highTick: see the MEDIUM branch's comment above — Render() decides its visibility.
 
         row.name:SetPoint("TOPLEFT", 0, 0)
         row.status:SetPoint("TOPRIGHT", 0, -2)
@@ -622,9 +640,27 @@ local function Render(data, key)
 
             -- SetMinMaxValues + SetValue let the StatusBar do its own clamping/fill math natively
             -- (also a sanctioned secret sink) instead of us dividing stat.current ourselves.
-            local barMax = math.max(stat.target * TARGET_HEADROOM, 0.01)
+            -- barMax scales off whichever of target/high is larger, so the bar doesn't just read
+            -- "full" the instant you clear the median target — a stat.high reading (present once a
+            -- key has one; see Core.lua) pushes the ceiling out past it, leaving room to show BOTH
+            -- ticks and a visible "safe" gap between them, matching how it already reads when
+            -- stat.high isn't available (that fallback is exactly the old target*TARGET_HEADROOM
+            -- behavior, not a separate code path).
+            local hasHigh = stat.high and stat.high > stat.target
+            local ceiling = hasHigh and stat.high or stat.target
+            local barMax = math.max(ceiling * TARGET_HEADROOM, 0.01)
             row.bar:SetMinMaxValues(0, barMax)
             row.bar:SetValue(stat.current)
+            -- Both ticks are repositioned every render (not just once at row creation) since their
+            -- fraction of barMax now varies per key once stat.high is in play, rather than staying
+            -- pinned at the fixed TICK_FRAC every row used to share.
+            row.tick:SetPoint("CENTER", row.barBG, "LEFT", ROW_W * (stat.target / barMax), 0)
+            if hasHigh then
+                row.highTick:SetPoint("CENTER", row.barBG, "LEFT", ROW_W * (stat.high / barMax), 0)
+                row.highTick:Show()
+            else
+                row.highTick:Hide()
+            end
             row.bar:SetStatusBarColor(col[1], col[2], col[3])
 
             -- SMALL/MEDIUM's single-line readout — always filled in regardless of which size is
@@ -734,6 +770,7 @@ local function ApplySkinToPanel()
     local tick = TickColor()
     for _, row in ipairs(rows) do
         row.tick:SetColorTexture(tick[1], tick[2], tick[3], 0.9)
+        row.highTick:SetColorTexture(tick[1], tick[2], tick[3], 0.45)
     end
     SyncTabUI() -- re-picks the active tab's text color via ApplyTabVisual -> RS:GetAccentColor()
 end
