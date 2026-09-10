@@ -5,6 +5,17 @@ local L = RecommendedStats_Locale
 local EXPECTED_SCHEMA = 1
 
 -- ⚠ VERIFY these return PERCENT (not rating) on live 12.1 before shipping (see scope.md §11).
+-- Reverted 2026-09-09: swapping these to GetCombatRatingBonus (to match RecommendedStatsNode's
+-- itemization-only rating_bonus targets) was based on the assumption that GetCombatRatingBonus
+-- returns a clean itemization-only percent. A live /dump of GetCombatRatingBonus(CR_VERSATILITY_
+-- DAMAGE_DONE) — untouched by that change, and supposedly the one stat with zero passive component
+-- per bnet.js's extractStats comment — came back 2.31%, while the character sheet showed 8.31% for
+-- the same character at the same moment. That gap disproves the "GetCombatRatingBonus == total for
+-- a passive-free stat" premise the swap relied on, so it isn't safe to assume for haste/crit/mastery
+-- either. Back to the total-percent getters, which is what actually matches the character sheet.
+-- The real itemization-vs-total mismatch against RecommendedStatsNode's targets is still open —
+-- next step is fixing it on the Node side (aggregate.js targets built from `.value` instead of
+-- `.rating_bonus`, since each StatTargets key is already scoped to one class+spec) rather than here.
 local function ReadStats()
     return {
         haste       = GetHaste(),
