@@ -102,6 +102,8 @@ L.BIS_PCT_FALLBACK   = "頂尖的 %d %% \194\183 %s (尚未有傳奇紀錄)"
 L.BIS_PCT_LOW_SAMPLE = "頂尖的 %d %% (比平常少)"
 L.BIS_PCT_PLAIN      = "頂尖的 %d %%"
 L.BIS_TIER_LINE      = "套裝: %d/4 \194\183 %d%% 運行四件"
+L.BIS_WINDOW_TITLE   = "最佳裝備 | %s"
+L.BIS_WINDOW_HINT    = "Shift-點擊: 在聊天中連結 \194\183 Ctrl-點擊: 預覽"
 L.BIS_SOURCE_PREFIX  = "來源: "
 L.BIS_SOURCE_WITH_DIFFICULTY = "%s (%s)"
 L.BIS_ENCHANT_LABEL = "附魔 "
@@ -116,7 +118,7 @@ L.OPTIONS_WINDOW_POSITION  = "視窗位置"
 L.ATTACH_MODE_ATTACHED = "與角色視窗連動"
 L.ATTACH_MODE_FREE     = "不連動 (自由移動)"
 L.OPTIONS_SHOW_STATS_TAB   = "顯示 \"屬性建議\" 標籤"
-L.OPTIONS_SHOW_BIS_TAB     = "顯示 \"最佳裝備\" 標籤"
+L.OPTIONS_SHOW_BIS_TAB     = "顯示 \"最佳裝備\" 按鈕"
 
 --------------------------------------------------------------------------------
 -- UI/TalentsWindow.lua, Talents.lua
