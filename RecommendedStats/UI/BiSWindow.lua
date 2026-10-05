@@ -1,14 +1,21 @@
 -- RecommendedStats :: UI/BiSWindow.lua
--- Lists BiS gear per slot for the current class/spec/content. Renders into RS.bisPage — an
--- empty content frame created by UI/CharacterPanel.lua (the merged window's host), which also
--- owns the "BiS Gear" tab button that shows/hides this page. This file no longer owns any
--- top-level frame, movable/escape-close/CharacterFrame-hook lifecycle of its own.
+-- Standalone BiS gear window (opened by the "BiS" button on the main panel, or /rs bis), same
+-- kind of launcher as UI/TalentsWindow.lua and UI/RotationWindow.lua. Used to be a tab page
+-- inside the main panel (RS.bisPage), which at 440px wide truncated item names and squeezed
+-- every stat onto one line; out here the 16 slots sit in two columns and each item's secondary
+-- stats are stacked one per line, with the recommended enchant/gem in their own sub-column.
 -- Item links + hover tooltip only, no tooltip rewriting (12.x taint hazard flagged
 -- in scope.md).
 --
+-- The Raid / Mythic+ toggle here drives the SAME setting as the stats panel's dropdown
+-- (RS:GetContent()/RS:SetContent()), unlike the Talents window's independent one: BiS picks and
+-- stat targets come from the same sampled players, so showing one content's gear next to the
+-- other's targets would be misleading.
+--
 -- Depends on Core.lua providing:
 --   RS:GetKey() / RS:SchemaOK() / RS.listeners / RS:Refresh() / RS:DaysSince()
---   RS:GetActiveTab() / RS.tabSyncers / RS:GetShowBiS()
+--   RS:GetContent() / RS:SetContent(c) / RS:HasDataFor(c) / RS:GetShowBiS()
+--   RS:MakeMovable() / RS.visibilitySyncers / RS.skinListeners
 --   RS:GetSampleSizeFor(key) / RS:IsSampleSizeLow(key)
 --   RecommendedStatsData_BiS[key] = { [SLOT] = entry, ... }, where entry is:
 --     itemID, pct           -- the #1 pick and its share of the top players
@@ -23,8 +30,6 @@
 --     days without a single Mythic guild yet (most visible right after it unlocks), so the
 --     node-side build falls back to Heroic/Normal rather than leaving the key empty; this is
 --     how the panel tells players their BiS list isn't Mythic-sourced when that happens.
--- Depends on CharacterPanel.lua providing:
---   RS.bisPage (this file's content parent, sized and positioned by that file)
 
 local RS = RecommendedStats
 local L = RecommendedStats_Locale
@@ -32,18 +37,32 @@ local L = RecommendedStats_Locale
 --------------------------------------------------------------------------------
 -- Look & feel
 --------------------------------------------------------------------------------
-local PANEL_W    = 440 -- must match CharacterPanel.lua's PANEL_W (RS.bisPage spans the full window width)
--- 32, not the original 22 — leaves room for a second line under both the item name (its own
--- rating readout, row.subLine) and the enchant/gem icon block (their own rating readout,
--- row.gearModsRating) — see CreateRow/SetRowItem below. CharacterPanel.lua no longer hand-syncs
--- a duplicate constant for this — see RS:GetBisContentHeight() below, which computes it from
--- ROW_H/ROW_GAP/SLOT_ORDER directly so the two files can't drift out of sync again the way they
--- did the first time this row height changed (see the original hand-synced BIS_CONTENT_H bug).
-local ROW_H      = 32
-local ROW_GAP    = 3
-local SUBLABEL_H = 18 -- small header row for the "% of top N" / tier-set line (no title here — the tab button already reads "BiS Gear")
+local PAD          = 16
+local COL_W        = 420
+local COL_GAP      = 24
+local ROWS_PER_COL = 8
+-- Tall enough for slot label + item name + three stacked stat lines (neck/rings roll three
+-- secondaries; most other slots roll two and leave the third line empty).
+local ROW_H        = 66
+local ROW_GAP      = 6
+local ICON_SZ      = 36
+local TEXT_X       = ICON_SZ + 10 -- left edge of every text line in a row
+local LINE_H       = 12
+local STATS_Y      = -31          -- first stacked stat line (and first enchant/gem line)
+local MAX_STAT_LINES = 3
+local MODS_X       = 220          -- enchant/gem sub-column, right of the stacked stat lines
+local HEADER_H     = 80           -- title + controls row, rows start below this
+local CONTROLS_Y   = -44
+
+local WIN_W = PAD * 2 + COL_W * 2 + COL_GAP
+local WIN_H = HEADER_H + ROWS_PER_COL * (ROW_H + ROW_GAP) - ROW_GAP + PAD
 
 local GOLD = { 1, 0.82, 0.15 }
+local DIM  = { 0.62, 0.62, 0.66 }
+local STAT_TEXT_COLOR = { 0.82, 0.82, 0.84 }
+local DEFAULT_BORDER  = { 0.25, 0.27, 0.33 }
+local TAB_ACTIVE_BG   = { 0.16, 0.17, 0.22, 1 }
+local TAB_IDLE_BG     = { 0.043, 0.047, 0.063, 1 }
 
 -- A slot below the "most players agree" line isn't wrong, just less consensus — so it stays
 -- a neutral color rather than reading as a warning the way the stat panel's "too low" does.
@@ -51,7 +70,8 @@ local PCT_HIGH_COLOR = { 0.32, 0.85, 0.48 }
 local PCT_HIGH_THRESHOLD = 65
 
 -- Cosmetic-only slots (SHIRT, TABARD) are in the data but don't affect character
--- power, so they're left out of the BiS list.
+-- power, so they're left out of the BiS list. The first ROWS_PER_COL fill the left column,
+-- the rest the right one, so reading order down-then-across matches the old single list.
 local SLOT_ORDER = {
     "HEAD", "NECK", "SHOULDER", "BACK", "CHEST", "WRIST",
     "HANDS", "WAIST", "LEGS", "FEET",
@@ -67,23 +87,19 @@ local SLOT_LABEL = {
 
 -- Rating readouts (item's own stats, and what a recommended enchant/gem itself grants) — this
 -- file owns its own copy of these rather than importing CharacterPanel.lua's, same "each file
--- owns its own layout locals independently" convention as PANEL_W above.
+-- owns its own layout locals independently" convention as the constants above.
 local STAT_ORDER = { "haste", "crit", "mastery", "versatility" }
 local SHORT_STAT_LABEL = {
     haste = L.STAT_HASTE_SHORT, crit = L.STAT_CRIT_SHORT, mastery = L.STAT_MASTERY_SHORT, versatility = L.STAT_VERSATILITY_SHORT,
 }
 
--- Exact content height needed for every SLOT_ORDER row plus the sub-header row — called by
--- CharacterPanel.lua (which owns RS.bisPage's actual frame/SetHeight) instead of that file
--- hand-typing its own copy of this arithmetic, which is what let the two drift out of sync the
--- first time ROW_H changed above. Safe to call from another file at runtime despite this file
--- loading after CharacterPanel.lua in the .toc — CharacterPanel.lua only ever calls this from
--- inside EnsurePanel/SyncTabUI, which don't run until well after every file has finished loading.
-function RS:GetBisContentHeight()
-    return SUBLABEL_H + (#SLOT_ORDER * (ROW_H + ROW_GAP)) + 8
-end
+local CONTENT_CHOICES = {
+    { value = "RAID",       text = L.CONTENT_RAID },
+    { value = "MYTHICPLUS", text = L.CONTENT_MYTHICPLUS },
+}
 
 local QUESTION_MARK_ICON = 134400 -- INV_Misc_QuestionMark, placeholder while the item loads
+local ENCHANT_ICON = "Interface\\Icons\\INV_Enchant_Disenchant"
 
 -- Standard PaperDoll inventory slot IDs (stable since vanilla) — used to read the player's
 -- currently equipped item per BiS slot for the status dot below. Hardcoded rather than the
@@ -123,6 +139,18 @@ local NEW_TAG_DAYS = 7
 -- the stat panel's "too low" state, since it's the same kind of "heads up, not the real target" cue.
 local DIFFICULTY_LABEL = { heroic = L.DIFFICULTY_HEROIC, normal = L.DIFFICULTY_NORMAL }
 local FALLBACK_COLOR = { 0.95, 0.65, 0.3 }
+
+local function BorderColor()
+    if RS:GetSkin() == "DEFAULT" then return DEFAULT_BORDER end
+    return RS:GetAccentColor()
+end
+
+local function StyleBackdrop(frame)
+    frame:SetBackdrop({ bgFile = "Interface\\Buttons\\WHITE8x8", edgeFile = "Interface\\Buttons\\WHITE8x8", edgeSize = 1 })
+    frame:SetBackdropColor(0.043, 0.047, 0.063, 0.97)
+    local b = BorderColor()
+    frame:SetBackdropBorderColor(b[1], b[2], b[3], 0.7)
+end
 
 -- "the-tidebound-grotto" -> "The Tidebound Grotto" — entry.source.raidSlug/raidDifficulty
 -- (aggregate.js) are RIO/Blizzard slugs, not display names; this is the whole raid list's
@@ -264,12 +292,19 @@ local function FormatRating(stat, rating, conversion)
     return L.RATING_NO_PCT:format(rating, label)
 end
 
-local function FormatRatingsLine(ratingsTable, conversion)
-    if not ratingsTable then return nil end
+-- One formatted "+56 Haste (5.0%)" string per stat the table has, in STAT_ORDER — the item's own
+-- stats render these one per line; an enchant/gem joins them onto its single line instead.
+local function FormatRatingsList(ratingsTable, conversion)
     local parts = {}
+    if not ratingsTable then return parts end
     for _, stat in ipairs(STAT_ORDER) do
         if ratingsTable[stat] then parts[#parts + 1] = FormatRating(stat, ratingsTable[stat], conversion) end
     end
+    return parts
+end
+
+local function FormatRatingsLine(ratingsTable, conversion)
+    local parts = FormatRatingsList(ratingsTable, conversion)
     if #parts == 0 then return nil end
     return table.concat(parts, "  ")
 end
@@ -330,110 +365,111 @@ end
 
 --------------------------------------------------------------------------------
 -- Build one slot row
+--
+--   [icon]  * Head                                        NEW  90%
+--   [    ]  Abyssal Doomhound's Relentless Stare
+--           +135 Crit (6.1%)          [e] +38 Mastery (1.3%)
+--           +66 Mastery (2.3%)        [g] +54 Crit (1.2%)
 --------------------------------------------------------------------------------
-local function CreateRow(parent)
+
+-- One enchant/gem line in the mods sub-column: icon + its own rating text, hoverable as a whole
+-- line (a bigger target than the icon alone) for the enchant/gem name.
+local function CreateModLine(row, index)
+    local line = CreateFrame("Button", nil, row)
+    line:SetSize(COL_W - MODS_X, LINE_H)
+    line:SetPoint("TOPLEFT", MODS_X, STATS_Y - (index - 1) * (LINE_H + 2))
+
+    line.icon = line:CreateTexture(nil, "ARTWORK")
+    line.icon:SetSize(LINE_H, LINE_H)
+    line.icon:SetPoint("LEFT", 0, 0)
+    line.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+
+    line.text = line:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+    line.text:SetPoint("LEFT", line.icon, "RIGHT", 4, 0)
+    line.text:SetPoint("RIGHT", line, "RIGHT", 0, 0)
+    line.text:SetJustifyH("LEFT")
+    line.text:SetWordWrap(false)
+
+    line:SetScript("OnEnter", function(self)
+        if not self.tooltipName then return end
+        GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+        GameTooltip:SetText(self.tooltipName, 1, 1, 1)
+        if self.tooltipRatingText then GameTooltip:AddLine(self.tooltipRatingText, 0.8, 0.8, 0.8) end
+        GameTooltip:Show()
+    end)
+    line:SetScript("OnLeave", function() GameTooltip:Hide() end)
+    line:Hide()
+    return line
+end
+
+local function CreateRow(parent, tooltipAnchor)
     local row = CreateFrame("Button", nil, parent)
-    row:SetSize(PANEL_W - 24, ROW_H)
+    row:SetSize(COL_W, ROW_H)
     row:RegisterForClicks("LeftButtonUp")
+    row.tooltipAnchor = tooltipAnchor
+
+    -- Faint band per row so the stacked lines read as one item, not a loose text column.
+    local bg = row:CreateTexture(nil, "BACKGROUND", nil, -1)
+    bg:SetAllPoints()
+    bg:SetColorTexture(1, 1, 1, 0.025)
 
     -- quality-tinted ring behind the icon (colored via item:GetItemQuality() once it loads) —
     -- slightly larger than the icon so it reads as a border, not a background fill
     row.iconBorder = row:CreateTexture(nil, "BACKGROUND")
-    row.iconBorder:SetSize(20, 20)
-    row.iconBorder:SetPoint("LEFT", 0, 0)
+    row.iconBorder:SetSize(ICON_SZ + 2, ICON_SZ + 2)
+    row.iconBorder:SetPoint("TOPLEFT", 4, -4)
     row.iconBorder:SetColorTexture(1, 1, 1, 0.25)
 
     row.icon = row:CreateTexture(nil, "ARTWORK")
-    row.icon:SetSize(18, 18)
+    row.icon:SetSize(ICON_SZ, ICON_SZ)
     row.icon:SetPoint("CENTER", row.iconBorder, "CENTER", 0, 0)
     row.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
 
     -- Green/yellow/red equipped-vs-BiS status dot — see SLOT_TO_INVSLOT/DOT_TEXTURE above.
     row.statusDot = row:CreateTexture(nil, "OVERLAY")
-    row.statusDot:SetSize(7, 7)
-    row.statusDot:SetPoint("LEFT", row.iconBorder, "RIGHT", 2, 0)
+    row.statusDot:SetSize(8, 8)
+    row.statusDot:SetPoint("TOPLEFT", TEXT_X + 4, -5)
 
     row.slotLabel = row:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
     row.slotLabel:SetPoint("LEFT", row.statusDot, "RIGHT", 5, 0)
-    row.slotLabel:SetWidth(51)
     row.slotLabel:SetJustifyH("LEFT")
 
-    -- Enchant/gem icon block — sits between the slot label and the item itself. Purely
-    -- informational (what's recommended + what it grants), not a comparison against the player's
-    -- own equipped enchant/gem — the ilvl-aware status dot already covers "do you have an
-    -- appropriate item here" at the whole-item level. A gem is a real WoW item, so its icon/name
-    -- come straight off it (SetRowItem below); an enchant isn't, so it gets a fixed generic icon
-    -- and its name comes from GetEnchantInfo's tooltip scan instead.
-    -- 13, not 14: the icon-block rating line below needs every spare pixel of vertical room it
-    -- can get within ROW_H (an icon is taller than a line of text, so this stack is tighter than
-    -- the item name/rating stack on the right even at the same row height).
-    local ICON_SZ = 13
-    row.gearMods = CreateFrame("Frame", nil, row)
-    row.gearMods:SetSize(44, ROW_H)
-    row.gearMods:SetPoint("TOPLEFT", row.slotLabel, "TOPRIGHT", 4, 0)
-
-    row.enchantIcon = CreateFrame("Button", nil, row.gearMods)
-    row.enchantIcon:SetSize(ICON_SZ, ICON_SZ)
-    row.enchantIcon:SetPoint("TOPLEFT", row.gearMods, "TOPLEFT", 0, 6)
-    row.enchantIcon.tex = row.enchantIcon:CreateTexture(nil, "ARTWORK")
-    row.enchantIcon.tex:SetAllPoints()
-    row.enchantIcon:Hide()
-
-    row.gemIcon = CreateFrame("Button", nil, row.gearMods)
-    row.gemIcon:SetSize(ICON_SZ, ICON_SZ)
-    row.gemIcon:SetPoint("LEFT", row.enchantIcon, "RIGHT", 2, 0)
-    row.gemIcon.tex = row.gemIcon:CreateTexture(nil, "ARTWORK")
-    row.gemIcon.tex:SetAllPoints()
-    row.gemIcon:Hide()
-
-    for _, iconBtn in ipairs({ row.enchantIcon, row.gemIcon }) do
-        iconBtn:SetScript("OnEnter", function(self)
-            if not self.tooltipName then return end
-            GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
-            GameTooltip:SetText(self.tooltipName, 1, 1, 1)
-            if self.tooltipRatingText then GameTooltip:AddLine(self.tooltipRatingText, 0.8, 0.8, 0.8) end
-            GameTooltip:Show()
-        end)
-        iconBtn:SetScript("OnLeave", function() GameTooltip:Hide() end)
-    end
-
-    -- What the enchant/gem itself grants, e.g. "+56 Haste (5.0%)  +23 Vers (2.0%)".
-    row.gearModsRating = row.gearMods:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-    row.gearModsRating:SetPoint("TOPLEFT", row.enchantIcon, "BOTTOMLEFT", 0, -1)
-    row.gearModsRating:SetJustifyH("LEFT")
-
-    row.itemName = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    -- TOPRIGHT, not TOP: "TOP" anchors to a frame's horizontal CENTER, not its right edge — that
-    -- put itemName's left edge overlapping the previous element instead of starting after it.
-    -- Confirmed live once already (against slotLabel); same rule applies here against gearMods.
-    row.itemName:SetPoint("TOPLEFT", row.gearMods, "TOPRIGHT", 4, 6)
-    row.itemName:SetPoint("RIGHT", row, "RIGHT", -64, 0)
-    row.itemName:SetJustifyH("LEFT")
-    row.itemName:SetWordWrap(false)
-
-    -- The item's OWN secondary-stat rating(s), e.g. "+56 Haste (5.0%)  +56 Vers (5.0%)" — this
-    -- used to be the enchant/gem match indicator, which moved to the icon block above.
-    row.subLine = row:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-    row.subLine:SetPoint("TOPLEFT", row.itemName, "BOTTOMLEFT", 0, -2)
-    row.subLine:SetJustifyH("LEFT")
+    row.pct = row:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+    row.pct:SetPoint("TOPRIGHT", -6, -4)
+    row.pct:SetWidth(40)
+    row.pct:SetJustifyH("RIGHT")
 
     -- Short-lived tag for a slot whose #1 pick changed recently (entry.changedAt) — see
-    -- NEW_TAG_DAYS above. Width bumped from the original 24 to 30: "NEW" at this font size was
-    -- getting clipped to "N..." — confirmed live once a fresh full data rebuild left every row
-    -- flagged as recently-changed at once, which is when a too-narrow width like this actually
-    -- shows up (a single stray NEW tag is easy to miss; every row at once isn't).
+    -- NEW_TAG_DAYS above.
     row.newTag = row:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-    row.newTag:SetPoint("RIGHT", row, "RIGHT", -38, 0)
-    row.newTag:SetWidth(30)
-    row.newTag:SetJustifyH("RIGHT")
+    row.newTag:SetPoint("RIGHT", row.pct, "LEFT", -6, 0)
     row.newTag:SetText(L.NEW_TAG)
     row.newTag:SetTextColor(unpack(GOLD))
     row.newTag:Hide()
 
-    row.pct = row:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-    row.pct:SetPoint("RIGHT", 0, 0)
-    row.pct:SetWidth(34)
-    row.pct:SetJustifyH("RIGHT")
+    row.itemName = row:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+    row.itemName:SetPoint("TOPLEFT", TEXT_X + 4, -16)
+    row.itemName:SetPoint("RIGHT", row, "RIGHT", -6, 0)
+    row.itemName:SetJustifyH("LEFT")
+    row.itemName:SetWordWrap(false)
+
+    -- The item's OWN secondary-stat ratings, one per line ("+56 Haste (5.0%)" / "+56 Vers (5.0%)").
+    row.statLines = {}
+    for i = 1, MAX_STAT_LINES do
+        local fs = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+        fs:SetPoint("TOPLEFT", TEXT_X + 4, STATS_Y - (i - 1) * LINE_H)
+        fs:SetWidth(MODS_X - TEXT_X - 12)
+        fs:SetJustifyH("LEFT")
+        fs:SetWordWrap(false)
+        fs:SetTextColor(unpack(STAT_TEXT_COLOR))
+        row.statLines[i] = fs
+    end
+
+    -- Enchant/gem lines — purely informational (what's recommended + what it grants), not a
+    -- comparison against the player's own equipped enchant/gem; the ilvl-aware status dot already
+    -- covers "do you have an appropriate item here" at the whole-item level. Filled in order, so a
+    -- slot with only a gem shows it on the first line rather than leaving a hole above it.
+    row.modLines = { CreateModLine(row, 1), CreateModLine(row, 2) }
 
     local highlight = row:CreateTexture(nil, "HIGHLIGHT")
     highlight:SetAllPoints()
@@ -442,7 +478,7 @@ local function CreateRow(parent)
 
     row:SetScript("OnEnter", function(self)
         if not self.itemID then return end
-        GameTooltip:SetOwner(self, "ANCHOR_LEFT")
+        GameTooltip:SetOwner(self, self.tooltipAnchor)
         -- self.itemLink (when set) carries this item's real bonus IDs — see BuildItemLink — so the
         -- hover tooltip matches the itemized copy actually shown in the row, not the base template.
         if self.itemLink then
@@ -473,49 +509,8 @@ local function CreateRow(parent)
 end
 
 --------------------------------------------------------------------------------
--- Content (built lazily into RS.bisPage)
+-- Row content
 --------------------------------------------------------------------------------
-local page, rows = nil, {}
-local emptyText
-
-local function EnsureContent()
-    if page then return end
-    page = RS.bisPage
-    if not page then return end -- CharacterPanel.lua hasn't built the merged window yet this pass
-
-    page.subLabel = page:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-    page.subLabel:SetPoint("TOPRIGHT", -12, -2) -- text set by Render(), which always runs right after this
-
-    -- Tier-set 2pc/4pc line, top-left of the same header row as subLabel above (no extra vertical
-    -- space needed — SUBLABEL_H's 18px already fits both). Hidden when RecommendedStatsData_TierSet
-    -- has nothing for this key (config.tierSetItemIDs not yet populated for this class, see
-    -- RecommendedStatsNode/config.js) — see Render() below for where it's populated.
-    page.tierLine = page:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-    page.tierLine:SetPoint("TOPLEFT", 12, -2)
-    page.tierLine:Hide()
-
-    local top = -SUBLABEL_H
-    for i in ipairs(SLOT_ORDER) do
-        local row = CreateRow(page)
-        row:SetPoint("TOPLEFT", 12, top - (i - 1) * (ROW_H + ROW_GAP))
-        rows[i] = row
-    end
-
-    emptyText = page:CreateFontString(nil, "OVERLAY", "GameFontDisable")
-    emptyText:SetPoint("TOP", 0, -SUBLABEL_H - 16)
-    emptyText:SetWidth(PANEL_W - 30)
-    emptyText:SetJustifyH("CENTER")
-    emptyText:Hide()
-end
-
---------------------------------------------------------------------------------
--- Render
---------------------------------------------------------------------------------
-local function ShowEmpty(msg)
-    for _, row in ipairs(rows) do row:Hide() end
-    emptyText:SetText(msg)
-    emptyText:Show()
-end
 
 -- Counts how many of the current tier set's itemIDs (RecommendedStatsData_TierSet[key].itemIDs,
 -- RecommendedStatsNode/config.js's tierSetItemIDs) the player currently has equipped, across
@@ -563,7 +558,21 @@ local function BuildDecoratedLink(itemLink, name, quality)
     return "|c" .. hex .. "|H" .. itemLink .. "|h[" .. name .. "]|h|r"
 end
 
+local function SetStatLines(row, list)
+    for i, fs in ipairs(row.statLines) do
+        local text = list and list[i]
+        fs:SetText(text or "")
+        fs:SetShown(text ~= nil)
+    end
+end
+
 local function SetRowItem(row, slot, entry, conversion)
+    -- Item/gem data arrives asynchronously (ContinueOnItemLoad), and this window re-renders on
+    -- every equipment/rating/spec/content change — a callback from an earlier render must not
+    -- paint its (possibly different) item over what this render put in the row.
+    row.renderToken = (row.renderToken or 0) + 1
+    local token = row.renderToken
+
     local itemID, pct = entry.itemID, entry.pct
     row.itemID = itemID
     row.itemLink = BuildItemLink(itemID, entry.bonusIDs)
@@ -572,17 +581,20 @@ local function SetRowItem(row, slot, entry, conversion)
     if pct and pct >= PCT_HIGH_THRESHOLD then
         row.pct:SetTextColor(unpack(PCT_HIGH_COLOR))
     else
-        row.pct:SetTextColor(0.62, 0.62, 0.66)
+        row.pct:SetTextColor(unpack(DIM))
     end
     row.itemName:SetText("...")
+    row.itemName:SetTextColor(1, 1, 1)
     row.icon:SetTexture(QUESTION_MARK_ICON)
     row.iconBorder:SetColorTexture(1, 1, 1, 0.25)
+    row.slotLabel:SetText(SLOT_LABEL[slot] or slot)
+    -- Hidden until the item load below resolves, so it never shows a stale value from a previous
+    -- key/spec this row was last rendered for.
+    SetStatLines(row, nil)
 
     -- Status dot: green for the exact #1 pick. Yellow covers the runner-up (entry.altItemID) OR
     -- the player's own item being at least as strong by ilvl (entry.ilvl, aggregate.js) even
-    -- though it's a different itemID — widened from an exact-itemID-only check, which used to
-    -- read a same-or-better item in a different form (a crafted/catalyst copy, a higher upgrade
-    -- rank of something else) as "missing". Red is neither.
+    -- though it's a different itemID. Red is neither.
     local invSlot = SLOT_TO_INVSLOT[slot]
     local equippedID = invSlot and GetInventoryItemID("player", invSlot)
     local equippedLink = invSlot and GetInventoryItemLink("player", invSlot)
@@ -598,62 +610,49 @@ local function SetRowItem(row, slot, entry, conversion)
         row.statusDot:SetTexture(dotTex.missing)
     end
 
-    -- Enchant/gem icon block — icon + name/rating-on-hover, informational (see the block's own
-    -- header comment in CreateRow for why this doesn't compare against the player's own gear).
-    -- The rating line below the icons is rebuilt from whichever of enchantPart/gemPart have
-    -- resolved so far, since the gem's half only arrives once its item data finishes loading
-    -- (see the ContinueOnItemLoad below — calling C_Item.GetItemStats before an item is
-    -- confirmed loaded returned nothing for most items, the same reason icon/name already wait
-    -- for this elsewhere in this function; the fix here is applying that same wait to ratings).
-    local enchantPart, gemPart
-    local function RefreshGearModsRating()
-        local parts = {}
-        if enchantPart then parts[#parts + 1] = enchantPart end
-        if gemPart then parts[#parts + 1] = gemPart end
-        row.gearModsRating:SetText(table.concat(parts, "  "))
+    -- Enchant/gem lines, filled in order (enchant first). An enchant's info comes from
+    -- GetEnchantInfo's item-link diff (see its own header comment), so it's available right away;
+    -- a gem's rating only once its item data has loaded (calling C_Item.GetItemStats before that
+    -- returned nothing for most items).
+    local nextMod = 1
+    local enchantInfo = entry.enchantID and GetEnchantInfo(itemID, entry.enchantID)
+    if enchantInfo then
+        local line = row.modLines[nextMod]
+        nextMod = nextMod + 1
+        local ratingText = FormatRatingsLine(enchantInfo.ratings, conversion)
+        line.icon:SetTexture(ENCHANT_ICON)
+        -- Falls back to the generic label rather than leaving this nil: if only the ratings-diff
+        -- half resolved (or vice versa), the tooltip should still show whatever it has.
+        line.tooltipName = enchantInfo.name or L.BIS_ENCHANT_LABEL
+        line.tooltipRatingText = ratingText
+        line.text:SetText(ratingText or line.tooltipName)
+        line:Show()
     end
 
     if entry.gemID then
+        local line = row.modLines[nextMod]
+        nextMod = nextMod + 1
+        line.icon:SetTexture(QUESTION_MARK_ICON)
+        line.tooltipName, line.tooltipRatingText = nil, nil
+        line.text:SetText("")
+        line:Show()
         local gemLink = "item:" .. entry.gemID
         local gemItem = Item:CreateFromItemID(entry.gemID)
-        row.gemIcon:Show()
-        row.gemIcon.tex:SetTexture(QUESTION_MARK_ICON)
-        row.gemIcon.tooltipName, row.gemIcon.tooltipRatingText = nil, nil
         gemItem:ContinueOnItemLoad(function()
-            row.gemIcon.tex:SetTexture(gemItem:GetItemIcon())
-            row.gemIcon.tooltipName = gemItem:GetItemName()
-            gemPart = FormatRatingsLine(ItemRatings(gemLink), conversion)
-            row.gemIcon.tooltipRatingText = gemPart
-            RefreshGearModsRating()
+            if row.renderToken ~= token then return end
+            local ratingText = FormatRatingsLine(ItemRatings(gemLink), conversion)
+            line.icon:SetTexture(gemItem:GetItemIcon())
+            line.tooltipName = gemItem:GetItemName() or L.BIS_GEM_LABEL
+            line.tooltipRatingText = ratingText
+            line.text:SetText(ratingText or line.tooltipName)
         end)
-    else
-        row.gemIcon:Hide()
-        row.gemIcon.tooltipName, row.gemIcon.tooltipRatingText = nil, nil
     end
 
-    -- Unlike the gem, an enchant's info comes from GetEnchantInfo's item-link diff (see its own
-    -- header comment), not an item load, so it's already available synchronously here — no
-    -- waiting needed for this half.
-    local enchantInfo = entry.enchantID and GetEnchantInfo(itemID, entry.enchantID)
-    if enchantInfo then
-        row.enchantIcon:Show()
-        row.enchantIcon.tex:SetTexture("Interface\\Icons\\INV_Enchant_Disenchant")
-        -- Falls back to the generic label rather than leaving this nil: if only the ratings-diff
-        -- half resolved (or vice versa), the tooltip should still show whatever it has instead
-        -- of not showing at all (the OnEnter handler bails out entirely when tooltipName is nil).
-        row.enchantIcon.tooltipName = enchantInfo.name or L.BIS_ENCHANT_LABEL
-        enchantPart = FormatRatingsLine(enchantInfo.ratings, conversion)
-        row.enchantIcon.tooltipRatingText = enchantPart
-    else
-        row.enchantIcon:Hide()
-        row.enchantIcon.tooltipName, row.enchantIcon.tooltipRatingText = nil, nil
+    for i = nextMod, #row.modLines do
+        local line = row.modLines[i]
+        line.tooltipName, line.tooltipRatingText = nil, nil
+        line:Hide()
     end
-    RefreshGearModsRating() -- shows the enchant half immediately; the gem half (if any) fills in above once loaded
-
-    -- The item's OWN secondary-stat rating(s) is populated inside item:ContinueOnItemLoad below,
-    -- same reasoning as the gem above — hidden until then so it never shows a stale value from a
-    -- previous key/spec this row was last rendered for.
-    row.subLine:Hide()
 
     local age = entry.changedAt and RS:DaysSince(entry.changedAt)
     row.newTag:SetShown(age ~= nil and age <= NEW_TAG_DAYS)
@@ -670,29 +669,62 @@ local function SetRowItem(row, slot, entry, conversion)
     local itemLinkForStats = row.itemLink or ("item:" .. itemID)
     local item = row.itemLink and Item:CreateFromItemLink(row.itemLink) or Item:CreateFromItemID(itemID)
     item:ContinueOnItemLoad(function()
+        if row.renderToken ~= token then return end
         local name = item:GetItemName() or ("Item " .. itemID)
         local quality = item:GetItemQuality()
         row.itemName:SetText(name)
         row.decoratedLink = BuildDecoratedLink(row.itemLink or ("item:" .. itemID), name, quality)
         row.icon:SetTexture(item:GetItemIcon())
         local r, g, b = C_Item.GetItemQualityColor(quality)
-        if r then row.iconBorder:SetColorTexture(r, g, b, 0.9) end
+        if r then
+            row.iconBorder:SetColorTexture(r, g, b, 0.9)
+            row.itemName:SetTextColor(r, g, b)
+        end
 
-        -- The item's OWN secondary-stat rating(s) — a bare "item:<id>" link (when entry.bonusIDs
+        -- The item's OWN secondary-stat ratings — a bare "item:<id>" link (when entry.bonusIDs
         -- is empty, BuildItemLink's fallback) reads the item's base-template stats rather than a
         -- specific drop's real roll, the same base-template caveat BuildItemLink's own comment
         -- documents — still real numbers, just not necessarily this exact drop's exact roll.
-        local ratingsLine = FormatRatingsLine(ItemRatings(itemLinkForStats), conversion)
-        row.subLine:SetShown(ratingsLine ~= nil)
-        if ratingsLine then row.subLine:SetText(ratingsLine) end
+        SetStatLines(row, FormatRatingsList(ItemRatings(itemLinkForStats), conversion))
     end)
 end
 
+--------------------------------------------------------------------------------
+-- Window
+--------------------------------------------------------------------------------
+local frame, titleText, subLabel, tierLine, emptyText
+local toggleBtns, rows = {}, {}
+
+local function ShowEmpty(msg)
+    for _, row in ipairs(rows) do row:Hide() end
+    subLabel:SetText("")
+    tierLine:Hide()
+    emptyText:SetText(msg)
+    emptyText:Show()
+end
+
+local function SpecName()
+    local idx = GetSpecialization and GetSpecialization()
+    return idx and select(2, GetSpecializationInfo(idx)) or ""
+end
+
 local function Render()
-    -- Recomputed stats/gear must not force the content into existence — only
-    -- RS:SyncVisibility() (character frame open, minimap toggle, or restoring a
-    -- standalone session) builds it (see EnsureContent above).
-    if not page then return end
+    -- Recomputed stats/gear (login, gear change, rating update) must not force the window into
+    -- existence or redraw it while closed — OnShow renders fresh anyway.
+    if not (frame and frame:IsShown()) then return end
+
+    titleText:SetText(L.BIS_WINDOW_TITLE:format(SpecName()))
+
+    local content = RS:GetContent()
+    local accent = RS:GetAccentColor()
+    for _, btn in ipairs(toggleBtns) do
+        local active = btn.value == content
+        local hasData = RS:HasDataFor(btn.value)
+        btn:SetEnabled(active or hasData)
+        btn.bg:SetColorTexture(unpack(active and TAB_ACTIVE_BG or TAB_IDLE_BG))
+        local c = active and accent or DIM
+        btn.label:SetTextColor(c[1], c[2], c[3], (active or hasData) and 1 or 0.4)
+    end
 
     if not RS:SchemaOK() then
         ShowEmpty(L.SCHEMA_OUT_OF_DATE)
@@ -710,33 +742,33 @@ local function Render()
     end
 
     -- The pct on each row below is already computed against the real per-key sample (see
-    -- aggregate.js's `100 * bestN / top.length`) — this label used to always claim "top N"
-    -- using the configured target regardless, which overstated confidence for a key built from
-    -- far fewer players. RS:GetSampleSizeFor falls back to the target when the per-key count
-    -- isn't available (older data, or a placeholder SampleSize.lua) so the label never goes blank.
+    -- aggregate.js's `100 * bestN / top.length`) — RS:GetSampleSizeFor falls back to the target
+    -- when the per-key count isn't available (older data, or a placeholder SampleSize.lua) so the
+    -- label never goes blank.
     local m = RecommendedStatsData_Meta
     local n = RS:GetSampleSizeFor(key) or (m and m.sampleSize) or 0
     local difficulty = RecommendedStatsData_RaidDifficulty and RecommendedStatsData_RaidDifficulty[key]
     local fallbackLabel = difficulty and DIFFICULTY_LABEL[difficulty]
     if fallbackLabel then
-        page.subLabel:SetFormattedText(L.BIS_PCT_FALLBACK, n, fallbackLabel)
-        page.subLabel:SetTextColor(unpack(FALLBACK_COLOR))
+        subLabel:SetFormattedText(L.BIS_PCT_FALLBACK, n, fallbackLabel)
+        subLabel:SetTextColor(unpack(FALLBACK_COLOR))
     elseif RS:IsSampleSizeLow(key) then
-        page.subLabel:SetFormattedText(L.BIS_PCT_LOW_SAMPLE, n)
-        page.subLabel:SetTextColor(unpack(FALLBACK_COLOR))
+        subLabel:SetFormattedText(L.BIS_PCT_LOW_SAMPLE, n)
+        subLabel:SetTextColor(unpack(FALLBACK_COLOR))
     else
-        page.subLabel:SetFormattedText(L.BIS_PCT_PLAIN, n)
-        page.subLabel:SetTextColor(0.62, 0.62, 0.66)
+        subLabel:SetFormattedText(L.BIS_PCT_PLAIN, n)
+        subLabel:SetTextColor(unpack(DIM))
     end
 
+    -- Tier-set 2pc/4pc line. Hidden when RecommendedStatsData_TierSet has nothing for this key
+    -- (config.tierSetItemIDs not yet populated for this class, see RecommendedStatsNode/config.js).
     local tierData = RecommendedStatsData_TierSet and RecommendedStatsData_TierSet[key]
     if tierData and tierData.itemIDs and #tierData.itemIDs > 0 then
         local owned = CountEquippedTierPieces(tierData.itemIDs)
-        page.tierLine:SetFormattedText(L.BIS_TIER_LINE, owned, tierData.pct4pc or 0)
-        page.tierLine:SetTextColor(0.62, 0.62, 0.66)
-        page.tierLine:Show()
+        tierLine:SetFormattedText(L.BIS_TIER_LINE, owned, tierData.pct4pc or 0)
+        tierLine:Show()
     else
-        page.tierLine:Hide()
+        tierLine:Hide()
     end
 
     emptyText:Hide()
@@ -750,7 +782,6 @@ local function Render()
             row:Hide()
         else
             row:Show()
-            row.slotLabel:SetText(SLOT_LABEL[slot] or slot)
             SetRowItem(row, slot, entry, conversion)
         end
     end
@@ -758,22 +789,110 @@ end
 
 table.insert(RS.listeners, Render)
 
---------------------------------------------------------------------------------
--- Visibility: lazily build content once the merged window exists; showing/hiding
--- this page based on the active tab is CharacterPanel.lua's job (RS.tabSyncers),
--- since it also owns the "BiS Gear" tab button.
---------------------------------------------------------------------------------
-local function SyncVisibility()
-    EnsureContent()
-end
-table.insert(RS.visibilitySyncers, SyncVisibility)
+local function EnsureWindow()
+    if frame then return end
 
-local function SyncTab()
-    if not page then return end
-    if RS:GetActiveTab() == "BIS" and RS:GetShowBiS() then
-        page:Show()
-    else
-        page:Hide()
+    frame = CreateFrame("Frame", "RecommendedStatsBiS", UIParent, "BackdropTemplate")
+    frame:SetSize(WIN_W, WIN_H)
+    -- Same strata/toplevel setup as UI/TalentsWindow.lua: above the character sheet, below
+    -- Blizzard's dropdown menus, raised to the front whenever it's opened or clicked.
+    frame:SetFrameStrata("DIALOG")
+    frame:SetToplevel(true)
+    StyleBackdrop(frame)
+    RS:MakeMovable(frame, "bisPos", function()
+        frame:ClearAllPoints()
+        frame:SetPoint("CENTER")
+    end)
+    tinsert(UISpecialFrames, "RecommendedStatsBiS")
+
+    titleText = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+    titleText:SetPoint("TOPLEFT", PAD, -14)
+
+    local close = CreateFrame("Button", nil, frame, "UIPanelCloseButton")
+    close:SetPoint("TOPRIGHT", -2, -2)
+
+    local hint = frame:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+    hint:SetPoint("RIGHT", close, "LEFT", -6, 0)
+    hint:SetText(L.BIS_WINDOW_HINT)
+
+    -- Controls row: Raid / Mythic+ toggle (shared setting, see header comment), tier line, and
+    -- the "% of top N" label over the right-hand % column.
+    local toggleW = 96
+    for i, choice in ipairs(CONTENT_CHOICES) do
+        local btn = CreateFrame("Button", nil, frame)
+        btn.value = choice.value
+        btn:SetSize(toggleW, 24)
+        btn:SetPoint("TOPLEFT", PAD + (i - 1) * (toggleW + 4), CONTROLS_Y)
+        btn.bg = btn:CreateTexture(nil, "BACKGROUND")
+        btn.bg:SetAllPoints()
+        btn.label = btn:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+        btn.label:SetPoint("CENTER")
+        btn.label:SetText(choice.text)
+        local hl = btn:CreateTexture(nil, "HIGHLIGHT")
+        hl:SetAllPoints()
+        hl:SetColorTexture(1, 1, 1, 0.06)
+        btn:SetScript("OnClick", function(self)
+            -- RS:SetContent refreshes every listener, this window's Render included.
+            if RS:GetContent() ~= self.value then RS:SetContent(self.value) end
+        end)
+        toggleBtns[i] = btn
     end
+
+    tierLine = frame:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+    tierLine:SetPoint("LEFT", toggleBtns[#toggleBtns], "RIGHT", 16, 0)
+    tierLine:SetTextColor(unpack(DIM))
+    tierLine:Hide()
+
+    subLabel = frame:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+    subLabel:SetPoint("BOTTOMRIGHT", frame, "TOPRIGHT", -PAD - 6, -HEADER_H + 6)
+
+    -- Thin divider between the two columns.
+    local divider = frame:CreateTexture(nil, "ARTWORK")
+    divider:SetColorTexture(1, 1, 1, 0.06)
+    divider:SetWidth(1)
+    divider:SetPoint("TOP", frame, "TOPLEFT", PAD + COL_W + COL_GAP / 2, -HEADER_H)
+    divider:SetPoint("BOTTOM", frame, "BOTTOMLEFT", PAD + COL_W + COL_GAP / 2, PAD)
+
+    for i in ipairs(SLOT_ORDER) do
+        local col = (i <= ROWS_PER_COL) and 0 or 1
+        local r = (i - 1) % ROWS_PER_COL
+        -- Left column's tooltips open to the left, right column's to the right, so a tooltip
+        -- never covers the other column.
+        local row = CreateRow(frame, col == 0 and "ANCHOR_LEFT" or "ANCHOR_RIGHT")
+        row:SetPoint("TOPLEFT", PAD + col * (COL_W + COL_GAP), -HEADER_H - r * (ROW_H + ROW_GAP))
+        rows[i] = row
+    end
+
+    emptyText = frame:CreateFontString(nil, "OVERLAY", "GameFontDisable")
+    emptyText:SetPoint("CENTER", 0, -HEADER_H / 2)
+    emptyText:SetWidth(WIN_W - 80)
+    emptyText:SetJustifyH("CENTER")
+    emptyText:Hide()
+
+    frame:SetScript("OnShow", function(self)
+        self:Raise()
+        Render()
+    end)
+
+    -- CreateFrame returns a SHOWN frame — hide it so the first RS:ToggleBiS() call opens it
+    -- instead of seeing IsShown() == true and closing it (same fix as UI/TalentsWindow.lua).
+    frame:Hide()
 end
-table.insert(RS.tabSyncers, SyncTab)
+
+function RS:ToggleBiS()
+    EnsureWindow()
+    frame:SetShown(not frame:IsShown())
+end
+
+-- Options' "Show BiS" turned off: the launcher button disappears (UI/CharacterPanel.lua), so an
+-- already-open window goes with it rather than lingering with no way back to it.
+table.insert(RS.visibilitySyncers, function()
+    if frame and not RS:GetShowBiS() then frame:Hide() end
+end)
+
+table.insert(RS.skinListeners, function()
+    if frame then
+        StyleBackdrop(frame)
+        Render()
+    end
+end)

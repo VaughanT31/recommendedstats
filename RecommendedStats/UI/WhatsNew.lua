@@ -37,6 +37,15 @@ local ANNOUNCEMENTS = {
             "The panel tabs are now Stats, BiS, Talents and Rotation.",
         },
     },
+    {
+        id = "2026-10-05-bis-window",
+        title = "What's New in RecommendedStats",
+        lines = {
+            "BiS now opens its own window, like Talents and Rotation, with your gear in two columns and full item names.",
+            "Each item's secondary stats are listed one per line, with the recommended enchant and gem beside them.",
+            "Its Raid / Mythic+ toggle follows the same setting as the Stats panel. Type /rs bis to open it directly.",
+        },
+    },
 }
 
 local function LatestAnnouncement()

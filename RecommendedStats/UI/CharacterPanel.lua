@@ -1,23 +1,19 @@
 -- RecommendedStats :: UI/CharacterPanel.lua
--- Single merged window, tabbed between "Stats" (stat readout + Raid/Mythic+ dropdown) and "BiS"
--- (UI/BiSWindow.lua's content) — one physical frame, one drag/escape/attach-mode lifecycle,
--- instead of two separately-docked panels. The header's other two buttons, "Talents" and
--- "Rotation", open their own windows (UI/TalentsWindow.lua, UI/RotationWindow.lua).
+-- The main panel: the "Stats" page (stat readout + Raid/Mythic+ dropdown) plus a header row
+-- whose other three buttons, "BiS", "Talents" and "Rotation", open their own windows
+-- (UI/BiSWindow.lua, UI/TalentsWindow.lua, UI/RotationWindow.lua). BiS used to be a second tab
+-- page inside this panel; it moved out to its own window for room to stack each item's stats.
 --
 -- Depends on Core.lua providing:
 --   RS:Evaluate()  -> { {name,current,target,delta,state}, ... }, key   (state = "under"|"on"|"over")
 --   RS:GetContent() / RS:SetContent(c)                                  (c = "RAID"|"MYTHICPLUS")
 --   RS:HasDataFor(c)                                                    -- greys out a dead-end dropdown choice
 --   RS.listeners (table)  and  RS:Refresh()
---   RS:GetActiveTab() / RS:SetActiveTab(tab) / RS.tabSyncers            (tab = "STATS"|"BIS")
---   RS:GetShowStats() / RS:GetShowBiS()                                 (which tabs are enabled)
+--   RS.tabSyncers                                                       (header/page sync)
+--   RS:GetShowStats() / RS:GetShowBiS()                                 (Stats page / BiS button)
 --   RS:IsDataStale()
 --   RS:GetSampleSizeFor(key) / RS:IsSampleSizeLow(key)
 --   RecommendedStatsData_Meta (sampleSize, gamePatch, updated)
---
--- Owns RS.bisPage: an empty content frame sized for BiS Gear's row count, created here and
--- populated by UI/BiSWindow.lua (see EnsurePanel below) — this file loads first per the .toc,
--- so RS.bisPage always exists before BiSWindow.lua's own visibilitySyncer runs.
 --
 -- NOTE: the dropdown uses the modern (11.x+/12.x) menu system
 -- (DropdownButton + WowStyle1DropdownTemplate + SetupMenu). Verify the template
@@ -31,9 +27,8 @@ local L = RecommendedStats_Locale
 --------------------------------------------------------------------------------
 -- Look & feel
 --------------------------------------------------------------------------------
--- 440, not the original 360 — grew once for BiS Gear's item-name truncation, then again for the
--- enchant/gem icon block between the slot label and the item. Shared with BiS Gear's row width
--- (UI/BiSWindow.lua).
+-- 440, not the original 360 — grew for BiS Gear's rows back when they lived in this panel
+-- (they're in their own window now, UI/BiSWindow.lua); kept so the four header buttons fit.
 local PANEL_W   = 440
 local ROW_W     = PANEL_W - 24  -- content width inside the panel's side padding
 -- The bar is anchored directly below the current-value text (see CreateRow's BAR_GAP), not
@@ -61,22 +56,13 @@ local function StatsContentH()
     return (CurrentRowH() + ROW_GAP) * 4 + PRIORITY_H + FOOTER_H + 6
 end
 
--- Shared header: 8px top pad + tab row + gap + dropdown row + 8px bottom pad. Both pages
--- (statsPage here, RS.bisPage from BiSWindow.lua) anchor their own top-left below this.
+-- Shared header: 8px top pad + tab row + gap + dropdown row + 8px bottom pad. statsPage anchors
+-- its top-left below this.
 local TAB_H          = 24
 local TAB_GAP        = 4
-local HEADER_BUTTONS = 4  -- Stats, BiS (tabs) + Talents, Rotation (window launchers), equal widths
+local HEADER_BUTTONS = 4  -- Stats (page label) + BiS, Talents, Rotation (window launchers), equal widths
 local DROPDOWN_ROW_H = 20
 local HEADER_H       = 8 + TAB_H + 6 + DROPDOWN_ROW_H + 8
-
--- No more hand-typed height constant here — RS:GetBisContentHeight() (UI/BiSWindow.lua) computes
--- this from that file's own ROW_H/ROW_GAP/SLOT_ORDER directly. A hand-synced duplicate constant
--- used to live here and drifted out of sync the first time BiSWindow.lua's ROW_H changed (a
--- clipped bottom row / missing bottom border, confirmed live) — computing it removes that whole
--- class of bug instead of just re-guessing a bigger magic number.
-local function BisContentH()
-    return RS:GetBisContentHeight()
-end
 
 -- A stat sitting slightly over target isn't a problem the way being under is, so it gets a
 -- calm neutral color instead of an alarming one — only "under" reads as urgent (red).
@@ -200,7 +186,6 @@ local function CreateTabButton(parent, label, tabValue)
     highlight:SetColorTexture(1, 1, 1, 0.06)
     btn:SetHighlightTexture(highlight)
 
-    btn:SetScript("OnClick", function(self) RS:SetActiveTab(self.tabValue) end)
     return btn
 end
 
@@ -388,7 +373,7 @@ end
 --------------------------------------------------------------------------------
 -- Panel + dropdown + tabs (created lazily)
 --------------------------------------------------------------------------------
-local panel, dropdown, sizeDropdown, statsTab, bisTab, talentsBtn, rotationBtn, statsPage
+local panel, dropdown, sizeDropdown, statsTab, bisBtn, talentsBtn, rotationBtn, statsPage
 local rows = {}
 local emptyText, footerText, priorityText, priorityHitbox
 
@@ -423,8 +408,8 @@ end
 
 -- Row-size shortcut (same setting as UI/OptionsPanel.lua's dropdown, RS:GetStatsSize()/
 -- RS:SetStatsSize()) — sits left of the Raid/Mythic+ dropdown so it's a one-click change without
--- leaving the panel. Only relevant to the Stats page, so SyncTabUI hides it while BiS Gear is
--- active (see below); ApplyStatsSizeToPanel keeps its label in sync when changed from Options.
+-- leaving the panel. Only relevant to the Stats page, so SyncTabUI hides it while that page is
+-- turned off in Options; ApplyStatsSizeToPanel keeps its label in sync when changed from Options.
 local SIZES = {
     { text = L.SIZE_DEFAULT, value = "DEFAULT" },
     { text = L.SIZE_SMALL,   value = "SMALL" },
@@ -504,7 +489,7 @@ local function EnsurePanel()
     -- (Chonky Character Sheet, MyCharacterSheet, etc.) — it just docks beside it by
     -- default and can be dragged anywhere, remembering the position in the DB.
     panel = CreateFrame("Frame", "RecommendedStatsPanel", UIParent, "BackdropTemplate")
-    panel:SetSize(PANEL_W, HEADER_H + math.max(StatsContentH(), BisContentH()) + 10)
+    panel:SetSize(PANEL_W, HEADER_H + StatsContentH() + 10)
     local border = BorderColor()
     StyleBackdrop(panel, 0.043, 0.047, 0.063, 0.97, border[1], border[2], border[3], 0.7)
 
@@ -524,22 +509,26 @@ local function EnsurePanel()
         end
     end)
 
-    -- Tabs replace the old static title — each label doubles as the section name.
+    -- The Stats "tab" is now this panel's only page, so it's always drawn active and doubles as
+    -- the panel's title; it has no click action.
     statsTab = CreateTabButton(panel, L.TAB_STATS, "STATS")
     local tabW = (PANEL_W - 24 - TAB_GAP * (HEADER_BUTTONS - 1)) / HEADER_BUTTONS
     statsTab:SetSize(tabW, TAB_H)
     statsTab:SetPoint("TOPLEFT", 12, -8)
 
-    bisTab = CreateTabButton(panel, L.TAB_BIS, "BIS")
-    bisTab:SetSize(tabW, TAB_H)
-    bisTab:SetPoint("TOPLEFT", statsTab, "TOPRIGHT", TAB_GAP, 0)
+    -- Not a tab: opens the separate BiS gear window (UI/BiSWindow.lua), which lays the 16 slots
+    -- out in two columns with each item's stats stacked, far wider than this panel. Same flat look
+    -- as a tab, accent-colored text so it reads as an action rather than a page (see SyncTabUI for
+    -- the skin-aware color).
+    bisBtn = CreateTabButton(panel, L.TAB_BIS, "BIS")
+    bisBtn:SetSize(tabW, TAB_H)
+    bisBtn:SetPoint("TOPLEFT", statsTab, "TOPRIGHT", TAB_GAP, 0)
+    bisBtn:SetScript("OnClick", function() if RS.ToggleBiS then RS:ToggleBiS() end end)
 
-    -- Not a tab: opens the separate talents window (UI/TalentsWindow.lua), since the talent tree
-    -- needs far more room than this panel has. Same flat look as a tab, accent-colored text so it
-    -- reads as an action rather than a page (see SyncTabUI for the skin-aware color).
+    -- Same kind of launcher: the talent tree (UI/TalentsWindow.lua) needs far more room too.
     talentsBtn = CreateTabButton(panel, L.TALENTS_BUTTON, "TALENTS")
     talentsBtn:SetSize(tabW, TAB_H)
-    talentsBtn:SetPoint("TOPLEFT", bisTab, "TOPRIGHT", TAB_GAP, 0)
+    talentsBtn:SetPoint("TOPLEFT", bisBtn, "TOPRIGHT", TAB_GAP, 0)
     talentsBtn:SetScript("OnClick", function() if RS.ToggleTalents then RS:ToggleTalents() end end)
 
     -- Same kind of launcher as Talents: the rotation guide (UI/RotationWindow.lua) is four columns
@@ -553,7 +542,7 @@ local function EnsurePanel()
     BuildSizeDropdown()
 
     -- "Recommended Stats" page: 4 stat rows + footer, all parented here so the whole
-    -- section shows/hides as one unit when the tab switches (see SyncTabUI below).
+    -- section shows/hides as one unit when Options turns it off (see SyncTabUI below).
     statsPage = CreateFrame("Frame", nil, panel)
     statsPage:SetPoint("TOPLEFT", 0, -HEADER_H)
     statsPage:SetPoint("TOPRIGHT", 0, -HEADER_H)
@@ -595,14 +584,6 @@ local function EnsurePanel()
     end)
     priorityHitbox:SetScript("OnLeave", function() GameTooltip:Hide() end)
     priorityHitbox:Hide()
-
-    -- "BiS Gear" page: an empty container UI/BiSWindow.lua populates with its own rows the
-    -- first time this merged window is created (see that file's SyncVisibility/EnsureContent).
-    local bisPage = CreateFrame("Frame", nil, panel)
-    bisPage:SetPoint("TOPLEFT", 0, -HEADER_H)
-    bisPage:SetPoint("TOPRIGHT", 0, -HEADER_H)
-    bisPage:SetHeight(BisContentH())
-    RS.bisPage = bisPage
 end
 
 --------------------------------------------------------------------------------
@@ -786,8 +767,8 @@ table.insert(RS.listeners, Render)
 
 --------------------------------------------------------------------------------
 -- Visibility: attach mode + minimap toggle drive this, not the character frame
--- directly (see RS:ShouldShowPanels() in Core.lua). This is the ONLY frame now —
--- UI/BiSWindow.lua no longer owns a top-level window of its own.
+-- directly (see RS:ShouldShowPanels() in Core.lua). Shown while either the Stats page or the
+-- BiS button is enabled, since the panel is also where the BiS window is launched from.
 --------------------------------------------------------------------------------
 local function SyncVisibility()
     if RS:ShouldShowPanels() and (RS:GetShowStats() or RS:GetShowBiS()) then
@@ -795,33 +776,31 @@ local function SyncVisibility()
         RS:RedockIfDefault("panelPos") -- follow CharacterFrame if it moved, unless the user dragged us elsewhere
         panel:Show()
         -- Not RS:Refresh() here — RS:SyncVisibility() (Core.lua) already calls it once, after
-        -- every visibilitySyncer (including BiSWindow.lua's lazy content-builder) has run.
+        -- every visibilitySyncer has run.
     elseif panel then
         panel:Hide()
     end
 end
 table.insert(RS.visibilitySyncers, SyncVisibility)
 
--- Which page is visible + the tab buttons' own active/inactive look — RS:SyncVisibility()
--- (Core.lua) calls RS:SyncTabs() right after every visibilitySyncer above has run, so this is
--- guaranteed to see an up-to-date RS.bisPage/statsPage every time.
+-- Header buttons' look + whether the Stats page is shown — RS:SyncVisibility() (Core.lua) calls
+-- RS:SyncTabs() right after every visibilitySyncer above has run.
 local function SyncTabUI()
     if not panel then return end
-    local active = RS:GetActiveTab()
-    statsTab:SetShown(RS:GetShowStats())
-    bisTab:SetShown(RS:GetShowBiS())
-    ApplyTabVisual(statsTab, active == "STATS")
-    ApplyTabVisual(bisTab, active == "BIS")
+    local showStats = RS:GetShowStats()
+    statsTab:SetShown(showStats)
+    bisBtn:SetShown(RS:GetShowBiS())
+    ApplyTabVisual(statsTab, true)
     local accent = RS:GetAccentColor()
+    bisBtn.label:SetTextColor(accent[1], accent[2], accent[3])
     talentsBtn.label:SetTextColor(accent[1], accent[2], accent[3])
     rotationBtn.label:SetTextColor(accent[1], accent[2], accent[3])
-    statsPage:SetShown(active == "STATS" and RS:GetShowStats())
-    if sizeDropdown then sizeDropdown:SetShown(active == "STATS" and RS:GetShowStats()) end
-    -- The window used to always stand as tall as the taller of the two tabs (BiS Gear's 16
-    -- rows), which left a dead gap below the Stats tab's shorter content whenever it was the
-    -- active one — resize to whichever tab is actually showing instead. Top-left stays anchored
-    -- (RS:MakeMovable), so this only ever moves the bottom edge.
-    panel:SetHeight(HEADER_H + (active == "BIS" and BisContentH() or StatsContentH()) + 10)
+    statsPage:SetShown(showStats)
+    if sizeDropdown then sizeDropdown:SetShown(showStats) end
+    -- With the Stats page off, the panel is just the header (launcher buttons + the Raid/Mythic+
+    -- dropdown, which the BiS window still follows). Top-left stays anchored (RS:MakeMovable),
+    -- so this only ever moves the bottom edge.
+    panel:SetHeight(HEADER_H + (showStats and StatsContentH() or 0) + 10)
     -- Re-applying the backdrop after every resize, not just at creation: a plain SetHeight() on
     -- this frame leaves the border geometry stale unless StyleBackdrop is called again with a
     -- fresh backdrop table (see its own comment — SetBackdrop no-ops on a repeated table
@@ -862,6 +841,6 @@ table.insert(RS.skinListeners, ApplySkinToPanel)
 
 -- Routed through the centralized dispatcher (rather than calling the local SyncVisibility
 -- above directly) so CharacterFrame's own show/hide also runs every other registered
--- visibilitySyncer (UI/BiSWindow.lua's lazy content-builder) and RS:SyncTabs() in one pass.
+-- visibilitySyncer (e.g. UI/BiSWindow.lua's hide-when-disabled check) and RS:SyncTabs() in one pass.
 CharacterFrame:HookScript("OnShow", function() RS:SyncVisibility() end)
 CharacterFrame:HookScript("OnHide", function() RS:SyncVisibility() end)

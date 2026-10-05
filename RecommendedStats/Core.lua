@@ -435,8 +435,8 @@ end
 -- merged window to appear: CharacterFrame showing (attach mode only), the
 -- minimap-icon toggle, or restoring a standalone (unattached) window left open
 -- last session. RS.visibilitySyncers holds one "create-if-needed and apply
--- Show/Hide" closure per registrant — CharacterPanel.lua's builds/shows the one
--- physical window, BiSWindow.lua's just lazily builds its content into it.
+-- Show/Hide" closure per registrant — CharacterPanel.lua's builds/shows the main
+-- panel, BiSWindow.lua's closes its window when BiS gets turned off in Options.
 RS.visibilitySyncers = {}
 
 function RS:ShouldShowPanels()
@@ -448,37 +448,18 @@ end
 
 function RS:SyncVisibility()
     for _, fn in ipairs(RS.visibilitySyncers) do fn() end
-    -- Always after the loop above: CharacterPanel.lua's own entry runs FIRST (TOC load order)
-    -- and creates RS.bisPage, but BiSWindow.lua's entry (which actually populates it via
-    -- EnsureContent) runs SECOND — rendering here, before the loop finishes, would fill
-    -- CharacterPanel.lua's own rows fine but always find BiSWindow.lua's page still empty.
+    -- Always after the loop above, so whatever a syncer just created renders with current data.
     RS:Refresh()
     RS:SyncTabs() -- also after: needs the now-current data above to decide empty-state, etc.
 end
 
 --------------------------------------------------------------------------------
--- Tabs — "Recommended Stats" and "BiS Gear" share one merged window (UI/CharacterPanel.lua)
+-- Panel header sync (UI/CharacterPanel.lua). BiS used to be a second tab page in the panel
+-- (RecommendedStatsDB.activeTab, now unused); it's its own window, UI/BiSWindow.lua.
 --------------------------------------------------------------------------------
--- Falls back to whichever tab IS enabled (RS:GetShowStats()/RS:GetShowBiS(), toggled from the
--- options panel) if the stored choice got disabled, rather than persisting a tab selection
--- that's no longer available to show.
-function RS:GetActiveTab()
-    RecommendedStatsDB = RecommendedStatsDB or {}
-    local tab = RecommendedStatsDB.activeTab or "STATS"
-    if tab == "STATS" and not RS:GetShowStats() and RS:GetShowBiS() then return "BIS" end
-    if tab == "BIS" and not RS:GetShowBiS() and RS:GetShowStats() then return "STATS" end
-    return tab
-end
-function RS:SetActiveTab(tab)
-    RecommendedStatsDB = RecommendedStatsDB or {}
-    RecommendedStatsDB.activeTab = tab
-    RS:SyncTabs()
-end
-
--- One "show/hide my page (and, for CharacterPanel.lua, update the tab buttons' own look)"
--- closure per registrant. Always run after RS.visibilitySyncers (see RS:SyncVisibility above),
--- so a page that's only built lazily the first time the merged window appears is guaranteed to
--- exist by the time this fires.
+-- One "update my header buttons / page visibility" closure per registrant. Always run after
+-- RS.visibilitySyncers (see RS:SyncVisibility above), so a panel that's only built lazily the
+-- first time it appears is guaranteed to exist by the time this fires.
 RS.tabSyncers = {}
 function RS:SyncTabs()
     for _, fn in ipairs(RS.tabSyncers) do fn() end
@@ -586,7 +567,7 @@ f:SetScript("OnEvent", function(_, event, isInitialLogin)
     end
 end)
 
--- Slash command: /rs raid | mythicplus | resetpos | options  (or /rs to print status)
+-- Slash command: /rs raid | mythicplus | bis | talents | rotation | resetpos | options  (or /rs to print status)
 SLASH_RECSTATS1 = "/rs"
 SlashCmdList.RECSTATS = function(msg)
     msg = (msg or ""):gsub("%s", ""):lower()
@@ -598,6 +579,10 @@ SlashCmdList.RECSTATS = function(msg)
             applyDefault()
         end
         print(L.CHAT_PREFIX .. L.MSG_POSITIONS_RESET)
+        return
+    end
+    if msg == "bis" then
+        if RS.ToggleBiS then RS:ToggleBiS() end
         return
     end
     if msg == "talents" then

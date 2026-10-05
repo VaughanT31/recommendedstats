@@ -118,6 +118,8 @@ L.BIS_PCT_FALLBACK   = "%% of top %d \194\183 %s (no Mythic logs yet)"
 L.BIS_PCT_LOW_SAMPLE = "%% of top %d (fewer than usual)"
 L.BIS_PCT_PLAIN      = "%% of top %d"
 L.BIS_TIER_LINE      = "Tier: %d/4 \194\183 %d%% run 4pc"
+L.BIS_WINDOW_TITLE   = "BiS Gear | %s"
+L.BIS_WINDOW_HINT    = "Shift-click: link in chat \194\183 Ctrl-click: preview"
 L.BIS_SOURCE_PREFIX  = "Source: "
 L.BIS_SOURCE_WITH_DIFFICULTY = "%s (%s)"
 L.BIS_ENCHANT_LABEL = "Enchant "
@@ -137,7 +139,7 @@ L.OPTIONS_WINDOW_POSITION  = "Window position"
 L.ATTACH_MODE_ATTACHED = "Attach to Character Screen"
 L.ATTACH_MODE_FREE     = "Not attached (move freely)"
 L.OPTIONS_SHOW_STATS_TAB   = "Show \"Stats\" tab"
-L.OPTIONS_SHOW_BIS_TAB     = "Show \"BiS\" tab"
+L.OPTIONS_SHOW_BIS_TAB     = "Show \"BiS\" button"
 
 --------------------------------------------------------------------------------
 -- UI/TalentsWindow.lua, Talents.lua
