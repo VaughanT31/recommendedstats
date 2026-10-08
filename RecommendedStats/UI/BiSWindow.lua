@@ -145,8 +145,12 @@ local function BorderColor()
     return RS:GetAccentColor()
 end
 
+-- A flat edgeSize = 1 is one UI unit, not one screen pixel: below 1.0 UI scale that's under a
+-- physical pixel, and on a window this wide the right edge could round away to nothing entirely
+-- depending on where it sat. Snapping to the nearest real pixel (minimum one) keeps all four edges.
 local function StyleBackdrop(frame)
-    frame:SetBackdrop({ bgFile = "Interface\\Buttons\\WHITE8x8", edgeFile = "Interface\\Buttons\\WHITE8x8", edgeSize = 1 })
+    local edge = PixelUtil and PixelUtil.GetNearestPixelSize(1, frame:GetEffectiveScale(), 1) or 1
+    frame:SetBackdrop({ bgFile = "Interface\\Buttons\\WHITE8x8", edgeFile = "Interface\\Buttons\\WHITE8x8", edgeSize = edge })
     frame:SetBackdropColor(0.043, 0.047, 0.063, 0.97)
     local b = BorderColor()
     frame:SetBackdropBorderColor(b[1], b[2], b[3], 0.7)
@@ -871,6 +875,8 @@ local function EnsureWindow()
 
     frame:SetScript("OnShow", function(self)
         self:Raise()
+        -- Re-snapped every open, so a UI scale change since the last one can't drop an edge again.
+        StyleBackdrop(self)
         Render()
     end)
 
