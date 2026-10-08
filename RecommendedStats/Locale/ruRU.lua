@@ -120,6 +120,8 @@ L.BIS_PCT_FALLBACK   = "%% из топ-%d \194\183 %s (пока нет эпох�
 L.BIS_PCT_LOW_SAMPLE = "%% из топ-%d (меньше игроков, чем обычно)"
 L.BIS_PCT_PLAIN      = "%% из топ-%d"
 L.BIS_TIER_LINE      = "Комплект: %d/4 \194\183 %d%% носят 4 предм."
+L.BIS_WINDOW_TITLE   = "BiS-экипировка | %s"
+L.BIS_WINDOW_HINT    = "Shift+клик: линк в чат \194\183 Ctrl+клик: осмотр"
 L.BIS_SOURCE_PREFIX  = "Источник: "
 L.BIS_SOURCE_WITH_DIFFICULTY = "%s (%s)"
 L.BIS_ENCHANT_LABEL = "Чары: "
@@ -139,7 +141,7 @@ L.OPTIONS_WINDOW_POSITION  = "Положение окна"
 L.ATTACH_MODE_ATTACHED = "Прикрепить к окну персонажа"
 L.ATTACH_MODE_FREE     = "Не прикреплять (свободное перемещение)"
 L.OPTIONS_SHOW_STATS_TAB   = "Отображать вкладку \"Рекомендуемые характеристики\""
-L.OPTIONS_SHOW_BIS_TAB     = "Отображать вкладку \"BiS-экипировка\""
+L.OPTIONS_SHOW_BIS_TAB     = "Показывать кнопку \"BiS-экипировка\""
 
 --------------------------------------------------------------------------------
 -- UI/TalentsWindow.lua, Talents.lua
