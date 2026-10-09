@@ -3,7 +3,7 @@
 ## Notes: Your secondary stats vs top-player targets, with BiS.
 ## Notes-ruRU: Ваши вторичные характеристики в сравнении с показателями топовых игроков, включая BiS.
 ## Author: CtrlShift_Zed
-## Version: 2026-10-08
+## Version: 2026-10-09
 ## Category: CtrlShift_Zed
 ## IconTexture: Interface\AddOns\RecommendedStats\icon
 ## SavedVariables: RecommendedStatsDB
