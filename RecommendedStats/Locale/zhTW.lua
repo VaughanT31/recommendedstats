@@ -25,7 +25,7 @@ L.SCHEMA_OUT_OF_DATE = "此插件版本的屬性數據已過時，請更新。"
 L.MSG_CONTENT_SET      = " 內容設定為 %s"
 L.MSG_DATA_REFRESHED   = " 屬性目標以及最佳裝備已於 %s 更新（排名前%d的玩家，版本 %s）。"
 L.MSG_POSITIONS_RESET  = " 面板位置重置。拖曳面板來重新移動。"
-L.MSG_CONTENT_STATUS   = " 內容 = %s  (使用 /rs raid|mythicplus|resetpos|options|skin export|skin import)"
+L.MSG_CONTENT_STATUS   = " 內容 = %s  (使用 /rs raid|mythicplus|bis|talents|rotation|link|resetpos|options|skin export|skin import)"
 
 --------------------------------------------------------------------------------
 -- UI/CharacterPanel.lua
@@ -237,3 +237,11 @@ L.SKIN_APPLIED          = "外觀已套用。"
 --------------------------------------------------------------------------------
 L.RATING_NUDGE_TITLE = "喜歡屬性建議嗎？"
 L.RATING_NUDGE_HINT  = "如果它有用，CurseForge上的評論會有很大幫助:"
+
+--------------------------------------------------------------------------------
+-- RecommendedStats Analyzer link (Rotation window "My pulls" button, /rs link)
+--------------------------------------------------------------------------------
+L.ANALYZER_BUTTON     = "我的戰鬥"
+L.ANALYZER_BUTTON_TIP = "在 rs.ctrlshiftzed.com 將你的團隊副本戰鬥與同專精頂尖玩家比較：施法、冷卻與增益，資料來自你的 Warcraft Logs。"
+L.ANALYZER_TITLE      = "你的團隊戰鬥與頂尖玩家比較"
+L.ANALYZER_HINT       = "按 Ctrl+C 複製，再貼到瀏覽器。你的團隊需要在 Warcraft Logs 上有紀錄。"

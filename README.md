@@ -88,6 +88,10 @@ Click the **Rotation** button in the panel header (or type `/rs rotation`) to op
 
 If too few top players run your hero talents to read a rotation from, the window shows the tree they do run and says so. Healers get the Mid Rotation and Filler columns only, since healing cooldowns follow the boss's damage rather than a fixed timing.
 
+**Your own pulls**
+
+Click **My pulls** at the top of the rotation window (or type `/rs link`) for a link to your page on the [RecommendedStats Analyzer](https://rs.ctrlshiftzed.com). Press Ctrl+C and paste it into your browser. The page lists your raid nights from Warcraft Logs with every kill and wipe; pick one to see your casts, cooldowns and buffs next to the top players of your spec on that boss. Your raid needs to be logged on Warcraft Logs, by you or anyone in it.
+
 **Slash commands**
 
 | Command | Effect |
@@ -98,6 +102,7 @@ If too few top players run your hero talents to read a rotation from, the window
 | `/rs resetpos` | Reset panel positions back to their default dock point |
 | `/rs talents` | Open or close the talents window |
 | `/rs rotation` | Open or close the rotation window |
+| `/rs link` | Copy the link to your page on the RecommendedStats Analyzer |
 | `/rs options` | Open the options panel |
 
 ## Options

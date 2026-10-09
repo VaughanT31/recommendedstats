@@ -31,7 +31,7 @@ L.SCHEMA_OUT_OF_DATE = "Stat data is out of date for this addon version. Please 
 L.MSG_CONTENT_SET      = " content set to %s"
 L.MSG_DATA_REFRESHED   = " stat targets and BiS gear were refreshed on %s (top %d players, patch %s)."
 L.MSG_POSITIONS_RESET  = " panel positions reset. Drag a panel to move it again."
-L.MSG_CONTENT_STATUS   = " content = %s  (use /rs raid|mythicplus|resetpos|options|skin export|skin import)"
+L.MSG_CONTENT_STATUS   = " content = %s  (use /rs raid|mythicplus|bis|talents|rotation|link|resetpos|options|skin export|skin import)"
 
 --------------------------------------------------------------------------------
 -- UI/CharacterPanel.lua
@@ -258,3 +258,11 @@ L.SKIN_APPLIED          = "Skin applied."
 --------------------------------------------------------------------------------
 L.RATING_NUDGE_TITLE = "Enjoying RecommendedStats?"
 L.RATING_NUDGE_HINT  = "If it's been useful, a rating on CurseForge helps a lot:"
+
+--------------------------------------------------------------------------------
+-- RecommendedStats Analyzer link (Rotation window "My pulls" button, /rs link)
+--------------------------------------------------------------------------------
+L.ANALYZER_BUTTON     = "My pulls"
+L.ANALYZER_BUTTON_TIP = "Compare your raid pulls with top players of your spec on rs.ctrlshiftzed.com: casts, cooldowns and buffs, read from your Warcraft Logs."
+L.ANALYZER_TITLE      = "Your raid pulls vs the top players"
+L.ANALYZER_HINT       = "Press Ctrl+C to copy, then paste it into your browser. Your raid needs to be logged on Warcraft Logs."

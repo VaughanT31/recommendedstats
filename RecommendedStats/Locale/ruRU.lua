@@ -33,7 +33,7 @@ L.SCHEMA_OUT_OF_DATE = "Данные о характеристиках уста�
 L.MSG_CONTENT_SET      = " тип контента изменен на %s"
 L.MSG_DATA_REFRESHED   = " целевые характеристики и BiS-экипировка обновлены %s (топ-%d игроков, патч %s)."
 L.MSG_POSITIONS_RESET  = " позиции панелей сброшены. Перетащите панель, чтобы снова ее переместить."
-L.MSG_CONTENT_STATUS   = " текущий контент: %s  (используйте: /rs raid|mythicplus|resetpos|options|skin export|skin import)"
+L.MSG_CONTENT_STATUS   = " текущий контент: %s  (используйте: /rs raid|mythicplus|bis|talents|rotation|link|resetpos|options|skin export|skin import)"
 
 --------------------------------------------------------------------------------
 -- UI/CharacterPanel.lua
@@ -260,3 +260,11 @@ L.SKIN_APPLIED          = "Оформление применено."
 --------------------------------------------------------------------------------
 L.RATING_NUDGE_TITLE = "Нравится RecommendedStats?"
 L.RATING_NUDGE_HINT  = "Если аддон оказался полезен, оценка на CurseForge очень поможет проекту:"
+
+--------------------------------------------------------------------------------
+-- RecommendedStats Analyzer link (Rotation window "My pulls" button, /rs link)
+--------------------------------------------------------------------------------
+L.ANALYZER_BUTTON     = "Мои пулы"
+L.ANALYZER_BUTTON_TIP = "Сравните свои рейдовые пулы с лучшими игроками вашей специализации на rs.ctrlshiftzed.com: применения, кулдауны и баффы по вашим логам Warcraft Logs."
+L.ANALYZER_TITLE      = "Ваши пулы в сравнении с лучшими игроками"
+L.ANALYZER_HINT       = "Нажмите Ctrl+C, чтобы скопировать, и вставьте в браузер. Ваш рейд должен быть записан на Warcraft Logs."

@@ -266,6 +266,47 @@ function RS:GetSpecKey()
     return class .. "_" .. spec
 end
 
+--------------------------------------------------------------------------------
+-- RecommendedStats Analyzer link (rs.ctrlshiftzed.com): the player's own page, where their raid
+-- pulls from Warcraft Logs are compared with top players. Shown by the Rotation window's
+-- "My pulls" button and /rs link. Built from the region, realm, name and spec; the site matches
+-- realm names in any client language and names in any case, so the path only needs encoding.
+--------------------------------------------------------------------------------
+local ANALYZER_URL = "https://rs.ctrlshiftzed.com"
+local REGION_BY_ID = { [1] = "us", [2] = "kr", [3] = "eu", [4] = "tw", [5] = "cn" }
+-- Class and spec tokens as the site's English slugs ("beast-mastery-hunter").
+local CLASS_SLUGS = { DEATHKNIGHT = "death-knight", DEMONHUNTER = "demon-hunter" }
+local SPEC_SLUGS = { BEASTMASTERY = "beast-mastery" }
+
+-- Percent-encodes everything but unreserved characters; UTF-8 names come out byte by byte.
+local function UrlEncode(text)
+    return (text:gsub("[^%w%-%._~]", function(c) return ("%%%02X"):format(c:byte()) end))
+end
+
+function RS:GetAnalyzerURL()
+    local region = GetCurrentRegionName and GetCurrentRegionName()
+    region = region and region ~= "" and region:lower() or REGION_BY_ID[GetCurrentRegion and GetCurrentRegion() or 0] or "eu"
+    -- The realm's display name as a slug ("Argent Dawn" -> "argent-dawn"); Cyrillic or Chinese
+    -- names stay as they are and are matched by the site.
+    local realm = (GetRealmName() or ""):lower():gsub("['()]", ""):gsub("%s+", "-")
+    local name = (UnitName("player") or ""):lower()
+    local url = ANALYZER_URL .. "/" .. region .. "/" .. UrlEncode(realm) .. "/" .. UrlEncode(name)
+    local class, spec = GetClassToken(), GetSpecToken()
+    if class and spec then
+        url = url .. "/" .. (SPEC_SLUGS[spec] or spec:lower()) .. "-" .. (CLASS_SLUGS[class] or class:lower())
+    end
+    return url
+end
+
+function RS:ShowAnalyzerLink()
+    if not RS.ShowCopyPopup then return end
+    RS:ShowCopyPopup({
+        title = L.ANALYZER_TITLE,
+        hint  = L.ANALYZER_HINT,
+        text  = RS:GetAnalyzerURL(),
+    })
+end
+
 function RS:SchemaOK()
     local m = RecommendedStatsData_Meta
     return m and m.schema == EXPECTED_SCHEMA
@@ -591,6 +632,10 @@ SlashCmdList.RECSTATS = function(msg)
     end
     if msg == "rotation" then
         if RS.ToggleRotation then RS:ToggleRotation() end
+        return
+    end
+    if msg == "link" then
+        RS:ShowAnalyzerLink()
         return
     end
     if msg == "options" or msg == "config" then

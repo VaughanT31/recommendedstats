@@ -46,6 +46,15 @@ local ANNOUNCEMENTS = {
             "Its Raid / Mythic+ toggle follows the same setting as the Stats panel. Type /rs bis to open it directly.",
         },
     },
+    {
+        id = "2026-10-10-analyzer",
+        title = "What's New in RecommendedStats",
+        lines = {
+            "New: see how your own raid pulls compare with the top players of your spec, at rs.ctrlshiftzed.com.",
+            "Click My pulls on the Rotation window (or type /rs link) to copy your page's link, then paste it into your browser.",
+            "It lists your raid nights from Warcraft Logs, every kill and wipe. Pick one to see your casts, cooldowns and buffs next to the top players on that boss.",
+        },
+    },
 }
 
 local function LatestAnnouncement()
