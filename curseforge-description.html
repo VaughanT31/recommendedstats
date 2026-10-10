@@ -1,47 +1,63 @@
-<p><strong>Recommended Stats &amp; Talents</strong> puts your character's true performance in view. It compares your live secondary stats against real data pulled from top players in your exact class and spec, tells you straight away whether Haste, Critical Strike, Mastery, or Versatility needs more attention, shows the talent builds those players actually run, down to each raid boss and Mythic+ dungeon, and lays out how they play the spec: the opener, the rotation, and when they press their cooldowns.</p>
-<p><span style="color: #ffd100;"><strong>Live Stat Comparison</strong></span><br>Haste, Critical Strike, Mastery, and Versatility are compared in real time against target percentages built from top players of your class and spec. Color-coded progress bars show at a glance whether each stat sits under, on, or over target.</p>
-<p><span style="color: #ffd100;"><strong>Talents, Per Boss and Per Dungeon</strong></span><br>Open the Talents window to see the build top players run for your spec, laid out like the in-game talent page: class talents, hero talents, and spec talents. Pick a specific raid boss or Mythic+ dungeon from the dropdown to see the build for that fight, or stay on Overall for the spec-wide build. Hover any talent to see how many players take it, and copy the loadout string to import it in one click. Where a boss or dungeon doesn't have enough exact kill or run data yet, the panel says so and shows the closest real build instead, so you always know what you're looking at.</p>
-<p><span style="color: #ffd100;"><strong>New: Compare Your Own Pulls</strong></span><br>Click <strong>My pulls</strong> on the Rotation window (or type <code>/rs link</code>) to copy the link to your page on the <a href="https://rs.ctrlshiftzed.com">RecommendedStats Analyzer</a>. It lists your raid nights from Warcraft Logs, every kill and wipe, and shows your casts, cooldowns and buffs next to the top players of your spec on that boss, with the biggest differences first. Your raid needs to be logged on Warcraft Logs.</p>
-<p><span style="color: #ffd100;"><strong>Rotation Guide, Per Boss</strong></span><br>Open the Rotation window to see how top players of your spec and hero talents actually play it, read from what they pressed on real raid kills. Four columns cover the opener, the core of the rotation, the filler, and when to use cooldowns. It shows which press gives each proc or buff, which press spends it, and how many stacks to build first. Pick a raid boss from the dropdown to see how that fight is played, or stay on Overall for all bosses pooled. Every spell and buff is an icon with its real in-game tooltip.</p>
-<p><em>The rotation guide won't increase your DPS by itself. It is there to grow your knowledge of the class and what takes priority in the rotation. It is a reference, not a "press this now" helper, and it reads nothing about the fight you are in.</em></p>
-<p><span style="color: #ffd100;"><strong>Best-in-Slot Panel</strong></span><br>See the top gear choice for every slot, complete with usage percentage, item icon, and a full hover tooltip. Matching checks item level as well as the exact item, so a comparable upgrade in a different form is never wrongly flagged as missing.</p>
-<p><span style="color: #ffd100;"><strong>Enchants &amp; Gems</strong></span><br>Recommended enchants and gems for each slot, with a simple check showing whether your current gear already has them.</p>
-<p><span style="color: #ffd100;"><strong>Tier Set Tracking</strong></span><br>Shows how many pieces of the current set you're wearing and what portion of top players run the 4-piece bonus.</p>
-<p><span style="color: #ffd100;"><strong>Stat Priority</strong></span><br>An optional stat priority line, worked out from the same top-player sample, gives a recommended order for your class and spec alongside the usual targets.</p>
-<p><span style="color: #ffd100;"><strong>Raid &amp; Mythic+ Targets</strong></span><br>Switch between Raid and Mythic+ targets from a dropdown or with <code>/rs raid</code> and <code>/rs mythicplus</code>. The Talents window has its own Raid and Mythic+ switch. The Rotation window covers raid bosses for now.</p>
-<p><span style="color: #ffd100;"><strong>Colorblind-Friendly Mode</strong></span><br>Adds shape and icon cues on top of the usual colors, for both the stat panel and BiS indicators.</p>
-<p><span style="color: #ffd100;"><strong>Minimap Button</strong></span><br>A LibDataBroker button gives one-click access. Left-click toggles the panels, right-click opens options, and it plays nicely with minimap organizer addons.</p>
-<p><span style="color: #ffd100;"><strong>Custom Skins</strong></span><br>Choose a Default, Class Color, or Custom Color skin from Options, then export a short code so friends can copy your look.</p>
-<p><span style="color: #ffd100;"><strong>Where the Numbers Come From</strong></span><br>Every target, BiS pick, talent build, and rotation is built from real top-player data, not guesswork. Warcraft Logs surfaces the top parsers for each class and spec on every raid boss and the top Mythic+ players in every dungeon, Raider.IO supplies the talent builds top players ran on real kills and runs, and Blizzard's own API supplies each player's exact stat percentages, equipped gear, and current talents. The rotation guide is read from the Warcraft Logs combat logs of those top-parsing raid kills: what each player pressed, the buffs they gained and spent, and the talents they had on that pull. Nothing is fetched in-game and the addon never contacts a server. All of it ships baked into the addon and refreshes with each update, the same as any other addon content. The panel shows exactly how many verified players a target is built from, so it's easy to tell an established number from one still filling in during a fresh tier.</p>
-<p><span style="color: #ffd100;"><strong>Getting Started</strong></span></p>
+<p><strong>Know exactly what top players of your spec do, right on your character panel.</strong> Recommended Stats compares your Haste, Critical Strike, Mastery and Versatility with real top players of your class and spec, and shows the BiS gear, enchants, gems, talents and rotation they actually use, per raid boss and per Mythic+ dungeon. Then compare your own raid pulls with theirs.</p>
 <ul>
-<li><strong>Open your character panel</strong> (default <code>C</code>) and the panel appears automatically beside it, with Stats, BiS, Talents and Rotation across the top.</li>
-<li><strong>Switch content type</strong> with the dropdown, or <code>/rs raid</code> / <code>/rs mythicplus</code>.</li>
-<li><strong>Click Talents</strong> (or <code>/rs talents</code>) and choose a boss or dungeon from the dropdown to see the build for that encounter.</li>
-<li><strong>Click Rotation</strong> (or <code>/rs rotation</code>) and choose a raid boss from the dropdown, or stay on Overall. Hover any icon for the spell's tooltip and how top players use it.</li>
-<li><strong>Click My pulls</strong> on the Rotation window (or <code>/rs link</code>), copy the link and open it in your browser to compare your logged raid pulls with the top players.</li>
-<li><strong>Hover any BiS entry</strong> for its full item tooltip.</li>
-<li><strong>Drag any window</strong> anywhere you like; the position is remembered per character. Run <code>/rs resetpos</code> to snap them back to their default spot.</li>
-<li><strong>Open options</strong> with <code>/rs options</code>, the minimap button's right-click, or Esc &gt; Options &gt; AddOns &gt; RecommendedStats, to change attach mode, pick a skin, toggle colorblind mode, or show/hide the BiS section.</li>
-<li><strong>Share a skin</strong> with <code>/rs skin export</code>, or apply one a friend sent with <code>/rs skin import</code>.</li>
+<li><strong>Stat targets</strong>: see straight away which secondary stat is too low, on target or over.</li>
+<li><strong>BiS gear</strong>: the top item for every slot, with the enchant and gem top players use.</li>
+<li><strong>Talents</strong>: the build top players run on each boss and dungeon, copied in one click.</li>
+<li><strong>Rotation guide</strong>: the opener, core rotation, filler and cooldown timing, read from real Mythic kills.</li>
+<li><strong>Your pulls vs the top players</strong>: what to work on first, from your own Warcraft Logs.</li>
 </ul>
+<p>Open your character panel (<code>C</code>) and it's there. No setup, no weights to paste.</p>
+
+<p><span style="color: #ffd100;"><strong>New: Compare Your Own Pulls</strong></span><br>Click <strong>My pulls</strong> on the Rotation window (or type <code>/rs link</code>) for the link to your page on the <a href="https://rs.ctrlshiftzed.com">RecommendedStats Analyzer</a>. It lists your raid nights from Warcraft Logs with every kill and wipe. Pick a pull to see the biggest differences from the top players of your spec on that boss first, then your casts, cooldowns and buffs side by side with theirs. Your raid needs to be logged on Warcraft Logs, by you or anyone in it.</p>
+
+<p><span style="color: #ffd100;"><strong>Stat Targets for Raid and Mythic+</strong></span><br>Haste, Critical Strike, Mastery and Versatility are compared live against target percentages built from top players of your class and spec. Colour-coded bars with a target tick show how far off you are, not just whether you're under or over. Switch between Raid and Mythic+ from the dropdown, or with <code>/rs raid</code> and <code>/rs mythicplus</code>. A stat priority line gives the recommended order from the same players.</p>
+
+<p><span style="color: #ffd100;"><strong>Best-in-Slot Gear, Enchants and Gems</strong></span><br>The BiS window shows the top item for every slot with how many of the top players wear it, the enchant and gem they use, and a check for whether your gear already has them. Matching looks at item level as well as the exact item, so a comparable upgrade is never wrongly flagged as missing. Tier set tracking shows how many pieces you wear and how many top players run the 4-piece.</p>
+
+<p><span style="color: #ffd100;"><strong>Talents, Per Boss and Per Dungeon</strong></span><br>The Talents window shows the build top players run, laid out like the in-game talent page: class, hero and spec trees. Pick a raid boss or Mythic+ dungeon, or stay on Overall for the spec-wide build. Hover any talent to see how many players take it, and copy the loadout string to import it in one click. When a boss or dungeon doesn't have enough exact data yet, it says so and shows the closest real build instead.</p>
+
+<p><span style="color: #ffd100;"><strong>Rotation Guide, Per Boss</strong></span><br>The Rotation window shows how top players of your spec and hero talents play it, read from what they pressed on real raid kills: the opener, the core of the rotation, the filler and when to use cooldowns. It shows which press gives each proc or buff, which press spends it, and how many stacks to build first. Every spell is an icon with its real in-game tooltip.</p>
+<p><em>The rotation guide won't increase your DPS by itself. It is a reference to grow your knowledge of the class and what takes priority, not a "press this now" helper, and it reads nothing about the fight you are in.</em></p>
+
+<p><span style="color: #ffd100;"><strong>Make It Yours</strong></span><br>Four row sizes, from one compact line to a full readout. A Default, Class Color or Custom Color skin, which you can export as a short code for friends. Colorblind-friendly icons for the stat and BiS marks. Windows dock to the character panel or move anywhere, and remember their position per character. A minimap button (LibDataBroker) opens everything with one click.</p>
+
+<p><span style="color: #ffd100;"><strong>Where the Numbers Come From</strong></span><br>Every target, BiS pick, talent build and rotation comes from real top-player data, not guesswork. Warcraft Logs surfaces the top parsers on every raid boss and the top Mythic+ players in every dungeon, Raider.IO supplies the talent builds from real kills and runs, and Blizzard's API supplies each player's exact stats, gear and talents. The rotation guide is read from the Warcraft Logs combat logs of top-parsing raid kills. The addon never contacts a server: the data ships inside it and refreshes with each update. The panel always shows how many players a target is built from.</p>
+
+<p><span style="color: #ffd100;"><strong>Commands</strong></span></p>
+<ul>
+<li><code>/rs raid</code> or <code>/rs mythicplus</code>: switch content</li>
+<li><code>/rs bis</code>, <code>/rs talents</code>, <code>/rs rotation</code>: open each window</li>
+<li><code>/rs link</code>: your page on the RecommendedStats Analyzer</li>
+<li><code>/rs resetpos</code>: snap windows back to their default spot</li>
+<li><code>/rs options</code>: options (also the minimap button's right-click)</li>
+<li><code>/rs skin export</code> and <code>/rs skin import</code>: share a skin</li>
+</ul>
+
 <p><span style="color: #ffd100;"><strong>Good to Know</strong></span></p>
 <ul>
-<li>Both Raid and Mythic+ targets are rebuilt regularly from real top-player data as the season progresses.</li>
-<li>A very low-population spec may not show data yet if too few top players currently run it, and specs early in a fresh tier can rest on a smaller sample until more players are verified. The panel always states the real player count so you know exactly what you're looking at.</li>
-<li>Per-boss and per-dungeon talents use the exact build from top kills and runs where enough exist. Otherwise they use the current builds of the top players on that encounter, and the panel labels which one you're seeing.</li>
-<li>The rotation guide changes with patches, not day to day, so it is refreshed about once a month or after a patch rather than with every update. The window shows the patch and date it was read on.</li>
-<li>The rotation guide follows your hero talents. If too few top players run yours to read a rotation from, it shows the tree they do run and says so.</li>
-<li>Healers see the rotation and filler columns only. Healing cooldowns follow the boss's damage rather than a fixed timing, so they can't be read from logs.</li>
-<li>The rotation guide covers raid bosses. Fights with several targets give a hint of how a spec plays in Mythic+, but not the full picture.</li>
-<li>Data sourced in part from <a href="https://www.warcraftlogs.com/" target="_blank" rel="nofollow noopener">Warcraft Logs</a> and <a href="https://raider.io/" target="_blank" rel="nofollow noopener">Raider.IO</a></li>
+<li>Raid and Mythic+ targets are rebuilt regularly as the season goes on. Early in a tier, or for a rarely played spec, a target may rest on fewer players, and the panel says how many.</li>
+<li>The rotation guide covers raid bosses and follows your hero talents. If too few top players run yours, it shows the tree they do run and says so.</li>
+<li>Healers see the rotation and filler only, since healing cooldowns follow the boss's damage rather than a fixed timing.</li>
+<li>The rotation guide is refreshed about once a month or after a patch, and shows the patch and date it was read on.</li>
+<li>Data sourced in part from <a href="https://www.warcraftlogs.com/" target="_blank" rel="nofollow noopener">Warcraft Logs</a> and <a href="https://raider.io/" target="_blank" rel="nofollow noopener">Raider.IO</a>.</li>
 </ul>
+
 <p><span style="color: #ffd100;"><strong>Translations</strong></span></p>
 <ul>
 <li><strong>Traditional Chinese (zhTW)</strong>, contributed by <a href="https://www.curseforge.com/members/bns333/projects" target="_blank" rel="nofollow noopener">BlueNightSky</a>.</li>
 <li><strong>Russian (ruRU)</strong>, contributed by <a href="https://www.curseforge.com/members/zamestotv/projects" target="_blank" rel="nofollow noopener">ZamestoTV</a>.</li>
 <li>The Rotation window is English only for now. Spell names, icons and tooltips already show in your own language.</li>
-<li>Want to help translate RecommendedStats into your language? Submit a comment or DM me.</li>
+<li>Want to help translate it into your language? Leave a comment or send me a message.</li>
 </ul>
-<p><span style="color: #ffd100;"><strong>Support</strong></span><br>RecommendedStats is free. If it helps you, you can buy me a coffee.</p>
-<p><a href="https://ko-fi.com/G2G01YLR68" target="_blank" rel="nofollow noopener"><img height="36" style="border: 0px; height: 36px;" src="https://storage.ko-fi.com/cdn/brandasset/v2/support_me_on_kofi_badge_red.png" alt="Buy Me a Coffee at ko-fi.com"></a></p>
+
+<p><span style="color: #ffd100;"><strong>Also by CtrlShiftZed</strong></span></p>
+<ul>
+<li><a href="https://www.curseforge.com/wow/addons/push-planner">Push Planner</a>: the fastest set of Mythic+ keys to reach your target rating.</li>
+<li><a href="https://www.curseforge.com/wow/addons/party-item-level-checker">Party iLvl Check</a>: your group's item level and missing buffs at a glance.</li>
+<li><a href="https://www.curseforge.com/wow/addons/auction-coach">Auction Coach</a>: plain-English Auction House advice, a simpler alternative to TSM.</li>
+<li><a href="https://www.curseforge.com/wow/addons/alt-inventory-tracker">Alt Inventory</a>: find any item across all your characters and the Warband bank.</li>
+<li><a href="https://www.curseforge.com/wow/addons/trust-crafter">Trust Crafter</a>: remembers who crafted your orders and how well.</li>
+</ul>
+
+<p><span style="color: #ffd100;"><strong>Support</strong></span><br>Recommended Stats is free. If it helps you, you can buy me a coffee.</p>
+<p><a href="https://ko-fi.com/G2G01YLR68" target="_blank" rel="nofollow noopener"><img style="border: 0px;" src="https://storage.ko-fi.com/cdn/brandasset/v2/support_me_on_kofi_badge_red.png" alt="Buy Me a Coffee at ko-fi.com" height="36"></a></p>
