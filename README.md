@@ -2,52 +2,68 @@
 
 A World of Warcraft addon that shows your secondary stats (Haste, Critical Strike, Mastery, Versatility) against targets pulled from top players for your class and spec, plus a best-in-slot gear list, the talent builds top players run for every boss and dungeon, and a rotation guide read from what those players actually press, right on the character screen.
 
-![Recommended Stats panel for a Druid, Mythic+, colorblind-friendly mode enabled](docs/screenshot_druid.png)
+![Recommended Stats panel for a Restoration Druid, Mythic+, with the Stats, BiS, Talents and Rotation tabs](docs/druid_default_skin.png)
 
 ## Features
 
 - **Stat panel** docked next to the character screen, showing current vs. target for each secondary stat, with a progress bar and a target tick so you can see how far off you are, not just whether you're over or under.
 - **Raid / Mythic+ toggle** so targets match the content you're actually doing.
-- **BiS gear panel** listing the best item per slot for your class, spec, and content, with a tooltip on hover and a "% of top players using this" figure.
-- **Top player talents** in their own window, opened from the Talents button next to the tabs: the full talent tree for your spec with the build most top players agree on, per boss (Raid) or per dungeon (Mythic+), plus a one-click copy of the loadout string to import in game.
-- **Rotation guide** in its own window, opened from the Rotation button: the opener, the core of the rotation, the filler and when to use cooldowns for your spec and hero talents, per raid boss or all bosses pooled. It shows which press gives each proc, which press spends it, and how many stacks to build first.
-- **Minimap button**: left-click to show or hide both panels, right-click to open options.
+- **BiS gear window**, opened from the BiS tab: the best item per slot for your class, spec and content, with the enchant and gem top players use, a tooltip on hover and a "% of top players using this" figure.
+- **Top player talents**, opened from the Talents tab: the full talent tree for your spec with the build most top players agree on, per boss (Raid) or per dungeon (Mythic+), plus a one-click copy of the loadout string to import in game.
+- **Rotation guide**, opened from the Rotation tab: the opener, the core of the rotation, the filler and when to use cooldowns for your spec and hero talents, per raid boss or all bosses pooled. It shows which press gives each proc, which press spends it, and how many stacks to build first.
+- **Your pulls vs the top players**: the My pulls button links to your page on the [RecommendedStats Analyzer](https://rs.ctrlshiftzed.com), which compares your own logged raid pulls with the top players of your spec.
+- **Row sizes and skins**: four row sizes, from one compact line to a full readout, and a Default, Class Color or Custom Color skin you can export and share.
+- **Minimap button**: left-click to show or hide the panel, right-click to open options.
 - **Movable panels**: attach to the character screen by default, or detach and drag them anywhere. Positions are remembered per character.
 - **Slash commands** for quick control without touching the mouse.
 
 ## Screenshots
 
-**Rotation**: the Rotation button in the panel header opens the rotation window. Hover any icon for the spell's own tooltip.
+**Stat panel** in its four row sizes, picked from the dropdown next to the Raid/Mythic+ toggle or from Options:
+
+| Default | Large |
+|---|---|
+| ![Default row size](docs/druid_default_skin.png) | ![Large row size with a difference-from-target line](docs/druid_large_skin.png) |
+
+| Medium | Small |
+|---|---|
+| ![Medium row size](docs/druid_medium_skin.png) | ![Small row size](docs/screenshot_druid_small.png) |
+
+![Row size dropdown open](docs/druid_menu_skin_dropdown.png)
+
+**Rotation**: the Rotation tab opens the rotation window. Hover any icon for the spell's own tooltip and how top players use it.
 
 ![Rotation window, Arcane Mage on one raid boss](docs/screenshot_mage_rotation.png)
 
-**Talents**: the Talents button sits beside the Stats and BiS tabs and opens the talents window.
+Healers get the spells the rotation is built on and what feeds what. Cooldowns follow the boss's damage, so they aren't read from logs:
 
-![Recommended Stats panel with the Talents button, Mythic+](docs/screenshot_paladin_mplus.png)
+![Rotation window, Holy Paladin](docs/paladin_holy_rotation_guide.png)
 
-The window shows your spec's class, hero and spec trees with the top-player build highlighted in gold. Switch between Raid and Mythic+ at the top, pick a boss or dungeon from the dropdown, and hover any talent to see how many players take it.
+**Talents**: the window shows your spec's class, hero and spec trees with the top-player build highlighted in gold. Switch between Raid and Mythic+ at the top, pick a boss, a dungeon or Overall from the dropdown, and hover any talent to see how many players take it.
 
-| Restoration Druid | Holy Paladin |
+| Restoration Druid, one raid boss | Holy Paladin, Mythic+ overall |
 |---|---|
-| ![Talents window, Restoration Druid](docs/screenshot_druid_talents_raid.png) | ![Talents window, Holy Paladin](docs/screenshot_paladin_talents_selector.png) |
+| ![Talents window, Restoration Druid on a raid boss](docs/screenshot_druid_talents_raid.png) | ![Talents window, Holy Paladin, Mythic+ overall build](docs/paladin_talents%20tree.png) |
 
-**BiS Gear**, with enchant/gem indicators and item-level-aware status dots:
+**BiS Gear**, with the enchant and gem top players use, item-level-aware status marks and how many of the top 20 wear each item:
 
-| Mythic+ | Raid |
+| Raid | Mythic+ |
 |---|---|
-| ![BiS Gear, Mythic+](docs/screenshot_druid_mythicplus_bis_gear.png) | ![BiS Gear, Raid](docs/screenshot_druid_raid_bis_gear.png) |
+| ![BiS Gear, Restoration Druid, Raid](docs/screenshot_druid_raid_bis_gear.png) | ![BiS Gear, Restoration Druid, Mythic+](docs/screenshot_druid_mythicplus_bis_gear.png) |
 
-**Row size**, from a single compact line up to a full readout with a delta-from-target line, picked from the dropdown next to the Raid/Mythic+ toggle or from Options:
+![BiS Gear, Holy Paladin, Mythic+](docs/paladin_bis_items_holy_demo.png)
 
-| Small | Medium |
+**Your own pulls**: My pulls in the rotation window gives you a link to your page on the RecommendedStats Analyzer.
+
+![My pulls link popup in the rotation window](docs/screenshot_mage_rotation_link.png)
+
+The Analyzer lists your raid nights from Warcraft Logs with every kill and wipe. Pick a pull to see what to work on first, then your presses per minute and cooldowns next to the top players of your spec on that boss.
+
+| Your raid nights | One pull |
 |---|---|
-| ![Small row size](docs/screenshot_druid_small.png) | ![Medium row size](docs/screenshot_druid_medium.png) |
+| ![RecommendedStats Analyzer, a character's raid night with kills per boss](docs/RecommendedStatsAnalyzer-Mage.png) | ![RecommendedStats Analyzer, what to work on for one pull](docs/RecommendedStatsAnalyzer-Mage-Fight.png) |
 
-| Large | Picking a size |
-|---|---|
-| ![Large row size](docs/screenshot_druid_large.png) | ![Row size dropdown open](docs/screenshot_druid_menu.png) |
-
-![Large row size for a Death Knight, Mythic+](docs/screenshot_mythicplus_deathknight.png)
+![RecommendedStats Analyzer, rotation and cooldowns compared with top players](docs/RecommendedStatsAnalyzer-Mage-IDeas.png)
 
 ## Installation
 
@@ -57,15 +73,15 @@ The window shows your spec's class, hero and spec trees with the top-player buil
 
 ## Usage
 
-Open your character screen (`C`) and the stat panel appears automatically, with the BiS gear panel docked beside it.
+Open your character screen (`C`) and the stat panel appears automatically. The tabs along its top switch between Stats and the BiS, Talents and Rotation windows.
 
 **Minimap button**
-- Left-click: show/hide both panels
+- Left-click: show/hide the panel
 - Right-click: open options
 
 **Talents**
 
-Click the **Talents** button next to the tabs (or type `/rs talents`) to open the talents window.
+Click the **Talents** tab (or type `/rs talents`) to open the talents window.
 
 1. Choose **Raid** or **Mythic+** at the top.
 2. Pick **Overall** for your spec's general build, or a specific boss or dungeon from the dropdown.
@@ -76,7 +92,7 @@ The window is movable, remembers its position, and closes with Escape.
 
 **Rotation**
 
-Click the **Rotation** button in the panel header (or type `/rs rotation`) to open the rotation window. It follows your current spec and hero talents.
+Click the **Rotation** tab (or type `/rs rotation`) to open the rotation window. It follows your current spec and hero talents.
 
 1. Leave the dropdown on **Overall** for all bosses pooled, or pick a raid boss to see how that fight is played. A council or add fight is played differently from a single target one.
 2. Read the four columns left to right:
@@ -100,17 +116,24 @@ Click **My pulls** at the top of the rotation window (or type `/rs link`) for a 
 | `/rs raid` | Show targets for Raid |
 | `/rs mythicplus` (or `/rs m+`) | Show targets for Mythic+ |
 | `/rs resetpos` | Reset panel positions back to their default dock point |
+| `/rs bis` | Open or close the BiS gear window |
 | `/rs talents` | Open or close the talents window |
 | `/rs rotation` | Open or close the rotation window |
 | `/rs link` | Copy the link to your page on the RecommendedStats Analyzer |
 | `/rs options` | Open the options panel |
+| `/rs skin export` | Copy your skin as a code to share |
+| `/rs skin import` | Paste a skin code from someone else |
 
 ## Options
 
 Available via Esc > Options > AddOns > RecommendedStats, or `/rs options`, or right-clicking the minimap button.
 
-- **Panel position**: attach to the character screen, or leave unattached so it can be moved and shown independently.
-- **Show BiS gear section**: toggle the BiS panel on or off.
+- **Window position**: attach to the character screen, or leave unattached so it can be moved and shown independently.
+- **Show "Stats" tab** and **Show "BiS" button**: hide the parts you don't use.
+- **Show minimap icon**.
+- **Colorblind-friendly icons**.
+- **Row size**: Default, Small, Medium or Large.
+- **Skin**: Default, Class Color or Custom Color, with **Export Skin** and **Import Skin** to share a look.
 
 ## How targets are calculated
 
@@ -161,7 +184,7 @@ Found a bug, a spec with missing data, or a suggestion? Open an issue on this re
 RecommendedStats doesn't have a translation for your language yet? Contributions are welcome.
 
 1. Copy `RecommendedStats/Locale/enUS.lua` as your starting point.
-2. Change the locale guard at the top of the copy to your client's locale code (e.g. `deDE`, `frFR`, `zhCN`) and translate the text on the right-hand side of each `L.KEY = "..."` line — leave the keys themselves untouched.
+2. Change the locale guard at the top of the copy to your client's locale code (e.g. `deDE`, `frFR`, `zhCN`) and translate the text on the right-hand side of each `L.KEY = "..."` line, leave the keys themselves untouched.
 3. Every `%s`, `%d`, `%.0f%%`, etc. in a line has to appear the same number of times, in the same order, as the English original. These get filled in with real values (dates, percentages, item names) at runtime, and a missing or mismatched one causes an in-game error rather than a display glitch.
 4. Send the finished file as an issue or PR on this repo, or reach out directly.
 
