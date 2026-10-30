@@ -1,4 +1,4 @@
--- GENERATED 2026-10-29 - do not hand-edit
+-- GENERATED 2026-10-30 - do not hand-edit
 RecommendedStatsData_Targets = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["haste"] = 4642,
@@ -117,7 +117,7 @@ RecommendedStatsData_Targets = {
         ["hasteHigh"] = 11920,
         ["crit"] = 16320,
         ["critHigh"] = 18231,
-        ["mastery"] = 8823,
+        ["mastery"] = 9079,
         ["masteryHigh"] = 11281,
     },
     ["MONK_WINDWALKER_RAID"] = {
@@ -133,8 +133,8 @@ RecommendedStatsData_Targets = {
         ["hasteHigh"] = 14620,
         ["crit"] = 1493,
         ["critHigh"] = 6456,
-        ["mastery"] = 20855,
-        ["masteryHigh"] = 25834,
+        ["mastery"] = 21572,
+        ["masteryHigh"] = 27123,
     },
     ["PALADIN_PROTECTION_RAID"] = {
         ["haste"] = 18352,
@@ -157,13 +157,13 @@ RecommendedStatsData_Targets = {
         ["hasteHigh"] = 2920,
         ["crit"] = 15385,
         ["critHigh"] = 17734,
-        ["mastery"] = 15088,
+        ["mastery"] = 15089,
         ["masteryHigh"] = 17336,
     },
     ["PRIEST_HOLY_RAID"] = {
         ["haste"] = 1309,
         ["hasteHigh"] = 3422,
-        ["crit"] = 11661,
+        ["crit"] = 11476,
         ["critHigh"] = 13855,
         ["mastery"] = 14241,
         ["masteryHigh"] = 18258,
@@ -177,9 +177,9 @@ RecommendedStatsData_Targets = {
         ["masteryHigh"] = 12114,
     },
     ["ROGUE_ASSASSINATION_RAID"] = {
-        ["haste"] = 8194,
+        ["haste"] = 8095,
         ["hasteHigh"] = 10929,
-        ["crit"] = 7810,
+        ["crit"] = 7946,
         ["critHigh"] = 8858,
         ["mastery"] = 13684,
         ["masteryHigh"] = 15042,
@@ -230,14 +230,14 @@ RecommendedStatsData_Targets = {
         ["crit"] = 3491,
         ["critHigh"] = 4657,
         ["mastery"] = 20120,
-        ["masteryHigh"] = 23224,
+        ["masteryHigh"] = 21678,
     },
     ["WARLOCK_DEMONOLOGY_RAID"] = {
         ["haste"] = 15019,
-        ["hasteHigh"] = 17996,
+        ["hasteHigh"] = 15794,
         ["crit"] = 4238,
         ["critHigh"] = 4993,
-        ["mastery"] = 17393,
+        ["mastery"] = 17535,
         ["masteryHigh"] = 19360,
     },
     ["WARLOCK_DESTRUCTION_RAID"] = {

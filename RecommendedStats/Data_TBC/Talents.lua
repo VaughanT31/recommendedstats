@@ -1,4 +1,4 @@
--- GENERATED 2026-10-29 - do not hand-edit
+-- GENERATED 2026-10-30 - do not hand-edit
 RecommendedStatsData_Talents = {
     ["DRUID_BALANCE_RAID"] = {
         ["n"] = 20,
@@ -35,7 +35,7 @@ RecommendedStatsData_Talents = {
                     44,
                     17,
                 },
-                ["pct"] = 60,
+                ["pct"] = 55,
             },
             {
                 ["split"] = {
@@ -43,7 +43,7 @@ RecommendedStatsData_Talents = {
                     47,
                     14,
                 },
-                ["pct"] = 40,
+                ["pct"] = 45,
             },
         },
         ["median"] = {
@@ -103,7 +103,7 @@ RecommendedStatsData_Talents = {
                     0,
                     61,
                 },
-                ["pct"] = 30,
+                ["pct"] = 25,
             },
             {
                 ["split"] = {
@@ -117,7 +117,7 @@ RecommendedStatsData_Talents = {
         ["median"] = {
             5,
             0,
-            56,
+            50,
         },
     },
     ["HUNTER_BEASTMASTERY_RAID"] = {
@@ -225,21 +225,21 @@ RecommendedStatsData_Talents = {
                     48,
                     11,
                 },
-                ["pct"] = 55,
-            },
-            {
-                ["split"] = {
-                    0,
-                    50,
-                    11,
-                },
-                ["pct"] = 10,
+                ["pct"] = 50,
             },
             {
                 ["split"] = {
                     0,
                     40,
                     21,
+                },
+                ["pct"] = 15,
+            },
+            {
+                ["split"] = {
+                    0,
+                    50,
+                    11,
                 },
                 ["pct"] = 10,
             },
@@ -263,17 +263,17 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["split"] = {
-                    17,
-                    0,
-                    44,
-                },
-                ["pct"] = 15,
-            },
-            {
-                ["split"] = {
                     10,
                     0,
                     51,
+                },
+                ["pct"] = 20,
+            },
+            {
+                ["split"] = {
+                    17,
+                    0,
+                    44,
                 },
                 ["pct"] = 15,
             },
@@ -305,11 +305,11 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["split"] = {
-                    44,
-                    12,
-                    5,
+                    50,
+                    11,
+                    0,
                 },
-                ["pct"] = 10,
+                ["pct"] = 5,
             },
         },
         ["median"] = {
@@ -327,7 +327,7 @@ RecommendedStatsData_Talents = {
                     31,
                     30,
                 },
-                ["pct"] = 75,
+                ["pct"] = 80,
             },
             {
                 ["split"] = {
@@ -395,7 +395,7 @@ RecommendedStatsData_Talents = {
                     20,
                     0,
                 },
-                ["pct"] = 30,
+                ["pct"] = 25,
             },
             {
                 ["split"] = {
@@ -403,7 +403,7 @@ RecommendedStatsData_Talents = {
                     19,
                     0,
                 },
-                ["pct"] = 20,
+                ["pct"] = 25,
             },
         },
         ["median"] = {
@@ -529,17 +529,17 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["split"] = {
-                    20,
-                    0,
-                    41,
-                },
-                ["pct"] = 15,
-            },
-            {
-                ["split"] = {
                     11,
                     21,
                     29,
+                },
+                ["pct"] = 10,
+            },
+            {
+                ["split"] = {
+                    20,
+                    0,
+                    41,
                 },
                 ["pct"] = 10,
             },
@@ -547,7 +547,7 @@ RecommendedStatsData_Talents = {
         ["median"] = {
             14,
             21,
-            30,
+            29,
         },
     },
     ["SHAMAN_ELEMENTAL_RAID"] = {
@@ -611,21 +611,21 @@ RecommendedStatsData_Talents = {
                     5,
                     56,
                 },
-                ["pct"] = 55,
-            },
-            {
-                ["split"] = {
-                    0,
-                    7,
-                    54,
-                },
-                ["pct"] = 20,
+                ["pct"] = 60,
             },
             {
                 ["split"] = {
                     0,
                     12,
                     49,
+                },
+                ["pct"] = 15,
+            },
+            {
+                ["split"] = {
+                    0,
+                    7,
+                    54,
                 },
                 ["pct"] = 15,
             },
@@ -650,18 +650,18 @@ RecommendedStatsData_Talents = {
             {
                 ["split"] = {
                     38,
-                    2,
-                    21,
+                    0,
+                    23,
                 },
                 ["pct"] = 25,
             },
             {
                 ["split"] = {
                     38,
-                    0,
-                    23,
+                    2,
+                    21,
                 },
-                ["pct"] = 25,
+                ["pct"] = 20,
             },
         },
         ["median"] = {
@@ -749,7 +749,7 @@ RecommendedStatsData_Talents = {
                     40,
                     0,
                 },
-                ["pct"] = 90,
+                ["pct"] = 85,
             },
             {
                 ["split"] = {
@@ -758,6 +758,14 @@ RecommendedStatsData_Talents = {
                     0,
                 },
                 ["pct"] = 10,
+            },
+            {
+                ["split"] = {
+                    22,
+                    39,
+                    0,
+                },
+                ["pct"] = 5,
             },
         },
         ["median"] = {

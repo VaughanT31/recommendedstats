@@ -1,4 +1,4 @@
--- GENERATED 2026-10-29 - do not hand-edit
+-- GENERATED 2026-10-30 - do not hand-edit
 RecommendedStatsData_SampleSize = {
     ["SHAMAN_ENHANCEMENT_MYTHICPLUS"] = 20,
     ["SHAMAN_ENHANCEMENT_RAID"] = 20,
@@ -47,7 +47,7 @@ RecommendedStatsData_SampleSize = {
     ["DRUID_RESTORATION_MYTHICPLUS"] = 20,
     ["DRUID_RESTORATION_RAID"] = 20,
     ["WARLOCK_DESTRUCTION_MYTHICPLUS"] = 20,
-    ["WARLOCK_DESTRUCTION_RAID"] = 19,
+    ["WARLOCK_DESTRUCTION_RAID"] = 20,
     ["PRIEST_HOLY_MYTHICPLUS"] = 20,
     ["PRIEST_HOLY_RAID"] = 20,
     ["MAGE_FIRE_MYTHICPLUS"] = 20,
