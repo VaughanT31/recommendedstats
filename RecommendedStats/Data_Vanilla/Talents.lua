@@ -1,4 +1,4 @@
--- GENERATED 2026-11-01 - do not hand-edit
+-- GENERATED 2026-11-02 - do not hand-edit
 if (C_Seasons and C_Seasons.GetActiveSeason and C_Seasons.GetActiveSeason() == ((Enum and Enum.SeasonID and Enum.SeasonID.SeasonOfDiscovery) or 2)) then return end
 RecommendedStatsData_Talents = {
     ["DRUID_BALANCE_RAID"] = {
@@ -62,7 +62,7 @@ RecommendedStatsData_Talents = {
                     33,
                     7,
                 },
-                ["pct"] = 65,
+                ["pct"] = 70,
             },
             {
                 ["split"] = {
@@ -70,7 +70,7 @@ RecommendedStatsData_Talents = {
                     32,
                     5,
                 },
-                ["pct"] = 25,
+                ["pct"] = 20,
             },
             {
                 ["split"] = {
@@ -566,7 +566,7 @@ RecommendedStatsData_Talents = {
         },
     },
     ["WARLOCK_DESTRUCTION_RAID"] = {
-        ["n"] = 8,
+        ["n"] = 9,
         ["builds"] = {
             {
                 ["split"] = {
@@ -574,7 +574,7 @@ RecommendedStatsData_Talents = {
                     21,
                     23,
                 },
-                ["pct"] = 75,
+                ["pct"] = 78,
             },
             {
                 ["split"] = {
@@ -582,7 +582,7 @@ RecommendedStatsData_Talents = {
                     21,
                     30,
                 },
-                ["pct"] = 13,
+                ["pct"] = 11,
             },
             {
                 ["split"] = {
@@ -590,7 +590,7 @@ RecommendedStatsData_Talents = {
                     21,
                     22,
                 },
-                ["pct"] = 13,
+                ["pct"] = 11,
             },
         },
         ["median"] = {
@@ -622,24 +622,6 @@ RecommendedStatsData_Talents = {
         ["median"] = {
             9,
             21,
-            21,
-        },
-    },
-    ["WARLOCK_AFFLICTION_RAID"] = {
-        ["n"] = 1,
-        ["builds"] = {
-            {
-                ["split"] = {
-                    30,
-                    0,
-                    21,
-                },
-                ["pct"] = 100,
-            },
-        },
-        ["median"] = {
-            30,
-            0,
             21,
         },
     },

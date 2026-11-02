@@ -1,4 +1,4 @@
--- GENERATED 2026-11-01 - do not hand-edit
+-- GENERATED 2026-11-02 - do not hand-edit
 RecommendedStatsData_Talents = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["n"] = 20,
@@ -496,9 +496,9 @@ RecommendedStatsData_Talents = {
         ["tiers"] = {
             {
                 ["spellID"] = 109215,
-                ["pct"] = 50,
+                ["pct"] = 55,
                 ["altSpellID"] = 118675,
-                ["altPct"] = 50,
+                ["altPct"] = 45,
             },
             {
                 ["spellID"] = 109248,
@@ -506,9 +506,9 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 109260,
-                ["pct"] = 80,
+                ["pct"] = 85,
                 ["altSpellID"] = 109212,
-                ["altPct"] = 20,
+                ["altPct"] = 15,
             },
             {
                 ["spellID"] = 120679,
@@ -529,16 +529,16 @@ RecommendedStatsData_Talents = {
         },
         ["glyphs"] = {
             {
+                ["spellID"] = 57902,
+                ["pct"] = 100,
+            },
+            {
                 ["spellID"] = 20895,
                 ["pct"] = 95,
             },
             {
-                ["spellID"] = 57902,
-                ["pct"] = 95,
-            },
-            {
                 ["spellID"] = 56850,
-                ["pct"] = 85,
+                ["pct"] = 90,
             },
             {
                 ["spellID"] = 57866,
@@ -550,7 +550,7 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 119462,
-                ["pct"] = 50,
+                ["pct"] = 45,
             },
             {
                 ["spellID"] = 57870,
@@ -855,9 +855,9 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 115610,
-                ["pct"] = 85,
+                ["pct"] = 80,
                 ["altSpellID"] = 11426,
-                ["altPct"] = 15,
+                ["altPct"] = 20,
             },
             {
                 ["spellID"] = 113724,
@@ -901,14 +901,14 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 56363,
-                ["pct"] = 25,
+                ["pct"] = 30,
             },
             {
                 ["spellID"] = 63092,
                 ["pct"] = 25,
             },
             {
-                ["spellID"] = 56384,
+                ["spellID"] = 63093,
                 ["pct"] = 20,
             },
         },
@@ -1101,12 +1101,12 @@ RecommendedStatsData_Talents = {
                 ["pct"] = 70,
             },
             {
-                ["spellID"] = 123391,
-                ["pct"] = 60,
+                ["spellID"] = 120479,
+                ["pct"] = 55,
             },
             {
-                ["spellID"] = 120479,
-                ["pct"] = 50,
+                ["spellID"] = 123391,
+                ["pct"] = 55,
             },
             {
                 ["spellID"] = 125893,
@@ -1425,9 +1425,9 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 108945,
-                ["pct"] = 50,
+                ["pct"] = 55,
                 ["altSpellID"] = 19236,
-                ["altPct"] = 35,
+                ["altPct"] = 30,
             },
             {
                 ["spellID"] = 109142,
@@ -1435,31 +1435,31 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 120517,
-                ["pct"] = 85,
+                ["pct"] = 80,
                 ["altSpellID"] = 110744,
-                ["altPct"] = 15,
+                ["altPct"] = 20,
             },
         },
         ["glyphs"] = {
             {
                 ["spellID"] = 55675,
-                ["pct"] = 100,
+                ["pct"] = 95,
             },
             {
                 ["spellID"] = 55673,
-                ["pct"] = 75,
-            },
-            {
-                ["spellID"] = 126174,
-                ["pct"] = 50,
+                ["pct"] = 80,
             },
             {
                 ["spellID"] = 145722,
                 ["pct"] = 50,
             },
             {
+                ["spellID"] = 126174,
+                ["pct"] = 45,
+            },
+            {
                 ["spellID"] = 126094,
-                ["pct"] = 35,
+                ["pct"] = 40,
             },
             {
                 ["spellID"] = 14771,
@@ -1470,8 +1470,8 @@ RecommendedStatsData_Talents = {
                 ["pct"] = 25,
             },
             {
-                ["spellID"] = 126152,
-                ["pct"] = 25,
+                ["spellID"] = 55685,
+                ["pct"] = 20,
             },
         },
     },
@@ -1709,9 +1709,9 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 131511,
-                ["pct"] = 85,
-                ["altSpellID"] = 108216,
-                ["altPct"] = 10,
+                ["pct"] = 90,
+                ["altSpellID"] = 108215,
+                ["altPct"] = 5,
             },
             {
                 ["spellID"] = 114015,
@@ -1740,11 +1740,11 @@ RecommendedStatsData_Talents = {
                 ["pct"] = 45,
             },
             {
-                ["spellID"] = 58027,
-                ["pct"] = 40,
+                ["spellID"] = 58032,
+                ["pct"] = 45,
             },
             {
-                ["spellID"] = 58032,
+                ["spellID"] = 58027,
                 ["pct"] = 40,
             },
             {
@@ -1843,9 +1843,9 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 108283,
-                ["pct"] = 65,
+                ["pct"] = 60,
                 ["altSpellID"] = 16166,
-                ["altPct"] = 35,
+                ["altPct"] = 40,
             },
             {
                 ["spellID"] = 108281,
@@ -1867,7 +1867,7 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 55449,
-                ["pct"] = 75,
+                ["pct"] = 70,
             },
             {
                 ["spellID"] = 55448,
@@ -1875,7 +1875,7 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 55455,
-                ["pct"] = 55,
+                ["pct"] = 60,
             },
             {
                 ["spellID"] = 58058,
@@ -1883,11 +1883,11 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 147770,
-                ["pct"] = 40,
+                ["pct"] = 35,
             },
             {
                 ["spellID"] = 58135,
-                ["pct"] = 35,
+                ["pct"] = 30,
             },
             {
                 ["spellID"] = 55447,
@@ -2180,9 +2180,7 @@ RecommendedStatsData_Talents = {
         ["tiers"] = {
             {
                 ["spellID"] = 103826,
-                ["pct"] = 95,
-                ["altSpellID"] = 103827,
-                ["altPct"] = 5,
+                ["pct"] = 100,
             },
             {
                 ["spellID"] = 55694,
@@ -2212,22 +2210,26 @@ RecommendedStatsData_Talents = {
         ["glyphs"] = {
             {
                 ["spellID"] = 94372,
-                ["pct"] = 100,
-            },
-            {
-                ["spellID"] = 58098,
-                ["pct"] = 75,
+                ["pct"] = 95,
             },
             {
                 ["spellID"] = 63327,
                 ["pct"] = 75,
             },
             {
+                ["spellID"] = 58098,
+                ["pct"] = 70,
+            },
+            {
                 ["spellID"] = 146969,
-                ["pct"] = 50,
+                ["pct"] = 45,
             },
             {
                 ["spellID"] = 58356,
+                ["pct"] = 40,
+            },
+            {
+                ["spellID"] = 68164,
                 ["pct"] = 40,
             },
             {
@@ -2235,12 +2237,8 @@ RecommendedStatsData_Talents = {
                 ["pct"] = 35,
             },
             {
-                ["spellID"] = 68164,
-                ["pct"] = 35,
-            },
-            {
                 ["spellID"] = 63325,
-                ["pct"] = 30,
+                ["pct"] = 35,
             },
         },
     },
