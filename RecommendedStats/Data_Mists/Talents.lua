@@ -1,4 +1,4 @@
--- GENERATED 2026-11-02 - do not hand-edit
+-- GENERATED 2026-11-03 - do not hand-edit
 RecommendedStatsData_Talents = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["n"] = 20,
@@ -496,9 +496,9 @@ RecommendedStatsData_Talents = {
         ["tiers"] = {
             {
                 ["spellID"] = 109215,
-                ["pct"] = 55,
+                ["pct"] = 50,
                 ["altSpellID"] = 118675,
-                ["altPct"] = 45,
+                ["altPct"] = 50,
             },
             {
                 ["spellID"] = 109248,
@@ -506,9 +506,9 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 109260,
-                ["pct"] = 85,
+                ["pct"] = 80,
                 ["altSpellID"] = 109212,
-                ["altPct"] = 15,
+                ["altPct"] = 20,
             },
             {
                 ["spellID"] = 120679,
@@ -529,16 +529,16 @@ RecommendedStatsData_Talents = {
         },
         ["glyphs"] = {
             {
-                ["spellID"] = 57902,
-                ["pct"] = 100,
-            },
-            {
                 ["spellID"] = 20895,
                 ["pct"] = 95,
             },
             {
+                ["spellID"] = 57902,
+                ["pct"] = 95,
+            },
+            {
                 ["spellID"] = 56850,
-                ["pct"] = 90,
+                ["pct"] = 85,
             },
             {
                 ["spellID"] = 57866,
@@ -550,7 +550,7 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 119462,
-                ["pct"] = 45,
+                ["pct"] = 50,
             },
             {
                 ["spellID"] = 57870,
@@ -1843,9 +1843,9 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 108283,
-                ["pct"] = 60,
+                ["pct"] = 65,
                 ["altSpellID"] = 16166,
-                ["altPct"] = 40,
+                ["altPct"] = 35,
             },
             {
                 ["spellID"] = 108281,
@@ -1867,7 +1867,7 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 55449,
-                ["pct"] = 70,
+                ["pct"] = 75,
             },
             {
                 ["spellID"] = 55448,
@@ -1875,7 +1875,7 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 55455,
-                ["pct"] = 60,
+                ["pct"] = 55,
             },
             {
                 ["spellID"] = 58058,
@@ -1883,11 +1883,11 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 147770,
-                ["pct"] = 35,
+                ["pct"] = 40,
             },
             {
                 ["spellID"] = 58135,
-                ["pct"] = 30,
+                ["pct"] = 35,
             },
             {
                 ["spellID"] = 55447,
@@ -2210,15 +2210,15 @@ RecommendedStatsData_Talents = {
         ["glyphs"] = {
             {
                 ["spellID"] = 94372,
-                ["pct"] = 95,
+                ["pct"] = 100,
+            },
+            {
+                ["spellID"] = 58098,
+                ["pct"] = 75,
             },
             {
                 ["spellID"] = 63327,
                 ["pct"] = 75,
-            },
-            {
-                ["spellID"] = 58098,
-                ["pct"] = 70,
             },
             {
                 ["spellID"] = 146969,
@@ -2226,11 +2226,7 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 58356,
-                ["pct"] = 40,
-            },
-            {
-                ["spellID"] = 68164,
-                ["pct"] = 40,
+                ["pct"] = 35,
             },
             {
                 ["spellID"] = 58369,
@@ -2238,6 +2234,10 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 63325,
+                ["pct"] = 35,
+            },
+            {
+                ["spellID"] = 68164,
                 ["pct"] = 35,
             },
         },

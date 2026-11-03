@@ -1,4 +1,4 @@
--- GENERATED 2026-11-02 - do not hand-edit
+-- GENERATED 2026-11-03 - do not hand-edit
 RecommendedStatsData_Talents = {
     ["DRUID_BALANCE_RAID"] = {
         ["n"] = 20,
@@ -293,21 +293,21 @@ RecommendedStatsData_Talents = {
                     11,
                     5,
                 },
-                ["pct"] = 55,
+                ["pct"] = 50,
+            },
+            {
+                ["split"] = {
+                    44,
+                    12,
+                    5,
+                },
+                ["pct"] = 10,
             },
             {
                 ["split"] = {
                     42,
                     6,
                     13,
-                },
-                ["pct"] = 5,
-            },
-            {
-                ["split"] = {
-                    50,
-                    11,
-                    0,
                 },
                 ["pct"] = 5,
             },
@@ -331,17 +331,17 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["split"] = {
-                    0,
-                    40,
-                    21,
-                },
-                ["pct"] = 10,
-            },
-            {
-                ["split"] = {
                     10,
                     41,
                     10,
+                },
+                ["pct"] = 5,
+            },
+            {
+                ["split"] = {
+                    0,
+                    33,
+                    28,
                 },
                 ["pct"] = 5,
             },
@@ -361,7 +361,7 @@ RecommendedStatsData_Talents = {
                     11,
                     45,
                 },
-                ["pct"] = 80,
+                ["pct"] = 85,
             },
             {
                 ["split"] = {
@@ -369,7 +369,7 @@ RecommendedStatsData_Talents = {
                     8,
                     48,
                 },
-                ["pct"] = 20,
+                ["pct"] = 15,
             },
         },
         ["median"] = {
