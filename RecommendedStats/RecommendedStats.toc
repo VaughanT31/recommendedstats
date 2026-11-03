@@ -2,6 +2,7 @@
 ## Title: RecommendedStats
 ## Notes: Your secondary stats vs top-player targets, with BiS.
 ## Notes-ruRU: Ваши вторичные характеристики в сравнении с показателями топовых игроков, включая BiS.
+## Notes-frFR: Vos caractéristiques secondaires par rapport aux objectifs des meilleurs joueurs, avec les BiS.
 ## Author: CtrlShift_Zed
 ## Version: 2026-11-03
 ## Category: CtrlShift_Zed
@@ -16,6 +17,7 @@ Libs\Libs.xml
 Locale\enUS.lua
 Locale\zhTW.lua
 Locale\ruRU.lua
+Locale\frFR.lua
 
 Flavor\Retail.lua
 
