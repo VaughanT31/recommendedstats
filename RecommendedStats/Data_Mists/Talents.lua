@@ -1,4 +1,4 @@
--- GENERATED 2026-11-03 - do not hand-edit
+-- GENERATED 2026-11-04 - do not hand-edit
 RecommendedStatsData_Talents = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["n"] = 20,
@@ -1342,21 +1342,19 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 121536,
-                ["pct"] = 95,
-                ["altSpellID"] = 64129,
-                ["altPct"] = 5,
+                ["pct"] = 100,
             },
             {
                 ["spellID"] = 139139,
-                ["pct"] = 65,
+                ["pct"] = 70,
                 ["altSpellID"] = 123040,
-                ["altPct"] = 35,
+                ["altPct"] = 30,
             },
             {
                 ["spellID"] = 19236,
-                ["pct"] = 40,
+                ["pct"] = 50,
                 ["altSpellID"] = 108945,
-                ["altPct"] = 35,
+                ["altPct"] = 30,
             },
             {
                 ["spellID"] = 109142,
@@ -1379,19 +1377,19 @@ RecommendedStatsData_Talents = {
                 ["pct"] = 80,
             },
             {
-                ["spellID"] = 58009,
+                ["spellID"] = 55692,
                 ["pct"] = 60,
             },
             {
-                ["spellID"] = 55692,
+                ["spellID"] = 58009,
                 ["pct"] = 55,
             },
             {
-                ["spellID"] = 145722,
+                ["spellID"] = 147776,
                 ["pct"] = 40,
             },
             {
-                ["spellID"] = 147776,
+                ["spellID"] = 145722,
                 ["pct"] = 30,
             },
             {
@@ -1399,7 +1397,7 @@ RecommendedStatsData_Talents = {
                 ["pct"] = 20,
             },
             {
-                ["spellID"] = 89489,
+                ["spellID"] = 126174,
                 ["pct"] = 20,
             },
         },
@@ -1703,15 +1701,15 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 36554,
-                ["pct"] = 85,
+                ["pct"] = 90,
                 ["altSpellID"] = 108212,
-                ["altPct"] = 15,
+                ["altPct"] = 10,
             },
             {
                 ["spellID"] = 131511,
-                ["pct"] = 90,
-                ["altSpellID"] = 108215,
-                ["altPct"] = 5,
+                ["pct"] = 85,
+                ["altSpellID"] = 108216,
+                ["altPct"] = 10,
             },
             {
                 ["spellID"] = 114015,
@@ -1733,11 +1731,11 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 58033,
-                ["pct"] = 65,
+                ["pct"] = 70,
             },
             {
                 ["spellID"] = 56819,
-                ["pct"] = 45,
+                ["pct"] = 50,
             },
             {
                 ["spellID"] = 58032,
@@ -1745,7 +1743,7 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 58027,
-                ["pct"] = 40,
+                ["pct"] = 35,
             },
             {
                 ["spellID"] = 56811,
@@ -2080,11 +2078,11 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 56250,
-                ["pct"] = 80,
+                ["pct"] = 85,
             },
             {
                 ["spellID"] = 58081,
-                ["pct"] = 60,
+                ["pct"] = 55,
             },
             {
                 ["spellID"] = 56240,
@@ -2092,7 +2090,7 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 56246,
-                ["pct"] = 35,
+                ["pct"] = 40,
             },
             {
                 ["spellID"] = 56218,
@@ -2100,7 +2098,7 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 58094,
-                ["pct"] = 25,
+                ["pct"] = 20,
             },
         },
     },
