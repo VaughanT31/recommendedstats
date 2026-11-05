@@ -1,4 +1,4 @@
--- GENERATED 2026-11-04 - do not hand-edit
+-- GENERATED 2026-11-05 - do not hand-edit
 if (C_Seasons and C_Seasons.GetActiveSeason and C_Seasons.GetActiveSeason() == ((Enum and Enum.SeasonID and Enum.SeasonID.SeasonOfDiscovery) or 2)) then return end
 RecommendedStatsData_ItemEffects = {
     ["11662"] = {
@@ -383,9 +383,6 @@ RecommendedStatsData_ItemEffects = {
         ["sc"] = 1,
     },
     ["22430"] = {
-        ["sc"] = 1,
-    },
-    ["22433"] = {
         ["sc"] = 1,
     },
     ["22436"] = {

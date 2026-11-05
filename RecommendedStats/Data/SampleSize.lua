@@ -1,4 +1,4 @@
--- GENERATED 2026-11-04 - do not hand-edit
+-- GENERATED 2026-11-05 - do not hand-edit
 RecommendedStatsData_SampleSize = {
     ["SHAMAN_ENHANCEMENT_MYTHICPLUS"] = 20,
     ["SHAMAN_ENHANCEMENT_RAID"] = 20,
