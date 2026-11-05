@@ -10,6 +10,7 @@
 ## SavedVariablesPerCharacter: RecommendedStatsDBChar
 ## X-License: MIT
 ## X-Wago-ID: 56ndvpG9
+## X-Curse-Project-ID: 1655471
 
 Libs\Libs.xml
 
