@@ -1,4 +1,4 @@
--- GENERATED 2026-11-05 - do not hand-edit
+-- GENERATED 2026-11-06 - do not hand-edit
 if (C_Seasons and C_Seasons.GetActiveSeason and C_Seasons.GetActiveSeason() == ((Enum and Enum.SeasonID and Enum.SeasonID.SeasonOfDiscovery) or 2)) then return end
 RecommendedStatsData_BiS = {
     ["DRUID_BALANCE_RAID"] = {
@@ -683,7 +683,7 @@ RecommendedStatsData_BiS = {
             ["pct"] = 100,
             ["ilvl"] = 86,
             ["enchantID"] = 2717,
-            ["enchantPct"] = 85,
+            ["enchantPct"] = 90,
             ["changedAt"] = "2000-01-01",
         },
         ["CHEST"] = {
@@ -724,16 +724,16 @@ RecommendedStatsData_BiS = {
             ["pct"] = 100,
             ["ilvl"] = 88,
             ["enchantID"] = 247,
-            ["enchantPct"] = 50,
+            ["enchantPct"] = 45,
             ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 16463,
-            ["pct"] = 65,
+            ["pct"] = 60,
             ["ilvl"] = 71,
-            ["altItemID"] = 16571,
-            ["altPct"] = 15,
-            ["altIlvl"] = 71,
+            ["altItemID"] = 22441,
+            ["altPct"] = 20,
+            ["altIlvl"] = 88,
             ["enchantID"] = 2564,
             ["enchantPct"] = 100,
             ["changedAt"] = "2000-01-01",
@@ -787,19 +787,16 @@ RecommendedStatsData_BiS = {
             ["pct"] = 40,
             ["ilvl"] = 89,
             ["altItemID"] = 23039,
-            ["altPct"] = 35,
+            ["altPct"] = 40,
             ["altIlvl"] = 83,
             ["enchantID"] = 2564,
-            ["enchantPct"] = 60,
+            ["enchantPct"] = 55,
             ["changedAt"] = "2026-10-23",
         },
         ["RANGED"] = {
             ["itemID"] = 22812,
-            ["pct"] = 95,
+            ["pct"] = 100,
             ["ilvl"] = 89,
-            ["altItemID"] = 19361,
-            ["altPct"] = 5,
-            ["altIlvl"] = 77,
             ["enchantID"] = 664,
             ["enchantPct"] = 100,
             ["changedAt"] = "2000-01-01",
@@ -812,7 +809,7 @@ RecommendedStatsData_BiS = {
             ["altPct"] = 10,
             ["altIlvl"] = 83,
             ["enchantID"] = 2564,
-            ["enchantPct"] = 60,
+            ["enchantPct"] = 55,
             ["changedAt"] = "2000-01-01",
         },
     },

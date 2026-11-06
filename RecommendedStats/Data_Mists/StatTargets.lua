@@ -1,4 +1,4 @@
--- GENERATED 2026-11-05 - do not hand-edit
+-- GENERATED 2026-11-06 - do not hand-edit
 RecommendedStatsData_Targets = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["haste"] = 4642,
@@ -102,7 +102,7 @@ RecommendedStatsData_Targets = {
         ["crit"] = 5594,
         ["critHigh"] = 6361,
         ["mastery"] = 15195,
-        ["masteryHigh"] = 17071,
+        ["masteryHigh"] = 16862,
     },
     ["MONK_BREWMASTER_RAID"] = {
         ["haste"] = 10314,
@@ -243,7 +243,7 @@ RecommendedStatsData_Targets = {
     ["WARLOCK_DESTRUCTION_RAID"] = {
         ["haste"] = 10281,
         ["hasteHigh"] = 12420,
-        ["crit"] = 7167,
+        ["crit"] = 7236,
         ["critHigh"] = 9106,
         ["mastery"] = 19614,
         ["masteryHigh"] = 20600,

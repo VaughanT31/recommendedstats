@@ -1,4 +1,4 @@
--- GENERATED 2026-11-05 - do not hand-edit
+-- GENERATED 2026-11-06 - do not hand-edit
 RecommendedStatsData_Targets = {
     ["DRUID_BALANCE_RAID"] = {
         ["crit"] = 336,
@@ -25,21 +25,23 @@ RecommendedStatsData_Targets = {
         ["hasteHigh"] = 217,
     },
     ["HUNTER_BEASTMASTERY_RAID"] = {
-        ["crit"] = 319,
+        ["crit"] = 309,
         ["critHigh"] = 362,
         ["hit"] = 97,
         ["hitHigh"] = 103,
+        ["haste"] = 27,
+        ["hasteHigh"] = 27,
     },
     ["HUNTER_MARKSMANSHIP_RAID"] = {
         ["crit"] = 250,
         ["critHigh"] = 289,
-        ["hit"] = 133,
+        ["hit"] = 126,
         ["hitHigh"] = 142,
     },
     ["HUNTER_SURVIVAL_RAID"] = {
         ["crit"] = 225,
         ["critHigh"] = 293,
-        ["hit"] = 73,
+        ["hit"] = 65,
         ["hitHigh"] = 96,
     },
     ["MAGE_ARCANE_RAID"] = {
@@ -61,15 +63,15 @@ RecommendedStatsData_Targets = {
     ["MAGE_FROST_RAID"] = {
         ["crit"] = 354,
         ["critHigh"] = 436,
-        ["hit"] = 152,
-        ["hitHigh"] = 179,
+        ["hit"] = 149,
+        ["hitHigh"] = 176,
         ["haste"] = 59,
-        ["hasteHigh"] = 114,
+        ["hasteHigh"] = 127,
     },
     ["PALADIN_HOLY_RAID"] = {
         ["crit"] = 229,
-        ["critHigh"] = 294,
-        ["haste"] = 89,
+        ["critHigh"] = 281,
+        ["haste"] = 96,
         ["hasteHigh"] = 331,
     },
     ["PALADIN_PROTECTION_RAID"] = {
@@ -94,9 +96,9 @@ RecommendedStatsData_Targets = {
     },
     ["PRIEST_SHADOW_RAID"] = {
         ["crit"] = 135,
-        ["critHigh"] = 163,
+        ["critHigh"] = 168,
         ["hit"] = 125,
-        ["hitHigh"] = 144,
+        ["hitHigh"] = 142,
         ["haste"] = 160,
         ["hasteHigh"] = 257,
     },
@@ -114,16 +116,16 @@ RecommendedStatsData_Targets = {
     },
     ["ROGUE_SUBTLETY_RAID"] = {
         ["crit"] = 186,
-        ["critHigh"] = 226,
-        ["hit"] = 270,
+        ["critHigh"] = 234,
+        ["hit"] = 268,
         ["hitHigh"] = 315,
     },
     ["SHAMAN_ELEMENTAL_RAID"] = {
         ["crit"] = 391,
-        ["critHigh"] = 445,
+        ["critHigh"] = 439,
         ["hit"] = 102,
         ["hitHigh"] = 127,
-        ["haste"] = 145,
+        ["haste"] = 141,
         ["hasteHigh"] = 194,
     },
     ["SHAMAN_ENHANCEMENT_RAID"] = {
