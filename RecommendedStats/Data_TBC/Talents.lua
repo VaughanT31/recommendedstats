@@ -1,4 +1,4 @@
--- GENERATED 2026-11-06 - do not hand-edit
+-- GENERATED 2026-11-07 - do not hand-edit
 RecommendedStatsData_Talents = {
     ["DRUID_BALANCE_RAID"] = {
         ["n"] = 20,
@@ -225,7 +225,7 @@ RecommendedStatsData_Talents = {
                     48,
                     11,
                 },
-                ["pct"] = 50,
+                ["pct"] = 55,
             },
             {
                 ["split"] = {
@@ -237,9 +237,9 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["split"] = {
-                    0,
-                    50,
-                    11,
+                    2,
+                    45,
+                    14,
                 },
                 ["pct"] = 10,
             },
@@ -259,7 +259,7 @@ RecommendedStatsData_Talents = {
                     0,
                     43,
                 },
-                ["pct"] = 65,
+                ["pct"] = 60,
             },
             {
                 ["split"] = {

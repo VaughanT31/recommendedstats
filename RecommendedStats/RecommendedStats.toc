@@ -4,7 +4,7 @@
 ## Notes-ruRU: Ваши вторичные характеристики в сравнении с показателями топовых игроков, включая BiS.
 ## Notes-frFR: Vos caractéristiques secondaires par rapport aux objectifs des meilleurs joueurs, avec les BiS.
 ## Author: CtrlShift_Zed
-## Version: 2026-11-06
+## Version: 2026-11-07
 ## Category: CtrlShift_Zed
 ## IconTexture: Interface\AddOns\RecommendedStats\icon
 ## SavedVariables: RecommendedStatsDB
