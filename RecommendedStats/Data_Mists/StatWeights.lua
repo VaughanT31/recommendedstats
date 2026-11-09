@@ -1,4 +1,4 @@
--- GENERATED 2026-11-07 - do not hand-edit
+-- GENERATED 2026-11-09 - do not hand-edit
 RecommendedStatsData_StatWeights = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["haste"] = -0.4429,
@@ -83,7 +83,7 @@ RecommendedStatsData_StatWeights = {
     ["PALADIN_HOLY_RAID"] = {
         ["haste"] = -0.2626,
         ["crit"] = -1.0378,
-        ["mastery"] = -0.2082,
+        ["mastery"] = -0.1974,
     },
     ["PALADIN_PROTECTION_RAID"] = {
         ["haste"] = -0.0367,

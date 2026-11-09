@@ -1,4 +1,4 @@
--- GENERATED 2026-11-07 - do not hand-edit
+-- GENERATED 2026-11-09 - do not hand-edit
 RecommendedStatsData_SampleSize = {
     ["DEATHKNIGHT_BLOOD_RAID"] = 20,
     ["DEATHKNIGHT_FROST_RAID"] = 20,
