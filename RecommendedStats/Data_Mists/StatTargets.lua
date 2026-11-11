@@ -1,4 +1,4 @@
--- GENERATED 2026-11-10 - do not hand-edit
+-- GENERATED 2026-11-11 - do not hand-edit
 RecommendedStatsData_Targets = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["haste"] = 4642,
@@ -102,7 +102,7 @@ RecommendedStatsData_Targets = {
         ["crit"] = 5594,
         ["critHigh"] = 6361,
         ["mastery"] = 15195,
-        ["masteryHigh"] = 16862,
+        ["masteryHigh"] = 17071,
     },
     ["MONK_BREWMASTER_RAID"] = {
         ["haste"] = 10314,

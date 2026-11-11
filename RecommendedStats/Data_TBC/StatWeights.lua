@@ -1,4 +1,4 @@
--- GENERATED 2026-11-10 - do not hand-edit
+-- GENERATED 2026-11-11 - do not hand-edit
 RecommendedStatsData_StatWeights = {
     ["DRUID_BALANCE_RAID"] = {
         ["crit"] = -0.0964,
@@ -6,8 +6,8 @@ RecommendedStatsData_StatWeights = {
         ["haste"] = -0.4341,
     },
     ["DRUID_FERAL_RAID"] = {
-        ["crit"] = -0.0962,
-        ["hit"] = -0.104,
+        ["crit"] = -0.1246,
+        ["hit"] = -0.0962,
     },
     ["DRUID_GUARDIAN_RAID"] = {
         ["crit"] = -0.1359,
@@ -103,17 +103,17 @@ RecommendedStatsData_StatWeights = {
         ["haste"] = -0.8038,
     },
     ["WARLOCK_DESTRUCTION_RAID"] = {
-        ["crit"] = -0.1005,
-        ["hit"] = -0.1336,
-        ["haste"] = -0.3466,
+        ["crit"] = -0.0935,
+        ["hit"] = -0.1332,
+        ["haste"] = -0.3443,
     },
     ["WARRIOR_ARMS_RAID"] = {
         ["crit"] = -0.2139,
         ["hit"] = -0.2409,
     },
     ["WARRIOR_FURY_RAID"] = {
-        ["crit"] = -0.1151,
-        ["hit"] = -0.1875,
+        ["crit"] = -0.1147,
+        ["hit"] = -0.1951,
     },
     ["WARRIOR_PROTECTION_RAID"] = {
         ["crit"] = -0.1305,

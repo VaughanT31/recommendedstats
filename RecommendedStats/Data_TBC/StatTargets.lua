@@ -1,4 +1,4 @@
--- GENERATED 2026-11-10 - do not hand-edit
+-- GENERATED 2026-11-11 - do not hand-edit
 RecommendedStatsData_Targets = {
     ["DRUID_BALANCE_RAID"] = {
         ["crit"] = 324,
@@ -10,9 +10,9 @@ RecommendedStatsData_Targets = {
     },
     ["DRUID_FERAL_RAID"] = {
         ["crit"] = 206,
-        ["critHigh"] = 226,
+        ["critHigh"] = 219,
         ["hit"] = 97,
-        ["hitHigh"] = 116,
+        ["hitHigh"] = 108,
     },
     ["DRUID_GUARDIAN_RAID"] = {
         ["crit"] = 220,
@@ -162,7 +162,7 @@ RecommendedStatsData_Targets = {
         ["hit"] = 181,
         ["hitHigh"] = 220,
         ["haste"] = 139,
-        ["hasteHigh"] = 175,
+        ["hasteHigh"] = 170,
     },
     ["WARRIOR_ARMS_RAID"] = {
         ["crit"] = 339,
@@ -171,9 +171,9 @@ RecommendedStatsData_Targets = {
         ["hitHigh"] = 155,
     },
     ["WARRIOR_FURY_RAID"] = {
-        ["crit"] = 306,
+        ["crit"] = 301,
         ["critHigh"] = 339,
-        ["hit"] = 121,
+        ["hit"] = 118,
         ["hitHigh"] = 165,
     },
     ["WARRIOR_PROTECTION_RAID"] = {
