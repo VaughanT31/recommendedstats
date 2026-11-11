@@ -1,4 +1,4 @@
--- GENERATED 2026-11-09 - do not hand-edit
+-- GENERATED 2026-11-10 - do not hand-edit
 RecommendedStatsData_StatWeights = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["haste"] = -0.4429,
@@ -38,7 +38,7 @@ RecommendedStatsData_StatWeights = {
     ["HUNTER_BEASTMASTERY_RAID"] = {
         ["haste"] = -0.0778,
         ["crit"] = -0.2874,
-        ["mastery"] = -0.1935,
+        ["mastery"] = -0.1766,
     },
     ["HUNTER_MARKSMANSHIP_RAID"] = {
         ["haste"] = -0.0918,

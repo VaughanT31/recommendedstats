@@ -1,7 +1,7 @@
--- GENERATED 2026-11-09 - do not hand-edit
+-- GENERATED 2026-11-10 - do not hand-edit
 RecommendedStatsData_Targets = {
     ["DRUID_BALANCE_RAID"] = {
-        ["crit"] = 325,
+        ["crit"] = 324,
         ["critHigh"] = 361,
         ["hit"] = 130,
         ["hitHigh"] = 145,
@@ -11,7 +11,7 @@ RecommendedStatsData_Targets = {
     ["DRUID_FERAL_RAID"] = {
         ["crit"] = 206,
         ["critHigh"] = 226,
-        ["hit"] = 96,
+        ["hit"] = 97,
         ["hitHigh"] = 116,
     },
     ["DRUID_GUARDIAN_RAID"] = {
@@ -21,12 +21,12 @@ RecommendedStatsData_Targets = {
         ["hitHigh"] = 106,
     },
     ["DRUID_RESTORATION_RAID"] = {
-        ["haste"] = 155,
+        ["haste"] = 156,
         ["hasteHigh"] = 217,
     },
     ["HUNTER_BEASTMASTERY_RAID"] = {
-        ["crit"] = 309,
-        ["critHigh"] = 362,
+        ["crit"] = 319,
+        ["critHigh"] = 382,
         ["hit"] = 97,
         ["hitHigh"] = 103,
     },
@@ -62,14 +62,14 @@ RecommendedStatsData_Targets = {
         ["crit"] = 336,
         ["critHigh"] = 436,
         ["hit"] = 149,
-        ["hitHigh"] = 177,
-        ["haste"] = 60,
+        ["hitHigh"] = 165,
+        ["haste"] = 59,
         ["hasteHigh"] = 143,
     },
     ["PALADIN_HOLY_RAID"] = {
-        ["crit"] = 228,
+        ["crit"] = 221,
         ["critHigh"] = 281,
-        ["haste"] = 96,
+        ["haste"] = 99,
         ["hasteHigh"] = 331,
     },
     ["PALADIN_PROTECTION_RAID"] = {
@@ -166,18 +166,18 @@ RecommendedStatsData_Targets = {
     },
     ["WARRIOR_ARMS_RAID"] = {
         ["crit"] = 339,
-        ["critHigh"] = 410,
-        ["hit"] = 129,
+        ["critHigh"] = 404,
+        ["hit"] = 120,
         ["hitHigh"] = 155,
     },
     ["WARRIOR_FURY_RAID"] = {
-        ["crit"] = 301,
-        ["critHigh"] = 322,
-        ["hit"] = 118,
-        ["hitHigh"] = 164,
+        ["crit"] = 306,
+        ["critHigh"] = 339,
+        ["hit"] = 121,
+        ["hitHigh"] = 165,
     },
     ["WARRIOR_PROTECTION_RAID"] = {
-        ["crit"] = 285,
+        ["crit"] = 284,
         ["critHigh"] = 335,
         ["hit"] = 97,
         ["hitHigh"] = 108,

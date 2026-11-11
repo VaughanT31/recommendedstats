@@ -1,4 +1,4 @@
--- GENERATED 2026-11-09 - do not hand-edit
+-- GENERATED 2026-11-10 - do not hand-edit
 RecommendedStatsData_Talents = {
     ["DRUID_BALANCE_RAID"] = {
         ["n"] = 20,
@@ -9,7 +9,7 @@ RecommendedStatsData_Talents = {
                     0,
                     13,
                 },
-                ["pct"] = 80,
+                ["pct"] = 85,
             },
             {
                 ["split"] = {
@@ -17,7 +17,7 @@ RecommendedStatsData_Talents = {
                     0,
                     14,
                 },
-                ["pct"] = 20,
+                ["pct"] = 15,
             },
         },
         ["median"] = {
@@ -35,7 +35,7 @@ RecommendedStatsData_Talents = {
                     44,
                     17,
                 },
-                ["pct"] = 60,
+                ["pct"] = 55,
             },
             {
                 ["split"] = {
@@ -43,7 +43,7 @@ RecommendedStatsData_Talents = {
                     47,
                     14,
                 },
-                ["pct"] = 40,
+                ["pct"] = 45,
             },
         },
         ["median"] = {
@@ -61,7 +61,15 @@ RecommendedStatsData_Talents = {
                     44,
                     17,
                 },
-                ["pct"] = 85,
+                ["pct"] = 80,
+            },
+            {
+                ["split"] = {
+                    0,
+                    47,
+                    14,
+                },
+                ["pct"] = 10,
             },
             {
                 ["split"] = {
@@ -70,14 +78,6 @@ RecommendedStatsData_Talents = {
                     15,
                 },
                 ["pct"] = 10,
-            },
-            {
-                ["split"] = {
-                    0,
-                    47,
-                    14,
-                },
-                ["pct"] = 5,
             },
         },
         ["median"] = {
@@ -263,17 +263,17 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["split"] = {
-                    17,
-                    0,
-                    44,
-                },
-                ["pct"] = 15,
-            },
-            {
-                ["split"] = {
                     10,
                     0,
                     51,
+                },
+                ["pct"] = 20,
+            },
+            {
+                ["split"] = {
+                    17,
+                    0,
+                    44,
                 },
                 ["pct"] = 15,
             },
@@ -749,7 +749,7 @@ RecommendedStatsData_Talents = {
                     40,
                     0,
                 },
-                ["pct"] = 85,
+                ["pct"] = 80,
             },
             {
                 ["split"] = {
