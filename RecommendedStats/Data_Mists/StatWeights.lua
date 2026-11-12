@@ -1,4 +1,4 @@
--- GENERATED 2026-11-11 - do not hand-edit
+-- GENERATED 2026-11-12 - do not hand-edit
 RecommendedStatsData_StatWeights = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["haste"] = -0.4429,
@@ -27,8 +27,8 @@ RecommendedStatsData_StatWeights = {
     },
     ["DRUID_GUARDIAN_RAID"] = {
         ["haste"] = -0.2308,
-        ["crit"] = -0.2013,
-        ["mastery"] = -0.6627,
+        ["crit"] = -0.1968,
+        ["mastery"] = -0.6298,
     },
     ["DRUID_RESTORATION_RAID"] = {
         ["haste"] = -0.3169,
@@ -41,9 +41,9 @@ RecommendedStatsData_StatWeights = {
         ["mastery"] = -0.1766,
     },
     ["HUNTER_MARKSMANSHIP_RAID"] = {
-        ["haste"] = -0.0918,
-        ["crit"] = -0.0858,
-        ["mastery"] = -0.4274,
+        ["haste"] = -0.103,
+        ["crit"] = -0.1667,
+        ["mastery"] = -0.5774,
     },
     ["HUNTER_SURVIVAL_RAID"] = {
         ["haste"] = -0.1243,
@@ -71,9 +71,9 @@ RecommendedStatsData_StatWeights = {
         ["mastery"] = -1.2857,
     },
     ["MONK_MISTWEAVER_RAID"] = {
-        ["haste"] = -0.4547,
-        ["crit"] = -0.138,
-        ["mastery"] = -0.4012,
+        ["haste"] = -0.4536,
+        ["crit"] = -0.1351,
+        ["mastery"] = -0.4132,
     },
     ["MONK_WINDWALKER_RAID"] = {
         ["haste"] = -0.0868,

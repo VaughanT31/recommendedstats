@@ -1,17 +1,17 @@
--- GENERATED 2026-11-11 - do not hand-edit
+-- GENERATED 2026-11-12 - do not hand-edit
 RecommendedStatsData_Targets = {
     ["DRUID_BALANCE_RAID"] = {
-        ["crit"] = 324,
-        ["critHigh"] = 361,
+        ["crit"] = 320,
+        ["critHigh"] = 359,
         ["hit"] = 130,
-        ["hitHigh"] = 145,
+        ["hitHigh"] = 141,
         ["haste"] = 119,
         ["hasteHigh"] = 190,
     },
     ["DRUID_FERAL_RAID"] = {
         ["crit"] = 206,
-        ["critHigh"] = 219,
-        ["hit"] = 97,
+        ["critHigh"] = 226,
+        ["hit"] = 96,
         ["hitHigh"] = 108,
     },
     ["DRUID_GUARDIAN_RAID"] = {
@@ -39,7 +39,7 @@ RecommendedStatsData_Targets = {
     ["HUNTER_SURVIVAL_RAID"] = {
         ["crit"] = 222,
         ["critHigh"] = 293,
-        ["hit"] = 65,
+        ["hit"] = 59,
         ["hitHigh"] = 96,
     },
     ["MAGE_ARCANE_RAID"] = {
@@ -48,7 +48,7 @@ RecommendedStatsData_Targets = {
         ["hit"] = 78,
         ["hitHigh"] = 112,
         ["haste"] = 89,
-        ["hasteHigh"] = 141,
+        ["hasteHigh"] = 166,
     },
     ["MAGE_FIRE_RAID"] = {
         ["crit"] = 380,
@@ -107,9 +107,9 @@ RecommendedStatsData_Targets = {
         ["hitHigh"] = 303,
     },
     ["ROGUE_COMBAT_RAID"] = {
-        ["crit"] = 231,
+        ["crit"] = 234,
         ["critHigh"] = 290,
-        ["hit"] = 307,
+        ["hit"] = 310,
         ["hitHigh"] = 319,
     },
     ["ROGUE_SUBTLETY_RAID"] = {
@@ -123,7 +123,7 @@ RecommendedStatsData_Targets = {
         ["critHigh"] = 439,
         ["hit"] = 102,
         ["hitHigh"] = 127,
-        ["haste"] = 141,
+        ["haste"] = 145,
         ["hasteHigh"] = 194,
     },
     ["SHAMAN_ENHANCEMENT_RAID"] = {
@@ -173,7 +173,7 @@ RecommendedStatsData_Targets = {
     ["WARRIOR_FURY_RAID"] = {
         ["crit"] = 301,
         ["critHigh"] = 339,
-        ["hit"] = 118,
+        ["hit"] = 117,
         ["hitHigh"] = 165,
     },
     ["WARRIOR_PROTECTION_RAID"] = {
