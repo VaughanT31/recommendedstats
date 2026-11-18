@@ -1,4 +1,4 @@
--- GENERATED 2026-11-17 - do not hand-edit
+-- GENERATED 2026-11-18 - do not hand-edit
 RecommendedStatsData_StatWeights = {
     ["DRUID_BALANCE_RAID"] = {
         ["crit"] = -0.0964,
@@ -56,7 +56,7 @@ RecommendedStatsData_StatWeights = {
         ["haste"] = -0.7165,
     },
     ["PRIEST_DISCIPLINE_RAID"] = {
-        ["haste"] = -0.7983,
+        ["haste"] = -0.8845,
     },
     ["PRIEST_HOLY_RAID"] = {
         ["haste"] = -0.5673,

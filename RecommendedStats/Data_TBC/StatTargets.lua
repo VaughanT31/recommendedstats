@@ -1,4 +1,4 @@
--- GENERATED 2026-11-17 - do not hand-edit
+-- GENERATED 2026-11-18 - do not hand-edit
 RecommendedStatsData_Targets = {
     ["DRUID_BALANCE_RAID"] = {
         ["crit"] = 324,
@@ -85,7 +85,7 @@ RecommendedStatsData_Targets = {
         ["hasteHigh"] = 133,
     },
     ["PRIEST_DISCIPLINE_RAID"] = {
-        ["haste"] = 60,
+        ["haste"] = 58,
         ["hasteHigh"] = 125,
     },
     ["PRIEST_HOLY_RAID"] = {

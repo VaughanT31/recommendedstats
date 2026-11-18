@@ -1,4 +1,4 @@
--- GENERATED 2026-11-17 - do not hand-edit
+-- GENERATED 2026-11-18 - do not hand-edit
 RecommendedStatsData_Targets = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["haste"] = 4642,
@@ -97,10 +97,10 @@ RecommendedStatsData_Targets = {
         ["masteryHigh"] = 14745,
     },
     ["MAGE_FROST_RAID"] = {
-        ["haste"] = 14267,
+        ["haste"] = 14289,
         ["hasteHigh"] = 15716,
         ["crit"] = 5594,
-        ["critHigh"] = 6418,
+        ["critHigh"] = 6361,
         ["mastery"] = 15195,
         ["masteryHigh"] = 17071,
     },
@@ -148,7 +148,7 @@ RecommendedStatsData_Targets = {
         ["haste"] = 15550,
         ["hasteHigh"] = 15822,
         ["crit"] = 4991,
-        ["critHigh"] = 6029,
+        ["critHigh"] = 5478,
         ["mastery"] = 18004,
         ["masteryHigh"] = 20947,
     },
@@ -246,7 +246,7 @@ RecommendedStatsData_Targets = {
         ["crit"] = 7236,
         ["critHigh"] = 9106,
         ["mastery"] = 19614,
-        ["masteryHigh"] = 20600,
+        ["masteryHigh"] = 21497,
     },
     ["WARRIOR_ARMS_RAID"] = {
         ["haste"] = 3029,
