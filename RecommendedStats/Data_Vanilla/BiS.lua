@@ -1,4 +1,4 @@
--- GENERATED 2026-11-18 - do not hand-edit
+-- GENERATED 2026-11-19 - do not hand-edit
 if (C_Seasons and C_Seasons.GetActiveSeason and C_Seasons.GetActiveSeason() == ((Enum and Enum.SeasonID and Enum.SeasonID.SeasonOfDiscovery) or 2)) then return end
 RecommendedStatsData_BiS = {
     ["DRUID_BALANCE_RAID"] = {
@@ -724,15 +724,15 @@ RecommendedStatsData_BiS = {
             ["pct"] = 100,
             ["ilvl"] = 88,
             ["enchantID"] = 247,
-            ["enchantPct"] = 40,
+            ["enchantPct"] = 35,
             ["changedAt"] = "2000-01-01",
         },
         ["HANDS"] = {
             ["itemID"] = 16463,
-            ["pct"] = 60,
+            ["pct"] = 55,
             ["ilvl"] = 71,
             ["altItemID"] = 22441,
-            ["altPct"] = 20,
+            ["altPct"] = 25,
             ["altIlvl"] = 88,
             ["enchantID"] = 2564,
             ["enchantPct"] = 100,
@@ -767,7 +767,7 @@ RecommendedStatsData_BiS = {
         },
         ["TRINKET_2"] = {
             ["itemID"] = 23041,
-            ["pct"] = 55,
+            ["pct"] = 50,
             ["ilvl"] = 90,
             ["altItemID"] = 19953,
             ["altPct"] = 20,
@@ -786,15 +786,15 @@ RecommendedStatsData_BiS = {
             ["changedAt"] = "2000-01-01",
         },
         ["MAIN_HAND"] = {
-            ["itemID"] = 22802,
-            ["pct"] = 40,
-            ["ilvl"] = 89,
-            ["altItemID"] = 23039,
-            ["altPct"] = 40,
-            ["altIlvl"] = 83,
+            ["itemID"] = 23039,
+            ["pct"] = 45,
+            ["ilvl"] = 83,
+            ["altItemID"] = 22802,
+            ["altPct"] = 35,
+            ["altIlvl"] = 89,
             ["enchantID"] = 2564,
-            ["enchantPct"] = 55,
-            ["changedAt"] = "2026-10-23",
+            ["enchantPct"] = 50,
+            ["changedAt"] = "2026-11-19",
         },
         ["RANGED"] = {
             ["itemID"] = 22812,
@@ -806,13 +806,13 @@ RecommendedStatsData_BiS = {
         },
         ["OFF_HAND"] = {
             ["itemID"] = 23044,
-            ["pct"] = 30,
+            ["pct"] = 25,
             ["ilvl"] = 83,
             ["altItemID"] = 22816,
             ["altPct"] = 10,
             ["altIlvl"] = 83,
             ["enchantID"] = 2564,
-            ["enchantPct"] = 55,
+            ["enchantPct"] = 50,
             ["changedAt"] = "2000-01-01",
         },
     },
