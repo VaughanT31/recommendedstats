@@ -1,4 +1,4 @@
--- GENERATED 2026-11-19 - do not hand-edit
+-- GENERATED 2026-11-20 - do not hand-edit
 if (C_Seasons and C_Seasons.GetActiveSeason and C_Seasons.GetActiveSeason() == ((Enum and Enum.SeasonID and Enum.SeasonID.SeasonOfDiscovery) or 2)) then return end
 RecommendedStatsData_Talents = {
     ["DRUID_BALANCE_RAID"] = {
@@ -502,25 +502,25 @@ RecommendedStatsData_Talents = {
         ["builds"] = {
             {
                 ["split"] = {
+                    0,
+                    32,
+                    19,
+                },
+                ["pct"] = 19,
+            },
+            {
+                ["split"] = {
                     5,
                     32,
                     14,
                 },
-                ["pct"] = 24,
+                ["pct"] = 19,
             },
             {
                 ["split"] = {
                     20,
                     31,
                     0,
-                },
-                ["pct"] = 14,
-            },
-            {
-                ["split"] = {
-                    0,
-                    32,
-                    19,
                 },
                 ["pct"] = 14,
             },
@@ -540,7 +540,7 @@ RecommendedStatsData_Talents = {
                     5,
                     46,
                 },
-                ["pct"] = 63,
+                ["pct"] = 68,
             },
             {
                 ["split"] = {

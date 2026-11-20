@@ -1,4 +1,4 @@
--- GENERATED 2026-11-19 - do not hand-edit
+-- GENERATED 2026-11-20 - do not hand-edit
 RecommendedStatsData_Talents = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["n"] = 20,
@@ -591,9 +591,9 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 131894,
-                ["pct"] = 80,
+                ["pct"] = 85,
                 ["altSpellID"] = 130392,
-                ["altPct"] = 20,
+                ["altPct"] = 15,
             },
             {
                 ["spellID"] = 120360,
@@ -616,11 +616,11 @@ RecommendedStatsData_Talents = {
                 ["pct"] = 60,
             },
             {
-                ["spellID"] = 57866,
-                ["pct"] = 50,
+                ["spellID"] = 119462,
+                ["pct"] = 55,
             },
             {
-                ["spellID"] = 119462,
+                ["spellID"] = 57866,
                 ["pct"] = 50,
             },
             {
@@ -629,11 +629,11 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["spellID"] = 57902,
-                ["pct"] = 20,
+                ["pct"] = 25,
             },
             {
                 ["spellID"] = 57870,
-                ["pct"] = 15,
+                ["pct"] = 10,
             },
         },
     },

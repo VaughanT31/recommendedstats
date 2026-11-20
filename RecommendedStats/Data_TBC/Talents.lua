@@ -1,4 +1,4 @@
--- GENERATED 2026-11-19 - do not hand-edit
+-- GENERATED 2026-11-20 - do not hand-edit
 RecommendedStatsData_Talents = {
     ["DRUID_BALANCE_RAID"] = {
         ["n"] = 20,
@@ -225,7 +225,7 @@ RecommendedStatsData_Talents = {
                     48,
                     11,
                 },
-                ["pct"] = 60,
+                ["pct"] = 55,
             },
             {
                 ["split"] = {
@@ -233,7 +233,7 @@ RecommendedStatsData_Talents = {
                     40,
                     21,
                 },
-                ["pct"] = 15,
+                ["pct"] = 20,
             },
             {
                 ["split"] = {
@@ -293,7 +293,7 @@ RecommendedStatsData_Talents = {
                     11,
                     5,
                 },
-                ["pct"] = 60,
+                ["pct"] = 55,
             },
             {
                 ["split"] = {
@@ -391,19 +391,19 @@ RecommendedStatsData_Talents = {
             },
             {
                 ["split"] = {
-                    42,
-                    19,
-                    0,
-                },
-                ["pct"] = 30,
-            },
-            {
-                ["split"] = {
                     41,
                     20,
                     0,
                 },
-                ["pct"] = 20,
+                ["pct"] = 25,
+            },
+            {
+                ["split"] = {
+                    42,
+                    19,
+                    0,
+                },
+                ["pct"] = 25,
             },
         },
         ["median"] = {
@@ -645,7 +645,7 @@ RecommendedStatsData_Talents = {
                     0,
                     21,
                 },
-                ["pct"] = 45,
+                ["pct"] = 40,
             },
             {
                 ["split"] = {
@@ -661,7 +661,7 @@ RecommendedStatsData_Talents = {
                     0,
                     23,
                 },
-                ["pct"] = 25,
+                ["pct"] = 30,
             },
         },
         ["median"] = {

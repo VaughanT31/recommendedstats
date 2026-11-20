@@ -1,4 +1,4 @@
--- GENERATED 2026-11-19 - do not hand-edit
+-- GENERATED 2026-11-20 - do not hand-edit
 RecommendedStatsData_Targets = {
     ["DRUID_BALANCE_RAID"] = {
         ["crit"] = 324,
@@ -37,9 +37,9 @@ RecommendedStatsData_Targets = {
         ["hitHigh"] = 142,
     },
     ["HUNTER_SURVIVAL_RAID"] = {
-        ["crit"] = 238,
+        ["crit"] = 230,
         ["critHigh"] = 287,
-        ["hit"] = 52,
+        ["hit"] = 58,
         ["hitHigh"] = 95,
     },
     ["MAGE_ARCANE_RAID"] = {
@@ -51,12 +51,12 @@ RecommendedStatsData_Targets = {
         ["hasteHigh"] = 166,
     },
     ["MAGE_FIRE_RAID"] = {
-        ["crit"] = 365,
+        ["crit"] = 380,
         ["critHigh"] = 431,
         ["hit"] = 148,
         ["hitHigh"] = 170,
         ["haste"] = 59,
-        ["hasteHigh"] = 114,
+        ["hasteHigh"] = 108,
     },
     ["MAGE_FROST_RAID"] = {
         ["crit"] = 336,
@@ -85,12 +85,12 @@ RecommendedStatsData_Targets = {
         ["hasteHigh"] = 133,
     },
     ["PRIEST_DISCIPLINE_RAID"] = {
-        ["haste"] = 58,
-        ["hasteHigh"] = 125,
+        ["haste"] = 60,
+        ["hasteHigh"] = 127,
     },
     ["PRIEST_HOLY_RAID"] = {
-        ["haste"] = 120,
-        ["hasteHigh"] = 175,
+        ["haste"] = 118,
+        ["hasteHigh"] = 167,
     },
     ["PRIEST_SHADOW_RAID"] = {
         ["crit"] = 135,
@@ -98,7 +98,7 @@ RecommendedStatsData_Targets = {
         ["hit"] = 125,
         ["hitHigh"] = 142,
         ["haste"] = 166,
-        ["hasteHigh"] = 323,
+        ["hasteHigh"] = 257,
     },
     ["ROGUE_ASSASSINATION_RAID"] = {
         ["crit"] = 218,
@@ -141,7 +141,7 @@ RecommendedStatsData_Targets = {
         ["hasteHigh"] = 257,
     },
     ["WARLOCK_AFFLICTION_RAID"] = {
-        ["crit"] = 346,
+        ["crit"] = 339,
         ["critHigh"] = 371,
         ["hit"] = 178,
         ["hitHigh"] = 214,
