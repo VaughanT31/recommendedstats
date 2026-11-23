@@ -1,4 +1,4 @@
--- GENERATED 2026-11-22 - do not hand-edit
+-- GENERATED 2026-11-23 - do not hand-edit
 RecommendedStatsData_Targets = {
     ["DRUID_BALANCE_RAID"] = {
         ["crit"] = 324,
@@ -51,12 +51,12 @@ RecommendedStatsData_Targets = {
         ["hasteHigh"] = 166,
     },
     ["MAGE_FIRE_RAID"] = {
-        ["crit"] = 362,
+        ["crit"] = 360,
         ["critHigh"] = 431,
         ["hit"] = 151,
         ["hitHigh"] = 170,
         ["haste"] = 59,
-        ["hasteHigh"] = 114,
+        ["hasteHigh"] = 108,
     },
     ["MAGE_FROST_RAID"] = {
         ["crit"] = 336,
@@ -108,7 +108,7 @@ RecommendedStatsData_Targets = {
     },
     ["ROGUE_COMBAT_RAID"] = {
         ["crit"] = 234,
-        ["critHigh"] = 290,
+        ["critHigh"] = 285,
         ["hit"] = 313,
         ["hitHigh"] = 319,
     },

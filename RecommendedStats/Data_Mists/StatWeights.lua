@@ -1,4 +1,4 @@
--- GENERATED 2026-11-22 - do not hand-edit
+-- GENERATED 2026-11-23 - do not hand-edit
 RecommendedStatsData_StatWeights = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["haste"] = -0.4429,
@@ -41,9 +41,9 @@ RecommendedStatsData_StatWeights = {
         ["mastery"] = -0.1766,
     },
     ["HUNTER_MARKSMANSHIP_RAID"] = {
-        ["haste"] = -0.1037,
-        ["crit"] = -0.1674,
-        ["mastery"] = -0.568,
+        ["haste"] = -0.103,
+        ["crit"] = -0.1667,
+        ["mastery"] = -0.5774,
     },
     ["HUNTER_SURVIVAL_RAID"] = {
         ["haste"] = -0.1243,
@@ -58,7 +58,7 @@ RecommendedStatsData_StatWeights = {
     ["MAGE_FIRE_RAID"] = {
         ["haste"] = -0.1945,
         ["crit"] = -0.0452,
-        ["mastery"] = -0.0691,
+        ["mastery"] = -0.0846,
     },
     ["MAGE_FROST_RAID"] = {
         ["haste"] = -0.066,

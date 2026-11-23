@@ -1,4 +1,4 @@
--- GENERATED 2026-11-22 - do not hand-edit
+-- GENERATED 2026-11-23 - do not hand-edit
 RecommendedStatsData_Targets = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["haste"] = 4642,
@@ -66,8 +66,8 @@ RecommendedStatsData_Targets = {
     },
     ["HUNTER_MARKSMANSHIP_RAID"] = {
         ["haste"] = 13820,
-        ["hasteHigh"] = 14830,
-        ["crit"] = 12734,
+        ["hasteHigh"] = 14681,
+        ["crit"] = 12777,
         ["critHigh"] = 14152,
         ["mastery"] = 3172,
         ["masteryHigh"] = 6172,
@@ -94,7 +94,7 @@ RecommendedStatsData_Targets = {
         ["crit"] = 18285,
         ["critHigh"] = 18954,
         ["mastery"] = 13168,
-        ["masteryHigh"] = 14745,
+        ["masteryHigh"] = 15168,
     },
     ["MAGE_FROST_RAID"] = {
         ["haste"] = 14289,
