@@ -1,4 +1,4 @@
--- GENERATED 2026-11-23 - do not hand-edit
+-- GENERATED 2026-11-24 - do not hand-edit
 RecommendedStatsData_StatWeights = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["haste"] = -0.4429,
@@ -58,7 +58,7 @@ RecommendedStatsData_StatWeights = {
     ["MAGE_FIRE_RAID"] = {
         ["haste"] = -0.1945,
         ["crit"] = -0.0452,
-        ["mastery"] = -0.0846,
+        ["mastery"] = -0.0691,
     },
     ["MAGE_FROST_RAID"] = {
         ["haste"] = -0.066,

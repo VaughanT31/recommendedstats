@@ -1,4 +1,4 @@
--- GENERATED 2026-11-23 - do not hand-edit
+-- GENERATED 2026-11-24 - do not hand-edit
 RecommendedStatsData_Talents = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["n"] = 20,

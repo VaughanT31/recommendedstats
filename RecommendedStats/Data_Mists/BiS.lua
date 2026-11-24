@@ -1,4 +1,4 @@
--- GENERATED 2026-11-23 - do not hand-edit
+-- GENERATED 2026-11-24 - do not hand-edit
 RecommendedStatsData_BiS = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["HEAD"] = {

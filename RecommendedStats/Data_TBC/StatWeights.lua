@@ -1,28 +1,28 @@
--- GENERATED 2026-11-23 - do not hand-edit
+-- GENERATED 2026-11-24 - do not hand-edit
 RecommendedStatsData_StatWeights = {
     ["DRUID_BALANCE_RAID"] = {
-        ["crit"] = -0.0964,
-        ["hit"] = -0.1534,
-        ["haste"] = -0.4341,
+        ["crit"] = -0.0949,
+        ["hit"] = -0.1531,
+        ["haste"] = -0.4104,
     },
     ["DRUID_FERAL_RAID"] = {
         ["crit"] = -0.0947,
         ["hit"] = -0.0933,
     },
     ["DRUID_GUARDIAN_RAID"] = {
-        ["crit"] = -0.1556,
-        ["hit"] = -0.0772,
+        ["crit"] = -0.1458,
+        ["hit"] = -0.0778,
     },
     ["DRUID_RESTORATION_RAID"] = {
-        ["haste"] = -0.4923,
+        ["haste"] = -0.54,
     },
     ["HUNTER_BEASTMASTERY_RAID"] = {
         ["crit"] = -0.1364,
         ["hit"] = -0.0694,
     },
     ["HUNTER_MARKSMANSHIP_RAID"] = {
-        ["crit"] = -0.1963,
-        ["hit"] = -0.1948,
+        ["crit"] = -0.1909,
+        ["hit"] = -0.194,
     },
     ["HUNTER_SURVIVAL_RAID"] = {
         ["crit"] = -0.1753,
@@ -62,9 +62,9 @@ RecommendedStatsData_StatWeights = {
         ["haste"] = -0.5673,
     },
     ["PRIEST_SHADOW_RAID"] = {
-        ["crit"] = -0.202,
-        ["hit"] = -0.1431,
-        ["haste"] = -0.5063,
+        ["crit"] = -0.2105,
+        ["hit"] = -0.1469,
+        ["haste"] = -0.5238,
     },
     ["ROGUE_ASSASSINATION_RAID"] = {
         ["crit"] = -0.1481,
@@ -112,8 +112,8 @@ RecommendedStatsData_StatWeights = {
         ["hit"] = -0.2206,
     },
     ["WARRIOR_FURY_RAID"] = {
-        ["crit"] = -0.1115,
-        ["hit"] = -0.1755,
+        ["crit"] = -0.1026,
+        ["hit"] = -0.1781,
     },
     ["WARRIOR_PROTECTION_RAID"] = {
         ["crit"] = -0.129,
