@@ -1,4 +1,4 @@
--- GENERATED 2026-11-24 - do not hand-edit
+-- GENERATED 2026-11-25 - do not hand-edit
 RecommendedStatsData_StatWeights = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["haste"] = -0.4429,
@@ -58,12 +58,12 @@ RecommendedStatsData_StatWeights = {
     ["MAGE_FIRE_RAID"] = {
         ["haste"] = -0.1945,
         ["crit"] = -0.0452,
-        ["mastery"] = -0.0691,
+        ["mastery"] = -0.0847,
     },
     ["MAGE_FROST_RAID"] = {
         ["haste"] = -0.066,
         ["crit"] = -0.1092,
-        ["mastery"] = -0.1075,
+        ["mastery"] = -0.1245,
     },
     ["MONK_BREWMASTER_RAID"] = {
         ["haste"] = -0.2589,
@@ -151,9 +151,9 @@ RecommendedStatsData_StatWeights = {
         ["mastery"] = -0.1,
     },
     ["WARLOCK_DESTRUCTION_RAID"] = {
-        ["haste"] = -0.2939,
-        ["crit"] = -0.2706,
-        ["mastery"] = -0.1465,
+        ["haste"] = -0.29,
+        ["crit"] = -0.2725,
+        ["mastery"] = -0.1408,
     },
     ["WARRIOR_ARMS_RAID"] = {
         ["haste"] = -0.5082,
