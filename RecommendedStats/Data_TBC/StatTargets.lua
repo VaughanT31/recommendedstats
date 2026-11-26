@@ -1,4 +1,4 @@
--- GENERATED 2026-11-25 - do not hand-edit
+-- GENERATED 2026-11-26 - do not hand-edit
 RecommendedStatsData_Targets = {
     ["DRUID_BALANCE_RAID"] = {
         ["crit"] = 324,
@@ -31,9 +31,9 @@ RecommendedStatsData_Targets = {
         ["hitHigh"] = 111,
     },
     ["HUNTER_MARKSMANSHIP_RAID"] = {
-        ["crit"] = 253,
-        ["critHigh"] = 283,
-        ["hit"] = 122,
+        ["crit"] = 259,
+        ["critHigh"] = 289,
+        ["hit"] = 119,
         ["hitHigh"] = 142,
     },
     ["HUNTER_SURVIVAL_RAID"] = {
@@ -63,7 +63,7 @@ RecommendedStatsData_Targets = {
         ["critHigh"] = 399,
         ["hit"] = 149,
         ["hitHigh"] = 164,
-        ["haste"] = 60,
+        ["haste"] = 83,
         ["hasteHigh"] = 143,
     },
     ["PALADIN_HOLY_RAID"] = {
@@ -107,8 +107,8 @@ RecommendedStatsData_Targets = {
         ["hitHigh"] = 303,
     },
     ["ROGUE_COMBAT_RAID"] = {
-        ["crit"] = 238,
-        ["critHigh"] = 290,
+        ["crit"] = 234,
+        ["critHigh"] = 285,
         ["hit"] = 313,
         ["hitHigh"] = 319,
     },

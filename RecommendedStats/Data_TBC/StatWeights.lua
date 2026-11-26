@@ -1,4 +1,4 @@
--- GENERATED 2026-11-25 - do not hand-edit
+-- GENERATED 2026-11-26 - do not hand-edit
 RecommendedStatsData_StatWeights = {
     ["DRUID_BALANCE_RAID"] = {
         ["crit"] = -0.0949,
@@ -10,8 +10,8 @@ RecommendedStatsData_StatWeights = {
         ["hit"] = -0.0933,
     },
     ["DRUID_GUARDIAN_RAID"] = {
-        ["crit"] = -0.1458,
-        ["hit"] = -0.0778,
+        ["crit"] = -0.1558,
+        ["hit"] = -0.0783,
     },
     ["DRUID_RESTORATION_RAID"] = {
         ["haste"] = -0.54,
@@ -21,8 +21,8 @@ RecommendedStatsData_StatWeights = {
         ["hit"] = -0.0694,
     },
     ["HUNTER_MARKSMANSHIP_RAID"] = {
-        ["crit"] = -0.1909,
-        ["hit"] = -0.194,
+        ["crit"] = -0.2059,
+        ["hit"] = -0.1986,
     },
     ["HUNTER_SURVIVAL_RAID"] = {
         ["crit"] = -0.1753,
@@ -39,9 +39,9 @@ RecommendedStatsData_StatWeights = {
         ["haste"] = -0.3863,
     },
     ["MAGE_FROST_RAID"] = {
-        ["crit"] = -0.1332,
-        ["hit"] = -0.1745,
-        ["haste"] = -0.7266,
+        ["crit"] = -0.1367,
+        ["hit"] = -0.1761,
+        ["haste"] = -0.6872,
     },
     ["PALADIN_HOLY_RAID"] = {
         ["crit"] = -0.2312,
@@ -71,8 +71,8 @@ RecommendedStatsData_StatWeights = {
         ["hit"] = -0.1254,
     },
     ["ROGUE_COMBAT_RAID"] = {
-        ["crit"] = -0.179,
-        ["hit"] = -0.0842,
+        ["crit"] = -0.1657,
+        ["hit"] = -0.0846,
     },
     ["ROGUE_SUBTLETY_RAID"] = {
         ["crit"] = -0.2044,

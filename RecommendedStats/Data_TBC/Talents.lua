@@ -1,4 +1,4 @@
--- GENERATED 2026-11-25 - do not hand-edit
+-- GENERATED 2026-11-26 - do not hand-edit
 RecommendedStatsData_Talents = {
     ["DRUID_BALANCE_RAID"] = {
         ["n"] = 20,
@@ -169,7 +169,7 @@ RecommendedStatsData_Talents = {
         ["median"] = {
             7,
             44,
-            8,
+            6,
         },
     },
     ["HUNTER_SURVIVAL_RAID"] = {

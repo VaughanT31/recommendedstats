@@ -1,4 +1,4 @@
--- GENERATED 2026-11-25 - do not hand-edit
+-- GENERATED 2026-11-26 - do not hand-edit
 RecommendedStatsData_Caps = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["hit"] = 2550,
