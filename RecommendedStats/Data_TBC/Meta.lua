@@ -1,7 +1,7 @@
--- GENERATED 2026-11-26 - do not hand-edit
+-- GENERATED 2026-11-27 - do not hand-edit
 RecommendedStatsData_Meta = {
     ["schema"] = 1,
-    ["updated"] = "2026-11-26",
+    ["updated"] = "2026-11-27",
     ["gamePatch"] = "2.5.6",
     ["sampleSize"] = 20,
     ["source"] = "Warcraft Logs",

@@ -1,4 +1,4 @@
--- GENERATED 2026-11-26 - do not hand-edit
+-- GENERATED 2026-11-27 - do not hand-edit
 RecommendedStatsData_TalentsDungeon = {
     ["PALADIN_HOLY_MYTHICPLUS"] = {
         ["den-of-nalorakk"] = {
@@ -82,6 +82,87 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLzYmZGjZLDADAbgNWMzAgAAmZWWWaZmhN2GGsBMz2AAMzAwMGjGA",
+                    ["n"] = 1,
+                },
+            },
+        },
+        ["murder-row"] = {
+            ["n"] = 20,
+            ["builds"] = {
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLGzMDjZLDADAbgNWMzAgAAmZWWWaZmhN2GGsZgZ2GAgZGAmxY0A",
+                    ["n"] = 2,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAADWGwMzyMzsMjZMsMzmZWMTTMLGzMDjZLDADAbgNWMzAgAAmZWWWaZmhN2YGsBMjBAYmBgZMGNA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAADWGwMzyMzsMjZMsY2MziZaixMmZGGzWGAGA2AbsYmBABAMzsss0yMDbsxDMYjBzwgBwMDAzYMaA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAADWGwMzyMzsMjZMsY2MziZaiZxYmZGjZLDADAbgN2MzAgAAmZWWWaZmhN2GPwgNgZ2GAgZGAMGjGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLzYmZYMbZAYAYDsxiZGAEAwMzyySLzMsx2wgNPAMz2AAMzAwMGjGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZ2mZmlZMjhFzmZWMTTMLzYmZGjZLDADAbgNWMzAgAAmZWWWaZmhN2GPwgFgZMAAzMAMjxoB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZDAmBAAWGwMzyMzsMjZMsY2MziZaihxMzMGzWGAGA2AbsZmBABAMzsst0yMDbsNmBbAzwAAmZAYGjRDA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMMmZGGzWGAmBwGYjFzMAIAgZmlllWmZYjthhtNDMjBAYmBgZMGNA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAYwywwMzyMzsMYMsMzmZWMaiZxYmZYMbZAYAYDsxiZGAEAwMzy2SLzMsxGGsBMz2gZAMzAwMGjGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaiZxYmZYMbZAYAYDsxiZGAEAwMzyySLzMsx2YGsBMzGAgZGAmxY0A",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMmxMzMGzWGAGA2AbsZmBABAMzsss0yMDbsNmBbAzYAAmZAYGjRDA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaiZxYmZGjZLDADAbgNWMzAgAAmZWWWaZmhN2GGsBMz2AAMzAwMGjGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaixMmZmxY2yAwAwGYjFzMAIAgZmlllWmZYjtxDMYDYGDAwMDAzYMaA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwywwMzyMzsMjZMsMPw2MziRTMLGzMzYMbZAYAYDsxiZGAEAwMzyySLzMsxGPwgNgZ2GAgZGAmxY0A",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLzYmZGjZLDADAbgNWMzAgAAmZWWWaZmhN2GGsBMz2AAMzAwMGjGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaiZxYmZYMbZAYAYDsxmZGAEAwMzyySLzMsx2YGsBMzGAgZGAmxY0A",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaiZZGzMzYMbZAYAYDsxiZGAEAwMzyySLzMsx2wgNgZMAAzMAMjxoB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLGzMzYMbZAYAYDsxmZGAEAwMzyySLzMsx24BGsBMz2AAMzAwMGjGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAADWGwMzyMzsMjZMsY2MziZaixMmZmxY2yAwAwGYjNzMAIAgZmlllWmZYjtxMYDYGDAwMDAGjRDA",
                     ["n"] = 1,
                 },
             },
@@ -171,87 +252,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
             },
         },
-        ["murder-row"] = {
-            ["n"] = 20,
-            ["builds"] = {
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLGzMDjZLDADAbgNWMzAgAAmZWWWaZmhN2GGsZgZ2GAgZGAmxY0A",
-                    ["n"] = 2,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAADWGwMzyMzsMjZMsY2MziZaixMmZGGzWGAGA2AbsYmBABAMzsss0yMDbsxDMYjBzwgBwMDAzYMaA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAADWGwMzyMzsMjZMsY2MziZaihxMzMGzWGAGA2AbsYmBABAMzsss0yMDbsNmBbAzYAAmZAYGjRDA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAADWGwMzyMzsMjZMsY2MziZaiZxYmZGjZLDADAbgN2MzAgAAmZWWWaZmhN2GPwgNgZ2GAgZGAMGjGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLzYmZYMbZAYAYDsxiZGAEAwMzyySLzMsx2wgNPAMz2AAMzAwMGjGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZ2mZmlZMjhFzmZWMTTMLzYmZGjZLDADAbgNWMzAgAAmZWWWaZmhN2GPwgFgZMAAzMAMjxoB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZDAmBAAWGwMzyMzsMjZMsY2MziZaihxMzMGzWGAGA2AbsZmBABAMzsst0yMDbsNmBbAzwAAmZAYGjRDA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMMmZGGzWGAmBwGYjFzMAIAgZmlllWmZYjthhtNDMjBAYmBgZMGNA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAYwywwMzyMzsMYMsMzmZWMaiZxYmZYMbZAYAYDsxiZGAEAwMzy2SLzMsxGGsBMz2gZAMzAwMGjGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaiZxYmZYMbZAYAYDsxiZGAEAwMzyySLzMsx2YGsBMzGAgZGAmxY0A",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMmxMzMGzWGAGA2AbsZmBABAMzsss0yMDbsNmBbAzYAAmZAYGjRDA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaiZxYmZGjZLDADAbgNWMzAgAAmZWWWaZmhN2GGsBMz2AAMzAwMGjGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwywwMzyMzsMjZMsMPw2MziRTMLGzMzYMbZAYAYDsxiZGAEAwMzyySLzMsxGPwgNgZ2GAgZGAmxY0A",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLzYmZGjZLDADAbgNWMzAgAAmZWWWaZmhN2GGsBMz2AAMzAwMGjGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaiZxYmZYMbZAYAYDsxmZGAEAwMzyySLzMsx2YGsBMzGAgZGAmxY0A",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaiZZGzMzYMbZAYAYDsxiZGAEAwMzyySLzMsx2wgNgZMAAzMAMjxoB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLGzMzYMbZAYAYDsxmZGAEAwMzyySLzMsx24BGsBMz2AAMzAwMGjGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAADWGwMzyMzsMjZMsY2MziZaixMmZmxY2yAwAwGYjNzMAIAgZmlllWmZYjtxMYDYGDAwMDAGjRDA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaixMmZmxY2yAwAwGYjFzMAIAgZmlllWmZYjtxDMYDYGDAwMDAzYMaA",
-                    ["n"] = 1,
-                },
-            },
-        },
         ["ruby-life-pools"] = {
             ["n"] = 20,
             ["builds"] = {
@@ -260,7 +260,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 2,
                 },
                 {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLzYmZGjZLDADAbgN2MzAgAAmZWWWaZmhN2GGsBMz2AAMzAwMGjGA",
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaixMmZmxY2yAwAwGYjFzMAIAgZmlllWmZYjtxDMYDYGDAwMDAzYMaA",
                     ["n"] = 2,
                 },
                 {
@@ -277,6 +277,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLzYmZYMbZAYAYDsxiZGAEAwMzyySLzMsx2wgNPAMz2AAMzAwMGjGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLzYmZGjZLDADAbgN2MzAgAAmZWWWaZmhN2GGsBMz2AAMzAwMGjGA",
                     ["n"] = 1,
                 },
                 {
@@ -321,10 +325,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZ2mZmlZMjhFzmZWMTTMLzYmZGjZLDADAbgNWMzAgAAmZWWWaZmhN2GGsBMz2AAMzAwMGjGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaixMmZmxY2yAwAwGYjFzMAIAgZmlllWmZYjtxDMYDYGDAwMDAzYMaA",
                     ["n"] = 1,
                 },
             },
@@ -410,6 +410,87 @@ RecommendedStatsData_TalentsDungeon = {
                 },
             },
         },
+        ["altar-of-fangs"] = {
+            ["n"] = 20,
+            ["builds"] = {
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLzYmZGjZLDADAbgN2MzAgAAmZWWWaZmhN2GGsBMz2AAMzAwMGjGA",
+                    ["n"] = 2,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAADWGwMzyMzsMjZMsMzmZWMTTMLGzMDjZLDADAbgNWMzAgAAmZWWWaZmhN2YGsBMjBAYmBgZMGNA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAYwyAmZWmZmlZMjhFzmZWMTTMMmZmxY2yAwAwGYjFzMAIAgZmlllWmZYjtxMYDYGDAwMDAGjRDA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLzYmZYMbZAYAYDsxiZGAEAwMzyySLzMsx2wgNPAMz2AAMzAwMGjGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLGzMDjZLDADAbgNWMzAgAAmZWWWaZmhN2GzgNgZ2GAgZGAmxY0A",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAADWGwMzyMzsMjZMsY2MziZaihxMzwY2yAwAwGYjFzMAIAgZmlllWmZYjNmBbMYGGMAmZAYGjRDA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAbAwMAAwyAmZWmZmlZMjhFzmZWMTTMLGzMzYMbZAYAYDsxmZGAEAwMzy2SLzMsx2YGsBMzGAgZGAmxY0A",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGGzMDjZLDADYYDsxyMmZZ2mZmtGAAQALAwmhxMmhZAAMzwMGjGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaiZxYmZYMbZAYAYDsxiZGAEAwMzyySLzMsx2YGsBMzGAgZGAmxY0A",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZ2mZmlZMjhFzmZWMTTMLzYmZGjZLDADAbgNWMzAgAAmZWWWaZmhN2GPwgFgZMAAzMAMjxoB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAYwywwMzyMzsMYMsMzmZWMaiZxYmZYMbZAYAYDsxiZGAEAwMzy2SLzMsxGGsBMz2gZAMzAwMGjGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLGmZGjZLDADAbgNWMzAgAAmZWWWaZmhN2GGsZgZ2GAgZGAmxY0A",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaixMmZmxY2yAwAwGYjNzMAIAgZmlllWmZYjtxMYDYGDAwMDAGjRDA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaihxMzMGzWGAGA2AbsYmBABAMzsss0yMDbsNMYzAzYAAmZAYGjRDA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAADWGwMzyMzsMjZMsY2MziZaiZZGzMzYMbZAYAYDsxiZGAEAwMzyySLzMsx2wgNgZ2GAgZGAMGjGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaihxMzMGzWGAGA2AbsYmBABAMzsss0yMDbsNmBbAzYAAmZAYGjRDA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMmxMzMGzWGAGA2AbsYmBABAMzsss0yMDbsNmBbAzYAAmZAYGjRDA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaixMmZmxY2yAwAwGYjNzMAIAgZmlllWmZYjtxDMYDYGGAwMDAzYMaA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaiZxYmZYMbZAYAYDsxmZGAEAwMzyySLzMsx2YGsBMzGAgZGAmxY0A",
+                    ["n"] = 1,
+                },
+            },
+        },
         ["kings-rest"] = {
             ["n"] = 20,
             ["builds"] = {
@@ -443,6 +524,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLzYmZGjZLDADAbgN2MzAgAAmZWWWaZmhN2wgNgZ2GYAMzAwMGjGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAYwyAmZWmZmlZMjhFzmZWMTTMLzYmZGjZLDADAbgN2MzAgAAmZWWWaZmhN2GGsBMjBAYmBAjxoB",
                     ["n"] = 1,
                 },
                 {
@@ -487,10 +572,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLGzMzYMbZAYAYDsxiZGAEAwMzyySLzMsx2wgNgZ2mBAMzAwMGjGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLGzMzYMbZAYAYDsxmZGAEAwMzyySLzMsx24BGsBMz2AAMzAwMGjGA",
                     ["n"] = 1,
                 },
             },
@@ -572,87 +653,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
             },
         },
-        ["altar-of-fangs"] = {
-            ["n"] = 20,
-            ["builds"] = {
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLzYmZGjZLDADAbgN2MzAgAAmZWWWaZmhN2GGsBMz2AAMzAwMGjGA",
-                    ["n"] = 2,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAADWGwMzyMzsMjZMsY2MziZaihxMzMGzWGAGA2AbsZmBABAMzsss0yMDbsNmBbAzYAAmZAYGjRDA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAYwyAmZWmZmlZMjhFzmZWMTTMMmZmxY2yAwAwGYjFzMAIAgZmlllWmZYjtxMYDYGDAwMDAGjRDA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLzYmZYMbZAYAYDsxiZGAEAwMzyySLzMsx2wgNPAMz2AAMzAwMGjGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLGzMDjZLDADAbgNWMzAgAAmZWWWaZmhN2GzgNgZ2GAgZGAmxY0A",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAADWGwMzyMzsMjZMsY2MziZaihxMzwY2yAwAwGYjFzMAIAgZmlllWmZYjNmBbMYGGMAmZAYGjRDA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAAbAwMAAwyAmZWmZmlZMjhFzmZWMTTMLGzMzYMbZAYAYDsxmZGAEAwMzy2SLzMsx2YGsBMzGAgZGAmxY0A",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGGzMDjZLDADYYDsxyMmZZ2mZmtGAAQALAwmhxMmhZAAMzwMGjGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaiZxYmZYMbZAYAYDsxiZGAEAwMzyySLzMsx2YGsBMzGAgZGAmxY0A",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZ2mZmlZMjhFzmZWMTTMLzYmZGjZLDADAbgNWMzAgAAmZWWWaZmhN2GPwgFgZMAAzMAMjxoB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAYwywwMzyMzsMYMsMzmZWMaiZxYmZYMbZAYAYDsxiZGAEAwMzy2SLzMsxGGsBMz2gZAMzAwMGjGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMLGmZGjZLDADAbgNWMzAgAAmZWWWaZmhN2GGsZgZ2GAgZGAmxY0A",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaixMmZmxY2yAwAwGYjNzMAIAgZmlllWmZYjtxMYDYGDAwMDAGjRDA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaihxMzMGzWGAGA2AbsYmBABAMzsss0yMDbsNMYzAzYAAmZAYGjRDA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAADWGwMzyMzsMjZMsY2MziZaiZZGzMzYMbZAYAYDsxiZGAEAwMzyySLzMsx2wgNgZ2GAgZGAMGjGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaihxMzMGzWGAGA2AbsYmBABAMzsss0yMDbsNmBbAzYAAmZAYGjRDA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyAmZWmZmlZMjhFzmZWMTTMmxMzMGzWGAGA2AbsYmBABAMzsss0yMDbsNmBbAzYAAmZAYGjRDA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaixMmZmxY2yAwAwGYjNzMAIAgZmlllWmZYjtxDMYDYGGAwMDAzYMaA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaiZxYmZYMbZAYAYDsxmZGAEAwMzyySLzMsx2YGsBMzGAgZGAmxY0A",
-                    ["n"] = 1,
-                },
-            },
-        },
     },
     ["WARRIOR_ARMS_MYTHICPLUS"] = {
         ["den-of-nalorakk"] = {
@@ -660,7 +660,7 @@ RecommendedStatsData_TalentsDungeon = {
             ["builds"] = {
                 {
                     ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGzMbmZmZGmxMDAAAAgxyMDMhxy2ALgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
-                    ["n"] = 3,
+                    ["n"] = 4,
                 },
                 {
                     ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxwMbLzMzMjZGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
@@ -714,10 +714,6 @@ RecommendedStatsData_TalentsDungeon = {
                     ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGmZzMzMzYmxMDAAAAgxyMDMhxy2ALgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGmZbZmZmZYGzMAAAAAGLzMwEGLbDsBGwMMhMD2AzMMMYWmZbAmZAwMMA",
-                    ["n"] = 1,
-                },
             },
         },
         ["murder-row"] = {
@@ -728,16 +724,20 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 5,
                 },
                 {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxwMbLzMzMjZGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
-                    ["n"] = 4,
-                },
-                {
                     ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGmZzMzMzYmxMDAAAAgxyMDMhxy2ALgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
                     ["n"] = 3,
                 },
                 {
                     ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxYmZzMzMzYmxMDAAAAgxyMDMhxy2ALgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
                     ["n"] = 3,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxwMbLzMzMjZGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
+                    ["n"] = 3,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGzMWmZmZGMmZAAAAAMWmZgJMW2GYBMgZYCZGsBmZYsNYWmZbAmZAwMMA",
+                    ["n"] = 1,
                 },
                 {
                     ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxwMbmZmZGzMmZAAAAAMWmZgJMW2GYBMgZYCZGsBmZsMMYWmZbAmZAwMMA",
@@ -883,15 +883,19 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 4,
                 },
                 {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxYmZbZmZmZYGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
-                    ["n"] = 3,
-                },
-                {
                     ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGmZzMzMzYmxMDAAAAgxyMDMhxy2ALgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
                     ["n"] = 2,
                 },
                 {
                     ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxYmZzMzMzYmxMDAAAAgxyMDMhxy2ALgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
+                    ["n"] = 2,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxwMbLzMzMjZGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
+                    ["n"] = 2,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxYmZbZmZmZYGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
                     ["n"] = 2,
                 },
                 {
@@ -908,10 +912,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGmZzMzMzwMmZAAAAAMWmZgJMW2GYBMgZYCZGsBmZsMMYWmZbAmZAwMMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxwMbLzMzMjZGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
                     ["n"] = 1,
                 },
                 {
@@ -940,15 +940,15 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 4,
                 },
                 {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxYmZzMzMzYmxMDAAAAgxyMDMhxy2ALgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
-                    ["n"] = 3,
-                },
-                {
                     ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxwMbLzMzMjZGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
                     ["n"] = 2,
                 },
                 {
                     ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGmZzMzMzYmxMDAAAAgxyMDMhxy2ALgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
+                    ["n"] = 2,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxYmZzMzMzYmxMDAAAAgxyMDMhxy2ALgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
                     ["n"] = 2,
                 },
                 {
@@ -980,7 +980,68 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGmZzMzMzYmxMDAAAAgxyDMDMZxYZbgFwAmhJkZwGYmhhBzyMbDwMDAmhBA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxYmZbZmZmZYGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
+                    ["n"] = 1,
+                },
+            },
+        },
+        ["altar-of-fangs"] = {
+            ["n"] = 20,
+            ["builds"] = {
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGzMbmZmZGmxMDAAAAgxyMDMhxy2ALgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
+                    ["n"] = 4,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxYmZzMzMzYmxMDAAAAgxyMDMhxy2ALgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
+                    ["n"] = 4,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxwMbLzMzMjZGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
+                    ["n"] = 2,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGzMWmZmZGMmZAAAAAMWmZgJMW2GYBMgZYCZGsBmZYsNYWmZbAmZAwMMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxwMLLzMzMjZGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxYmZbZmZmZYGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGmxyMzMzwMmZAAAAAMWmZgJMW2GYBMgZYCZGsBmZYsNYWmZbAmZAwMMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGmZzMzMzYmxMDAAAAgxyMDMhxy2ALgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZGAAAghphxwMWmZmZGzMmZAAAAAMzyMDMhxy2ALgBMDTIzgNwMDjtBWmZbAmZAwMMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZYmxyMzMzgxMDAAAAgxyMDMhxy2AbgBMDTIzgNwMjtx2gZZmtBYmBAzwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxwMbLzMzMjZYmBAAAAwYZmBmwYZbgFwAmhJkZwGYmhxygZZmtBYmBAzwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZYmxyMzMzwMmZAAAAAMWmZgJMW2GYBMgZYCZGsBmZYsNYWmZbAmZAwMMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGmZbZmZmZYGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
                     ["n"] = 1,
                 },
             },
@@ -1046,59 +1107,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
             },
         },
-        ["altar-of-fangs"] = {
-            ["n"] = 20,
-            ["builds"] = {
-                {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGzMbmZmZGmxMDAAAAgxyMDMhxy2ALgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
-                    ["n"] = 4,
-                },
-                {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxYmZzMzMzYmxMDAAAAgxyMDMhxy2ALgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
-                    ["n"] = 4,
-                },
-                {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxwMbLzMzMjZGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
-                    ["n"] = 3,
-                },
-                {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxwMLLzMzMjZGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxYmZbZmZmZYGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGmxyMzMzwMmZAAAAAMWmZgJMW2GYBMgZYCZGsBmZYsNYWmZbAmZAwMMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGmZzMzMzYmxMDAAAAgxyMDMhxy2ALgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZGAAAghphxwMWmZmZGzMmZAAAAAMzyMDMhxy2ALgBMDTIzgNwMDjtBWmZbAmZAwMMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZYmxyMzMzgxMDAAAAgxyMDMhxy2AbgBMDTIzgNwMjtx2gZZmtBYmBAzwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxwMbLzMzMjZYmBAAAAwYZmBmwYZbgFwAmhJkZwGYmhxygZZmtBYmBAzwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZYmxyMzMzwMmZAAAAAMWmZgJMW2GYBMgZYCZGsBmZYsNYWmZbAmZAwMMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGmZbZmZmZYGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
-                    ["n"] = 1,
-                },
-            },
-        },
     },
     ["DEATHKNIGHT_BLOOD_MYTHICPLUS"] = {
         ["den-of-nalorakk"] = {
@@ -1129,6 +1137,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbMz0MLzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmZMbzMz0MmZGzMDAAAAgZYmZmZGzMGAwMzMzMAAAGYgZsoxyGIbDYDwMGAAgZGAD",
                     ["n"] = 1,
                 },
@@ -1145,10 +1157,6 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbMz0MLzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyYmxMmZmhZbmZmmZbGjxMGAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGGAAwMDMMA",
                     ["n"] = 1,
                 },
@@ -1158,12 +1166,69 @@ RecommendedStatsData_TalentsDungeon = {
                 },
             },
         },
+        ["murder-row"] = {
+            ["n"] = 20,
+            ["builds"] = {
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbmZmmZZmZMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
+                    ["n"] = 8,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZZMz0MLzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyYGmxMzMMbzMz0MbzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMbzMz0MLGjZmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmBbzMz0MLzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyYGmxMzMMbzMz0MLzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbmZmmZZGjZmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZZmZmmZxMjZmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZZmZmmZxMjZmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLLgsNgNAzYAAAmZAMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMbzMz0MLmZMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbmZmmxMGzMjBAAAAMDzMzMzYmxAAmZmZmBAAwADMjFNW2AZbAbAmxAAAMzAGD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbMz0MLzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMLzMz0MLGjZmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
+                    ["n"] = 1,
+                },
+            },
+        },
         ["the-blinding-vale"] = {
             ["n"] = 20,
             ["builds"] = {
                 {
                     ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbmZmmZZmZMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
-                    ["n"] = 5,
+                    ["n"] = 6,
                 },
                 {
                     ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmZMmZmpZWmZGzMDAAAAgZYmZmZGzMGAwMzMzMAAAGYgZsoxyGIbDYDwMGAAgZGAD",
@@ -1217,71 +1282,6 @@ RecommendedStatsData_TalentsDungeon = {
                     ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMjhZbmZmmZzMjxMmBAAAAmZmZmZmZYGDAYmZmZGAAADMwMW0YZDktBsBYGzAAAmZghB",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbmZmmZZGjZmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
-                    ["n"] = 1,
-                },
-            },
-        },
-        ["murder-row"] = {
-            ["n"] = 20,
-            ["builds"] = {
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbmZmmZZmZMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
-                    ["n"] = 7,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZZMz0MLzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyYGmxMzMMbzMz0MbzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMbzMz0MLGjZmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmBbzMz0MLzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyYGmxMzMMbzMz0MLzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbmZmmZZGjZmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZZmZmmZxMjZmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZZmZmmZxMjZmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLLgsNgNAzYAAAmZAMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMbzMz0MLmZMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbmZmmxMGzMjBAAAAMDzMzMzYmxAAmZmZmBAAwADMjFNW2AZbAbAmxAAAMzAGD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbMz0MLzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZZmZmmZZmZMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMLzMz0MLGjZmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
-                    ["n"] = 1,
-                },
             },
         },
         ["ruby-life-pools"] = {
@@ -1289,14 +1289,10 @@ RecommendedStatsData_TalentsDungeon = {
             ["builds"] = {
                 {
                     ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbmZmmZZmZMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
-                    ["n"] = 8,
+                    ["n"] = 9,
                 },
                 {
                     ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyYGmxMzMMbzMz0MLzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
-                    ["n"] = 2,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZZmZmmZxMjZmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
                     ["n"] = 2,
                 },
                 {
@@ -1317,6 +1313,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbMz0MLzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZZmZmmZxMjZmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
                     ["n"] = 1,
                 },
                 {
@@ -1382,6 +1382,63 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMbjZmmZxYmZmxAAAAAGMzMzMjZmZMAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDgB",
+                    ["n"] = 1,
+                },
+            },
+        },
+        ["altar-of-fangs"] = {
+            ["n"] = 20,
+            ["builds"] = {
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbmZmmZZmZMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
+                    ["n"] = 5,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZMjZZMz0MLzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
+                    ["n"] = 2,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMbzMz0MLmZMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
+                    ["n"] = 2,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbmZmmZxMjZmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
+                    ["n"] = 2,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMjhZbmZmmZxMjZmxAAAAAmZmZmZmZYGDAYmZmZGAAADMwMW0YZDktBsBYGzAAAmZwgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyYGmxMzMMbzMz0MbzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyYGmxMzMMbzMz0MLzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMjZbmZmmZxYMmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMjhZbmZmmZxMjxMGAAAAwMzMzMzMDzYMAYMzMzAAAYgBmxiGLbgsNgtBYGzAAAmZwgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmZMmZmpZWmZGzMDAAAAgZYmZmZGzMGAwMzMzMAAAGYgZsoxyGIbDYDwMGAAgZGAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmZMLzMz0MLmZMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMbjZmmZxMjZmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZZmZmmZZmZMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
                     ["n"] = 1,
                 },
             },
@@ -1504,63 +1561,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
             },
         },
-        ["altar-of-fangs"] = {
-            ["n"] = 20,
-            ["builds"] = {
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbmZmmZZmZMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
-                    ["n"] = 5,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZMjZZMz0MLzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
-                    ["n"] = 2,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMbzMz0MLmZMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
-                    ["n"] = 2,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbmZmmZxMjZmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
-                    ["n"] = 2,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMjhZbmZmmZxMjZmxAAAAAmZmZmZmZYGDAYmZmZGAAADMwMW0YZDktBsBYGzAAAmZwgB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyYGmxMzMMbzMz0MbzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyYGmxMzMMbzMz0MLzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDYMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMjZbmZmmZxYMmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMjhZbmZmmZxMjxMGAAAAwMzMzMzMDzYMAYMzMzAAAYgBmxiGLbgsNgtBYGzAAAmZwgB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmZMmZmpZWmZGzMDAAAAgZYmZmZGzMGAwMzMzMAAAGYgZsoxyGIbDYDwMGAAgZGAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmZMLzMz0MLmZMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMzMMbjZmmZxMjZmxAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZZmZmmZZmZMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
-                    ["n"] = 1,
-                },
-            },
-        },
     },
     ["ROGUE_SUBTLETY_MYTHICPLUS"] = {
         ["den-of-nalorakk"] = {
@@ -1615,6 +1615,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTjxyYMDzYYmZmxMz2MmZ2WGzMzMzYwYmtBAAAgZYMgxsYYgBmFtQL2gBMzgZMA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMDDzMzMzw8AbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
                     ["n"] = 1,
                 },
@@ -1626,10 +1630,6 @@ RecommendedStatsData_TalentsDungeon = {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmxyMzMzMzYwYmtBAAAgBjBMmFDDMwsoFaxGMgZGMzMA",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGbTMbLjxMMjhZmZGzMbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
-                    ["n"] = 1,
-                },
             },
         },
         ["murder-row"] = {
@@ -1637,7 +1637,11 @@ RecommendedStatsData_TalentsDungeon = {
             ["builds"] = {
                 {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
-                    ["n"] = 3,
+                    ["n"] = 4,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZMjZmZMYMz2AAAAwgxAGzihBGYW0CtYDzAmZwMzA",
+                    ["n"] = 2,
                 },
                 {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZMjZmZMgZ2GAAAAmhxAGzihBGYW0CtYDzAmZwMzA",
@@ -1649,10 +1653,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmxyYmZmZGDGzsNAAAAMDjBMmNDDMwsoFaxGmBMzgxMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTjxyYMDzYYmZmxMz2MmZ2WGzYmZGDGzsNAAAAMDjBMmFDDMwsoFaxGMgZGMzMA",
                     ["n"] = 1,
                 },
                 {
@@ -1672,6 +1672,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZMzMzMjBjZ2GAAAAmhxAGzihBGYW0CtYDGwMDmxA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTjxyYMDzYYmZmxMz2MmZsMzMmZmxgxMbDAAAADGDYMLGGYgZRL0iNMDYmBzMDA",
                     ["n"] = 1,
                 },
@@ -1688,23 +1692,11 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZMjZmZMYMz2AAAAwgxAGzihBGYW0CtYDzAmZwMzA",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTjxyYMDzYYmZmxMz2MmZsMmZmZmxgxMbDAAAADGDYMLGGYgZRL0iNMDYmBzMDA",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZgZmZGzMbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDGzA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZgZmZGzMbzYGbbzMzMzMjBjZ2GAAAAGMGwY2MMwAziWoFbYGwMDmxA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYGbLzMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
                     ["n"] = 1,
                 },
             },
@@ -1714,7 +1706,7 @@ RecommendedStatsData_TalentsDungeon = {
             ["builds"] = {
                 {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
-                    ["n"] = 5,
+                    ["n"] = 6,
                 },
                 {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTjxyYMzYGYmZmxMz2MmZ22GzMzMzYwYmtBAAAgBjBMmFDDMwsoFaxGmBMzgZMA",
@@ -1769,11 +1761,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZMzMzMjBjZ2GAAAAmhxAGzihBGYW0CtYDGwMDmxA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmxyYmZmZGDGzsNAAAAMYMgxsYYgBmFtQL2wMgZGMzMA",
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDGzA",
                     ["n"] = 1,
                 },
             },
@@ -1786,15 +1774,15 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 5,
                 },
                 {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYGbLzMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
-                    ["n"] = 2,
-                },
-                {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZmZMzMjBjZ2GAAAAGMGwY2MMwAziWoFbYGwMDmxA",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgZ2mBAAAAAmlxYZiZbZMmhZMMzMzYmZbGzMbLzMjZmZMgZ2GAAAAGMGwYWMMwAziWoFbwAmZwMzA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZMzMzMjBjZ2GAAAAmhxAGzihBGYW0CtYDGwMDmxA",
                     ["n"] = 1,
                 },
                 {
@@ -1815,6 +1803,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGbTMbLjxMMjhZmZGzMbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbwAmZwMzA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYGbLzMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
                     ["n"] = 1,
                 },
                 {
@@ -1899,6 +1891,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTjxyYMzYGYmZmxMz2MmZ2WGzMzMzYwYmtBAAAgBjBMmFDDMwsoFaxGmBMzgxMA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTjxyYMDzYYmZmxMz2MmZsMzMmZmxgxMbDAAAADGDYMLGGYgZRL0iNMDYmBzMDA",
                     ["n"] = 1,
                 },
@@ -1910,8 +1906,69 @@ RecommendedStatsData_TalentsDungeon = {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZmZmZmZMYMz2AAAAwgxAGzihBGYW0CtYDzAmZwwA",
                     ["n"] = 1,
                 },
+            },
+        },
+        ["altar-of-fangs"] = {
+            ["n"] = 20,
+            ["builds"] = {
                 {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZgZmZGzMbzYGbbzMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
+                    ["n"] = 6,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZMjZmZMYMz2AAAAwgxAGzihBGYW0CtYDzAmZwMzA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGbTMbLjxMMjhZmZGzMbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbwAmZwMzA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTjxyYMDzYYmZmxMz2MmZ2WGzMzMzYwYmtBAAAgBjBMmFDDMwsoFaxGmBMzgxMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgZ2mBAAAAAmlxYZiZbZMmhZMMzMzYmZbGzMbLzMjZmZMgZ2GAAAAGMGwYWMMwAziWoFbwAmZwMzA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTjxyYMzYGYmZmxMz2MmZ2WGzMzMzYwYmtBAAAgBjBMmFDDMwsoFaxGmBMzgZMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTjxyYMDzYYmZmxMz2MmZ2WGzMzMzYwYmtBAAAgBjBMmFDDMwsoFaxGmBMzgZMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmxyYmZmZGDGzsNAAAAMDjBMmFDDMwsoFaxGmBMzgxMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZgZmZGzMbzYmxyYmZmZGDGzsNAAAAMDjBMmFDDMwsoFaxGmBMzgxMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZmZMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbbMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgZ2mBAAAAAmlxYZiZbZMmhZMMzMzYmZbGzMbLjZmZmZMYMz2AAAAwMMGwYWMMwAziWoFbwAmZwwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTjxyYMDzYYmZmxMz2MmZ2WGzMzMzYwYmtBAAAgZYMgxsYYgBmFtQL2wMgZGMMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYGbLzMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDGzA",
                     ["n"] = 1,
                 },
             },
@@ -1973,67 +2030,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGbTMbLjxMMjhZmZGzMbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
-                    ["n"] = 1,
-                },
-            },
-        },
-        ["altar-of-fangs"] = {
-            ["n"] = 20,
-            ["builds"] = {
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
-                    ["n"] = 6,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZmZMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
-                    ["n"] = 2,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGbTMbLjxMMjhZmZGzMbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbwAmZwMzA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTjxyYMDzYYmZmxMz2MmZ2WGzMzMzYwYmtBAAAgBjBMmFDDMwsoFaxGmBMzgxMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgZ2mBAAAAAmlxYZiZbZMmhZMMzMzYmZbGzMbLzMjZmZMgZ2GAAAAGMGwYWMMwAziWoFbwAmZwMzA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTjxyYMzYGYmZmxMz2MmZ2WGzMzMzYwYmtBAAAgBjBMmFDDMwsoFaxGmBMzgZMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTjxyYMDzYYmZmxMz2MmZ2WGzMzMzYwYmtBAAAgBjBMmFDDMwsoFaxGmBMzgZMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmxyYmZmZGDGzsNAAAAMDjBMmFDDMwsoFaxGmBMzgxMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZgZmZGzMbzYmxyYmZmZGDGzsNAAAAMDjBMmFDDMwsoFaxGmBMzgxMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbbMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgZ2mBAAAAAmlxYZiZbZMmhZMMzMzYmZbGzMbLjZmZmZMYMz2AAAAwMMGwYWMMwAziWoFbwAmZwwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTjxyYMDzYYmZmxMz2MmZ2WGzMzMzYwYmtBAAAgZYMgxsYYgBmFtQL2wMgZGMMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYGbLzMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDGzA",
                     ["n"] = 1,
                 },
             },
@@ -2149,6 +2145,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzgN0GmZbmlZmZGzMLzyMzywYmZBAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzgN0GmZbmlZmZGjZZWmZWGGzMLAgZAgZGDDD",
                     ["n"] = 1,
                 },
@@ -2184,8 +2184,85 @@ RecommendedStatsData_TalentsDungeon = {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYssYajZGjlZMz8AjZZWmZWGGzMbAADAMzYYYA",
                     ["n"] = 1,
                 },
+            },
+        },
+        ["murder-row"] = {
+            ["n"] = 20,
+            ["builds"] = {
                 {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYahZGjlZMz8AjZZWmZWGGzMLAADAMzYYYA",
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstMTYmZhlZmZGzwsMzsMMmZWAAGAYmxwwA",
+                    ["n"] = 2,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzgF0GmZZmlZmZmHYMLzyMzywYmZDAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhBAAAAsYmNYADY2YCZWAAbzMzYstMTYmZjlZmZGzwsMzsMMmZ2GAwwAYmxwM+AA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhBAAAAsYmNYADY2YCZWAAbzMzMmtlRbGzsZ2mZmZMYWGzywYmZZAgZAgZGDz4DA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzgN0GmZbmlZmZGjZZWmZWGGzMLAgZAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzgtFaDzsNzyMzMjxsMLzMLDjZmFAgBAmZMMMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZmtxyMmZMmlZZmZZYMzsAAMAwMjhhB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzgN0GmZbmlZmZGzMLzyMzywYmZBAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYmtFTYmZbsMjZGzYZWmZWGGzMLAADAMzYYYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZGjlZMz8AjZZWmZWGGzMLAADAMzYYYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzgN0GmZbmlZmZmHYMLzyMzywYmZBAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzgN02wMbzsMzMz8AjZxyMzywYmZBAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYmtFTLMzYsMjZGzYxyMzywYmZBAMDAMzYYYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZGjlZMz8AjZxyMzywYmZBAYGAMzYYYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYssYCzMGLzYmZGzysYmlhxMzCAYGAYmxwwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZGjlZegZmZYxyMzywYmZBAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZGjlZMzMjZxyMzywYmZBAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYssYajZmtxyMmZmhFLzMLDjZmFAgBAmZMMMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZGjlZmZGjZxyMzywYmZBAYAgZGDDD",
                     ["n"] = 1,
                 },
             },
@@ -2271,87 +2348,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
             },
         },
-        ["murder-row"] = {
-            ["n"] = 20,
-            ["builds"] = {
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstMTYmZhlZmZGzwsMzsMMmZWAAGAYmxwwA",
-                    ["n"] = 2,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhBAAAAsYmNYADY2YCZWAAbzMzYstMTYmZjlZmZGzwsMzsMMmZ2GAwwAYmxwM+AA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzgF0GmZZmlZmZmHYMLzyMzywYmZBAYAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhBAAAAsYmNYADY2YCZWAAbzMzMmtlRbGzsZ2mZmZMYWGzywYmZZAgZAgZGDz4DA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzgN0GmZbmlZmZGjZZWmZWGGzMLAgZAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzgtFaDzsNzyMzMjxsMLzMLDjZmFAgBAmZMMMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZmtxyMmZMmlZZmZZYMzsAAMAwMjhhB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzgN0GmZbmlZmZGzMLzyMzywYmZBAYAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYmtFTYmZbsMjZGzYZWmZWGGzMLAADAMzYYYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZGjlZMz8AjZZWmZWGGzMLAADAMzYYYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzgN0GmZbmlZmZmHYMLzyMzywYmZBAYAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzgN02wMbzsMzMz8AjZxyMzywYmZBAYAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYmtFTLMzYsMjZGzYxyMzywYmZBAMDAMzYYYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYssYCzMGLzYmZGzysYmlhxMzCAYGAYmxwwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZGjlZegZmZYxyMzywYmZBAYAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZGjlZMzMjZxyMzywYmZBAYAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYssYajZmtxyMmZmhFLzMLDjZmFAgBAmZMMMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZGjlZmZGjZxyMzywYmZBAYAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzgN0GmZbmlZmZmHYMLzyMzywYmZBAYAgZGDDD",
-                    ["n"] = 1,
-                },
-            },
-        },
         ["ruby-life-pools"] = {
             ["n"] = 20,
             ["builds"] = {
@@ -2400,6 +2396,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZGjlZMz8AjZxyMzywYmZBAYGAMzYYYA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzgN0GmxMLzMzMzYWmlZmlhxMzCAwAAzMGGGA",
                     ["n"] = 1,
                 },
@@ -2421,10 +2421,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYssYajZmtxyMmZMmlZZmZZYMzsAAMAwMjhhB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhBAAAAsYmNYADY2YCZWAgZbmZGjtFTYmZZsMzMzYYxyMzywYmZZAADDgZGDz4DA",
                     ["n"] = 1,
                 },
             },
@@ -2497,6 +2493,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzgN0GmZbmlZmZGzMLzyMzywYmZBAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZGjlZmZGjZxyMzywYmZBAYAgZGDDD",
                     ["n"] = 1,
                 },
@@ -2508,8 +2508,89 @@ RecommendedStatsData_TalentsDungeon = {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzgtFaDzYmlZmZmZMLWmZWGGzMLAADAMzYYYA",
                     ["n"] = 1,
                 },
+            },
+        },
+        ["altar-of-fangs"] = {
+            ["n"] = 20,
+            ["builds"] = {
                 {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZmtxyMzMjhFLzMLDjZmFAgBAmZMMMA",
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzgF0GmZZmlZmZmHYMLzyMzywYmZDAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYCzMbjlZMzMDLzyMzywYmZBAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzgN0GmZbmlZmZGjZZWmZWGGzMLAgZAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZGjlZMz8AjZZWmZWGGzMLAADAMzYYYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzgN0GmZbmlZmZGzMLzyMzywYmZBAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzgtFaBzYmlZmZGzYZWmZWGGzMLAgZAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZGjlZmZGjZxyMzywYmZBAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZmtxyMmZMmlZZmZZYMzsAAMAwMjhhB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstYajZGjlZMzMjZxyMzywYmZBAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstMTYmZhlZmZGzwsMzsMMmZWAAGAYmxwwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGjtFTbMzsMWmZmZMsMLDLmZYmlBAMAwMjhhB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzgN0CmZZmlZmZGzYZWmZWGGzMbAADDgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstMTYmZhlZmZGzYxyMzywYmZBAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstYajZGjlZmZGjZxyMzywYmZBAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstYajZGjlZmZGzYxyMzywYmZBAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYmtFTYmZbsMjZGzYZWmZWGGzMLAADAMzYYYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzgF0GmZbmlZmZmHYMLzyMzywYmZBAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzgF0GmZbmlZmZGjZZWmZWGGzMLAADDgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzMstMaDzsYWmZmZMDzyYWGGzMLAAzAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzgN02wMbzsMzMzYMLzyMzywYmZDAYAgZGDDD",
                     ["n"] = 1,
                 },
             },
@@ -2554,6 +2635,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZGjlZmZGjZxyMzywYmZBAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZmtxyMmZMmFLzMLDjZmFAgZAwMjhhB",
                     ["n"] = 1,
                 },
@@ -2591,10 +2676,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstYajZmtxyMPwMjxsYZmZZYMzsAAMAwMjhhB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYssYaDzsNWmZmZMmFLzMLDjZmFAgBAmZMMMA",
                     ["n"] = 1,
                 },
             },
@@ -2680,91 +2761,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
             },
         },
-        ["altar-of-fangs"] = {
-            ["n"] = 20,
-            ["builds"] = {
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzgF0GmZbmlZmZmHYMLzyMzywYmZDAYAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYCzMbjlZMzMDLzyMzywYmZBAYAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzgN0GmZbmlZmZGjZZWmZWGGzMLAgZAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZGjlZMz8AjZZWmZWGGzMLAADAMzYYYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzgN0GmZbmlZmZGzMLzyMzywYmZBAYAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzgtFaBzYmlZmZGzYZWmZWGGzMLAgZAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZGjlZmZGjZxyMzywYmZBAYAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstYajZmtxyMmZMmlZZmZZYMzsAAMAwMjhhB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstYajZGjlZMzMjZxyMzywYmZBAYAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstMTYmZhlZmZGzwsMzsMMmZWAAGAYmxwwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGjtFTbMzsMWmZmZMsMLDLmZYmlBAMAwMjhhB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzgN0CmZZmlZmZGzYZWmZWGGzMbAADDgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstMTYmZhlZmZGzYxyMzywYmZBAYAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstYajZGjlZmZGjZxyMzywYmZBAYAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstYajZGjlZmZGzYxyMzywYmZBAYAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYmtFTYmZbsMjZGzYZWmZWGGzMLAADAMzYYYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzgF0GmZbmlZmZmHYMLzyMzywYmZBAYAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzgF0GmZbmlZmZGjZZWmZWGGzMLAADDgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzMstMaDzsYWmZmZMDzyYWGGzMLAAzAgZGDDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzgN02wMbzsMzMzYMLzyMzywYmZDAYAgZGDDD",
-                    ["n"] = 1,
-                },
-            },
-        },
     },
     ["DRUID_GUARDIAN_MYTHICPLUS"] = {
         ["murder-row"] = {
@@ -2779,15 +2775,15 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 2,
                 },
                 {
+                    ["code"] = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMmZZZgZzwoJamZWmZmZmlxMAAAAAAMjNDYZbmBjZZAMFAAAYDzMALGDDYxCAzMAG",
+                    ["n"] = 2,
+                },
+                {
                     ["code"] = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMmZZZgZzwoJamZWmZmZmlxMGAAAAAgZsZALbzMYMbDgpAAAAbYmBYxADYxCAzMAG",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMmZZZgZzwoJamZWmZmZmlxMAAAAAAMjNDYbbmBjZbAMFAAAYDzMALGDDYxCAzMAG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMmZZZgZzwoJamZWmZmZmlxMAAAAAAMjNDYZbmBjZZAMFAAAYDzMALGDDYxCAzMAG",
                     ["n"] = 1,
                 },
                 {
@@ -2807,10 +2803,6 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMmZZZgZzwoJamZWMzMzsMmxAAAAAAMjNDYZbmBjZZAMFAAAYDzMALGDDYxCAzMAG",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMmZZZgZzwoJamZWmZmZmlxMGAAAAAgZsZALbzMYMbDgpAAAAbYmHAYxYYALWAYmBwA",
                     ["n"] = 1,
                 },
@@ -2823,15 +2815,15 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMzyMLmxMLLDMbGGNRzMzyMzMzsMmBAAAAAAjNDYZbmBjZZAMFAAAYDzMALGDDYxCAzMAG",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMPwMLLDMbmxoJyMzyYmZmlxMAAAAAAYsZALbzMYMLDgpAAAAbGzMALGDDYxCAzMAG",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMmZZZgZzwoJamZWmZmZmlxMAAAAAAMjNDYZZmBjZbAMFAAAYDzMALGDDYxCAzMAG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMmZZZgZbGGNRmZWmZmZmlxMAAAAAwgZsZALbzMYMLDgpAAAAbYmHAYxYYALWAYmBwA",
                     ["n"] = 1,
                 },
             },
@@ -3055,10 +3047,6 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 2,
                 },
                 {
-                    ["code"] = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMmZZZgZzwoJamZWmZmZmlxMAAAAAAMjNDYbbmBjZZAMFAAAYDzMALGDDYxCAzMAG",
-                    ["n"] = 2,
-                },
-                {
                     ["code"] = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMmZZZgZzwoJamZWmZmZmlxMGAAAAAgZsZALbzMYMbDgpAAAAbYmBYxADYxCAzMAG",
                     ["n"] = 1,
                 },
@@ -3083,6 +3071,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMmZZZgZzwoJamZWmZmZmlxMMAAAAAgZsZAbbzMYMbDgpAAAAbYmHAYxYYALWAYmBwA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMPwMLLDMbmxoJyMzyYmZmlxMAAAAAAYsZALbzMYMLDgpAAAAbGzMALGDDYxCAzMAG",
                     ["n"] = 1,
                 },
@@ -3096,6 +3088,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMmZZZgZbGGNRmZWmZmZmlxMAAAAAwgZsZALbzMYMLDgpAAAAbYmHAYxYYALWAYmBwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMmZZZgZzwoJamZWmZmZmlxMAAAAAAMjNDYbbmBjZZAMFAAAYDzMALGDDYxCAzMAG",
                     ["n"] = 1,
                 },
                 {
@@ -3309,6 +3305,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZMzYMMsAbwMW0YbAZGYDzMDzyMjRzyyMzmZMYxYmxYWmlZAAYAMzgZGAGDG",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZMzYMMsAbwMW0YbAZGYDzMDz2MjRz2yMzmZMbsYMzYMmlZAAYAMzgZGAGDG",
                     ["n"] = 1,
                 },
@@ -3317,11 +3317,11 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZMzMjhhFYDmxiGbDIzAbYmBzyMzMa2WmZ2MjZjlZMzYwsMAAYAMzgZGAGDG",
+                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZMzYMMsAbwMW0YbAZGYDzMDzyMzMaWWmZ2MjBLzYmxwysMAAYAMzgZGAGDG",
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZMzYMMsAbwMW0YbAZGYDzMDzyMzMaWWmZ2MjBLzYmxwysMAAYAMzgZGAGDG",
+                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZMzMjZMsAbwMW0YbAZGYDzMY2mZMaWWmZYGzGLGzMGjZZGAAGAzMYmBgxgB",
                     ["n"] = 1,
                 },
                 {
@@ -3364,10 +3364,6 @@ RecommendedStatsData_TalentsDungeon = {
                     ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzstsNzMzMjxYMMWMzCMgJYWYCMWYmZwsNzMjmtlZmNzYwyMmZMYWmBAgBgZMAmZYMYA",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZMzYMMsAbwMW0YbAZGYDzMDz2MzMaWWmZYGDWmxMjhlZZGAAGAzMYmBgxgB",
-                    ["n"] = 1,
-                },
             },
         },
         ["den-of-nalorakk"] = {
@@ -3394,11 +3390,11 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZmZGjhhFYDmxiGbDIzAbYmBz2MzMaWWmZ2MjBLzYmxgZZGAAGAzMYmBgxgB",
+                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZmZGMjhFYDmxiGbDIzAbMzMYWGjRzyyMzmZMbsYMzYMmlZAAYAMzgZGAGDG",
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZmZGMMsAbwMW0YbAZGYjZmBz2MjRz2yMDzY2Yx8AzMGWmlZAAYAMzgZGAGDG",
+                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZmZGjhhFYDmxiGbDIzAbYmBz2MzMaWWmZ2MjBLzYmxgZZGAAGAzMYmBgxgB",
                     ["n"] = 1,
                 },
                 {
@@ -3705,7 +3701,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZMzYMjhFYDmxiGbDIzAbYmZY2mZMaWWmZ2MjZhFjZGDmlZAAYAMzgZGAGDG",
+                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZMzYMMsAbwMW0YbAZGYDzMDzyMzMaWWmZ2MjBLzYmxgZZGAAGAzMYmBgxgB",
                     ["n"] = 1,
                 },
             },
@@ -3718,11 +3714,11 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZMzYMMsAbwMW0YbAZGYDzMDzyMjRz2yMzmZMbsYMzYMLzyMAAMAmZwMDADYA",
+                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZMzYMMsAbwMW0YbAZGYDzMDz2MzMa2WmZYGDWmxMjxsMLDAAGAzMYmBgxgB",
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZMzYMMsAbwMW0YbAZGYDzMDz2MzMaWWmZYGDWmxMzDMYWmBAgBwMDmZAYMYA",
+                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZMzYMMsAbwMW0YbAZGYDzMDzyMjRz2yMzmZMbsYMzYMLzyMAAMAmZwMDADYA",
                     ["n"] = 1,
                 },
                 {
@@ -3971,11 +3967,11 @@ RecommendedStatsData_TalentsDungeon = {
             ["n"] = 20,
             ["builds"] = {
                 {
-                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAYWegxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
-                    ["n"] = 3,
+                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYGMzMz2MmZmZGzkxMDAAAAAAY2MmtZYmZ2mZGLzMmxyMDjlZ2mBDjtNmkxMjhFAAAAAAAwMDwAAAAwA",
+                    ["n"] = 2,
                 },
                 {
-                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYGMzMz2MmZmZGzkxMDAAAAAAY2MmtZYmZ2mZGLzMmxyMDjlZ2mBDjtNmkxMjhFAAAAAAAwMDwAAAAwA",
+                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAYWegxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
                     ["n"] = 2,
                 },
                 {
@@ -3988,6 +3984,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMzyMmZmxMzkxMDAAAAAAY2MmtZYmBzMWmZMDzMGzyAbziZMMbaaMzMG2AAAAAAAAYmBDAAAAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYGMzMz2MmZmZGzkxMDAAAAAAYWMmtZYmZ2mZGLzMmxyMDjlZ2mBDjtNmkxMjhFAAAAAAAwMDwAAAAwA",
                     ["n"] = 1,
                 },
                 {
@@ -4052,15 +4052,15 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 2,
                 },
                 {
+                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2mxMzMzYmMmZAAAAAAAzmxsNDzMz2MzYZmxMWmZYmlZ2mBDjtNmkxMjhFAAAAAAAwMDwAAAAwA",
+                    ["n"] = 2,
+                },
+                {
                     ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2mxMzMmZmMmZAAAAAAAzmxsNDzMz2MzYZmxMWmZYmlZ2mBDjtNmkxMjhFAAAAAAAwMDwAAAAwA",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2mxMzMGzkxMDAAAAAAYWMmtZYmZ2mZGLzMmxyMDzsNz2MYYstxkMmZMjFAAAAAAAwMDwAAAAwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2mxMzMzYmMmZAAAAAAAzmxsNDzMz2MzYZmxMWmZYmlZ2mBDjtNmkxMjhFAAAAAAAwMDwAAAAwA",
                     ["n"] = 1,
                 },
                 {
@@ -4109,10 +4109,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYGMzMzyMmZmZGzkxMDAAAAAAYWMmthZmZ2mZGLzMmxyMDjlZ2mBDjtNmkxMjhFAAAAAAAwMDwAAAAwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2mxMzMzMzkxMDAAAAAAY2MmtBzMz2MzYZmxMWmZYmlZ2mBDjtNmkxMjhFAAAAAAAwMDwAAAAwA",
                     ["n"] = 1,
                 },
             },
@@ -4194,11 +4190,11 @@ RecommendedStatsData_TalentsDungeon = {
             ["n"] = 20,
             ["builds"] = {
                 {
-                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2mxMzMzYmMmZAAAAAAAzmxsNYmZ2mZGLzMmxyMDzsMz2MYYstxkMmZMjFAAAAAAAwMDwAAAAwA",
-                    ["n"] = 2,
+                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2mxMzMzYmMmZAAAAAAAzixsNYmZ2mZGLzMmxyMDzsMz2MYYstxkMmZMjFAAAAAAAwMDwAAAAwA",
+                    ["n"] = 3,
                 },
                 {
-                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2mxMzMzYmMmZAAAAAAAzixsNYmZ2mZGLzMmxyMDzsMz2MYYstxkMmZMjFAAAAAAAwMDwAAAAwA",
+                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2mxMzMzYmMmZAAAAAAAzmxsNYmZ2mZGLzMmxyMDzsMz2MYYstxkMmZMjFAAAAAAAwMDwAAAAwA",
                     ["n"] = 2,
                 },
                 {
@@ -4259,10 +4255,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2mxMzMzYmMmZAAAAAAAzmxsNYmZ2mZGLzMmxyMDzsMz2MYYssxkMmZMjFAAAAAAAwMDwAAAAwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZMjZmZMzMhZGAAAAAAwsZmZbmhZmtZmxyMjZsMzwMLzsNDGGLbMJjZGDLAAAAAAAgZGgBAAAgB",
                     ["n"] = 1,
                 },
             },
@@ -4490,7 +4482,7 @@ RecommendedStatsData_TalentsDungeon = {
             ["n"] = 20,
             ["builds"] = {
                 {
-                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYGMzMz2MmZmZGzkxMDAAAAAAYWMmtZYmZ2mZGLzMmxyMDjlZ2mBDjtNmkxMjhFAAAAAAAwMDwAAAAwA",
+                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2mxMzMzYmMmZAAAAAAAzixsNYmZ2mZGLzMmxyMDzsMz2MYYstxkMmZMjFAAAAAAAwMDwAAAAwA",
                     ["n"] = 3,
                 },
                 {
@@ -4498,7 +4490,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 3,
                 },
                 {
-                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2mxMzMzYmMmZAAAAAAAzixsNYmZ2mZGLzMmxyMDzsMz2MYYstxkMmZMjFAAAAAAAwMDwAAAAwA",
+                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYGMzMz2MmZmZGzkxMDAAAAAAYWMmtZYmZ2mZGLzMmxyMDjlZ2mBDjtNmkxMjhFAAAAAAAwMDwAAAAwA",
                     ["n"] = 2,
                 },
                 {
@@ -4585,6 +4577,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMGDz2MzMzMLzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBwAD",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMjBz2MzMzMbzMjmZMGDzMGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmQGLYmxMzADADzMAAD",
                     ["n"] = 1,
                 },
@@ -4606,10 +4602,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjxYY2mZmZmZZmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMzYY2mZmZmZzY0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBwAD",
                     ["n"] = 1,
                 },
             },
@@ -4833,6 +4825,83 @@ RecommendedStatsData_TalentsDungeon = {
                 },
             },
         },
+        ["temple-of-sethraliss"] = {
+            ["n"] = 20,
+            ["builds"] = {
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjZYY2mZmZmZZmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
+                    ["n"] = 2,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjxYY2mZmZmZbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
+                    ["n"] = 2,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjhxMDzyYmZmZbmZmmZMGDzMGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmQGLYmxMzADADzMAMYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjxYY2mZmZmZzMjmZMzYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjxYYWmZmZmZZmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMDYWmZmZmZZmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMDY2mZmZmZZmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMDDz2MzMzMLzY0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjxYYWmZmZmZbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMGDz2MzMzMLmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBwAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMDY2mZmZmZbmZkZMGDzMGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmQGLYmxMzADADzMAjBD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjZMYWmZmZmZbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjxMDz2MzMzMbzY0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMDY2mZmZmZxMjmZMGDzMGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmQGLYmxMzADADzMAzAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMDDz2MzMzMbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBwAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjZGDz2MzMzMbzY0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMzMGDzyMzMzMbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjZGDzyMzMzMbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBwAD",
+                    ["n"] = 1,
+                },
+            },
+        },
         ["altar-of-fangs"] = {
             ["n"] = 20,
             ["builds"] = {
@@ -4877,6 +4946,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjZGDz2MzMzMbzY0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMYMmZY2mZmZmZbGjmZMzYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
                     ["n"] = 1,
                 },
@@ -4890,10 +4963,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjxYY2mZmZmZbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjZGDzyMzMzMbzY0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
                     ["n"] = 1,
                 },
                 {
@@ -5048,83 +5117,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
             },
         },
-        ["temple-of-sethraliss"] = {
-            ["n"] = 20,
-            ["builds"] = {
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjZYY2mZmZmZZmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
-                    ["n"] = 2,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjxYY2mZmZmZbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
-                    ["n"] = 2,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjxYGzyYmZmZbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjxYY2mZmZmZzMjmZMzYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjxYYWmZmZmZZmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMDYWmZmZmZZmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMDY2mZmZmZZmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMDDz2MzMzMLzY0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjxYYWmZmZmZbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMGDz2MzMzMLmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBwAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMDY2mZmZmZbmZkZMGDzMGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmQGLYmxMzADADzMAjBD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjZMYWmZmZmZbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjxMDz2MzMzMbzY0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMDY2mZmZmZxMjmZMGDzMGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmQGLYmxMzADADzMAzAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMDDz2MzMzMbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBwAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjZGDz2MzMzMbzY0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMzMGDzyMzMzMbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjZGDzyMzMzMbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBwAD",
-                    ["n"] = 1,
-                },
-            },
-        },
     },
     ["ROGUE_ASSASSINATION_MYTHICPLUS"] = {
         ["the-blinding-vale"] = {
@@ -5208,10 +5200,6 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAIbzMzMzMjx2MzMbzsMzMPgZMzYMMzYMAGYBmxoxsBy2A2MAYmZMGA",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAotlxMzMzMGbzMzsNzyMz8AmxMjxwMjxMgNzyADYJYZYCMsYwMDwgB",
                     ["n"] = 1,
                 },
@@ -5225,6 +5213,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAotlxMzMzMGLzMzsNzyMz8AmxMjxwMjxAsZWGYALBLDTghFDmZAGjB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAotlxMzMzMGbzMzsNzyMz8AmxMjxwMjxAsZWGYALBLDTghFDmZAMjB",
                     ["n"] = 1,
                 },
             },
@@ -5920,6 +5912,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAAMjZmZmxMjhZAAAAAAAYMbjxMAAAAAAAAMjZYmZmZmZmZGmZZmxYTbLAIgBAzMz2Mz0sNzmZYMjB",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAAWMzMzMzMzMwMAAAAAAALPwY2GMDAAAAAAAAzYwYmZmZmZmhZWmZM202CACYAMmZmtZmpZbmNzMGzYA",
                     ["n"] = 1,
                 },
@@ -5953,10 +5949,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAQgHYMDjZA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAAMjZmZmxMjhZAAAAAAAYMbjxMAAAAAAAAMjZYMzMzMzMDmZZmxYTbLAIgBYGzMz2Mz0sNziZYMjB",
                     ["n"] = 1,
                 },
             },
@@ -6042,11 +6034,11 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 3,
                 },
                 {
-                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAAMjZmZmxMjhZAAAAAAAYMbjxMAAAAAAAAMjZYmZmZmZmZGmZZmxYTLLAIgBAzMz2Mz0sNziZYMjB",
-                    ["n"] = 2,
+                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzYmxwMAAAAAAAMmthZGAAAAAAAAmxMMmZmZmZmZYmlZGjNtsAgAGAjZmZbmZa2mZbmBmxA",
+                    ["n"] = 1,
                 },
                 {
-                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzYmxwMAAAAAAAMmthZGAAAAAAAAmxMMmZmZmZmZYmlZGjNtsAgAGAjZmZbmZa2mZbmBmxA",
+                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAAMjZmZmxMjhZAAAAAAAYMbjxMAAAAAAAAMjZYmZmZmZmZGmZZmxYTLLAIgBAzMz2Mz0sNziZYMjB",
                     ["n"] = 1,
                 },
                 {
@@ -6063,6 +6055,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzYmxYmBAAAAAAgxsMYGAAAAAAAAmxMMmZmZmZmZGzsMzYsptFAEwAYMzMbzMTz2MLmhxMGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAAMjZmZmxMjhZAAAAAAAYMbjxMAAAAAAAAMjZYmZmZmZmZGmZZmxYTLLAIgBAzMz2Mz0sMzmZYMjB",
                     ["n"] = 1,
                 },
                 {
@@ -6192,6 +6188,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzYmxwMAAAAAAALGz2gZAAAAAAAAYGzwMzMzMzMzMMziZMWkFmZmZ2abmZGADDABegxMMmB",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMmZmZmZmZGzsMzMjNttAgAGAMzMbzMTz2MLmhxMGA",
                     ["n"] = 1,
                 },
@@ -6217,10 +6217,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAAMjZmZmxMjhZAAAAAAAYMbjxMAAAAAAAAMjZYmZmZmZmZGmZZmxYTbLAIgBAzMz2Mz0sNzmZYMjB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAAMjZmZmxMjhZAAAAAAAWMmtxYGAAAAAAAAmxgZmZmZmZmZYmlZGjNttAgAGAMzMbzMTz2MLmhxMGA",
                     ["n"] = 1,
                 },
             },
@@ -6292,10 +6288,6 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 2,
                 },
                 {
-                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmysMDzM2Gz2wMbzYMGDzYhNAMLz2Mzs1gAAAWAMAYMDDMjZmNgZmhxwgB",
-                    ["n"] = 2,
-                },
-                {
                     ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmyYGmZsNmthZ2mxYMGmxCbAYWmtZmZrBBAAsAYAwYGGYGzMbAzMDjZMYA",
                     ["n"] = 2,
                 },
@@ -6324,7 +6316,15 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmysMDzM2Gz2wMbzYMGDzYhNAMLz2Mzs1gAAAWAMAYMDDMjZmNgZmhxwgB",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmyYGmZmtxsNMz2MmZMGmxCbAYWmtZmZrBBAAsAYAwYYAzYmZDYmZYMMYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmysMDzM2Gz2wMbzYMGDzYhNAMLz2Mzs1gAAAWAMAgZ2AmxMzGwMzYGDDG",
                     ["n"] = 1,
                 },
                 {
@@ -6520,7 +6520,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 6,
                 },
                 {
-                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmyYGmZsNmthZ2mxYMGmxCbAYWmtZmZrBBAAsAYAwYGGYGzMbAzMDjZMYA",
+                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmysMDzM2Gz2wMbzYMGDzYhNAMLz2Mzs1gAAAWAMAYMDDMjZmNgZmhxwgB",
                     ["n"] = 2,
                 },
                 {
@@ -6548,15 +6548,15 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmysMDzM2Gz2wMbzYMGDzYhNAMLz2Mzs1gAAAWAMAYMDDMjZmNgZmhxwgB",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmysMDzM2Gz2wMbzYMGDzYhNAMLz2Mzs1gAAAWAMAgZ2AmxMzGwMzYGDDG",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzYGAAAAAAjysMDzM2Gz2wMbzYMGDzYhNAMLz2Mzs1gAAAWAMAMjZYGMjZmNgZmhxwgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmyYGmZsNmthZ2mxYMGmxCbAYWmtZmZrBBAAsAYAwYGGYGzMbAzMDjZMYA",
                     ["n"] = 1,
                 },
                 {
@@ -6629,7 +6629,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzYGAAAAAAjysMDzM2Gz2wMbzYmxYYYhNAMLz2Mzs1gAAAWAMgBjZ2MwMmZ2AmZGGDDG",
+                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzYGAAAAAAzUmlZYmx2Y2GmZbGzMGDDLsBgZZ2mZmtGEAAwCgBAjZ2AmxMzGwMzwYGDG",
                     ["n"] = 1,
                 },
                 {
@@ -6713,11 +6713,11 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 3,
                 },
                 {
-                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZmZMzMzMzMzDsMjxMjZzMzMAAQMW2GYBMBzwEYG2AmZYAAAmZYMLDjBjB",
+                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZmZMzMzMzMzsMMmZMbmZmBAAixy2ALgJYGmAzwGwMDDAAwMDjZZYMYM",
                     ["n"] = 2,
                 },
                 {
-                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjZMz2yMzMzMmxMzMzMzMzyMzYmxsMmZGAAIMwGssY0YGQmFMjFAzgBAMzAYwiZAGD",
+                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZmZMzMzMzMzDsMjxMjZzMzMAAQMW2GYBMBzwEYG2AmZYAAAmZYMLDjBjB",
                     ["n"] = 2,
                 },
                 {
@@ -6729,11 +6729,11 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZmZMzMzMzMzsMMmZMbmZmBAAixy2ALgJYGmAzwGwMDDAAwMDjZZYMYM",
+                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjZMz2yMzMzMmxMzMzMmZWmZGzMmlxMzAAAhB2glNjGzAysgZsAYGMAgZGADWMDDGD",
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjZMz2yMzMzMmxMzMzMmZWmZGzMmlxMzAAAhB2glNjGzAysgZsAYGMAgZGADWMDDGD",
+                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjZMz2yMzMzMmxMzMzMzMzyMzYmxsMmZGAAIMwGssY0YGQmFMjFAzgBAMzAYwiZAGD",
                     ["n"] = 1,
                 },
                 {
@@ -6839,15 +6839,11 @@ RecommendedStatsData_TalentsDungeon = {
             ["n"] = 20,
             ["builds"] = {
                 {
-                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMz2yMzMzMmxMzMzMzMPwyMGzMmNzMzAAAxYZbgFwEMDTgZYDYmhBAAYmhxsMMGMG",
-                    ["n"] = 3,
-                },
-                {
                     ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjZMz2yMzMjZmxMzMzMzMzyMzYmxsMmZGAAIMwGssY0YGQmFMjFAzgBAMzAYwiZAGD",
                     ["n"] = 3,
                 },
                 {
-                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZmZMzMzMzMzDsMjxMjZzMzMAAQMW2GYBMBzwEYG2AmZYAAAmZYMLDjBjB",
+                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMz2yMzMzMmxMzMzMzMPwyMGzMmNzMzAAAxYZbgFwEMDTgZYDYmhBAAYmhxsMMGMG",
                     ["n"] = 2,
                 },
                 {
@@ -6864,6 +6860,14 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjZMzmZmZmZMjZmZmZMzsMzMmZMLjZmBAACDsBLbGNmBkZBzYBwMYAAzMAGsYmxgxA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmZ2MzMzMjZMzMzMzMzDsMjxMjZzMzMAAQMW2GYBMBzwEYG2AmZYAAAmZYMLDjBjB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZmZMzMzMzMzDsMjxMjZzMzMAAQMW2GYBMBzwEYG2AmZYAAAmZYMLDjBjB",
                     ["n"] = 1,
                 },
                 {
@@ -6894,10 +6898,14 @@ RecommendedStatsData_TalentsDungeon = {
                     ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZmZMzMzYGzsMzMmZmZzMzMAAQMW2GYBMBzwEYG2AmZYAAAmZYMGGDGD",
                     ["n"] = 1,
                 },
+                {
+                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMz2yMzMzMzMmZmZmZm5BWmxYmxsZmZGAAIGLbDsAmgZYCMDbAzMMAAAzMMmlBGMG",
+                    ["n"] = 1,
+                },
             },
         },
         ["altar-of-fangs"] = {
-            ["n"] = 18,
+            ["n"] = 17,
             ["builds"] = {
                 {
                     ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMz2yMzMzMmxMzMzMzMPwyMGzMmNzMzAAAxYZbgFwEMDTgZYDYmhBAAYmhxsMMGMG",
@@ -6906,10 +6914,6 @@ RecommendedStatsData_TalentsDungeon = {
                 {
                     ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZmZMzMzMzMzDsMjxMjZzMzMAAQMW2GYBMBzwEYG2AmZYAAAmZYMLDjBjB",
                     ["n"] = 3,
-                },
-                {
-                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMz2yMzMzMzMmZmZmZm5BWmxYmxsZmZGAAIGLbDsAmgZYCMDbAzMMAAAzMMmlBGMG",
-                    ["n"] = 2,
                 },
                 {
                     ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjhZ2WmZmZmZmxMzMzMzMPwyMGzMmNzMzAAAxYZbgFwEMDTgZYDYmhBAAYmhxsMMGMG",
@@ -6925,6 +6929,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjZMz2yMzMzMmxMzMzMmZWmZGzMmlxMzAAAhB2glNjGzAysgZsAYGMAgZGADWMDDGD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMz2yMzMzMzMmZmZmZm5BWmxYmxsZmZGAAIGLbDsAmgZYCMDbAzMMAAAzMMmlBGMG",
                     ["n"] = 1,
                 },
                 {
@@ -7192,7 +7200,7 @@ RecommendedStatsData_TalentsDungeon = {
     },
     ["HUNTER_SURVIVAL_MYTHICPLUS"] = {
         ["murder-row"] = {
-            ["n"] = 9,
+            ["n"] = 10,
             ["builds"] = {
                 {
                     ["code"] = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2ILwMM0gFzMzMzMWGAAAAAAmxMzMMjhxMsMmmBAAAYAwDMWWmZegFmZGmxYAzsBMMGzMbGAA",
@@ -7220,6 +7228,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgtZmZmZGz2MAAAAAAmxMzM2MGzYGMmmBAAAYAgxyyMjlhZGmxYAYGbwMGmZzAA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2ILwMM0gFzMzMzMWGAAAAAAmxMzM2mxwYGWGTzAAAAMAYGLLzMWYmZ4BGjBMzGAzYMzsZAA",
                     ["n"] = 1,
                 },
                 {
@@ -7529,7 +7541,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBWmZZMLz2MmZ22MwMMbMbLLzMWYMNjZADGAzMzMMbYGmlZCAAAAgAsYbmtZbmJAAMYMAzAGDsIjZA",
+                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBWmZZML2mxMz2mBmhZzMbLLzMWYMNjZADGAzMzMMbYGmlZCAAAAgAsYbmtZbmJAAMYMAzAGDsIjZA",
                     ["n"] = 1,
                 },
                 {
@@ -7549,6 +7561,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBWmZZML2mxMz2mBmhZzMbLLzMWYmpZMDYMGwYmZmhZDzglZCAAAAgAsYbmtZbmJAAAMAzAGDsIjZA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgB2mZZML2mxMz2mBmhZzMbLLzMWYmpZMDYwAYmZmhZDzglZCAAAAgAsYbmtZbmJAAMYMAzAGDsIjZA",
                     ["n"] = 1,
                 },
@@ -7562,10 +7578,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZZmxCDNjZADGMYmZmhZZwwsMTAAAAAEgFLzsMbzMBAgBMAzAGDjFZMDA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBWmZZML2mxMz2mBmhZzMbLLzMWYmpZMDYMGwYmZmhZDzglZCAAAAgAsYbmtZbmJAAAMAzAGDsIjZA",
                     ["n"] = 1,
                 },
             },
@@ -7991,6 +8003,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZZmxCzoZMDYwghlZmZGmtBDWMBAAAAQAWsMzysNzEAAGwAMDYMMWmMmBA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBWmZZML2mxMz2mBmhZzMbLLzMWMzMNjZADGGGzMzMMbwgFTAAAAAEgFbzsNbzMBAgBjBYGwYgFZMDA",
                     ["n"] = 1,
                 },
@@ -8000,10 +8016,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBWmZZML2mxMz2mBmhZzMbLLzMWYmpZMDYwAsMzMzwshZYWegJAAAAwsNtMbzsMbAQAAYAzMDAMGYRGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBWmZZML2mxMz2mBmhZzMbLLzMWYmpZMDYwAsMzMzwsBDzyDMBAAAAQAWsNz2sNzEAAGMGgZAjBWkxMA",
                     ["n"] = 1,
                 },
             },
@@ -8431,10 +8443,6 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 2,
                 },
                 {
-                    ["code"] = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzohG2AAwMmZmZZmhZmZGzMYmxMDzMmZmxmZGzYGMmmBAAAAAAAAmxYAzsRgZWAbDAA",
-                    ["n"] = 2,
-                },
-                {
                     ["code"] = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzohG2AAwMmZmZ5BmxMzMzYmBzMmZYmxMzMMzMMmhlhmBAAAAAAAAmxYAzsRYMzCYbAA",
                     ["n"] = 1,
                 },
@@ -8464,6 +8472,14 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzohG2AAwMmZmZ5BmxMzMzYmBzMmZYmxMzM2mZGzYGWGTzAAAAAAAAAPwYMgZ2IgZBsNAA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzohG2AAwMmZmZZmhZmZGzMYmxMDzMmZmxmZGzYGMmmBAAAAAAAAmxYAzsRYYWAbDAA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzohG2AAwMmZmZZmhZmZGzMYmxMDzMmZmxmZGzYGMmmBAAAAAAAAmxYAzsRgZWAbDAA",
                     ["n"] = 1,
                 },
                 {
@@ -8593,6 +8609,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzohG2AAwMmZmZ5BmxMzMzYmBzMmZYmxMzM2mZGGzwyQzAAAAAAAAAzYMgZ2IMMLgtBA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzohG2AAwMmZmZ5BmxMzMzYmBzMmZYmxMzM2mZGzYGM0MAAAAAAAAwMGDYmNCDzCYbAA",
                     ["n"] = 1,
                 },
@@ -8652,10 +8672,6 @@ RecommendedStatsData_TalentsDungeon = {
                     ["code"] = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzohG2AAwMmZmZZmhZmZGzMYmxMDzMmZmx2MzYGzwyYaGAAAAAAAA4BGjBMzGBMLgtBA",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzohG2AAwMmZmZZmhZmZGzMYmxMDzMmZmxmZGzYGMmmBAAAAAAAAmxYAzsRgZWAbDAA",
-                    ["n"] = 1,
-                },
             },
         },
         ["the-blinding-vale"] = {
@@ -8663,6 +8679,10 @@ RecommendedStatsData_TalentsDungeon = {
             ["builds"] = {
                 {
                     ["code"] = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzohG2AAwMmZmZZmhZmZGzMYmxMDzMmZmhZmhxMsM0MAAAAAAAAwMGDYmNCjZWAbDAA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzohG2AAwMmZmZ5BmxMzMzYmBzMmZYmxMzM2mZGGzwyQzAAAAAAAAAzYMgZ2IMMLgtBA",
                     ["n"] = 1,
                 },
                 {
@@ -8722,10 +8742,6 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzohG2AAwMmZmZZmhZmZGzMYmxMDzMmZmx2MzwYGWGaGAAAAAAAAYGjBMzGhhZBsNAA",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzohG2AAwMmZmZ5BmxMzMzYmBzMmZYmxMzM2mZGzYGMmmBAAAAAAAAegxYAzsRgZWAbDAA",
                     ["n"] = 1,
                 },
@@ -8761,7 +8777,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlZMAADAAAAAAaamZZmxMYMbtBgBGwMYDAAgAMzsss0yMjFLLMDAYGGDAmZAwMDyYB",
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlZMAADAAAAAAaamZZmxMYMbtBgBGwAbAAAEgZmlllWmZsYZhZAAzsZMAYmBAzMIjF",
                     ["n"] = 1,
                 },
                 {
@@ -8790,6 +8806,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlZMAADAAAAAAaamZZmxMDjZrNAMwAmBbAAAEgZmltlWmZsYZBDAYGGDAmZAwMDyYB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGz8AzMzMzyyYMLjZZGDAwAAAAAAgmmZMzYmhxs1GAGYADsBAAQAmZWWWaZmxilFmBwgZYMAYmBAzMIjN",
                     ["n"] = 1,
                 },
                 {
@@ -8824,8 +8844,89 @@ RecommendedStatsData_TalentsDungeon = {
                     ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZGzyYmZmZmxyyYYZMLzYAAGAAAAAA00MzyMjZGGPwWbAYgBMwGAAABYmZZZplZGLWWYGADmZDAwMDAmZQGL",
                     ["n"] = 1,
                 },
+            },
+        },
+        ["den-of-nalorakk"] = {
+            ["n"] = 20,
+            ["builds"] = {
                 {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGz8AzMzMW2GjZZWmlZMAADAAAAAAaamZZmxMDjZrNAMwAAbAAAEgZmlllWmZsYZhZAMYGGDAmZAwMDyYB",
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlZMAADAAAAAAaamZZmxMDDbtBgBGwMYDAAgAMzsss0yMjFLLMDAGzshBAzMAYmBZsA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZW2GjZZWmlZMAADAAAAAAaamZZmxMDDbtBgBGwMYDAAgAMzsss0yMjFLLYAMGzwYAwMDAmZQGL",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlZMAADAAAAAAaamZZmxMYMbtBgBGwAbAAAEgZmlllWmZsYZhZAAzsZMAYmBAzMIjF",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlZMAADAAAAAAaamZZmxMDjRbAYgBYwGAAABYmZZZplZGLWWwAYwMbGDAmZAwMDyYB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGz8AzMzMzyyYMLjZZGDAwAAAAAAgmmZMzYmhxs1GAGYADsBAAQAmZW2WaZmxilFmBwgZYMAYmBAzMIjF",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZsNLjZMzMzMLLjxYWmlZMAADAAAAAAaamZZmxMDjHYrNAMwAmBbAAAEgZmltlWmZsYZhZAAzshBAzMAYmBZsA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzMzMzMWWGjZZMLzYAAGAAAAAA00MzyMjZGGzWbAYgBMwGAAABYmZZZplZGLWWwAYwMMGAMzAgZGkxC",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZW2GjZZWmlZMAADAAAAAAaamxMjZGGzWbAYAAwGAAABYmZZbplZGLWWYGAjxMGGAMzAwMzgM2A",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZW2GjZZWmlhBAYAAAAAAQTzMLzMmZYYrNAMwAmBbAAAEgZmltlWmZsYZhZYgBzYYAwMDAmZQGL",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlZMAADAAAAAAaamZZmxMDjZrNAMwAmBbAAAEgZmltlWmZsYZBDAYGGDAmZAwMDyYB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlZMAADAAAAAAaamZZmxMDjHYrNAMwAmBbAAAEgZmltlWmZsYZBDgBzwYAwMDAmZQGb",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZsNLjZMzMzMLbjxYWmlZMAADAAAAAAaamZZmxMDjHYrNAMwAGYDAAgAMzsst0yMjFLLMDgBzshBAzMAYmBZsA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGz8AzMzMWWGjZZWmlZMAAAAAAAAQTzMLzMmZGjZrNAMAAYDAAgAMzsst0yMjFLLMDAGzshBAzMAMzMIjF",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZW2GjZZWmlZMAADAAAAAAaamZZmxMDDbtBgBGwMYDAAgAMzsst0yMjFLLMDgBzshBAzMAYmBZsA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzMzMzMWWGjZZMLzYAAGAAAAAA00MzyMjZGGzWbAYgBMwGAAABYmZZbplZGLWWYGAwMMGAMzAgZGkxC",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlZMAADAAAAAAaamZZmxMDjZrNAMwAGYDAAgAMzsss0yMjFLLYAMYGGDAmZAwMDyYB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZsNLjZMzMzYZbMmlZZWmxAAMAAAAAAopZmlZGzMMmt2AwADYgNAAACwMzy2SLzMWsswMAgZYMAYmBAzMIjF",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzMzMzMWWGjZZMLzYAAGAAAAAA00MzyMjZGGzWbAYgBMwGAAABYmZZbplZGLWWYGAwMbYAwMDAmZQGb",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZsNbjZMzMzMLLjxsMmlZMAADAAAAAAaamxMjZGmZ2aDADAMwGAAABYmZbbplZGLWWYGADmhxAgZGAMzgMWA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZW2GjZZWmlZMAADAAAAAAaamZxMmBjZrNAMwAGYDAAgAMzsst0yMjFLLMDAGzwYAwMDAzMDyYB",
                     ["n"] = 1,
                 },
             },
@@ -9000,91 +9101,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
             },
         },
-        ["den-of-nalorakk"] = {
-            ["n"] = 20,
-            ["builds"] = {
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZW2GjZZWmlZMAADAAAAAAaamZZmxMDDbtBgBGwMYDAAgAMzsss0yMjFLLYAMGzwYAwMDAmZQGL",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlZMAADAAAAAAaamZZmxMDjRbAYgBYwGAAABYmZZZplZGLWWwAYwMbGDAmZAwMDyYB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGz8AzMzMzy2YMLjZZGDAwAAAAAAgmmZWmZMzw4B2aDADMgB2AAAIAzMLbLtMzYxyCzAYwMbYAwMDAmZQGL",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlZMAADAAAAAAaamZZmxMDjZrNAMwAGYDAAgAMzsss0yMjFLLMDAYGGDAmZAwMDyYB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGz8AzMzMzyyYMLjZZGDAwAAAAAAgmmZMzYmhxs1GAGYADsBAAQAmZW2WaZmxilFmBwgZYMAYmBAzMIjF",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZsNLjZMzMzMLLjxYWmlZMAADAAAAAAaamZZmxMDjHYrNAMwAmBbAAAEgZmltlWmZsYZhZAAzshBAzMAYmBZsA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzMzMzMWWGjZZMLzYAAGAAAAAA00MzyMjZGGzWbAYgBMwGAAABYmZZZplZGLWWwAYwMMGAMzAgZGkxC",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZW2GjZZWmlZMAADAAAAAAaamxMjZGGzWbAYAAwGAAABYmZZbplZGLWWYGAjxMGGAMzAwMzgM2A",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZW2GjZZWmlhBAYAAAAAAQTzMLzMmZYYrNAMwAmBbAAAEgZmltlWmZsYZhZYgBzYYAwMDAmZQGL",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlZMAADAAAAAAaamZZmxMDjZrNAMwAmBbAAAEgZmltlWmZsYZBDAYGGDAmZAwMDyYB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlZMAADAAAAAAaamZZmxMDjHYrNAMwAmBbAAAEgZmltlWmZsYZBDgBzwYAwMDAmZQGb",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZsNLjZMzMzMLbjxYWmlZMAADAAAAAAaamZZmxMDjHYrNAMwAGYDAAgAMzsst0yMjFLLMDgBzshBAzMAYmBZsA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZW2GjZZWmlZMAADAAAAAAaamZZmxMDDbtBgBGwMYDAAgAMzsst0yMjFLLMDgBzshBAzMAYmBZsA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzMzMzMWWGjZZMLzYAAGAAAAAA00MzyMjZGGzWbAYgBMwGAAABYmZZbplZGLWWYGAwMMGAMzAgZGkxC",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlZMAADAAAAAAaamZZmxMDjZrNAMwAGYDAAgAMzsss0yMjFLLYAMYGGDAmZAwMDyYB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZsNLjZMzMzYZbMmlZZWmxAAMAAAAAAopZmlZGzMMmt2AwADYgNAAACwMzy2SLzMWsswMAgZYMAYmBAzMIjF",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzMzMzMWWGjZZMLzYAAGAAAAAA00MzyMjZGGzWbAYgBMwGAAABYmZZbplZGLWWYGAwMbYAwMDAmZQGb",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZsNbjZMzMzMLLjxsMmlZMAADAAAAAAaamxMjZGmZ2aDADAMwGAAABYmZbbplZGLWWYGADmhxAgZGAMzgMWA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZW2GjZZWmlZMAADAAAAAAaamZxMmBjZrNAMwAGYDAAgAMzsst0yMjFLLMDAGzwYAwMDAzMDyYB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlZMAADAAAAAAaamZZmxMDjZrNAMwAGYDAAgAMzsst0yMjFLLYAMYmNjBAzMAYGIjF",
-                    ["n"] = 1,
-                },
-            },
-        },
         ["kings-rest"] = {
             ["n"] = 20,
             ["builds"] = {
@@ -9250,7 +9266,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlZMAADAAAAAAaamZZmxMYMbtBgBGwAbAAAEgZmltlWmZsYZhZAMYmNMAYmBAzMIjF",
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZW2GjZZWmlZMAADAAAAAAaamZZmxMDDbtBgBGwMYDAAgAMzsst0yMjFLLMDgBzshBAzMAYmBZsB",
                     ["n"] = 1,
                 },
             },
@@ -9295,6 +9311,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGz8AzMzMWWGjZZWmlZMAAAAAAAAQTzMLzMmZGjZrNAMAAYDAAgAMzsst0yMjFLLMDAGzshBAzMAMzMIjF",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZW2GjZZWmlZMAADAAAAAAaamZZmxMDDbtBgBGwMYDAAgAMzsst0yMjFLLMDgBzshBAzMAYmBZsA",
                     ["n"] = 1,
                 },
@@ -9332,10 +9352,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZW2GjZZWmlZMAADAAAAAAaamZZmxMDjZrNAMwAGYDAAgAMzsst0yMjFLLYAMYmNjBAzMAYGIjF",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZW2GjZZWmlZMAADAAAAAAaamZZmxMDjZrNAMwAmBbAAAEgZmltlWmZsYZBDAYGGDAmZAwMDyYB",
                     ["n"] = 1,
                 },
             },
@@ -9416,11 +9432,11 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlZMAADAAAAAAaamZZmxMDjHYrNAMwAmBbAAAEgZmltlWmZsYZBDgBzwYAwMDAmZQGb",
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGz8AzMzMWWGjZZWmlZMAAAAAAAAQTzMLzMmZGjZrNAMAAYDAAgAMzsst0yMjFLLMDAGzshBAzMAMzMIjF",
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlhBAYAAAAAAQTzMLzMmZYMbtBgBGwMYDAAgAMzsss0yMjFLLYAMYGGDAmZAwMDyYB",
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZWWGjZZWmlZMAADAAAAAAaamZZmxMDjHYrNAMwAmBbAAAEgZmltlWmZsYZBDgBzwYAwMDAmZQGb",
                     ["n"] = 1,
                 },
             },
@@ -9500,6 +9516,91 @@ RecommendedStatsData_TalentsDungeon = {
                 },
             },
         },
+        ["murder-row"] = {
+            ["n"] = 20,
+            ["builds"] = {
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmx2MAAAAAAAAAAAALDz0MmhhxghhZmZGmNMDzyDMBAswsNmxMzMDAgFzsMLjJIAgZmBwMADDEzMzmB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYbmx2MAAAAAAAAAAAALDz0MmhhBMMMzMzwsxMDWmJAgFmtxMmZmZAAsYmlZbMBBAMjBwMAjlBiZmZzA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYbmx2MGAAAAAAAAAAAYZYmwMMMgxMMzMzwsxMDzyMBAsYmtxMGmZAAsBgmlZpZmZWAmxAzMAMWGIGwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmx2MAAAAAAAAAAAALDzEmhhBMMjZmZGmNmZwyMBAswsNmxMzMDAgFzsMbjJIAgZMAmBYsMQjZmZzA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZY0MmhhBMMMzMzwshZYWmJAgFmtxMmZmZAAsYmlZZMBBAYmBwMAjlBiZmZzA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYbmx2MAAAAAAAAAAAALDz0MmhhBMMMzMzwshZYWegJAgFmtxMmZmZAAsYmlZbMBBAMzMAmBYsMQMzMbG",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZYmwMMMGMjhZmZGmNMDzyMBAswsNmxYmZAAsYmlZbMBBAMjBwMAjlBiZmZzA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGjlZmZbGAAAAAAAAAAAglhRzYGGGwwMmZmZY2YmhZxEAwiZ2mZGjZmBAwiZWmtxEEAgxAYGgxyMImZmNPA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYbmx2MAAAAAAAAAAAALDz0MmhhBMMMzMzwsxMDWmJAgFmtxMmZmZAAsYmlZZMBBAMjBwMAjlBiZmZzA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwALzYYmZmhZbYGmFTAALmZbmZMmZGAALmZZ2GTQAAGDgZAGLDEzMzmLA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZYmmxMMMgZmhZmZGmNmZYWMBAswsNmxYmZAAsYmlZbMBBAMjBwMAsMQMzMbG",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYbmx2MAAAAAAAAAAAALDz0MmhhxghhZmZGmNMDWmJAgFmtxMmZmZAAsYmlZbMBBAMjBwMAjlBiZmZzA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYbmx2MAAAAAAAAAAAALDz0MmhhBMMMzMzwsxMDWmJAgFmtxMmZmZAAsYmlZbMBBAMjBwMAjtBiZmZzA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZYmmxMMMGMjhZmZGmNMDzyMBAswsNmxYmZAAsYmlZZMBBAMjBwMAsAiZmZzA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZY0MmhhBMjhZmZGmthZYWmJAgFmtxMGzMDAgFzsMbjJIAgZMAmBYsAiZmZzA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GmhlZGbzAAAAAAAAAAAAsMMCzwwAmZGmZmZY2GmhZZmAAWMz2MjZmZmBAwGAaWmlmZmZBADMzAwYZgYAXA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwAGmxMzMDz2wMMLmAAWMz2MzYMzMAAWMzysMmgAAMGAzAMWmBxMzs5CA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZYmwMMMgZMMzMzwsxMDWmJAgFmNmxMzMDAgFzsMLjJIAgZMAmBYsMGiZmZzA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZYmmxMMMghhZmZGmNmZwyMBAswsNmxYmZAAsYmlZbMBBAMjBwMAjlBiZmZzA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZYmmxMMMghhZmZGmNMDzyMBAswsNmxYmZAAsYmlZbMBBAMjBwMAjlBiZmZzA",
+                    ["n"] = 1,
+                },
+            },
+        },
         ["kings-rest"] = {
             ["n"] = 20,
             ["builds"] = {
@@ -9573,91 +9674,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZYmwMMMgZMMzMzwsNMDzyMBAsYmtZmxYmZAAsYmlZZMBBAYMAmBYsMQMzMb+A",
-                    ["n"] = 1,
-                },
-            },
-        },
-        ["murder-row"] = {
-            ["n"] = 20,
-            ["builds"] = {
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZYmmxMMMGMMMzMzwshZYWegJAgFmNmxMzMDAgFzsMLjJIAgZmBwMADDEzMzmB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYbmx2MAAAAAAAAAAAALDz0MmhhBMMMzMzwsxMDWmJAgFmtxMmZmZAAsYmlZbMBBAMjBwMAjlBiZmZzA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYbmx2MGAAAAAAAAAAAYZYmwMMMgxMMzMzwsxMDzyMBAsYmtxMGmZAAsBgmlZpZmZWAmxAzMAMWGIGwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmx2MAAAAAAAAAAAALDzEmhhBMMjZmZGmNmZwyMBAswsNmxMzMDAgFzsMbjJIAgZMAmBYsMQjZmZzA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZY0MmhhBMMMzMzwshZYWmJAgFmtxMmZmZAAsYmlZZMBBAYmBwMAjlBiZmZzA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYbmx2MAAAAAAAAAAAALDz0MmhhBMMMzMzwshZYWegJAgFmtxMmZmZAAsYmlZbMBBAMzMAmBYsMQMzMbG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGjlZmZbGAAAAAAAAAAAglhRzYGGGwwMmZmZY2YmhZxEAwiZ2mZGjZmBAwiZWmtxEEAgxAYGgxyMImZmNPA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYbmx2MAAAAAAAAAAAALDz0MmhhBMMMzMzwsxMDWmJAgFmtxMmZmZAAsYmlZZMBBAMjBwMAjlBiZmZzA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwALzYYmZmhZbYGmFTAALmZbmZMmZGAALmZZ2GTQAAGDgZAGLDEzMzmLA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZYmmxMMMgZmhZmZGmNmZYWMBAswsNmxYmZAAsYmlZbMBBAMjBwMAsMQMzMbG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYbmx2MAAAAAAAAAAAALDz0MmhhxghhZmZGmNMDWmJAgFmtxMmZmZAAsYmlZbMBBAMjBwMAjlBiZmZzA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYbmx2MAAAAAAAAAAAALDz0MmhhBMMMzMzwsxMDWmJAgFmtxMmZmZAAsYmlZbMBBAMjBwMAjtBiZmZzA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmx2MAAAAAAAAAAAALDzEmhhxgZMMzMzwshZYWmJAgFmtxMmZmZAAsYmlZbMBBAMjBwMAjlBiZmZzA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZYmmxMMMGMjhZmZGmNMDzyMBAswsNmxYmZAAsYmlZZMBBAMjBwMAsAiZmZzA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZY0MmhhBMjhZmZGmthZYWmJAgFmtxMGzMDAgFzsMbjJIAgZMAmBYsAiZmZzA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GmhlZGbzAAAAAAAAAAAAsMMCzwwAmZGmZmZY2GmhZZmAAWMz2MjZmZmBAwGAaWmlmZmZBADMzAwYZgYAXA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwAGmxMzMDz2wMMLmAAWMz2MzYMzMAAWMzysMmgAAMGAzAMWmBxMzs5CA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZYmwMMMgZMMzMzwsxMDWmJAgFmNmxMzMDAgFzsMLjJIAgZMAmBYsMGiZmZzA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZYmmxMMMghhZmZGmNmZwyMBAswsNmxYmZAAsYmlZbMBBAMjBwMAjlBiZmZzA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZYmmxMMMghhZmZGmNMDzyMBAswsNmxYmZAAsYmlZbMBBAMjBwMAjlBiZmZzA",
                     ["n"] = 1,
                 },
             },
@@ -10070,12 +10086,8 @@ RecommendedStatsData_TalentsDungeon = {
     },
     ["HUNTER_MARKSMANSHIP_MYTHICPLUS"] = {
         ["the-blinding-vale"] = {
-            ["n"] = 15,
+            ["n"] = 14,
             ["builds"] = {
-                {
-                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMjNjZmxMsMmmxgZZbbmZmZmZmZwMLDzMAAAzYMAMTbgBYjZ2mxA",
-                    ["n"] = 2,
-                },
                 {
                     ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMDGzMjZYZMNjBzymZmZmZmZmZhZWGmZAAAmxYAYm2YYA2YmtZMA",
                     ["n"] = 1,
@@ -10118,6 +10130,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMzy2MmZGzgx0MGMbbbzMzMzMzMDmZZYmBAAMmZAgZaDMAbMz2MG",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMjNjZmxMsMmmxgZZbbmZmZmZmZwMLDzMAAAzYMAMTbgBYjZ2mxA",
                     ["n"] = 1,
                 },
                 {
@@ -10208,10 +10224,14 @@ RecommendedStatsData_TalentsDungeon = {
             },
         },
         ["altar-of-fangs"] = {
-            ["n"] = 7,
+            ["n"] = 8,
             ["builds"] = {
                 {
                     ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMDGzMjZYZMNjBzymZmZmZmZmZhZWGmZAAAmxYAYm2YYA2YmtZMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMjNjZmxMYMNjBzymZmZmZmZmZhZWGmZAAAmxYAYm2YYA2YmlZMA",
                     ["n"] = 1,
                 },
                 {
@@ -10412,8 +10432,12 @@ RecommendedStatsData_TalentsDungeon = {
             },
         },
         ["voidscar-arena"] = {
-            ["n"] = 7,
+            ["n"] = 9,
             ["builds"] = {
+                {
+                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwGMwMGNWGQmBbAAAAAAAAgZMzMjtZMzMmhlx0MGMLbbzMzMzMzMzCzsMMDAAgHYMGAmpNwAsxMbzYA",
+                    ["n"] = 2,
+                },
                 {
                     ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMDGzMjZYZMNjBzymZmZmZmZmZhZWGmZAAAmxYAYm2YYAWYmtZMA",
                     ["n"] = 1,
@@ -10431,11 +10455,11 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwGMwMGNWGQmBbAAAAAAAAgZMzMjtZMzMmhlx0MGMLbbzMzMzMzMzCzsMMDAAAjxAwMtBzAsxMbzYA",
+                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMjtZMzMmBjpZMY222mZmZmZmZGMzywMDAAYMGDAz0GMDwCzsNjB",
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwGMwMGNWGQmBbAAAAAAAAgZMzMjtZMzMmhlx0MGMLbbzMzMzMzMzCzsMMDAAgHYMGAmpNwAsxMbzYA",
+                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwGMwMGNWGQmBbAAAAAAAAgZMzMjtZMzMmhlx0MGMLbbzMzMzMzMzCzsMMDAAAjxAwMtBzAsxMbzYA",
                     ["n"] = 1,
                 },
                 {
@@ -10867,7 +10891,7 @@ RecommendedStatsData_TalentsDungeon = {
             ["builds"] = {
                 {
                     ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2YmZmxY2M2mZZGzMmZAAAAYJY2M8AmZUzYWMzMzsMmhBAAAAAwADAAAgmZZWmZmBEYBmZGgFGMAAAmZDD",
-                    ["n"] = 7,
+                    ["n"] = 6,
                 },
                 {
                     ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2YmZmxY2M2mZZGzMmZAAAAYLY2M8AmZUzYWMzMzsMmhBAAAAAwADAAAgmZZWmZmBEYBmZGgFGMAAAmZDD",
@@ -10879,6 +10903,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2YmZmxY2M2mZZGzMmZAAAAYJY2MGmZUzYWMzMzsMmhBAAAAAwADAAAgmZZWmZmBEYBmZGgFGMAAAmZDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2YmZmxY2M2mZZGzMmZAAAAYJY2M8AmZUzYWMzMzsMmxMAAAAAAGYAAAA0MLzyMzMgALgZGgFGMAAAmZDD",
                     ["n"] = 1,
                 },
                 {
@@ -10922,7 +10950,7 @@ RecommendedStatsData_TalentsDungeon = {
             ["builds"] = {
                 {
                     ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2gxMzMDz2YmxYZYZ7B22mNMLAAwysMtMbzsMAAQAMsBmZATjBAAMA",
-                    ["n"] = 2,
+                    ["n"] = 1,
                 },
                 {
                     ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2gxMzMDzGzMmZZYZ7B22mNMLAAwysMtMbzsMAAQAMsBmZATjBAAMA",
@@ -10934,6 +10962,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2AmZmZY2sNzYmlhltHYbb2wsAAALzy0ysNzyAAABwwGYmBMNGAAwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2MMmZmZY2YmxYZYZ7B22mNMLAAwysMtMbzsMAAQAMsBmZATjBAAMA",
                     ["n"] = 1,
                 },
                 {
@@ -11087,16 +11119,16 @@ RecommendedStatsData_TalentsDungeon = {
             ["n"] = 20,
             ["builds"] = {
                 {
-                    ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2gxMzMDz2YmxYZYZ7B22mNMLAAwysMtMbzsMAAQAMsBmZATjBAAMA",
+                    ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2AmZmZY2GzMmZZYZ7B22mNMLAAwysMtMbzsMAAQAMsBmZATjBAAMA",
                     ["n"] = 2,
+                },
+                {
+                    ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2gxMzMDz2YmxYZYZ7B22mNMLAAwysMtMbzsMAAQAMsBmZATjBAAMA",
+                    ["n"] = 1,
                 },
                 {
                     ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2gxMzMDzGzMmZZYZ7B22mNMLAAwysMtMbzsMAAQAMsBmZATjBAAMA",
-                    ["n"] = 2,
-                },
-                {
-                    ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2AmZmZY2GzMmZZYZ7B22mNMLAAwysMtMbzsMAAQAMsBmZATjBAAMA",
-                    ["n"] = 2,
+                    ["n"] = 1,
                 },
                 {
                     ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2gxMzMjZ2YmxYZYZ7B22mNMLAAwysMtMbzsMAAQAMsBmZATjBAAMA",
@@ -11104,6 +11136,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2AmZmZY2sNzYmlhltHYbb2wsAAALzy0ysNzyAAABwwGYmBMNGAAwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2MMmZmZY2YmxYZYZ7B22mNMLAAwysMtMbzsMAAQAMsBmZATjBAAMA",
                     ["n"] = 1,
                 },
                 {
@@ -11136,6 +11172,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBmwMYmB2MMmZmZMzGzMmZZYZ7B22mNMLAAwysMtMbzsMAAQAMsBmZATjBAAMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2gxMzMDzGzMmZZYZ7B22mNMLAAwysNtMbzsMAAQAMsBmZATjBAAMA",
                     ["n"] = 1,
                 },
                 {
@@ -11330,11 +11370,11 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 3,
                 },
                 {
-                    ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2gxMzMDzGzMmZZYZ7B22mNMLAAwysMtMbzsMAAQAMsBmZATjBAAMA",
-                    ["n"] = 2,
+                    ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2AmZmZY2GzMmZZYZ7B22mNMLAAwysMtMbzsMAAQAMsBmZATjBAAMA",
+                    ["n"] = 1,
                 },
                 {
-                    ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2AmZmZY2GzMmZZYZ7B22mNMLAAwysMtMbzsMAAQAMsBmZATjBAAMA",
+                    ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2gxMzMDzGzMmZZYZ7B22mNMLAAwysMtMbzsMAAQAMsBmZATjBAAMA",
                     ["n"] = 1,
                 },
                 {
@@ -11387,6 +11427,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBmYmBmhxGMmZmZMzGzMmZZYZ7B22mNMLAAwysMtMbzsMAAQAMsBmZATjBAAMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEmBmhxmBmZmZMzGzMmZZYZ7B22mNMLAAwysMtMbzsMAAQAMsBmZATjBAAMA",
                     ["n"] = 1,
                 },
                 {
@@ -11623,6 +11667,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwMLzMmFMzQzMzAAAwAAmZmmlllZAgYDAgNGzMDbWmxMLzYMjZmhFmZmZmBAYAAAGgZGgBADzMD",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswDMDamZGAAAGAwMz0sssMDAEbAAAmZG2sMjZWmxYmZmZYhZmZmZAAGAAgBYmBMDAGmZG",
                     ["n"] = 1,
                 },
@@ -11640,10 +11688,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGmZZmxsgZQzMzMAAAGAwMz0sssNDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAjBADzMD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwYZmxsgZGamZGAAAGAwMz0sssMDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAjBADzMD",
                     ["n"] = 1,
                 },
             },
@@ -11704,7 +11748,15 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssMDAEbAAAmZG2sMjZWmxYmZmZYhZMzMDAwAAAMAzMgZAwwMzA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswDMDamZGAAAGAwMz0sssMDAEbAAsAzMDbWmxMLzYMzMzMswMmZmBAYAAAGgZGwMAYYmZA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwMLzMmFMzQzMzAAAwAAmZmmlllZAgYDAgNGzMDbWmxMLzYMjZmhFmZmZmBAYAAAGgZGgBADzMD",
                     ["n"] = 1,
                 },
                 {
@@ -11713,14 +11765,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMDamZGAAAGAwMz0sssMDAEbAAsxYmZYzyMmZZGjZMzMswMzMzMAADAAwAMzAMAYYmZA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwYZm5BmFMDamxAAAwAAmZmmlllZAgYDAgNYmZYzyMmZZGjZmZmhFmZmZmBAYAAAGgZGYmBADzMD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMPwsgZGamZGAAAGAwMz0sssMDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAmBADzMD",
                     ["n"] = 1,
                 },
             },
@@ -11887,6 +11931,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwMLzMmFMzQzMzAAAwAAmZmmlllZAgYDAgNGzMDbWmxMLzYMjZmhFmZmZmBAYAAAGgZGgBADzMD",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwYxYmFMDamZmBAAwAAmZmmlllZAgYDAgNYmZYzyMmZZGjZmZmhFmZmZmBAYAAAGgZGYMAYYmZA",
                     ["n"] = 1,
                 },
@@ -11928,10 +11976,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwMLzMPwsgZQzMzAAAwAAmZmmlllZAgYDAgNYmZYzyMmZZGjZmZmhFmZmZmBAYAAAGgZGwAADzMD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwMLzMzsgZQzMGAAAGAwMz0sstNDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAMAYYmZA",
                     ["n"] = 1,
                 },
             },
@@ -11980,6 +12024,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssMDAEbAAAmZG2sMjZWmxYmZmZYhZMzMDAwAAAMAzMgZAwwMzA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLGzsgZGamZmBAAwAAmZmmlllZAgYDAgNYmZYzyMmZZGjZmZmhFmZmZmBAYAAAGgZGYMAYYmZA",
                     ["n"] = 1,
                 },
@@ -12005,10 +12053,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAMzALzMzsgZGamZGAAAGAwMz0sssMDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAMAYYmZA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwMLzMmFMzQzMGAAAGAwMz0sssMDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAjBADzMD",
                     ["n"] = 1,
                 },
             },
@@ -12440,6 +12484,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CoQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjZYmZmlBAAAAAAAMmxwCMw2oFaYxYmxysNzMjZAgZGjZmZGgxMmZAAAGzMzYYYZGDYA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMzmZmZWGAAAAAAAwYGDLwAbjWohFjZGLzyMzMmBAmZMzMmZAGzYGbAAgxMzMGGWmxAGA",
                     ["n"] = 1,
                 },
@@ -12485,10 +12533,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMz2MzY2GAAAAAAAwYGDLwAbjWohFjZGLzyMzMmBAmZMzMmZAGzYGLAAgxMzMGGWmxAGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMmtBAAAAAAAMmxwCMw2oFaYxYmxysMzMjZAgZGjZmZGgZmxMzCAAYMzMjhhlZMgB",
                     ["n"] = 1,
                 },
             },
@@ -12904,6 +12948,10 @@ RecommendedStatsData_TalentsDungeon = {
             ["n"] = 20,
             ["builds"] = {
                 {
+                    ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAjZmxMzMDziZmlZMGjGzYYxMzMjZYmBAAAALzMAGDwALw2iRjZAMLxMbwYmZYsBAzMAAMDMG",
+                    ["n"] = 2,
+                },
+                {
                     ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAGzMmZmxMmNzMLzYMGNMzwyMmZGzwMDAAAAWmZAmxAMwCstY0YGAzSMzGMmZGGbAwMDAAzAjB",
                     ["n"] = 1,
                 },
@@ -12960,10 +13008,6 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAjZmxMzMDziZmlZMGjGzYYxMzMjZYmBAAAALzMAGDwALw2iRjZAMLxMbwYmZYsBAzMAAMDMG",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAGzYmZmZmxsZmZZYMGNmxwiZmZGzwMDAAAAWmZAmxAMwGssY0YGAzSMzGMmZGMbAwMDAAzAjB",
                     ["n"] = 1,
                 },
@@ -12977,10 +13021,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAjZMzMzMDziZmlZ8AGjGzYYxMzMjZMzMAAAAYZmBwYAGYB2WMaMDgZJmZDGzMDjNAYmBAgZgxA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAjZGzMzMzY2MzsMMGjGzYGLmZmZMDzMAAAAYZmBYGDwAbwyiRjZAMbxMbwwMDjFAYmBAADMG",
                     ["n"] = 1,
                 },
             },
@@ -13317,6 +13357,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAjZMzMzMDzmZmlZMGjGzYYxMzMjZYmBAAAALzMAGDwALw2iRjZAMLxMbwYmZYsBAzMAAMDMG",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAjZmZmZGDzmZmlZMGjGzYstYmZmxMMzAAAAglZGAjBYgNYZxoxMAmlYmNYMzMMAAzMAAMDMG",
                     ["n"] = 1,
                 },
@@ -13362,10 +13406,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAGzMzMzMmxsZmZZGjxoxMGbLmZmZMDzMAAAAYZmBYGDwAbwyiRjZAMLxMbAzMDGAwMDAAzAjB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAjZwMzMzY2MzsMjxY0YmZYxMzMjZYmBAAAALjBYGDwAbwyiRjZAMLxMbwMzMDjFAYmBAgBMG",
                     ["n"] = 1,
                 },
                 {
@@ -13796,6 +13836,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsNMMmNmNbzAAAAAAAAAAgNDNbzw0MDwswMzYxkZAAAAAYAAmBAgAAAmtZ2a2mZzGzMzMMzAjmBAYmBgB",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsNMMmNmNbzAAAAAAAAAAgNDNbjZmmZAmlZmZmZxEzAAAAAYAAmBAgAAAmtZ2a2mZzGjZeAMzsBaGAgZGAGA",
                     ["n"] = 1,
                 },
@@ -13803,14 +13847,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["code"] = "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsNMMzsgNbzAAAAAAAAAAglBNbGmmZMMmlZmZGLzkZAAAAAAAgBAgAAAmtZ2a2mZxGjZGMzA0MAAzMAMA",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsNMMzsNsZbGAAAAAAAAAAsNoZzw0MjZ8AmlZmZmhJPwMAAAAAAAYAAIAAgZbmtmtZWsxYmBmZB0MAAzMAMA",
-                    ["n"] = 1,
-                },
             },
         },
         ["altar-of-fangs"] = {
-            ["n"] = 18,
+            ["n"] = 17,
             ["builds"] = {
                 {
                     ["code"] = "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsNMMmFmFbzAAAAAAAAAAgNDNbzw0MDwswMzMLmMDAAAAADAwMAAEAAwsNzWz2Mb2YMzgZmNMaGAgZGAGA",
@@ -13880,14 +13920,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["code"] = "CkGAAAAAAAAAAAAAAAAAAAAAAgxMLjZmZm5BmthHgxsZmNbzAAAAAAAAAAgNDNbzMmmZAmFmZmhJjBAAAAwAAMAAIAAgZbmtmtZWsxMzYYmZDjmBAYmBgB",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsNz8AMmNsZbGAAAAAAAAAAsYoZbmx0MD8AmFzMzYxkHwAAAAAYAAMAAEAAwsNzWz2Mb2YmZGMzsBaGAgZGAGA",
-                    ["n"] = 1,
-                },
             },
         },
         ["ruby-life-pools"] = {
-            ["n"] = 20,
+            ["n"] = 18,
             ["builds"] = {
                 {
                     ["code"] = "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsNMMzsgFbzAAAAAAAAAAgNDNbzw0MDwswMzMLmMDAAAAADAwMAAEAAwsNzWz2Mb2YMzgZmNMaGAgZGAGA",
@@ -13959,14 +13995,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsNMMmlZsZbGAAAAAAAAAAsZoZbGmmZAmFzMzMM5BGAAAAAGAgZAAIAAgZbmtmtZWsxMzMwMbY0MAAzMAMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZbMjZmxsNMDmNjNbzAAAAAAAAAAgFDNbzMmmZAmFzMzYxkHwAAAAAYAAmBAgAAAmtZ2a2mZzGzMzgZmNQzAAMzAwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsNMMzsMsZbGAAAAAAAAAAsMoZzw0MjBmFzMzMLzkHYGAAAAADAgBAgAAAmtZ2a2mZxGjZGYmFQzAAMzAwA",
                     ["n"] = 1,
                 },
             },
@@ -14357,7 +14385,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAz2MmZmZZZGLmZmNWmZmZAjZAAmhxMDjAzMYwYA",
+                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmxYbxYjZmtxyMzMDDjZAAmhxMjZmAzMYwYA",
                     ["n"] = 1,
                 },
             },
@@ -14422,6 +14450,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmxYZxYjZmtxyMzMzwgZAAmhxMjZEYmBDGDA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAz2MmxYZxYjZmtxyMPwMzwsMmBAYGGzMMCMzgBjB",
                     ["n"] = 1,
                 },
@@ -14441,10 +14473,6 @@ RecommendedStatsData_TalentsDungeon = {
                     ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmxMbLGMzMbmlZegZmBGzAAMDjZGmJwMDGMGA",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAz2MmxMLLzYzMzsNWmxMDmlxMAAzwYmhRgZGMYMA",
-                    ["n"] = 1,
-                },
             },
         },
         ["voidscar-arena"] = {
@@ -14460,6 +14488,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmxYZZGbMzsNWmZmZeAzgZAAmhxMDjAzMYwYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAz2MmxYZxYbMzsxyMzMzwYMDAwMMmZYEYmBDGDA",
                     ["n"] = 1,
                 },
                 {
@@ -14512,10 +14544,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmxMLLGbMzsMWm5BmZeAsMmBAYGGzMMTgZGMYMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAz2MmxYZxYbMzsxyMzMzwYMDAwMMmZYEYmBDGDA",
                     ["n"] = 1,
                 },
                 {
@@ -14584,15 +14612,15 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAz2MmxYZZGbMzsNWmZmZYmFmBAYGGzMMCMzgBjB",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAz2MmxYbxYjZmtxyMPwMzwsMmBAYGGzMMCMzgBjB",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmxYZZGLMzswyMzMDjlxMAAzwYmhZCMzgBjB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAz2MmxYZxYjZmtxyMzMDzsMmBAYGGzMMCMzgBjB",
                     ["n"] = 1,
                 },
             },
@@ -14645,6 +14673,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAz2MmxYZZGbMzsNWmZmZYmFmBAYGGzMMCMzgBjB",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAz2MmxYZZGbMzYsMzMzMmBzAAMDjZGGBmZwgxA",
                     ["n"] = 1,
                 },
@@ -14658,10 +14690,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAz2MmxYZZGbMzglZmZmxMLMDAwMMmZYEYmBDGDA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmxYZZGbMzYsMzMzwMLjZAAmhxMDjAzMYwYA",
                     ["n"] = 1,
                 },
             },
@@ -14809,6 +14837,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAMzMmlxMjZGDzALzMzMAAAAGzsMDmZmhZMzAYmCgZWwQYMLDwYgFjZWA0MmZMGMDwMzMwA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAgZm5BmlxMjZGDzALzMzMAAAAmxsMDmZmx2MmZAMTBwMLYIMmtBYMwixMLAaGzMGDmBYmZAD",
                     ["n"] = 1,
                 },
@@ -14830,10 +14862,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAMzMmlxMjZGDzALzMzMAAAAGzsMzYmZmxGmZYBmpAYmFMEGz2AMGYxYmFANjZGjBzAMzMgB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAMzMmlhZMzYYGGLzMzMAAAAGzsMDmZmhZMzAYmCgZWwQYMLDwYgFjZWA0MmZMGMDwMzMwA",
                     ["n"] = 1,
                 },
             },
@@ -15230,15 +15258,15 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAMzMmlxMjZGDzALzMzMAAAAGzsMzYmZmxGmZMgZKAmZBDhxsNAjBWMmZBQzYmxYwMAzMDYA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAgZmxsMmZMzYYGYbmZmBAAAwYmlZYmZmBjZGjNMTBwMLYIMmlBYMwiZmZBQzYmHwYwMAzMDYA",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAMzMmlxMjZGDzALzMzMAAAAGmlZwMzMMjZGshZKAmZBDhxsMAjBWMmZBQzYmxYYmBYmZAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAghZmlxMjZGjZGYZmZmBAAAwwsMzYmZmh5BMzAYmCgZWwQYMbDwYgFjZWA0MmZMGMDwMzMwA",
                     ["n"] = 1,
                 },
             },
@@ -15291,6 +15319,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAMzMmlxMjZGDzALzMzMAAAAGzsMDmZmhZMzAYmCgZWwQYMLDwYgFjZWA0MmZMGMDwMzMwA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAgxMzsMmZMzYYGGbzMzMAAAAGmlZYmZmhZMzYAzUAMzCGCjZZAGDsYMWA0MmZMGMDwMzAGA",
                     ["n"] = 1,
                 },
@@ -15312,10 +15344,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAgZm5BmlxMjZGjZGGLzMzMAAAAGzsMDzYmhZMzAYmCgZWwQYMLDwYgFDWA0MmZMGMDwMzMwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEQAAAAAAAAAAAAAAAAAAAAAAwYAAAAAAAMzMmlxMjZGDzALzMzMAAAAGzsMzYmZmxGmZYBmpAYmFMEGz2AMGYxYmFANjZGjBzAMzMgB",
                     ["n"] = 1,
                 },
             },
@@ -15472,6 +15500,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMzMzsNzMzMzMjFwMbTLD2mBAAAAAMbLjZGmZMziZmZbAAAAYMAYMLGGyAzCL0CbMAzMYGMA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CQQAAAAAAAAAAAAAAAAAAAAAAAgZ2mxMzMjZmtZmZMzMzsAmx0ygtZAAAAAAWWmZmhZmZmFzMz2AAAAwMDAGzihhMwswCtwGAmZwAD",
                     ["n"] = 1,
                 },
@@ -15481,10 +15513,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMzMzsNzMzMzMjFGPwMbTLD2mBAAAAAMbLjZGmZMziZmZbAAAAYmBAjZxwQGYWYhWYjBYmBD8AA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMzMzsNzMzMzMjFwMbTLD2mBAAAAAMbLjZGmZMziZmZbAAAAYMAYMLGGyAzCL0CbMAzMYGMA",
                     ["n"] = 1,
                 },
                 {
@@ -15960,7 +15988,7 @@ RecommendedStatsData_TalentsDungeon = {
             },
         },
         ["voidscar-arena"] = {
-            ["n"] = 15,
+            ["n"] = 14,
             ["builds"] = {
                 {
                     ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2WGYMzMPwsZGghBAAmZMmBDzkZmZAAAgtZmZyYmZmZbMDAMmBWALgZYCZzM2MMAmZYA",
@@ -16018,14 +16046,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZsMmBzYmZzMgthBAAmxMmZGjZmGzMDAAAYmZkhZGz2YGAYMDsAWAzwEymZsZYAMzwA",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZswMGzYmZzMgtBAAwMmxMzYYmYmZAAAAzMz0MMz8Az2YGAYMDsA2AzwEymZsZYGgZGGA",
-                    ["n"] = 1,
-                },
             },
         },
         ["ruby-life-pools"] = {
-            ["n"] = 16,
+            ["n"] = 15,
             ["builds"] = {
                 {
                     ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2WGYYmZmNzAMMAAwMMmBDzkZmZAAAgtZmZywMzMbzMDAMmBWALgZYCZzM2MMAmZGD",
@@ -16085,10 +16109,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZwMjBzY2mhxMbzYAAgZMjZwYGNmZAAAAmZGZGzMmtZmBAzYGYBsAmhJkNDbGGAzMjB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZsMmxwYmZzMgthBAAmxMmZGDzEzMDAAAYmZmMMz8Az2YGAYMDsA2AzwEymZsZYGgZGGA",
                     ["n"] = 1,
                 },
             },
@@ -16175,7 +16195,7 @@ RecommendedStatsData_TalentsDungeon = {
             },
         },
         ["kings-rest"] = {
-            ["n"] = 15,
+            ["n"] = 13,
             ["builds"] = {
                 {
                     ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZsMmxwYmZzMgthBAAmxMmZGDzEzMDAAAYmZmMmZGzyYGAYMDsA2AzwEymZsZYGgZGGA",
@@ -16229,18 +16249,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZwMjZYGzmhZmZbYAAgZMj5BMzYGxMDAAAwMzIzYmxsNzMAYGzALgFwMMhsZYzwAYmZMA",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2WmHYGDjxsZGw2wAAAzYGzMjhZixMAAAgZmZyYmZmZbMDAMmBWAbgZYCZzM2MMDwMDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZsMmxwYmZzMgtBAAwMmZmZGDzEzMDAAAYmZmMMzMjxMAwYGYBsBmhJkNzYzwMAzMMA",
-                    ["n"] = 1,
-                },
             },
         },
         ["temple-of-sethraliss"] = {
-            ["n"] = 15,
+            ["n"] = 14,
             ["builds"] = {
                 {
                     ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2MwYmZmZzMgthBAAmxMmBDzkZmZAAAAzMzkhZmZ2GzAAjZgFwCYGmQ2MjNDzAMzwA",
@@ -16296,10 +16308,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZswMGzYmZzMgtBAAwMmxMzYYmYmZAAAAzMz0MMz8Az2YGAYMDsA2AzwEymZsZYGgZGGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2WGzYYMPwsZGw2AAAYmZGzMjhZamZmBAAAMzMTGmZMGzAAjZgFwGYGmQ2MjNDzAMzwA",
                     ["n"] = 1,
                 },
             },
@@ -16945,15 +16953,15 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMGDz2YmZa2mZGzMjBAAAAAAAgZGDDAWmxMzmZGzMjBGYGLassAYbiNMgZAYMzMmBzMYMjB",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CwPAAAAAAAAAAAAAAAAAAAAAAAYmZMjZMY2mZmZa2MzYmZMAAAAAAAAMPwYYAwyMY2MzYmZMwAzYTjlFAbTshBMDgZmZmxMYmBDjB",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMmZYWmZmZa2mZGzMjBAAAAAAAgZGDDAWmxMzmZGzMjBGYGbassBYbiNMgZAYMzMmBzMAjB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMGDz2MzMTjZmxMzYAAAAAAAAYegxMGAsMwsZmxMzYgBmxmGLLA2mYDDYGAzMzMjZwMDMzYA",
                     ["n"] = 1,
                 },
             },
@@ -17223,6 +17231,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMMjMzMGWmZmZgZMzYmZmZGDGmxmZmtxYGAAAAAAABMzM2AAAAwAzMzMzWbzMzAADAAAgB",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjxMjhZkZmxwyMzMDMjZmZMzMzYwwM2egZmtxYGAAAAAAABMzMzGAAAAGYmZmZ2abmZGAAAAAgB",
                     ["n"] = 1,
                 },
@@ -17240,10 +17252,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMMzkZmBDzMzAzYmxMzMzMGMzMjNzMbjxMAAAAAAACYmZsBAAAgBmZmZmt2mZmBAAAAAYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMMjMzMGWmZmZgZMzYmZmZGDGmxmZmtxYGAAAAAAABMzM2AAAAwAzMzMzWbzMzAADAAAgB",
                     ["n"] = 1,
                 },
                 {
@@ -17710,6 +17718,295 @@ RecommendedStatsData_TalentsDungeon = {
             },
         },
     },
+    ["EVOKER_AUGMENTATION_MYTHICPLUS"] = {
+        ["den-of-nalorakk"] = {
+            ["n"] = 12,
+            ["builds"] = {
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyMYmlZYmxMAAAAAAAAwMMmBjpGzMzAAAAgZMjxMz2YmBmZzAjZswCZgZYoRsAmZmBAG",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAwAAAzwYGjxUjZmZAAAAgxMGzMbjZGYmNjBbwyY0YZAMTEbYMwMDgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAwAAAzwYGjxUjZmZAAAAgxMGzMbjZGYmNDMmxCLkBmhhGxCGjZGAYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAAAAYGegZGMmaMzMDAAAAMzMGzMbjZGYmNDMmxCLkBmhhGxCGzMzAAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgxMbzMzMWGYmlZmZmxMAAAAAgBAAzMDMYM1YmZGAAAAMjZmxMz2YmBmZZGYMjFWIDMDDNiFMGzMAwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmxyAzsMjZmxMbAAAAAAAAYGeAzDMjxUjZmZAAAAgZmxYmZbMzAzsYgxMWYhMwMM0IWwYmZGAYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZmZMjZAAAAAAAAgZGPgZwYqZmZmBAAAAzYGjZmtxMDMDDMmxCLkBmhhGxCmZMzAAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyMYmlZYmxMAAAAAAAAwM8AmBjpGzMzAAAAgZmZMmZ2GzMwMbGYMjFWIDMDDNiFwMzMAwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZmZbmZmZWmBzsMDzMmBAAAAAAAAmhHwYGjpGzMzAAAAgZmZMmZ2GzMwMbzAjZswCZgZYoRsAmZmBAG",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZmZMMDAAAAAAAAMzYMDGTNmZmBAAAAzYGjZmtxMDMzmBGzYhFyAzwQjYBzMmZAgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWmBzsMDzMmZDAAAAAAAAzwYGMmaMzMDAAAAmZmxYmZbMzAzsZgxMWYhMwMM0IWAjZGAYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzYmZMzGAAAAAAAAmhx8AYM1MzMzAAAAgZMzMmZ2GzMwMLGYMjFWIDMDDNiFMGzMAwA",
+                    ["n"] = 1,
+                },
+            },
+        },
+        ["murder-row"] = {
+            ["n"] = 12,
+            ["builds"] = {
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZmZbmZmZWmBzsMDzMmBAAAAAAAAmhxMYM1YmZGAAAAMjZMmZ2GzMwMbzAjZswCZgZYoRsAmZmBAG",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAAAAYGGzgxUjZmZAAAAgZmxYmZbMzAzsZMYDWGjGLDgZiYDjZwMDgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmZWGYmlZYmxMAAAAAAAAwM8AzYGjpGzMzAAAAAzMjxMz2YmBmhBGzYhFyAzwQjYBmZmZAgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAwAAAzwYGjxUjZmZAAAAgxMGzMbjZGYmNDMmxCLkBmhhGxCGjZGAYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAAAAYGeAzgxUjZmZAAAAwMzMGzMbjZGYmNDMmxCLkBmhhGxCGzMzAAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzYmZMzGAAAAAGAAwMMmBzM1YmZGAAAAYMjxMz2YmBmZxAjZswCZgZYoRsgxYmBAG",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWmBzsMDzMmZDAAAAAAAAzwDYGMmaMzMDAAAAmZmxYmZbMzAzsZgxMWYhMwMM0IWAzMzAAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzMzMjZAAAAAAAAgZGYYGTNzMzMAAAAYGzMjZmtxMDMziBGzYhFyAzwQjYBjxMDAM",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZmZbMzgZYmZZGzMjZ2AAAAAgBAAmhxAjpGzMzAAAAAzMzMmZWGzMwMbzYwCsMGNWGAzExGGzgZGAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZGMDzMbzMzMjZ2AAAAAwMAAwMMzMzYoGmZGAAAAYmxwMz2YmBmBGsALjRjtBwMRshxAzMYwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWmBzsMDzMmZDAAAAAAAAzAzgxUzMzMDAAAAmxMzYmZbMzAzsZgxMWYhMwMM0IWAzMzAAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZGbzMzMzyMYmlZYmxMbAAAAAAAAYGeAzMjxUDzMDAAAAmxMGzMbjZGDzsZgxMWYhMwMM0IWAzMzAAD",
+                    ["n"] = 1,
+                },
+            },
+        },
+        ["kings-rest"] = {
+            ["n"] = 8,
+            ["builds"] = {
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyMYmlZYmxMAAAAAAAAwM8AzMYM1YmZGAAAAMjZMmZ2GzMwMbGYMjFWIDMDDNiFwMzMAwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZGbzMzMzyAzsMjxMmZDAAAAAAAAzwYGMmaMzMDAAAAMzMGzMbjZGYmtZMYDWGjGLDgZiYDjZwMDgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAwAAAzwDYGMmaMzMDAAAAMzMGzMbjZGYmNDMmxCLkBmhhGxCGzMzAAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZGbzMzMzyAzsMjxMmZDAAAAAAAAzwDYGMmaMzMDAAAAmZmxYmZbMzAzsNDMmxCLkBmhhGxCGzMzAAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWmBzsMDzMmZDAAAAAAAAzwYGMmaMzMDAAAAmZmxYmZbMzAzsZgxMWYhMwMM0IWAjZGAYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyMYmlZYmxMAAAAAAAAwMMmZGjpGzMzAAAAAjZMmZ2GzMwMbGYMjFWIDMDDNiFwYmBAG",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZGbzMzMzyMYmlZYmxMbAAAAAAAAYGYmZMmaMzMDAAAAMzMGzMbjZGYmtZgxMWYhMwMM0IWAzMzAAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMWGYmlZMzMmBAAAAAAAAmhHw8AzYM1YmZGAAAAYmZMmZ2GzMwMLGYMjFWIDMDDNiFMmZmBAG",
+                    ["n"] = 1,
+                },
+            },
+        },
+        ["ruby-life-pools"] = {
+            ["n"] = 5,
+            ["builds"] = {
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAAAAYGGzgxUjZmZAAAAgZmxYmZbMzAzsZMYDWGjGLDgZiYDjZwMDgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZGjZMzGAAAAAMAAwMDMYM1YmZGAAAAMjZMmZ2mZmBmhBGzYhFyAzwQjYBzMmZAGM",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZmZbmZmZWmBzsMDzMmBAAAAAAAAmhHYmBjpGzMzAAAAgZMjxMz2YmBmZbGYMjFWIDMDDNiFwMzMAwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAwMzMbzMzMzyAzsMDzMmBAAAAAAAAmhHYGzYM1YmZGAAAAYmZMmZ2GzMwMmBGzYhFyAzwQjYBmZmZAgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAwAAAzwYGjxUjZmZAAAAgxMGzMbjZGYmNDMmxCLkBmhhGxCGjZGAYA",
+                    ["n"] = 1,
+                },
+            },
+        },
+        ["temple-of-sethraliss"] = {
+            ["n"] = 9,
+            ["builds"] = {
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAAAAYGGzgxUjZmZAAAAgZmxYmZbMzAzsZMYDWGjGLDgZiYDjZwMDgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZmZbmZmZWmBzsMDzMmBAAAAAAAAmhxMYM1YmZGAAAAMjZMmZ2GzMwMbzAjZswCZgZYoRsAmZmBAG",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAwMzMbzMzMzyAzsMDzMmBAAAAAAAAmhHYGzYM1YmZGAAAAYmZMmZ2GzMwMmBGzYhFyAzwQjYBmZmZAgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYZmZmZWmhZmlZYmxMAAAAAAAAwMMmBjpGzMzAAAAAjZMzMz2YmBmZzAjZswCZgZYoRsAGzMAwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAwAAAzwYGjxUjZmZAAAAgxMGzMbjZGYmNjBbwyY0YZAMTEbYMwMDgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAwAAAzwDYGjxUzMzMDAAAAMmxYmZbMzAzsZgxMWYhMwMM0IWwYMzAAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyMYmlZYmxMAAAAAAAAwM8AmBjpGzMzAAAAgZmZMmZ2GzMwMbGYMjFWIDMDDNiFwMzMAwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzMzMjZAAAAAAAAgZGPgZYGTNmZmBAAAAzYGjZmtxMDMziBGzYhFyAzwQjYBjxMDAM",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZmZMjZAAAAAAAAgZGjZwYqZMzMAAAAYGzYMzsNmZgZYgxMWYhMwMM0IWwMjZGAYA",
+                    ["n"] = 1,
+                },
+            },
+        },
+        ["the-blinding-vale"] = {
+            ["n"] = 9,
+            ["builds"] = {
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyMYmlZYmxMAAAAAAAAwMMmBjpGzMzAAAAgZMjxMz2YmBmZzAjZswCZgZYoRsAmZmBAG",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyAzsMjxMmBAAAAAAAAmhxMYM1YmZGAAAAYmZMmZ2GzMwMbGDWglxoxyAYmI2wYGMzAYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZGbzMzMzyAzsMjxMmZDAAAAAAAAzwYmZMmaMzMDAAAAMmxYmZbMzAzsNDMmxCLkBmhhGxCGjZGAYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYZmZmZWmhZmlZYmxMAAAAAAAAwMMmBjpGzMzAAAAAjZMzMz2YmBmZzAjZswCZgZYoRsAGzMAwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbjZGMDzMLzYmZMzGAAAAAAAAmhx8AYM1YmZGAAAAYmZmxMz2YmBmZzYwCsMGN2GAzExGGzgZGAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAAAAYGeAzgxUjZmZAAAAwMzMGzMbjZGYmNDMmxCLkBmhhGxCGzMzAAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyMYmlZYmxMAAAAAAAAwM8AmBjpGzMzAAAAgZmZMmZ2GzMwMbGYMjFWIDMDDNiFwMzMAwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZmZMjZAAAAAAAAgZGPgZwYqZmZmBAAAAzYGjZmtxMDMDDMmxCLkBmhhGxCmZMzAAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmZWGYmlZYmxMAAAAAAAAwM8AzYGjpGzMzAAAAAzMjxMz2YmBmhBGzYhFyAzwQjYBmZmZAgB",
+                    ["n"] = 1,
+                },
+            },
+        },
+        ["altar-of-fangs"] = {
+            ["n"] = 8,
+            ["builds"] = {
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyMYmlZYmxMAAAAAAAAwM8AzMYM1YmZGAAAAMjZMmZ2GzMwMbGYMjFWIDMDDNiFwMzMAwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAAAAYGeAzgxUjZmZAAAAwMzMGzMbjZGYmNDMmxCLkBmhhGxCGzMzAAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAwMzMbzMzMzyAzsMDzMmBAAAAAAAAmhHYGzYM1YmZGAAAAYmZMmZ2GzMwMmBGzYhFyAzwQjYBmZmZAgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyAzsMjxMmBAAAAAAAAmhxMYM1YmZGAAAAYmZMmZ2GzMwMbGD2glxoxyAYmI2wYGMzAYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZGbzMzMWGYmlZMGmZDAAAAAGAAYGGzgxUjZmZAAAAwMmxYmZbMzAzsZgxMWYhMwMM0IWwMjZGAYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyMYmlZYmxMAAAAAAAAwM8AmBjpGzMzAAAAgZmZMmZ2GzMwMbGYMjFWIDMDDNiFwMzMAwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmxyAzsMjZmxMbAAAAAAAAYGYmZMmaMzMDAAAAMzMGzMLjZGYmNDMmxCLkBmhhGxCGzMzAAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWmBzsMDzMmZDAAAAAAAAzwYGMmaMzMDAAAAmZmxYmZbMzAzsZgxMWYhMwMM0IWAjZGAYA",
+                    ["n"] = 1,
+                },
+            },
+        },
+    },
     ["DRUID_BALANCE_MYTHICPLUS"] = {
         ["den-of-nalorakk"] = {
             ["n"] = 20,
@@ -18033,7 +18330,7 @@ RecommendedStatsData_TalentsDungeon = {
             },
         },
         ["ruby-life-pools"] = {
-            ["n"] = 13,
+            ["n"] = 14,
             ["builds"] = {
                 {
                     ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsYmZmZhBjZZmlZWYmxGLzsMmZM2wwAM22mZwY2GBmAAAAsYmZmZwmhxYAAYmBLDA",
@@ -18073,6 +18370,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbZMmZgHwsYmZmBDDjZWmZxMzYhlZWGjZGLYYAGbbzMYMbjATAAAAWMzMzMYzYGjZAAMzADA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsMzMzMLMYMLzsMzCzM2YZmlxMjxGGGgx22MDGz2IwEAAAgFmZmZwmhxYAAYmBLDA",
                     ["n"] = 1,
                 },
                 {
@@ -18229,15 +18530,15 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CAEAAAAAAAAAAAAAAAAAAAAAAMzwMLzMzsgZmYmxYmZmZWMzMzMzMzsMTzMLzCAAAaBAA2AAAAAYbZMzMzDwsNjZmx2CAAAYmBzEGwAYA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CAEAAAAAAAAAAAAAAAAAAAAAAMzwMLzMPwsMMzEzMGzMzMziZmZmZmZmlZamZbWAAAQLAAwCAAAAAbLjZmZwsNjZmx2GAAAYmBzkxAGAD",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CAEAAAAAAAAAAAAAAAAAAAAAAMzwMLzMzshZEzMmZmZmZWMzMMjZgAAAzMzssMz0GAAsBAAAWAYbbMzMzwsNMmZsBAAwMbAzEGwMYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CAEAAAAAAAAAAAAAAAAAAAAAAMzwMLzMzsgZmYmxYmZmZWMzMzMzMzsMTzMLzCAAAaBAA2AAAAAYbZMzMzDwsNjZmx2CAAAYmBzEGwAYA",
                     ["n"] = 1,
                 },
                 {
@@ -18321,7 +18622,7 @@ RecommendedStatsData_TalentsDungeon = {
             },
         },
         ["the-blinding-vale"] = {
-            ["n"] = 6,
+            ["n"] = 5,
             ["builds"] = {
                 {
                     ["code"] = "CAEAAAAAAAAAAAAAAAAAAAAAAMzwMLzMzsMMzEzMGzMzMzmZmZmZmZmlZamZbWAAAQLAAwGAAAAAbLjZmZwsNjZmx2CAAAYmBzEGwAYA",
@@ -18341,10 +18642,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CAEAAAAAAAAAAAAAAAAAAAAAAMzwMLzMzsgZmYmxYmZmZ2MzMzMzMzsMTzMLzCAAAaBAA2AAAAAYbbMzMDmtZMzM22AAAAzMYmMGwAYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CAEAAAAAAAAAAAAAAAAAAAAAAMzwMLzMzsgZmYmxYmZmZWMzMzMzMzsMTzMLzCAAAaBAA2AAAAAYbZMzMzDwsNjZmx2CAAAYmBzEGwAYA",
                     ["n"] = 1,
                 },
             },
@@ -18387,6 +18684,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CAEAche08tHz49KSVf7iKFnyuNzwMLzMPwsMMzEzMGzMzMziZmZmZmZmlZamZbWAAAQLAAwCAAAAAbLjZmZwsNjZmx2GAAAYmBzwYADgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CAEAche08tHz49KSVf7iKFnyuNzwMLzMmFMzEzMzMzMzMzmZmZmZmZmlZamZbWAAzMzssMz0CAAsBAAAAw2yYmZGMbzYmZstAAAwMbzMYGGDYAMA",
                     ["n"] = 1,
                 },
                 {
@@ -18457,301 +18758,8 @@ RecommendedStatsData_TalentsDungeon = {
                     ["code"] = "CAEAche08tHz49KSVf7iKFnyuNzgZZmZmFegZmYmZGzMzMzmZmhZMDEAAYmZmllZm2AAgFAAAwCAbLjZmZwsNMmZsAAAwMbAzADYGMMA",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CAEAche08tHz49KSVf7iKFnyuZGLsMzMzyYmZiZmZMjZmZxMzMzwMzyMNzsMLAAAoFAAYBAAAAgNjZmZwsNjZmx2CAAAYmBzADYgPgB",
-                    ["n"] = 1,
-                },
             },
             ["source"] = "current",
-        },
-    },
-    ["EVOKER_AUGMENTATION_MYTHICPLUS"] = {
-        ["murder-row"] = {
-            ["n"] = 12,
-            ["builds"] = {
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZmZbmZmZWmBzsMDzMmBAAAAAAAAmhxMYM1YmZGAAAAMjZMmZ2GzMwMbzAjZswCZgZYoRsAmZmBAG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAAAAYGGzgxUjZmZAAAAgZmxYmZbMzAzsZMYDWGjGLDgZiYDjZwMDgB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmZWGYmlZYmxMAAAAAAAAwM8AzYGjpGzMzAAAAAzMjxMz2YmBmhBGzYhFyAzwQjYBmZmZAgB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAwAAAzwYGjxUjZmZAAAAgxMGzMbjZGYmNDMmxCLkBmhhGxCGjZGAYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAAAAYGeAzgxUjZmZAAAAwMzMGzMbjZGYmNDMmxCLkBmhhGxCGzMzAAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzYmZMzGAAAAAGAAwMMmBzM1YmZGAAAAYMjxMz2YmBmZxAjZswCZgZYoRsgxYmBAG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWmBzsMDzMmZDAAAAAAAAzwDYGMmaMzMDAAAAmZmxYmZbMzAzsZgxMWYhMwMM0IWAzMzAAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzMzMjZAAAAAAAAgZGYYGTNzMzMAAAAYGzMjZmtxMDMziBGzYhFyAzwQjYBjxMDAM",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZmZbMzgZYmZZGzMjZ2AAAAAgBAAmhxAjpGzMzAAAAAzMzMmZWGzMwMbzYwCsMGNWGAzExGGzgZGAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZGMDzMbzMzMjZ2AAAAAwMAAwMMzMzYoGmZGAAAAYmxwMz2YmBmBGsALjRjtBwMRshxAzMYwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWmBzsMDzMmZDAAAAAAAAzAzgxUzMzMDAAAAmxMzYmZbMzAzsZgxMWYhMwMM0IWAzMzAAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZGbzMzMzyMYmlZYmxMbAAAAAAAAYGeAzMjxUDzMDAAAAmxMGzMbjZGDzsZgxMWYhMwMM0IWAzMzAAD",
-                    ["n"] = 1,
-                },
-            },
-        },
-        ["kings-rest"] = {
-            ["n"] = 8,
-            ["builds"] = {
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyMYmlZYmxMAAAAAAAAwM8AzMYM1YmZGAAAAMjZMmZ2GzMwMbGYMjFWIDMDDNiFwMzMAwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZGbzMzMzyAzsMjxMmZDAAAAAAAAzwYGMmaMzMDAAAAMzMGzMbjZGYmtZMYDWGjGLDgZiYDjZwMDgB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAwAAAzwDYGMmaMzMDAAAAMzMGzMbjZGYmNDMmxCLkBmhhGxCGzMzAAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZGbzMzMzyAzsMjxMmZDAAAAAAAAzwDYGMmaMzMDAAAAmZmxYmZbMzAzsNDMmxCLkBmhhGxCGzMzAAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWmBzsMDzMmZDAAAAAAAAzwYGMmaMzMDAAAAmZmxYmZbMzAzsZgxMWYhMwMM0IWAjZGAYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyMYmlZYmxMAAAAAAAAwMMmZGjpGzMzAAAAAjZMmZ2GzMwMbGYMjFWIDMDDNiFwYmBAG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZGbzMzMzyMYmlZYmxMbAAAAAAAAYGYmZMmaMzMDAAAAMzMGzMbjZGYmtZgxMWYhMwMM0IWAzMzAAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMWGYmlZMzMmBAAAAAAAAmhHw8AzYM1YmZGAAAAYmZMmZ2GzMwMLGYMjFWIDMDDNiFMmZmBAG",
-                    ["n"] = 1,
-                },
-            },
-        },
-        ["ruby-life-pools"] = {
-            ["n"] = 5,
-            ["builds"] = {
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAAAAYGGzgxUjZmZAAAAgZmxYmZbMzAzsZMYDWGjGLDgZiYDjZwMDgB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZGjZMzGAAAAAMAAwMDMYM1YmZGAAAAMjZMmZ2mZmBmhBGzYhFyAzwQjYBzMmZAGM",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZmZbmZmZWmBzsMDzMmBAAAAAAAAmhHYmBjpGzMzAAAAgZMjxMz2YmBmZbGYMjFWIDMDDNiFwMzMAwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAwMzMbzMzMzyAzsMDzMmBAAAAAAAAmhHYGzYM1YmZGAAAAYmZMmZ2GzMwMmBGzYhFyAzwQjYBmZmZAgB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAwAAAzwYGjxUjZmZAAAAgxMGzMbjZGYmNDMmxCLkBmhhGxCGjZGAYA",
-                    ["n"] = 1,
-                },
-            },
-        },
-        ["temple-of-sethraliss"] = {
-            ["n"] = 9,
-            ["builds"] = {
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAAAAYGGzgxUjZmZAAAAgZmxYmZbMzAzsZMYDWGjGLDgZiYDjZwMDgB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZmZbmZmZWmBzsMDzMmBAAAAAAAAmhxMYM1YmZGAAAAMjZMmZ2GzMwMbzAjZswCZgZYoRsAmZmBAG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAwMzMbzMzMzyAzsMDzMmBAAAAAAAAmhHYGzYM1YmZGAAAAYmZMmZ2GzMwMmBGzYhFyAzwQjYBmZmZAgB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYZmZmZWmhZmlZYmxMAAAAAAAAwMMmBjpGzMzAAAAAjZMzMz2YmBmZzAjZswCZgZYoRsAGzMAwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAwAAAzwYGjxUjZmZAAAAgxMGzMbjZGYmNjBbwyY0YZAMTEbYMwMDgB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAwAAAzwDYGjxUzMzMDAAAAMmxYmZbMzAzsZgxMWYhMwMM0IWwYMzAAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyMYmlZYmxMAAAAAAAAwM8AmBjpGzMzAAAAgZmZMmZ2GzMwMbGYMjFWIDMDDNiFwMzMAwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzMzMjZAAAAAAAAgZGPgZYGTNmZmBAAAAzYGjZmtxMDMziBGzYhFyAzwQjYBjxMDAM",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZmZMjZAAAAAAAAgZGjZwYqZMzMAAAAYGzYMzsNmZgZYgxMWYhMwMM0IWwMjZGAYA",
-                    ["n"] = 1,
-                },
-            },
-        },
-        ["den-of-nalorakk"] = {
-            ["n"] = 12,
-            ["builds"] = {
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZmZbmZmZWmBzsMDzMmBAAAAAAAAmhxMYM1YmZGAAAAMjZMmZ2GzMwMbzAjZswCZgZYoRsAmZmBAG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAwAAAzwYGjxUjZmZAAAAgxMGzMbjZGYmNjBbwyY0YZAMTEbYMwMDgB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAwAAAzwYGjxUjZmZAAAAgxMGzMbjZGYmNDMmxCLkBmhhGxCGjZGAYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAAAAYGegZGMmaMzMDAAAAMzMGzMbjZGYmNDMmxCLkBmhhGxCGzMzAAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgxMbzMzMWGYmlZmZmxMAAAAAgBAAzMDMYM1YmZGAAAAMjZmxMz2YmBmZZGYMjFWIDMDDNiFMGzMAwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmxyAzsMjZmxMbAAAAAAAAYGeAzDMjxUjZmZAAAAgZmxYmZbMzAzsYgxMWYhMwMM0IWwYmZGAYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZmZMjZAAAAAAAAgZGPgZwYqZmZmBAAAAzYGjZmtxMDMDDMmxCLkBmhhGxCmZMzAAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyMYmlZYmxMAAAAAAAAwM8AmBjpGzMzAAAAgZmZMmZ2GzMwMbGYMjFWIDMDDNiFwMzMAwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZmZbmZmZWmBzsMDzMmBAAAAAAAAmhHwYGjpGzMzAAAAgZmZMmZ2GzMwMbzAjZswCZgZYoRsAmZmBAG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZmZMMDAAAAAAAAMzYMDGTNmZmBAAAAzYGjZmtxMDMzmBGzYhFyAzwQjYBzMmZAgB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWmBzsMDzMmZDAAAAAAAAzwYGMmaMzMDAAAAmZmxYmZbMzAzsZgxMWYhMwMM0IWAjZGAYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzYmZMzGAAAAAAAAmhx8AYM1MzMzAAAAgZMzMmZ2GzMwMLGYMjFWIDMDDNiFMGzMAwA",
-                    ["n"] = 1,
-                },
-            },
-        },
-        ["the-blinding-vale"] = {
-            ["n"] = 9,
-            ["builds"] = {
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZmZbmZmZWmBzsMDzMmBAAAAAAAAmhxMYM1YmZGAAAAMjZMmZ2GzMwMbzAjZswCZgZYoRsAmZmBAG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyAzsMjxMmBAAAAAAAAmhxMYM1YmZGAAAAYmZMmZ2GzMwMbGDWglxoxyAYmI2wYGMzAYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgZGbzMzMzyAzsMjxMmZDAAAAAAAAzwYmZMmaMzMDAAAAMmxYmZbMzAzsNDMmxCLkBmhhGxCGjZGAYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYZmZmZWmhZmlZYmxMAAAAAAAAwMMmBjpGzMzAAAAAjZMzMz2YmBmZzAjZswCZgZYoRsAGzMAwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbjZGMDzMLzYmZMzGAAAAAAAAmhx8AYM1YmZGAAAAYmZmxMz2YmBmZzYwCsMGN2GAzExGGzgZGAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAAAAYGeAzgxUjZmZAAAAwMzMGzMbjZGYmNDMmxCLkBmhhGxCGzMzAAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyMYmlZYmxMAAAAAAAAwM8AmBjpGzMzAAAAgZmZMmZ2GzMwMbGYMjFWIDMDDNiFwMzMAwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZmZMjZAAAAAAAAgZGPgZwYqZmZmBAAAAzYGjZmtxMDMDDMmxCLkBmhhGxCmZMzAAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZmZWGYmlZYmxMAAAAAAAAwM8AzYGjpGzMzAAAAAzMjxMz2YmBmhBGzYhFyAzwQjYBmZmZAgB",
-                    ["n"] = 1,
-                },
-            },
-        },
-        ["altar-of-fangs"] = {
-            ["n"] = 8,
-            ["builds"] = {
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyMYmlZYmxMAAAAAAAAwM8AzMYM1YmZGAAAAMjZMmZ2GzMwMbGYMjFWIDMDDNiFwMzMAwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWGYmlZMmxMbAAAAAAAAYGeAzgxUjZmZAAAAwMzMGzMbjZGYmNDMmxCLkBmhhGxCGzMzAAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAwMzMbzMzMzyAzsMDzMmBAAAAAAAAmhHYGzYM1YmZGAAAAYmZMmZ2GzMwMmBGzYhFyAzwQjYBmZmZAgB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyAzsMjxMmBAAAAAAAAmhxMYM1YmZGAAAAYmZMmZ2GzMwMbGD2glxoxyAYmI2wYGMzAYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZGbzMzMWGYmlZMGmZDAAAAAGAAYGGzgxUjZmZAAAAwMmxYmZbMzAzsZgxMWYhMwMM0IWwMjZGAYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzMzyMYmlZYmxMAAAAAAAAwM8AmBjpGzMzAAAAgZmZMmZ2GzMwMbGYMjFWIDMDDNiFwMzMAwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmxyAzsMjZmxMbAAAAAAAAYGYmZMmaMzMDAAAAMzMGzMLjZGYmNDMmxCLkBmhhGxCGzMzAAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzYbmZmZWmBzsMDzMmZDAAAAAAAAzwYGMmaMzMDAAAAmZmxYmZbMzAzsZgxMWYhMwMM0IWAjZGAYA",
-                    ["n"] = 1,
-                },
-            },
         },
     },
     ["PRIEST_DISCIPLINE_MYTHICPLUS"] = {
@@ -18909,13 +18917,13 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyMzMGgZbmtZmZmZGDAAAAAAAAAghZZGMzMDzYmBMNTMAzsghwYWGgxgFAAYMzMjBzAMzMTwA",
+                    ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMDWmZMmBmZbmtZmZmxMDAAAAAAAAAgxMLzgZmZYGzMYz0MxAMzGGCjZZAGDWAAgxMjxgZAmZGBzA",
                     ["n"] = 1,
                 },
             },
         },
         ["kings-rest"] = {
-            ["n"] = 12,
+            ["n"] = 11,
             ["builds"] = {
                 {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMDzyMjxMzMMbzgZmZYGAAAAAAAAAADzyMjZmZG8AmZATzEzAmZBDhxsNAjBLAAwYmxYYmBYmZmgZA",
@@ -18961,14 +18969,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMDzyMjxMzMMbzgZmZYGAAAAAAAAAADzyMMzMzwMmZATzEzAmZBDhxsMAjBLAAwYmHYGDmBYmZmgZA",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMzDwyMjxMz8AMbzYmZmZYGAAAAAAAAAADzyMYmZGMmZwmpZiBYmFMEGzyAMGsAAAjZmZMMzAMzMCmB",
-                    ["n"] = 1,
-                },
             },
         },
         ["ruby-life-pools"] = {
-            ["n"] = 10,
+            ["n"] = 9,
             ["builds"] = {
                 {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMDzyMjZmhhZbGMzMDzAAAAAAAAAAYYWmZMzMzw8AmZATzEzAmZBDhxsNAjBLAAwYmxYwMAzMzEMD",
@@ -19006,14 +19010,10 @@ RecommendedStatsData_TalentsDungeon = {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMDzyMjxMzMMbzgZmZYGAAAAAAAAAADzyMYmZGmxMDYamYGwMLYIMmlBYMYBAAGzMGDzMAzMzEMD",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsNDWmZMzMzwMbzYmZMDzAAAAAAAAAAYwyMMzMzwMmZATzEDwMLYIMmlBYMYBAAGzMzYwMAzMzEMD",
-                    ["n"] = 1,
-                },
             },
         },
         ["altar-of-fangs"] = {
-            ["n"] = 10,
+            ["n"] = 11,
             ["builds"] = {
                 {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMDzyMjxMzMMbzgZmZYGAAAAAAAAAAjZWmBzMzwMmZATzEzAmZBDhxsMAjBLAAwYmxYwMAzMzEMD",
@@ -19029,6 +19029,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMDWmZMmZmHwMbzYmZmZYGAAAAAAAAAAjZWmBzYGMmZwmpZiBYmFMEGzyAMGsAAAjZmZmhZGgZmRwM",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMDzyMjxYmhZbGzMzMDzAAAAAAAAAAYMzyMYmZGmxMD2MNTMAzsghwYWGgxgFAAYMzDMjBzAMzMCmB",
                     ["n"] = 1,
                 },
                 {
@@ -19254,6 +19258,10 @@ RecommendedStatsData_TalentsDungeon = {
             ["n"] = 19,
             ["builds"] = {
                 {
+                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGjx2MzYmZGbIDLMNmBzAMzmZ0sZAIjxCAmZAjZmZMbMz2yAMDGA",
+                    ["n"] = 2,
+                },
+                {
                     ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGDz2MzYmZGbMZGMTDwMAzsZGNbGAyYsAgZGwYmZGzGzstMAzgB",
                     ["n"] = 1,
                 },
@@ -19283,10 +19291,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGzw2MzYmZGbID2mpBYGgZ2MjmNDAZMWAwMDYmZmZMbMz2yAMDGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGjx2MzYmZGbIDLMNmBzAMzmZ0sZAIjxCAmZAjZmZMbMz2yAMDGA",
                     ["n"] = 1,
                 },
                 {
@@ -19323,10 +19327,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGDz2MzYmZGbIzw2MNAzAMzmZ0sZAIjxCAmZAjZmZMbMz2yAMDGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGjx2MzYmZGbIzYxMNAzAMzmZ0sZAIjxCAmZAjZmZMbMz2yAMDGA",
                     ["n"] = 1,
                 },
             },
@@ -19375,11 +19375,11 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGzw2MzYmZGbIzYxMNAzAMzmZ0sZAIjxCAmZAjZmZMbMz2yAMDGA",
+                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGzY2MzYmZGbIDLbz0AMDwMbmRzmBgMGLAYmBMmZmxsxMbLDwMYA",
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGjZ2MzYmZGbIDLbz0AMDwMbmRzmBgMGLAYmBMmZmxsxMbLDwMYA",
+                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGzw2MzYmZGbIzYxMNAzAMzmZ0sZAIjxCAmZAjZmZMbMz2yAMDGA",
                     ["n"] = 1,
                 },
                 {
@@ -19821,7 +19821,7 @@ RecommendedStatsData_TalentsDungeon = {
             },
         },
         ["kings-rest"] = {
-            ["n"] = 5,
+            ["n"] = 6,
             ["builds"] = {
                 {
                     ["code"] = "C8DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsgZGZmxAAAwABMzMNbbLzAAsZmZsNzMzMzGAAAAAWMzMzMAAYGjZGzYmZBAzMkxYAzwYA",
@@ -19841,6 +19841,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "C8DAAAAAAAAAAAAAAAAAAAAAAMzwMLzYmFMDZmxMAAAGIgZmpZbbZGAgNzMmtZmZmZ2AAAAAwmZmZmBAAzYMzYGzMbAYmhwYAGGD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C8DAAAAAAAAAAAAAAAAAAAAAAMGGLzMzsYzMjMzMzAAAYgAmZmmlttZAA2MzM2mZmZGbAAAAAYxMzMDAAMjxMzMjZmlBgZGCjBMDjB",
                     ["n"] = 1,
                 },
             },
@@ -19930,31 +19934,6 @@ RecommendedStatsData_TalentsDungeon = {
                 },
             },
         },
-        ["the-blinding-vale"] = {
-            ["n"] = 5,
-            ["builds"] = {
-                {
-                    ["code"] = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwgZGmBzwYMTjZmpZmZ2mZmZmZmZmZGwMmxYmZbmZgBGD2glxoxyAyMIYDzgZGM8AA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwgZGMwwYMTjZmpZmZ2mZmZmZmZmZGwMzMzYmZbmZgBGD2glxox2AyMIYDzgZGM8AA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwgZGmBGGjZaMzMNzMz2MzMzMzMzMzAmZmxYmZbmZgBGD2glxox2AyMIYDzgZGM8AA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwgZGmBGzYMTjZmpZmZ2mZmZmZmZmZGwMmZGzMbjZgBGD2glxox2AyMIYDzgZGM8AA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwgZGMYGYMTzMzMNzMz2MzMzMzMzMzAmZmZGzMbzMDMwYwGsMGN2GQmBBbYgZGM8AA",
-                    ["n"] = 1,
-                },
-            },
-        },
         ["ruby-life-pools"] = {
             ["n"] = 5,
             ["builds"] = {
@@ -19988,7 +19967,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 2,
                 },
                 {
-                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwgZGmhHw8AYMTjZmpZmZ2mZmZmZmZmZGwMmxYmZbmZgBmZmxGbWGzSjtZGmMTWAbDzgZmZmhHA",
+                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwgZGmBmHAjZaMzMNzMz2MzMzMzMzMzAmZmZGzMbzMDMwMzM2YzyYWasNzwkZyCYbYgZmZmhHA",
                     ["n"] = 1,
                 },
                 {
@@ -19996,11 +19975,11 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwMDzgZghZMTzMzMNzM2mZmZmZmZmZGwMmZGzMbjZgBmZmxGbWGzSjtZGmMTWAbDDMzMzY8AA",
+                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwMDzwMDMYMTzMzMNzM2mZmZmZmZmZGwMmxYmZZmZgBGD2glxox2AyMBYDDMzghHA",
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwMDzwMDMYMTzMzMNzM2mZmZmZmZmZGwMmxYmZZmZgBGD2glxox2AyMBYDDMzghHA",
+                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwgZGmBGzYMTjZmpZmZ2mZmZmZmZmZGwMzMGzMbjZgBGD2glxox2AyMBYDzgZGM8AA",
                     ["n"] = 1,
                 },
                 {
@@ -20012,15 +19991,11 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwgZGmBGzYMTjZmpZmZ2mZmZmZmZmZGwMzMGzMbjZgBGD2glxox2AyMBYDzgZGM8AA",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAgZMDmZYGmBMYMTjZmpZmx2MzMzMzMzMzAmxMzYmZbmZgBGD2glxox2AyMBYDDMzghHA",
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwMDzwMgBjZamZmpZmx2MzMzMzMzMzAmxMGzMbzMDMwYwGsMGN2GQmJAbYgZGMjHA",
+                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwgZGMMGGjZaMzMNzMz2MzMzMzMzMzAmZmxYmxMzADMGsBLjRjtBkZCwGmBzMY4BA",
                     ["n"] = 1,
                 },
                 {
@@ -20028,7 +20003,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwgZGmBzAjZaMzMNzMz2MzMzMzMzMzAmZmxYmZbmZgBGD2glxox2AyMBYDzgZGM8AA",
+                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAgZMDmZYGmZwMMjHYaMzMNzMWmZmZmZmZmZGwMzAzMbzMDMAD2glxox2AyMBYDDMzgZ8AA",
                     ["n"] = 1,
                 },
                 {
@@ -20057,6 +20032,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwMDzwMw8AYMTzMzMNzM2mZmZmZmZmZGwMmxYmZbmZgBmZmxGLWGzWjtZGmMTWAbDDMzgZ8AA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwgZGmBGGjZaMzMNzMz2MzMzMzMzMzAmZmZGzMmZGYgxgNYZMasNgMTA2wMYmBDPA",
                     ["n"] = 1,
                 },
             },
@@ -20070,7 +20049,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 2,
                 },
                 {
-                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwgZGmhHw8AYMTjZmpZmZ2mZmZmZmZmZGwMmxYmZbmZgBmZmxGbWGzSjtZGmMTWAbDzgZmZmhHA",
+                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwgZGmBmHAjZaMzMNzMz2MzMzMzMzMzAmZmZGzMbzMDMwMzM2YzyYWasNzwkZyCYbYgZmZmhHA",
                     ["n"] = 1,
                 },
                 {
@@ -20078,11 +20057,11 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwMDzgZghZMTzMzMNzM2mZmZmZmZmZGwMmZGzMbjZgBmZmxGbWGzSjtZGmMTWAbDDMzMzY8AA",
+                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwMDzwMDMYMTzMzMNzM2mZmZmZmZmZGwMmxYmZZmZgBGD2glxox2AyMBYDDMzghHA",
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwMDzwMDMYMTzMzMNzM2mZmZmZmZmZGwMmxYmZZmZgBGD2glxox2AyMBYDDMzghHA",
+                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwgZGmBGzYMTjZmpZmZ2mZmZmZmZmZGwMzMGzMbjZgBGD2glxox2AyMBYDzgZGM8AA",
                     ["n"] = 1,
                 },
                 {
@@ -20094,15 +20073,11 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwgZGmBGzYMTjZmpZmZ2mZmZmZmZmZGwMzMGzMbjZgBGD2glxox2AyMBYDzgZGM8AA",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAgZMDmZYGmBMYMTjZmpZmx2MzMzMzMzMzAmxMzYmZbmZgBGD2glxox2AyMBYDDMzghHA",
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwMDzwMgBjZamZmpZmx2MzMzMzMzMzAmxMGzMbzMDMwYwGsMGN2GQmJAbYgZGMjHA",
+                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwgZGMMGGjZaMzMNzMz2MzMzMzMzMzAmZmxYmxMzADMGsBLjRjtBkZCwGmBzMY4BA",
                     ["n"] = 1,
                 },
                 {
@@ -20110,7 +20085,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwgZGmBzAjZaMzMNzMz2MzMzMzMzMzAmZmxYmZbmZgBGD2glxox2AyMBYDzgZGM8AA",
+                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAgZMDmZYGmZwMMjHYaMzMNzMWmZmZmZmZmZGwMzAzMbzMDMAD2glxox2AyMBYDDMzgZ8AA",
                     ["n"] = 1,
                 },
                 {
@@ -20139,6 +20114,10 @@ RecommendedStatsData_TalentsDungeon = {
                 },
                 {
                     ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwMDzwMw8AYMTzMzMNzM2mZmZmZmZmZGwMmxYmZbmZgBmZmxGLWGzWjtZGmMTWAbDDMzgZ8AA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsbBPJc41CfcseY0baneJ1IHrBAAAAAAAAAAAjZwgZGmBGGjZaMzMNzMz2MzMzMzMzMzAmZmZGzMmZGYgxgNYZMasNgMTA2wMYmBDPA",
                     ["n"] = 1,
                 },
             },
@@ -20216,7 +20195,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CkQAMrNP5kak+EBqLfUa3dMm+aMjZmpZzMWYmZWGAAgZmNbmZWmZAgZZZZMMmFz0YmZYLzCDbDAAAzAAAzMzMzMzMzYmZYmxMzYwMmBAYAD",
+                    ["code"] = "CkQAMrNP5kak+EBqLfUa3dMm+iZmZGNbmx2MzY2GAAwMmlZbmZ2GDAMLbLjhxsYmGzMDLZWYYbAAAwAAAzMzMjZYmNjxMjZmxMDzMzAAMgB",
                     ["n"] = 1,
                 },
                 {
@@ -20302,7 +20281,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CkQAMrNP5kak+EBqLfUa3dMm+aMjZmpZzMWYmZWGAAgZmNbmZWmZAgZZZZMMmFz0YmZYLzCDbDAAAzAAAzMzMzMzMzYmZYmxMzYwMmBAYAD",
+                    ["code"] = "CkQAMrNP5kak+EBqLfUa3dMm+iZmZGNbmx2MzY2GAAwMmlZbmZ2GDAMLbLjhxsYmGzMDLZWYYbAAAwAAAzMzMjZYmNjxMjZmxMDzMzAAMgB",
                     ["n"] = 1,
                 },
                 {
@@ -20390,7 +20369,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CsQAMrNP5kak+EBqLfUa3dMm+yMzMzMNbMjZmxsMLzMzMLmZWW8ADAAmZGzMziNMzMmZZZ0Mzw2wys1YjBAAGDwGAmZmZwYGzAAAgZmZAAghB",
+                    ["code"] = "CsQAMrNP5kak+EBqLfUa3dMm+yMzMzMNbMjZmxsMLzMzMLmZWWYAAwMzYmZWshZmxMLLjmZG2GWmtGbMAAwYA2AwMzMDGzYGAAAMzMDAAeghB",
                     ["n"] = 1,
                 },
                 {
@@ -20476,7 +20455,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CsQAMrNP5kak+EBqLfUa3dMm+yMzMzMNbMjZmxsMLzMzMLmZWW8ADAAmZGzMziNMzMmZZZ0Mzw2wys1YjBAAGDwGAmZmZwYGzAAAgZmZAAghB",
+                    ["code"] = "CsQAMrNP5kak+EBqLfUa3dMm+yMzMzMNbMjZmxsMLzMzMLmZWWYAAwMzYmZWshZmxMLLjmZG2GWmtGbMAAwYA2AwMzMDGzYGAAAMzMDAAeghB",
                     ["n"] = 1,
                 },
                 {
@@ -20562,7 +20541,7 @@ RecommendedStatsData_TalentsDungeon = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CsQAMrNP5kak+EBqLfUa3dMm+yMzMzMNbMjZmxsMLzMzMLmZWW8ADAAmZGzMziNMzMmZZZ0Mzw2wys1YjBAAGDwGAmZmZwYGzAAAgZmZAAghB",
+                    ["code"] = "CsQAMrNP5kak+EBqLfUa3dMm+yMzMzMNbMjZmxsMLzMzMLmZWWYAAwMzYmZWshZmxMLLjmZG2GWmtGbMAAwYA2AwMzMDGzYGAAAMzMDAAeghB",
                     ["n"] = 1,
                 },
                 {
@@ -20640,19 +20619,23 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 2,
                 },
                 {
-                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamxAAAwAAmZmmlltZAgYDAAwMzwmlZMzyMGzMzMDLMzMzMDAwAAAMAzMgZAwwMzA",
-                    ["n"] = 2,
-                },
-                {
                     ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssMDAEbAAAmZG2sMjZWmxYmZmZYhZMzMDAwAAAMAzMgZAwwMzA",
                     ["n"] = 2,
                 },
                 {
-                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamxAAAwAAmZmmlltZAgYDAgFYmZYzyMmZZGjZmZmhFmxMzMAADAAwAMzAmBADzMD",
+                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsgZQzMzAAAwAAmZmmlllZAgYDAgFYmZYzyMmZZGjZmZmhFmZmZmBAYAAAGgZGwMAYYmZA",
+                    ["n"] = 2,
+                },
+                {
+                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssNDAEbAAAmZG2sMjZWmxYmZmZYhZMzMDAwAAAMAzMgZAwwMzA",
                     ["n"] = 2,
                 },
                 {
                     ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssMDAEbAAgxMzwmlZMzyMGzYmZYhZmZmZAAGAAgBYmBYAwwMzA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamxAAAwAAmZmmlltZAgYDAAwMzwmlZMzyMGzMzMDLMzMzMDAwAAAMAzMgZAwwMzA",
                     ["n"] = 1,
                 },
                 {
@@ -20668,10 +20651,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwMLzMmFMzQzMGAAAGAwMz0sssMDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAmBADzMD",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGLjlZMzCzMoZGDAAADAYmZaWWWmBAiNAAAzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAmBADzMD",
                     ["n"] = 1,
                 },
@@ -20684,15 +20663,15 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssNDAEbAAAmZG2sMjZWmxYmZmZYhZMzMDAwAAAMAzMgZAwwMzA",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamxAAAwAAmZmmlltZAgYDAgFYmZYzyMmZZGjZmZmhFmZmZmBAYAAAGgZGgBADzMD",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGYZmZmFmZQzMGAAAGAwMz0sssMDAEbAAsAzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAmBADzMD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamxAAAwAAmZmmlltZAgYDAgFYmZYzyMmZZGjZmZmhFmxMzMAADAAwAMzAmBADzMD",
                     ["n"] = 1,
                 },
                 {
@@ -20897,7 +20876,7 @@ RecommendedStatsData_TalentsBoss = {
             ["builds"] = {
                 {
                     ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamxAAAwAAmZmmlltZAgYDAAwMzwmlZMzyMGzMzMDLMzMzMDAwAAAMAzMgZAwwMzA",
-                    ["n"] = 4,
+                    ["n"] = 3,
                 },
                 {
                     ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamxAAAwAAmZmmlllZAgYDAAwMzwmlZMzyMGzMzMDLMzMzMDAwAAAMAzMgZAwwMzA",
@@ -20920,7 +20899,11 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwMLzMmFMzQzMGAAAGAwMz0sssMDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAmBADzMD",
+                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsgZQzMzAAAwAAmZmmlllZAgYDAgFYmZYzyMmZZGjZmZmhFmZmZmBAYAAAGgZGwMAYYmZA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssMDAEbAAAzMzM2sMzMzyMGjZmBLMjZmZAAGAAgBYmBMDAGmZG",
                     ["n"] = 1,
                 },
                 {
@@ -20967,7 +20950,7 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamxAAAwAAmZmmlltZAgYDAAwMzwmlZMzyMGzMzMDLMzMzMDAwAAAMAzMgZAwwMzA",
-                    ["n"] = 3,
+                    ["n"] = 2,
                 },
                 {
                     ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamxAAAwAAmZmmlltZAgYDAgFYmZYzyMmZZGjZmZmhFmxMzMAADAAwAMzAmBADzMD",
@@ -20986,7 +20969,11 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwMLzMmFMzQzMGAAAGAwMz0sssMDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAmBADzMD",
+                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsgZQzMzAAAwAAmZmmlllZAgYDAgFYmZYzyMmZZGjZmZmhFmZmZmBAYAAAGgZGwMAYYmZA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMDamZGAAAGAwMz0sssMDAEbAAAzMzM2sMzMzyMGjZmBLMjZmZAAGAAgBYmBMDAGmZG",
                     ["n"] = 1,
                 },
                 {
@@ -21534,6 +21521,10 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsNDzyYmHYmZmx2yYMLjZZGDAwAAAAAAg0MziZMzMGzWbAYgZgZwGAAABYmZZbplZGLWWwAgxMMGAMzAgZgMWA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGz8AzMzMz2yYMLzilZMAADAAAAAASzMmZMzMGzWbAYgBMwGAAABYmZZbplZGLWWYGAMmhxAgZGAMzgMWA",
                     ["n"] = 1,
                 },
@@ -21571,10 +21562,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWmZmHYmZmZsMGzywyMGAAAAAAAAINzYmxMzYMbtBgBGwAbAAAEgZmltlWmZsYZjZADGzwYAwMDAmZQGL",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZ2WGjZZWmlZMAAAAAAAAQamxMjZmxY2aDADYgB2AAAIAzMLLLtMzYxyCzAYMmhxAgZGAMzgMWA",
                     ["n"] = 1,
                 },
             },
@@ -22086,7 +22073,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZGAAAghphZGzMbmZmZGMmZAAAAAMzyMDMhxy2ALgBMDTIzgNwMjthBWmZbAmZAwMMA",
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZGAAAghphBzMWmZmZGzMmZAAAAAMzyMDMhxy2AbgBMDTIzgNwMDjtBWmZbAmZAwMMA",
                     ["n"] = 1,
                 },
                 {
@@ -22099,6 +22086,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZGAAAghphZGzMWmZmZGMmZAAAAAMzyMDMhxy2AbgBMDTIzgNwMDjtBWmZbAmZAwMMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZGAAAghphxYmxyMzMzwMmZAAAAAMzyMDMhxy2ALgBMDTIzgNwMDjtBWmZbAmZAwMMA",
                     ["n"] = 1,
                 },
                 {
@@ -22121,10 +22112,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMmZGAAAghphBzMWmZmZGzMmZAAAAAMWmZAhxyyALgBMDTIzgNwMDjtBzyMLDwMDAmhBA",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZGAAAghphxYmxyMzMzwMmZAAAAAMzyMDMhxy2ALgBMDTIzgNwMDjtBWmZbAmZAwMMA",
-                    ["n"] = 1,
-                },
             },
             ["difficulty"] = "mythic",
         },
@@ -22140,15 +22127,15 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 2,
                 },
                 {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMmZGAAAghphxYmZbZmZmZwYmBAAAAwMLzMgwYZZgFwAmhJkZwGYmhx2ALzsMAzMAYGGA",
+                    ["n"] = 2,
+                },
+                {
                     ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxYmZZZmZmZwYmBAAAAwMLzMwEGLbDsAGwMMhMD2AzM2GGYZmtBYmBAzwA",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMmZGAAAghphxYmxyMzMzgxMDAAAAgZWmZAhxyyALgBMDTIzgNwMjtx2ALzsMAzMAYGGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMmZGAAAghphZGzMbmZmZGMmZAAAAAMzyMDIMWWGYBMgZYCZGsBmZsNMwyMLDwMDAmhBA",
                     ["n"] = 1,
                 },
                 {
@@ -22173,10 +22160,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMmZGAAAghphBzMWmZmZGzMmZAAAAAMzyMDIMWWGYDMgZYCZGsBmZYsNwyMLDwMDAmhBA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzMmZGAAAghphxYmZbZmZmZwYmBAAAAwMLzMgwYZZgFwAmhJkZwGYmhx2ALzsMAzMAYGGA",
                     ["n"] = 1,
                 },
                 {
@@ -22358,7 +22341,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZGAAAghphBzMWmZmZGzMmZAAAAAMzyMDMhxy2AbgBMDTIzgNwMDjtBWmZbAmZAwMMA",
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphxYmZzMzMzYmxMDAAAAgxyMDMhxy2ALgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
                     ["n"] = 1,
                 },
                 {
@@ -22370,7 +22353,11 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGmZbZmZmZYGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGzMWmZmZGMmZAAAAAMzyMDMhxy2AbgBMDTIzgNwMDjtBWmZbAmZAwMMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAAzMzsMzYmZGAAAghphxYmxyMzMzwMmZAAAAAMzyMDMhxy2ALgBMDTIzgNwMDjtBWmZbAmZAwMMA",
                     ["n"] = 1,
                 },
                 {
@@ -22390,11 +22377,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZYmZzMzMzwMmZAAAAAMWmZgJMW2GYBMgZYCZGsBmZsMMYWmZbAmZAwMMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphBzMbLzMzMDzYmBAAAAwYZmBmwYZbgFwAmhJkZwGYmhx2gZZmtBYmBAzwA",
+                    ["code"] = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZYmZzMzMzgxMDAAAAgxyMDMhxy2ALgBMDTIzgNwMjtx2gZZmtBYmBAzwA",
                     ["n"] = 1,
                 },
             },
@@ -22457,7 +22440,7 @@ RecommendedStatsData_TalentsBoss = {
             ["difficulty"] = "mythic",
         },
         ["the-coiled-altar"] = {
-            ["n"] = 13,
+            ["n"] = 14,
             ["builds"] = {
                 {
                     ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZ2YmZmxY2WGLjtZmZMzMAAAAsFMbwYmRNjZZmZmZMm5BGAAAAAAADAAAgAgZbmlmlZW2AzMALmBDAgZGAMA",
@@ -22465,6 +22448,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2YmZmxY2M2mZZGzMmZAAAAYJY2M8AmZUzYWMzMzsMmxMAAAAAAGYAAAA0MLzyMzMgALgZGgFGMAAAmZDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZWYmZmxY2WmBbzMzYmZAAAAYJY2MMmZUzYWmZmZGjZMDAAAAAAwAAAAIAY2mZpZZmtNwMPAwiZwAAYmBAD",
                     ["n"] = 1,
                 },
                 {
@@ -22602,48 +22589,6 @@ RecommendedStatsData_TalentsBoss = {
             },
             ["difficulty"] = "mythic",
         },
-        ["entombed-sentinels"] = {
-            ["n"] = 9,
-            ["builds"] = {
-                {
-                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZ2YmZmxY2WGLjtZmZMzMAAAAsFMMMmZUzYWMzMzYMDDAAAAAgBGAAAABAz2MLNLzssBzMDwiZwAAYmBAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZ2YmZmxY2WGLjtZmZMzMAAAAsEMbwYmRNjZZMzMjxMmBAAAAAwADAAAgAgZbmlmlZW2AzMALmBDAgZGAMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwYMjxYmZMmtFWGbzMzYmZAAAAYJY2gxMjaGzyYmZmlxMmBAAAAAAYAAAAEAMbzs0sMzyGYmBYxMYAAMzAgB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZMmZmZMmtFWGbzMzYmZAAAAYJY2gxMjaGzyYmZmlxMmBAAAAAAYAAAAEAMbzs0sMzyGYmBYxMYAAMzAgB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwYMjxYmZMmtFWGbzMzYmZAAAAYJY2gxMjaGzCzMzYMjZAAAAAAMwAAAAIAY2mZpZZmlNYmZAWMDGAAzMAYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwYMzGzMzMGz2yYZsNzMjHYmBAAAglghhxMjaGzCzMzsMmxMAAAAAAGYAAAAEAMbzs0sMzyGYmBYxMYAAMzAgB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwYMjxYmZMmtFWGbzMzYmZAAAAYLY2MMmZUzYWmZmZGjZMAAAAAAMwAAAAIAY2mZpZZmlNwMPAwiZwAAYmBAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwYMjxYmZMmtFWGbzMzYmZAAAAYJY2YMmZUzYWYmZGjZeADAAAAAgBGAAAABAz2MLNLzssBzMPAwiZwAAYmBAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZ2YmZmxY2WGLjtZmZMzMAAAAsEMbwYmRNjZxMzMjxMPgBAAAAAAYAAAAEAMbzs0sMzyGYmBYxMDDAgZGAMA",
-                    ["n"] = 1,
-                },
-            },
-            ["difficulty"] = "mythic",
-        },
         ["the-lost-explorers"] = {
             ["n"] = 9,
             ["builds"] = {
@@ -22687,8 +22632,12 @@ RecommendedStatsData_TalentsBoss = {
             ["difficulty"] = "mythic",
         },
         ["sszorak"] = {
-            ["n"] = 13,
+            ["n"] = 14,
             ["builds"] = {
+                {
+                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZWYmZmxY2WmBbzMzYmZAAAAYJY2MMmZUzYWmZmZGjZMDAAAAAAwAAAAIAY2mZpZZmtNwMPAwiZwAAYmBAD",
+                    ["n"] = 1,
+                },
                 {
                     ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwgZMGzMzMmtFWGbzMzYmZAAAAYJY2gxMjaGziZmZGjZegBAAAAAAwAAAAIAY2mZpZZmlNYmZAWMDGAAzMAYA",
                     ["n"] = 1,
@@ -22739,6 +22688,52 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwgZMGzMzMmtFWGbzMzYmZAAAAYJY2gxMjaGzyYmZGjZegBAAAAAAwAAAAIAY2mZpZZmlNYmZAWMDGAAzMAYA",
+                    ["n"] = 1,
+                },
+            },
+            ["difficulty"] = "mythic",
+        },
+        ["entombed-sentinels"] = {
+            ["n"] = 10,
+            ["builds"] = {
+                {
+                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZ2YmZmxY2WGLjtZmZMzMAAAAsFMMMmZUzYWMzMzYMDDAAAAAgBGAAAABAz2MLNLzssBzMDwiZwAAYmBAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZ2YmZmxY2WGLjtZmZMzMAAAAsEMbwYmRNjZZMzMjxMmBAAAAAwADAAAgAgZbmlmlZW2AzMALmBDAgZGAMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZ2YmZmxY2WGLjtZmZMzMAAAAsEMbwYmRNjZZmZmZMmxMAAAAAAADAAAgAgZbmlmlZW2AzMALmBDAgZGAMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwYMjxYmZMmtFWGbzMzYmZAAAAYJY2gxMjaGzyYmZmlxMmBAAAAAAYAAAAEAMbzs0sMzyGYmBYxMYAAMzAgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZMmZmZMmtFWGbzMzYmZAAAAYJY2gxMjaGzyYmZmlxMmBAAAAAAYAAAAEAMbzs0sMzyGYmBYxMYAAMzAgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwYMjxYmZMmtFWGbzMzYmZAAAAYJY2gxMjaGzCzMzYMjZAAAAAAMwAAAAIAY2mZpZZmlNYmZAWMDGAAzMAYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwYMzGzMzMGz2yYZsNzMjHYmBAAAglghhxMjaGzCzMzsMmxMAAAAAAGYAAAAEAMbzs0sMzyGYmBYxMYAAMzAgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwYMjxYmZMmtFWGbzMzYmZAAAAYLY2MMmZUzYWmZmZGjZMAAAAAAMwAAAAIAY2mZpZZmlNwMPAwiZwAAYmBAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAwYMjxYmZMmtFWGbzMzYmZAAAAYJY2YMmZUzYWYmZGjZeADAAAAAgBGAAAABAz2MLNLzssBzMPAwiZwAAYmBAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZ2YmZmxY2WGLjtZmZMzMAAAAsEMbwYmRNjZxMzMjxMPgBAAAAAAYAAAAEAMbzs0sMzyGYmBYxMDDAgZGAMA",
                     ["n"] = 1,
                 },
             },
@@ -22816,7 +22811,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjxYY2mZmZmZzMjmZMGDzMGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmQGLYmxMzADADzMAzAD",
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjxYY2mZmZmZbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
                     ["n"] = 1,
                 },
                 {
@@ -23026,7 +23021,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjxYY2mZmZmZzMjmZMGDzMGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmQGLYmxMzADADzMAzAD",
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjxYY2mZmZmZbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
                     ["n"] = 1,
                 },
                 {
@@ -23073,18 +23068,18 @@ RecommendedStatsData_TalentsBoss = {
             ["builds"] = {
                 {
                     ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjZAz2MzMzMLzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYmBD",
-                    ["n"] = 4,
-                },
-                {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjZAz2MzMzMbzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYmBD",
                     ["n"] = 3,
                 },
                 {
-                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjxYY2mZmZmZzMjmZMGDzMGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmQGLYmxMzADADzMAzAD",
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjZAz2MzMzMbzMjMjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYmBD",
                     ["n"] = 2,
                 },
                 {
                     ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMMjZGDz2MzMzMbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBwAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjxYY2mZmZmZbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBgBD",
                     ["n"] = 1,
                 },
                 {
@@ -23113,6 +23108,18 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMDY2mZmZmZbmZkZMGDzMGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmQGLYmxMzADADzMAjBD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMDDz2MzMzMLmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBwAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMGDz2MzMzMbmZ0MjxYYmxgZmZmZmZmZAAAAAAAAAYMbDMgFwywEyYBzMmZGYAYYmBYAD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsPAAAAAAAAAAAAAAAAAAAAAAMAmZMjxYY2mZmZmZzMjmZMGDzMGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmQGLYmxMzADADzMAzAD",
                     ["n"] = 1,
                 },
                 {
@@ -23378,15 +23385,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMDzYmZMDGTzYwYbZmZmZmZmZgZZwMAAgxMzYGgZabDzAsxMbzYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMjZWMjZmxMYMNjBz222MzMzMzMzgZWGmZAAAjZmBAz02GMAbMz2MG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMjtZMzMmBjpZMY222mZmZmZmZGMzywMAAAjZGzAYm2ADwGzsNjB",
+                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMjZWMjZmxMYMNjBz222MzMzMzMzswMLDzAAAMmZGAMTbbwAsxMbzYA",
                     ["n"] = 1,
                 },
                 {
@@ -23439,6 +23438,14 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMDzYmZMDGTzYwsttNzMzMzMzMYmlhZAAA8AzMMAmpNGzAswMbzYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMDzYmZMDGTzYwsttNzMzMzMzMwsMMzAAAGjZGAmpNmFDwGzsNjB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMDzYmZMDGTzYwsttNzMzMzMzMwsMMzAAAmHYmBAmpNmFDwGzsNjB",
                     ["n"] = 1,
                 },
             },
@@ -23652,10 +23659,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMjtZMzMmBjpZMY222mZmZmZmZGMzywMAAAjZGzAYm2ADwGzsNjB",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMjtZMzMmBjpZMY222mZmZmZmZGMzywMAAAzDMzwAYm2ADwGzsNjB",
                     ["n"] = 1,
                 },
@@ -23693,6 +23696,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMDzYmZMDGTzYwsttNzMzMzMzMwsMMzAAAGzMAwMtxsMDwGzsNjB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMziZMzMmBjpZMY222mZmZmZmZGYWGmZAAAzDMmBAz02GMAbMz2MG",
                     ["n"] = 1,
                 },
             },
@@ -23804,15 +23811,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMDzYmZMDGTzYwsttNzMzMzMzMwsMMDAAwMzMMAmpNGGgFmZbGD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMjZWMjZmxMYMNjBz222MzMzMzMzgZWGmZAAAjZmBAz02GMAbMz2MG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMjtZMzMmBjpZMY222mZmZmZmZGMzywMAAAjZGzAYm2ADwGzsNjB",
+                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMjZWMjZmxMYMNjBjtlZmZmZmZmZhZWGMDAAYMzMGAz02GMAbMz2MG",
                     ["n"] = 1,
                 },
                 {
@@ -23855,6 +23854,14 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMDzYmZMDGaGDmtttZmZmZmZmBmlhZAAAmZmZMAmptNYAWYmtZMA",
                     ["n"] = 1,
                 },
+                {
+                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMDzYmZMDGTzYwsttNzMzMzMzMYmlhZAAA8AzMMAmpNGzAswMbzYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMDzYmZMDGTzYwsttNzMzMzMzMwsMMzAAAmHYmBAmpNmFDwGzsNjB",
+                    ["n"] = 1,
+                },
             },
             ["difficulty"] = "mythic",
         },
@@ -23886,15 +23893,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMjZWMjZmxMYMNjBz222MzMzMzMzgZWGmZAAAjZmBAz02GMAbMz2MG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMziZMzMmBjpZMY222mZmZmZmZGMzywMDAAYMzAAz0GDDwCzsNjB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMjtZMzMmBjpZMY222mZmZmZmZGMzywMAAAjZGzAYm2ADwGzsNjB",
+                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMjZWMjZmxMYMNjBz222MzMzMzMzswMLDzAAAMmZGAMTbbwAsxMbzYA",
                     ["n"] = 1,
                 },
                 {
@@ -23935,6 +23934,14 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMDzYmZMDGTzYwsttNzMzMzMzMwsMMDAAw8AzMMAmpNmFDwGzsNjB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMDzYmZMDGTzYwsttNzMzMzMzMwsMMzAAAGzMAwMtxsMDwGzsNjB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMzMziZMzMmBjpZMY222mZmZmZmZGYWGmZAAAzDMmBAz02GMAbMz2MG",
                     ["n"] = 1,
                 },
             },
@@ -24222,7 +24229,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYBmZWGzMmZMMDzsMzYGAAAAzYWmBzMzwMmZAMTNAmZDDhxsMAjBWMzMLAaGMGDzMAzMzAD",
+                    ["code"] = "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYBmZWGzMmZMMDzsMzYGAAAAzYWmBzMzwMmZAMTBwMLYIMmlBYMwiZmZBQzYMGDzMAzMzAD",
                     ["n"] = 1,
                 },
                 {
@@ -24288,7 +24295,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYBmZWGzMmZMMDzsMzYGAAAAzYWmBzMzwMmZAMTNAmZDDhxsMAjBWMzMLAaGMGDzMAzMzAD",
+                    ["code"] = "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYBmZWGzMmZMMDzsMzYGAAAAzYWmBzMzwMmZAMTBwMLYIMmlBYMwiZmZBQzYMGDzMAzMzAD",
                     ["n"] = 1,
                 },
                 {
@@ -24484,7 +24491,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYBmZ2GzMmZMMDzsMzYGAAAAzYWmBzMzwMmZAMTNAmZBDhxsNAjBWMzMLAaGjxYwMAzMzAD",
+                    ["code"] = "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYBmZ2GzMmZMMDjlZmZGAAAAzYWmBzMzwMmZAMTNAmZBDhxsMAjBWMzMLAaGjxYYmBYmZAD",
                     ["n"] = 1,
                 },
                 {
@@ -24606,11 +24613,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGzM2mxYmZGGaGYmmZgZAmZzMa2MAkxYBAzMgxMzMmNmZbZAMYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGzM2mxYmZGbIzYxMNAzAMzmZ0sZAIjxCAmZAjZmZMbMz2yAMDGA",
+                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDzAAAAAAAAAAAAMMLmxYbmxMz2MYGzmZGzMzYjJDLmpBYGgZ2MjmNDAZMWAwMjBjZmZMbMz2yAMDGA",
                     ["n"] = 1,
                 },
                 {
@@ -24631,6 +24634,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGzw2MzYmZGbMZgZaMwMAzsZGNbGAyYsAgZGwYmZGzGzstMAzgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGzw2MzYmZGbIzYxMNAzAMzmZ0sZAIjxCAmZAjZmZMLMz2yAMDGA",
                     ["n"] = 1,
                 },
             },
@@ -24788,10 +24795,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDzAAAAAAAAAAAAMMLmxYbmxMz2MYGzmZGzMzYjJDLmpBYGgZ2MjmNDAZMWAwMjBjZmZMbMz2yAMDGA",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGzM2mxYmZGbMZw2MNAzAMzmZ0sZAIjxCAmZAjZmZMbMz2yAMDGA",
                     ["n"] = 1,
                 },
@@ -24829,6 +24832,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDzAAAAAAAAAAAAMMLmxYbmxMz2MYG2mZGzMzYjJzgZaAmBYmNzoZzAQGjFAMzYwYmZGzGzstMAzgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGzM2mxYmZGQzAz0MDMDwMbmRzmBgMGLAYmBMmZmxsxMbLDwMYA",
                     ["n"] = 1,
                 },
             },
@@ -24889,7 +24896,7 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGzM2mxYmZGGaGYmmZgZAmZzMa2MAkxYBAzMgxMzMmNmZbZAMYA",
-                    ["n"] = 3,
+                    ["n"] = 2,
                 },
                 {
                     ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGzw2MzYmZGbIDLmpZAzAMzmZ0sZAIjxCAmZAjZmZMbMz2yAMDGA",
@@ -24905,6 +24912,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGzM2mxYmZGGaGYmmZGMDwMbmRzmBgMGLAYmBMGzMmNmZbZAMYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGDz2MzYmZGbMZGMTDwMAzsZGNbGAyYsAgZGwYmZGzGzstMAzgB",
                     ["n"] = 1,
                 },
                 {
@@ -24951,10 +24962,6 @@ RecommendedStatsData_TalentsBoss = {
             ["builds"] = {
                 {
                     ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGzM2mxYmZGGaGYmmZgZAmZxMa2MAkxYBAzMgxMzMmNmZbZAMYA",
-                    ["n"] = 3,
-                },
-                {
-                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGzw2MzYmZGbIzYxMNAzAMzmZ0sZAIjxCAmZAjZmZMbMz2yAMDGA",
                     ["n"] = 2,
                 },
                 {
@@ -24982,10 +24989,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGzM2mxYmZGGaGYmmZgZAmZzMa2MAkxYBAzMgxMzMmNmZbZAMYA",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGzw2MzYmZGQzAz0MzMMDwMLmRziBgMGLAYmBMGzMmNmZbZAMYA",
                     ["n"] = 1,
                 },
@@ -24994,7 +24997,15 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGDz2MzYmZGbMZGMTDwMAzsZGNbGAyYsAgZGwYmZGzGzstMAzgB",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGzM2mxYmZGbMZw2MNAzAMzmZ0sZAIjxCAmZAjZmZMbMz2yAMDGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGzw2MzYmZGbIzYxMNAzAMzmZ0sZAIjxCAmZAjZmZMbMz2yAMDGA",
                     ["n"] = 1,
                 },
                 {
@@ -25011,6 +25022,14 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGjx2MzYmZGbID2mpBYGgZ2MjmNDAZMWAwMDYmZmZMbMz2yAMDGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGzw2MzYmZGbIzYxMNAzAMzmZ0sZAIjxCAmZAjZmZMLMz2yAMDGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMzyMGzw2MzYmZGbMZgZaMDmBYmFzoZxAQGjFAMzAGzMzY2YmtlBwgB",
                     ["n"] = 1,
                 },
             },
@@ -25290,10 +25309,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAZbmZmZmZM2mZmZbmlZm5BMjZGjhZGjBwALwMGNmNQ2GwmBAzMzMGA",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAottZmZmZmxYZmZmtZWmZmHwMmZMGmZMGADsAzY0Y2AZbAbGAMzwYA",
                     ["n"] = 1,
                 },
@@ -25317,82 +25332,8 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAotlZmZmZmxYZmZmtZWmZmHYegxMjxwMjxAsZWGYALBLDTghFDmZAGMA",
                     ["n"] = 1,
                 },
-            },
-            ["difficulty"] = "mythic",
-        },
-        ["the-lost-explorers"] = {
-            ["n"] = 20,
-            ["builds"] = {
-                {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAIbzMzMzMjxyMzMbzsMzMPgZMzYMMzYMAGYBmxoxsBy2A2MAYmZMGA",
-                    ["n"] = 3,
-                },
-                {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAZbmZmZmZM2mZmZbmlZm5BMjZGjhZGjBwALwMGNmNQ2GwmBAzMzMGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAZbmZmZmZMWmZmZbmlZm5BMjZGjhZGjBwALwMGNmNQ2GwmBAzMzMGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAttNzMzMzMGLzMzsNzyMz8AzDMmZMGmZMGADsAzY0Y2AZbAbGAMzMDD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAttNzMzMzMGLzMzsNzyMz8AzDMmZMGmZMGADsAzY0Y2AZbAbAgZmZGD",
-                    ["n"] = 1,
-                },
                 {
                     ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAIbzMzMzMjxyMzMbzsMzMPgZMzYMMzYMAGYBmxoxsBy2A2MAYmZGGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsYwAAAAAAWGsNDAAAAAIbzMzMzMjxyMzMbzsMzMzYMzYMmZGjBwALwMGNmNQ2GwmBAzMzMGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAttNzMzMzMGLzMzsNzyMz8AmxMjxwMjxAYgFYGjGzGIbDYDAMzMzYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsYAAAAAAYWGsNDAAAAAottZmZmZmxYZmZmtZWmZmxMmZMGmZMGADsAzY0Y2AZbAbAgZmZGD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAttNzMzMzMGbzMzsNzyMz8AzDMmZMGmZMGADsAzY0Y2AZbAbAgZmZGD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAZbmZmZmZMWmZmZbmlZm5BmHYMzYMMzYMAGYBmxoxsBy2A2MAYmZmxA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAottZmZmZmxYZmZmtZWmZGjxMjxYmZMGADsAzY0Y2AZbAbGbAmZGMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsYwAAAAAAWGsNDAAAAAIbzMzMzMjxyMzMbzsMzMz8AjZGjhZGzMAGYBmxoxsBy2A2MAYmZGGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAwygtZAAAAAAZbmZmZmZMWmZmZbmlZm5BMjZGjhZGzMAGYBmxoxsBy2A2MAYmZMGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAIbzMzMzMjxyMzMbzsMzMPgZMzYMMzYMAGYBmxoxsAy2A2MAYmZGGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAIbzMzMzMjx2MzMbzsMzMPgZMzYMMzYMAGYBmxoxsBy2A2MAYmZGGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsMDGAAAAAYWGsNDAAAAAIbzMzMzMjxyMzMbzsMzMzYGzYMmZMMAGYBmxoxsAy2A2MAYmZMGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAottZmZmZmxYZmZmtZWmZmHwMmZMGmZMGADsAzY0Y2AZbAbGAMzMYA",
                     ["n"] = 1,
                 },
             },
@@ -25463,6 +25404,84 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsYwAAAAAAzygtZAAAAAAZbmZmZmZM2mZmZbmlZmZGjZGjxMzYMAGYBmxoxsBy2A2MAYmZMGA",
+                    ["n"] = 1,
+                },
+            },
+            ["difficulty"] = "mythic",
+        },
+        ["the-lost-explorers"] = {
+            ["n"] = 20,
+            ["builds"] = {
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAIbzMzMzMjxyMzMbzsMzMPgZMzYMMzYMAGYBmxoxsBy2A2MAYmZMGA",
+                    ["n"] = 3,
+                },
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAZbmZmZmZMWmZmZbmlZm5BMjZGjhZGjBwALwMGNmNQ2GwmBAzMzMGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAttNzMzMzMGLzMzsNzyMz8AzDMmZMGmZMGADsAzY0Y2AZbAbGAMzMDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAttNzMzMzMGLzMzsNzyMz8AzDMmZMGmZMGADsAzY0Y2AZbAbAgZmZGD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAIbzMzMzMjxyMzMbzsMzMPgZMzYMMzYMAGYBmxoxsBy2A2MAYmZGGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsYwAAAAAAWGsNDAAAAAIbzMzMzMjxyMzMbzsMzMzYMzYMmZGjBwALwMGNmNQ2GwmBAzMzMGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAttNzMzMzMGLzMzsNzyMz8AmxMjxwMjxAYgFYGjGzGIbDYDAMzMzYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsYAAAAAAYWGsNDAAAAAottZmZmZmxYZmZmtZWmZmxMmZMGmZMGADsAzY0Y2AZbAbAgZmZGD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAttNzMzMzMGbzMzsNzyMz8AzDMmZMGmZMGADsAzY0Y2AZbAbAgZmZGD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDAAAAAAzygtZAAAAAAZbmZmZmZMWmZmZbmlZm5BmHYMzYMMzYMAGYBmxoxsBy2A2MAYmZmxA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAottZmZmZmxYZmZmtZWmZGjxMjxYmZMGADsAzY0Y2AZbAbGbAmZGMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsYwAAAAAAWGsNDAAAAAIbzMzMzMjxyMzMbzsMzMz8AjZGjhZGzMAGYBmxoxsBy2A2MAYmZGGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAwygtZAAAAAAZbmZmZmZMWmZmZbmlZm5BMjZGjhZGzMAGYBmxoxsBy2A2MAYmZMGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAIbzMzMzMjxyMzMbzsMzMPgZMzYMMzYMAGYBmxoxsAy2A2MAYmZGGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAIbzMzMzMjx2MzMbzsMzMPgZMzYMMzYMAGYBmxoxsBy2A2MAYmZGGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsMDGAAAAAYWGsNDAAAAAIbzMzMzMjxyMzMbzsMzMzYGzYMmZMMAGYBmxoxsAy2A2MAYmZMGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAottZmZmZmxYZmZmtZWmZmHwMmZMGmZMGADsAzY0Y2AZbAbGAMzMYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlxsYAAAAAAYWGsNDAAAAAIbzMzMzMjxyMzMbzsMzMzYMzYMmZGjBwALwMGNmNQ2GwmBAzMzMGA",
                     ["n"] = 1,
                 },
             },
@@ -26040,11 +26059,11 @@ RecommendedStatsData_TalentsBoss = {
             ["n"] = 20,
             ["builds"] = {
                 {
-                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAz2MmxYZZGbMzsxyMzMDDjZAAmhxMjZmAzMYwYA",
-                    ["n"] = 1,
+                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmZGLLzAzMbsMzMzwwYGAgZYMzYmJwMDGMGA",
+                    ["n"] = 2,
                 },
                 {
-                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmZGLLzAzMbjlZmZGGGzAAMDjZGzIwMDGMGA",
+                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAz2MmxYZZGbMzsxyMzMDDjZAAmhxMjZmAzMYwYA",
                     ["n"] = 1,
                 },
                 {
@@ -26073,10 +26092,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmZGLLzYhZmNWmZmZYYMAAmhxMjZmAzMYwYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmZGLLzAzMbsMzMzwwYGAgZYMzYmJwMDGMGA",
                     ["n"] = 1,
                 },
                 {
@@ -26127,10 +26142,6 @@ RecommendedStatsData_TalentsBoss = {
             ["builds"] = {
                 {
                     ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAz2MmxYZZGLMzsxyMzMDDjZAAmhxMjZmAzMYwYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmZGLLzAzMbjlZmZGGGzAAMDjZGzIwMDGMGA",
                     ["n"] = 1,
                 },
                 {
@@ -26205,6 +26216,10 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDLkFYGGawCAzyMmZGbLzYjZmNWmZmZYYMDAwMMmZYmAzMYwYA",
                     ["n"] = 1,
                 },
+                {
+                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDLkFYGGawCAzyMmZGLLzYjZmNWmZmZYYMDAwMMmZYmAzMYwYA",
+                    ["n"] = 1,
+                },
             },
             ["difficulty"] = "mythic",
         },
@@ -26264,7 +26279,11 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAz2MmxMbLzYzMzYmlZMz8AYZMDAwMMmZYEYmBDGDA",
+                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmZGLLzYjZmNWmZmZYYMDAwMMmZMjAzMYwYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDLkFYGGawCAzyMmZGbLzYjZmNWmZmZYYMDAwMMmZYmAzMYwYA",
                     ["n"] = 1,
                 },
                 {
@@ -26281,10 +26300,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDLkFYGGawCAz2MmxYbxYjZmFzyMzMzAjZAAmhxMDzEYmBDGDA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAzyMmxYZZGbMzsNWmZmZeADMDAwMMmZMjAzMYwYA",
                     ["n"] = 1,
                 },
             },
@@ -26570,7 +26585,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNzMzYMzYmZYsAbwMW0YbAZGYzMYY2GjZa2WmZ2MjZhFzDMzYwsMAAAwMzgZGAYwM",
+                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNzMDjZGzMgFYDmxiGbDIzAbGjZw2MzMTz2yMzmZMLsMjZGDmlBAAAmZGMzAADmB",
                     ["n"] = 1,
                 },
                 {
@@ -26660,7 +26675,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNzMzYMzYmZYsAbwMW0YbAZGYzMYY2GjZa2WmZ2MjZhFzDMzYwsMAAAwMzgZGAYwM",
+                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNzMDjZGzMgFYDmxiGbDIzAbGjZw2MzMTz2yMzmZMLsMjZGDmlBAAAmZGMzAADmB",
                     ["n"] = 1,
                 },
                 {
@@ -26824,7 +26839,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNzMzYMzYmBjFYDmxmGbDIzAbmBD2GzMTz2yMziZMLsYmZGDmlBAAAmZGMzAADmB",
+                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNzMDjZGzMgFYDmxiGbDIzAbGjZw2MzMTz2yMziZMLsMjZGDmlBAAAmZGMzAADmB",
                     ["n"] = 1,
                 },
                 {
@@ -26910,7 +26925,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNzMzYMzYmBjFYDmxmGbDIzAbmBD2GzMTz2yMzmZMLsYmZGDmlBAAAmZGMzAADmB",
+                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNzMDjZGzMgFYDmxiGbDIzAbGjZw2MzMTz2yMziZMLsMjZGDmlBAAAmZGMzAADmB",
                     ["n"] = 1,
                 },
                 {
@@ -26942,7 +26957,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNzMzYMzYmBjFYDmxiGbDIzAbmBD2GzMTz2yMzmZMbsMzYGDmlBAAAmZGMzAADmB",
+                    ["code"] = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNjZGjZGzMDjFYDmxiGbDIzAbmhZY2GjZa2WmZ2MjZhFzDMzYwsMAAAwMzgZGAYwM",
                     ["n"] = 1,
                 },
                 {
@@ -27006,7 +27021,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CoQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZzM2mZGzyAAAAAAAAGzYYBGYb0CNsYMzYZWmZmxMAwMjZmxMDAzYMAAAjZmZmhhlZMgB",
+                    ["code"] = "CoQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjx2MzYWGAAAAAAAwYGDLwAbjWohFjZGLzyMzMmBAmZMzMmZAmZGjBAAYMzMjhhlZMgB",
                     ["n"] = 1,
                 },
                 {
@@ -27166,6 +27181,10 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CoQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjx2MzYWGAAAAAAAwYGDLwAbjWohFjZGLzyMzMmBAmZMzMmZAmZGjBAAYMzMjhhlZMgB",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMzsNAAAAAAAgxMGWgB2GtQDLGzMWmlZmZMDAMzYmZMzAMzMmZAAAGzMzYYYZGDYA",
                     ["n"] = 1,
                 },
@@ -27219,10 +27238,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZmpZhZMzMzsMAAAAAAAgxMGWgB2GtQDLGzMWmlZmZMDAMzYmZMzAYmxYAAAGzMzYYYZGDYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMzsMAAAAAAAgxMGWgB2GtQDLGzMWmlZmZMDAMzYmZMzAMzMmZAAAGzMzYYYZGDYA",
                     ["n"] = 1,
                 },
             },
@@ -27342,7 +27357,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZmZWGAAAAAAAwYGDLwAbjWohFjZGLzyMzMmBAmZMmZmZAGzYmBAAYMzMjhhlZMgB",
+                    ["code"] = "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbjZ2MzYWGAAAAAAAwYGDLwAbjWohFjZGLz2MzMmBAmZMmZmZAmZGzAAAYMzMjhhlZMgB",
                     ["n"] = 1,
                 },
                 {
@@ -27400,11 +27415,11 @@ RecommendedStatsData_TalentsBoss = {
             ["n"] = 20,
             ["builds"] = {
                 {
-                    ["code"] = "CoQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjZMzMzsMAAAAAAAgxMGWgB2GtQDLGzMWmlZmZMDAMzYmZMzAYmxMAAAGzMzYYYZGDYA",
-                    ["n"] = 2,
+                    ["code"] = "CoQAAAAAAAAAAAAAAAAAAAAAAwMzDMzMNbMMzMzsMAAAAAAAgxMGWgB2GtQDLGzMWmlZmZMDAMzYmZMzAYmhZAAAGzMzMDDLzYAD",
+                    ["n"] = 1,
                 },
                 {
-                    ["code"] = "CoQAAAAAAAAAAAAAAAAAAAAAAwMzDMzMNbMMzMzsMAAAAAAAgxMGWgB2GtQDLGzMWmlZmZMDAMzYmZMzAYmhZAAAGzMzMDDLzYAD",
+                    ["code"] = "CoQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjx2MzYWGAAAAAAAwYGDLwAbjWohFjZGLzyMzMmBAmZMzMmZAmZGjBAAYMzMjhhlZMgB",
                     ["n"] = 1,
                 },
                 {
@@ -27421,6 +27436,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CoQAAAAAAAAAAAAAAAAAAAAAAgxMzoZbMjZmZmtBAAAAAAAMmxwCMw2oFaYxYmxysNzMjZAgZGjZmZGAzMmZAAAGzMzYYYZGDYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CoQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjZMzMzsMAAAAAAAgxMGWgB2GtQDLGzMWmlZmZMDAMzYmZMzAYmxMAAAGzMzYYYZGDYA",
                     ["n"] = 1,
                 },
                 {
@@ -27652,15 +27671,15 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 3,
                 },
                 {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaYGGGwMGmZmZY2GmhZZmAAWMz2MzYMzMAAWMzysMmgAAMGAzAMWGImZmNXA",
+                    ["n"] = 2,
+                },
+                {
                     ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYAMGLzMz2MAAAAAAAAAAAALDjmxMMMgZMjZmZGmthZwyMBAsYmtZmxMzMDAgNA0sMLNzMzGwwAzMAwyAxA+A",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwAmxwMzMDz2wMYZmAAWMz2YGzMzMAAWMzysMmgAAwAYGgxyAxMzs5DA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMCzwwAmZGmZmZYWGmBLzEAwiZ2mZGjZmBAwiZWmtxEEAgxAYGgxyMImZmNXA",
                     ["n"] = 1,
                 },
                 {
@@ -27713,10 +27732,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMCzwwAmxwMzMDz2wMMLzEAwiZ2mZGjZmBAwiZWmlxEEAgxAYGgxyMImZmNXA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwAGmxMzMDz2wMYZmAAWMz2MzYMzMAAWMzysMmgAAMGAzAMWGImZmNXA",
                     ["n"] = 1,
                 },
             },
@@ -27878,19 +27893,19 @@ RecommendedStatsData_TalentsBoss = {
             ["n"] = 20,
             ["builds"] = {
                 {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mxAAAAAAAAAAAALDjmxMMMgZMMzMzwsNMDWmJAgFmtxMmZmZAAsYmlZZMBBAYMAmBYsMQMzMb+A",
-                    ["n"] = 3,
-                },
-                {
                     ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mxAAAAAAAAAAAALDjmxMMMYMMjZmZGmtBDziJAgFmtxMmZmZAAsYmlZbMBBAYMAmBYsMDiZmZzHA",
                     ["n"] = 3,
                 },
                 {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwALzYYmZmhZbYGmFTAALmZbmZMmZGAALmZZWGTQAAGDgZAGLDEzMzmLA",
-                    ["n"] = 1,
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mxAAAAAAAAAAAALDjGmhhBMjhZmZGmthZYWmJAgFmtxMmZmZAAsYmlZZMBBAYMAmBYsMQMzMb+A",
+                    ["n"] = 3,
                 },
                 {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mxAAAAAAAAAAAALDjGmhhBMjhZmZGmthZYWmJAgFmtxMmZmZAAsYmlZZMBBAYMAmBYsMQMzMb+A",
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mxAAAAAAAAAAAALDjmxMMMgZMMzMzwsNMDWmJAgFmtxMmZmZAAsYmlZZMBBAYMAmBYsMQMzMb+A",
+                    ["n"] = 2,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwALzYYmZmhZbYGmFTAALmZbmZMmZGAALmZZWGTQAAGDgZAGLDEzMzmLA",
                     ["n"] = 1,
                 },
                 {
@@ -27937,16 +27952,16 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mxAAAAAAAAAAAAbDjwMMMgZMjZmZGmthZYWmJAgFmtxMmZmZAAsYmlZbMBBAYMAmBYsMQMzMb+A",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZY0MmhhBMMMzMzwsNMDzyMBAswsNmxMzMDAgFzsMLjJIAAjBwMAjlBiZmZzA",
-                    ["n"] = 1,
-                },
             },
             ["difficulty"] = "mythic",
         },
         ["sszorak"] = {
             ["n"] = 20,
             ["builds"] = {
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaYGGGwMGmZmZY2GmhZZmAAWMz2MzYMzMAAWMzysMmgAAMGAzAMWGImZmNXA",
+                    ["n"] = 2,
+                },
                 {
                     ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwALzYYmZmhZbYGmFTAALmZbmZMmZGAALmZZWGTQAAGDgZAGLDEzMzmLA",
                     ["n"] = 1,
@@ -27961,10 +27976,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYw2MmhlZGbzAAAAAAAAAAAAsMMaGzAGwwMmZmZY2YmhZZmAAWMz2MDzMzMAA2AQzys0MzMLAYgZGAGLDED4DA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaYGGGwMGmZmZY2GmhZZmAAWMz2MzYMzMAAWMzysMmgAAMGAzAMWGImZmNXA",
                     ["n"] = 1,
                 },
                 {
@@ -28021,10 +28032,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwAGGmZmZY2GmhZZmAAWMz2MzYMzMAAWMzysMmgAAMGAzAMWGImZmNXA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMCzwwAmxwMzMDz2wMMLzEAwiZ2mZGjZmBAwiZWmlxEEAgxAYGgxyMImZmNXA",
                     ["n"] = 1,
                 },
             },
@@ -28104,11 +28111,11 @@ RecommendedStatsData_TalentsBoss = {
             ["n"] = 20,
             ["builds"] = {
                 {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwAGmxMzMDz2wMMLmAAWMz2MzYMzMAAWMzysNmgAAMGAzAMWmBxMzs5CA",
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwAbDzYmZmhZbYGsYCAYxMbzMjxMzAAYxMLzyYCCAwYAMDwYZwEzMzmLA",
                     ["n"] = 2,
                 },
                 {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwAmxMmZmZY2GmBLmAAWMz2MzYMzMAAWMzysMmgAAMGAzAMWmBxMzs5CA",
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwAGmxMzMDz2wMMLmAAWMz2MzYMzMAAWMzysNmgAAMGAzAMWmBxMzs5CA",
                     ["n"] = 2,
                 },
                 {
@@ -28117,10 +28124,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYAMGLzMz2MAAAAAAAAAAAALDjmxMMMgZMjZmZGmthZwyMBAsYmtZmxMzMDAgNA0sMLNzMzGwwAzMAwyAxA+A",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMCzwwAmZGmZmZYWGmBLzEAwiZ2mZGjZmBAwiZWmtxEEAgxAYGgxyMImZmNXA",
                     ["n"] = 1,
                 },
                 {
@@ -28156,6 +28159,10 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwAmxMmZmZY2GmBLmAAWMz2MzYMzMAAWMzysMmgAAMGAzAMWmBxMzs5CA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwAGGmZmZYWGmhZZmAAWMz2MzYMzMAAWMzysMmgAAMGAzAMWGImZmNXA",
                     ["n"] = 1,
                 },
@@ -28182,15 +28189,19 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 2,
                 },
                 {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZY0MmhhBMMMzMzwsNMDzyMBAswsNmxYmZAAsYmlZZMBBAMjBwMAjlBiZmZxA",
-                    ["n"] = 2,
-                },
-                {
                     ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYAMGLzMz2MAAAAAAAAAAAALDjmxMMMgZMjZmZGmthZwyMBAsYmtZmxMzMDAgNA0sMLNzMzGwwAzMAwyAxA+A",
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYM2GGsMzMbzAAAAAAAAAAAAsMMaGzwwAbDzYmZmhZbYGsYCAYxMbzMjxMzAAYxMLzyYCCAwYAMDwYZwEzMzmLA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mZAAAAAAAAAAAALDjmxMMMghZMzMzwsxMDziJAgFmtxMGzMDAgFzsMbjJIAAjBwMAjlZQMzMLG",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mZAAAAAAAAAAAALDjmxMMMghhZmZGmlhZYWegJAgFmNmxYmZAAsYmlZZMBBAMjBwMAjlZQMzMLG",
                     ["n"] = 1,
                 },
                 {
@@ -28218,6 +28229,14 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZY0MmhhBMMMzMzwsNMDzyMBAswsNmxYmZAAsYmlZZMBBAMjBwMAjlBiZmZxA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZYmmxMMMGMMMzMzwshZYWegJAgFmtxMGzMDAgFzsMbjJIAgZMAmBYsMQMzMLG",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZY0MmhhBMMMzMzwsNMDzyDMBAswsNmxYmZAAsYmlZZMBBAMjBwMAjlZQMzMLG",
                     ["n"] = 1,
                 },
@@ -28241,14 +28260,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgBLzMz2MDAAAAAAAAAAAYZY0MmhhBMMMzMzwsNMDzyDMBAsYmNmxYmZAAsYmlZZMBBAMjBwMAjlZQMzMLG",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmx2MAAAAAAAAAAAALDjmxMMMghhZmZGmFmZYWMBAswsNmxMzMDAgFzsMLjJIAgZMAmBYsMDTMzMLG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmx2MAAAAAAAAAAAALDjmxMMMgxMjZmZGmFmZwiJAgFmtxMmZmZAAsYmlZbMBBAMjBwMAjlZQMzMLG",
-                    ["n"] = 1,
-                },
             },
             ["difficulty"] = "mythic",
         },
@@ -28262,11 +28273,11 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 2,
                 },
                 {
-                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxsMzMzwsNYwiJAAAAACwilZWmtZmAAwAGgZAjhxiMmBA",
+                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmllZshZmhZWW2mZswMaGzAGMYYZmZmhZZwwsYCAAAAgAsYZmlZbmJAAMgBYGwYYsIjZA",
                     ["n"] = 2,
                 },
                 {
-                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmllZshZmhZWW2mZswMaGzAGMYYZmZmhZZwwsYCAAAAgAsYZmlZbmJAAMgBYGwYYsIjZA",
+                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZZmxCzoZMDYwgxsMzMzwsNYwiJAAAAACwilZWmtZmAAwAGgZAjhxiMmBA",
                     ["n"] = 2,
                 },
                 {
@@ -28310,15 +28321,15 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxsMzMzwsNYwiJAAAAACwilZWmtZmAAwAGgZAjhxiMmBA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmllZshZmhZW22mZswMaGzAGMYMLzMzMMbDGsYCAAAAgAsYZmlZbmJAAMgBYGwYYsIjZA",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZZmxCzoZMDYwghlZmZGmtBDziJAAAAACwilZWmtZmAAwAGgZAjhxiMmBA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZZmxCzoZMDYwgxsMzMzwsNYwiJAAAAACwilZWmtZmAAwAGgZAjhxiMmBA",
                     ["n"] = 1,
                 },
                 {
@@ -28334,10 +28345,6 @@ RecommendedStatsData_TalentsBoss = {
                 {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZZmxCzoZMDYwgxsMzMzwsNYwiJAAAAACwilZWmtZmAAwAGgZAjhxiMmBA",
                     ["n"] = 3,
-                },
-                {
-                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxsMzMzwsNYwiJAAAAACwilZWmtZmAAwAGgZAjhxiMmBA",
-                    ["n"] = 2,
                 },
                 {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmllZshZmhZWW2mZswMaGzAGMYMmZmZY2GjBLmAAAAAIALWmZZ2mZCAADYAmBMGGLyYGA",
@@ -28376,6 +28383,10 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxsMzMzwsNYwiJAAAAACwilZWmtZmAAwAGgZAjhxiMmBA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwghlZmZGmtBDziJAAAAACwilZWmtZmAAwAGgZAjhxiMmBA",
                     ["n"] = 1,
                 },
@@ -28399,16 +28410,16 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZZmxCzoZMDYwAmlZmZGmtBDziJAAAAACwilZWmtZmAAwAGgZAjhxiMmBA",
                     ["n"] = 1,
                 },
+                {
+                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZZmxCzoZMDYwgxsMzMzMmNYwiJAAAAACwilZWmtZmAAwAGgZAjhxiMmBA",
+                    ["n"] = 1,
+                },
             },
             ["difficulty"] = "mythic",
         },
         ["ulatek"] = {
             ["n"] = 20,
             ["builds"] = {
-                {
-                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxsMzMzwsNYwiJAAAAACwilZWmtZmAAwAGgZAjhxiMmBA",
-                    ["n"] = 2,
-                },
                 {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmllZshZmhZWW2mZswMaGzAGMYMmZmZY2GjBLmAAAAAIALWmZZ2mZCAADYAmBMGGLyYGA",
                     ["n"] = 1,
@@ -28423,10 +28434,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxYmZmhZbMGsYCAAAAgAsYZmlZbmJAAMgBYGwYYsIjZA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmllZshZmhZW2WmZswMaGzAGMYMLzMzMMbDGsYCAAAAgAsYZmlZbmJAAMgBYGwYYsIjZA",
                     ["n"] = 1,
                 },
                 {
@@ -28458,6 +28465,10 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxsMzMzwsNYwiJAAAAACwilZWmtZmAAwAGgZAjhxiMmBA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCDNjZADGwsMzMzwsNYYWegJAAAAACwilZWmtZmAAwAGgZAjhxiMmBA",
                     ["n"] = 1,
                 },
@@ -28479,6 +28490,14 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZZmxCzoZMDYwAGzMzMMbjxwsYCAAAAgAsYZmlZbmJAAMgBYGwYYsIjZA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZZmxCDNjZADGwsMzMzwsNYYWegJAAAAACwilZWmtZmAAwAGgZAjhxiMmBA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MLDbWMmZWWG2wYGmZZZbmxCzoZMDYwghlZmZGmtBDWMBAAAAQAWsMzysNzEAAGwAMDYMMWmMmBA",
                     ["n"] = 1,
                 },
             },
@@ -28629,7 +28648,7 @@ RecommendedStatsData_TalentsBoss = {
             ["builds"] = {
                 {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxsMzMzwsNYwiJAAAAACwilZWmtZmAAwAGgZAjhxiMmBA",
-                    ["n"] = 3,
+                    ["n"] = 2,
                 },
                 {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZZmxCDNjZADmNGWmZmZY2wMMLmAAAAAIALWmZZ2mZCAADYAmBMGGLyYGA",
@@ -28699,6 +28718,10 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZZmxCzoZMDYwgxsMzMzwsNYwiJAAAAACwilZWmtZmAAwAGgZAjhxiMmBA",
                     ["n"] = 1,
                 },
+                {
+                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2MwmFzYmllZshZmhZWW2mZswMaGzAGMgZZmZmhZbwglHYCAAAAgAsYZmlZbmJAAMgBYGwYYsIjZA",
+                    ["n"] = 1,
+                },
             },
             ["difficulty"] = "mythic",
         },
@@ -28707,7 +28730,7 @@ RecommendedStatsData_TalentsBoss = {
             ["builds"] = {
                 {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxsMzMzwsNYwiJAAAAACwilZWmtZmAAwAGgZAjhxiMmBA",
-                    ["n"] = 3,
+                    ["n"] = 2,
                 },
                 {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZbmxCzoZMDYwgxYmZmhZbMGsYCAAAAgAsYZmlZbmJAAMgBYGwYYsIjZA",
@@ -28771,6 +28794,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgB2mZZYziZMzyyM2wMzsNzstsMzYhhmxMgBDGWmZmZY2GMMLPwEAAAAABYxyMLz2MTAAYAAmBMGGLyYGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAghx2YZYzixMzyyM2wYGmZZZZmxCzoZMDYwwwYmZmhZbMGsYCAAAAgAsYZmlZbmJAAMgBYGwYYsIjZA",
                     ["n"] = 1,
                 },
             },
@@ -28865,7 +28892,7 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAY2egxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
-                    ["n"] = 2,
+                    ["n"] = 3,
                 },
                 {
                     ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2mxMzMmZmMmZAAAAAAAzixsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
@@ -28873,10 +28900,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMzyMmZmxMzEmZAAAAAAAziZmtZwM4BmxyMzDMDzMGzyALziZMMbaaMzMzwGAAAAAAAAzMYAAAAYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2mxMzMzMzkhZAAAAAAAzmxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
                     ["n"] = 1,
                 },
                 {
@@ -29075,14 +29098,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAY2egxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
-                    ["n"] = 3,
+                    ["n"] = 4,
                 },
                 {
                     ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2mxMzMmZmMmZAAAAAAAzixsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2mxMzMzMzkhZAAAAAAAzmxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
                     ["n"] = 1,
                 },
                 {
@@ -29137,14 +29156,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAY2egxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
-                    ["n"] = 2,
+                    ["n"] = 3,
                 },
                 {
                     ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2mxMzMmZmMmZAAAAAAAzixsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2mxMzMzMzkhZAAAAAAAzmxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
                     ["n"] = 1,
                 },
                 {
@@ -29180,7 +29195,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZWmxMzMmZmwMDAAAAAAY2MzsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
+                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZWmxMzMzYmwMDAAAAAAY2MzsNDjZ2mZGLzMmxyMDzsMz2MYYssxkMmZmhFAAAAAAAwMDwAAAAwA",
                     ["n"] = 1,
                 },
             },
@@ -29252,16 +29267,12 @@ RecommendedStatsData_TalentsBoss = {
             ["n"] = 20,
             ["builds"] = {
                 {
-                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAYWegxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
+                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAY2egxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
                     ["n"] = 3,
                 },
                 {
-                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAY2egxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
-                    ["n"] = 2,
-                },
-                {
-                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZWmxMzMzMzkxMDAAAAAAY2MmtZYMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
-                    ["n"] = 2,
+                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAYWegxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
+                    ["n"] = 3,
                 },
                 {
                     ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMzyMmZmxMzEmZAAAAAAAziZmtZwM4BmxyMzDMDzMGzyALziZMMbaaMzMzwGAAAAAAAAzMYAAAAYA",
@@ -29281,6 +29292,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZWmxMzMmZmwMDAAAAAAY2MmtZYmZ2mZGLzMmxyMDzsMz2MYYssxkMmZMjFAAAAAAAwMDwAAAAwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZWmxMzMzMzkxMDAAAAAAY2MmtZYMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
                     ["n"] = 1,
                 },
                 {
@@ -29323,14 +29338,10 @@ RecommendedStatsData_TalentsBoss = {
             ["builds"] = {
                 {
                     ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAY2egxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
-                    ["n"] = 3,
+                    ["n"] = 4,
                 },
                 {
                     ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZ2MmZmxMzkxMDAAAAAAYWegxsNDzMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
-                    ["n"] = 2,
-                },
-                {
-                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZWmxMzMzMzkxMDAAAAAAY2MmtZYMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
                     ["n"] = 2,
                 },
                 {
@@ -29351,6 +29362,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZWmxMzMmZmwMDAAAAAAY2MmtZYmZ2mZGLzMmxyMDzsMz2MYYssxkMmZMjFAAAAAAAwMDwAAAAwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEkAAAAAAAAAAAAAAAAAAAAAAYgZmZWmxMzMzMzkxMDAAAAAAY2MmtZYMz2MzYZmxMWmZYmlZ2mBDjlNmkxMjhFAAAAAAAwMDwAAAAwA",
                     ["n"] = 1,
                 },
                 {
@@ -29839,7 +29854,7 @@ RecommendedStatsData_TalentsBoss = {
             ["builds"] = {
                 {
                     ["code"] = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMDzwMDMYMTzMzMNzM2mZmZmZmZmZGwMmxYmZZmZgBGD2glxox2AyMIYDDMzghHA",
-                    ["n"] = 8,
+                    ["n"] = 7,
                 },
                 {
                     ["code"] = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMDzwMgBjZaMzMNzM2mZmZmZmZmZGwMmZGzMLzMDMwYwGsMGN2GQmBBbYgZGMjHA",
@@ -29887,6 +29902,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZMDmZYGmBMYMTzMzMNzM2mZmZmZmZmZGwMmxYmZZmZgBGD2glxox2AyMIYDDMzghHA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMDzwMwMYMTjZmpZmx2MzMzMzMzMzAMzMzYmZZmZgBGD2glxox2AyMIYDDMzghHA",
                     ["n"] = 1,
                 },
             },
@@ -30101,7 +30120,7 @@ RecommendedStatsData_TalentsBoss = {
             ["builds"] = {
                 {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGGzMDjZLDADYYDsxyMmZZ2mZmtGAAQALAwmhxMmhZAAMzwMGjGA",
-                    ["n"] = 2,
+                    ["n"] = 3,
                 },
                 {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwAAA2mZmZMjZGLGzMDLDmZxMNxsMjZmhxslBgBgNwmZZGzsMbzMzWDAAIgFAYjxYYmxMAAmZYGjRDA",
@@ -30113,10 +30132,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwAAA2mZmZMjZGLGzMDLDmZxMNxYGzMDjZLDADYYDsx2MmZZ2mZmtGAAQALAwmhxMmhZAAMzwMGjGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGzYmZYMbZAYADbgNWmxMLz2Mzs1AAACYBA2YMmxMMDAgZGmxY0A",
                     ["n"] = 1,
                 },
                 {
@@ -30179,7 +30194,7 @@ RecommendedStatsData_TalentsBoss = {
             ["builds"] = {
                 {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGGzMDjZLDADYYDsxyMmZZ2mZmtGAAQALAwmhxMmhZAAMzwMGjGA",
-                    ["n"] = 3,
+                    ["n"] = 5,
                 },
                 {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwAAA2mZmZMjZGLGzMDLDmZxMNxYGzMDjZLDADYYDsx2MmZZ2mZmtGAAQALAwmhxMmhZAAMzwMGjGA",
@@ -30187,14 +30202,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmJxsNjZmhxslBgBgNwmxMmZZ2mZmtGAAQALAwmZMmxMMDAgZGmxgGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGzYmZYMbZAYADbgNWmxMLz2Mzs1AAACYBA2YMmxMMDAgZGmxY0A",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxMjZYZwMLzoJGzYmZGjZLDADYYDsxywMLz2Mzs1AAACYhFAbwYGzwMAAmZYGjRDA",
                     ["n"] = 1,
                 },
                 {
@@ -30257,7 +30264,7 @@ RecommendedStatsData_TalentsBoss = {
             ["builds"] = {
                 {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGGzMDjZLDADYYDsxyMmZZ2mZmtGAAQALAwmhxMmhZAAMzwMGjGA",
-                    ["n"] = 3,
+                    ["n"] = 4,
                 },
                 {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwAAA2mZmZMjZGLGzMDLDmZxMNxsMjZmhxslBgBgNwmZZGzsMbzMzWDAAIgFAYjxYYmxMAAmZYGjRDA",
@@ -30319,10 +30326,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzgZGzYWGMzyMSMMmZGGzWGAGwwGYzsMMzysNzMbNAAgAWAgNDjZMDzAAYmhZMGNA",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGzYmZYMbZAYAYDsxyMmZZ2mZmtGAAQALgB2wMmxMMDAgZGMGjGA",
-                    ["n"] = 1,
-                },
             },
             ["difficulty"] = "mythic",
         },
@@ -30331,7 +30334,7 @@ RecommendedStatsData_TalentsBoss = {
             ["builds"] = {
                 {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGGzMDjZLDADYYDsxyMmZZ2mZmtGAAQALAwmhxMmhZAAMzwMGjGA",
-                    ["n"] = 2,
+                    ["n"] = 4,
                 },
                 {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwAAA2mZmZMjZGLGzMDLDmZxMNxsMjZmhxslBgBgNwmZZGzsMbzMzWDAAIgFAYjxYYmxMAAmZYGjRDA",
@@ -30391,14 +30394,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzgZMzYxMzMjHYZwMLmJxYGzMDjZLDADYYDsxyMmZZ2mZmtGAAQALgB28AMmxMMDAgZGMGjGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzgZGzYWGMzyMaihxMzwY2yAwAG2AbsMMzysNzMbNAAgAWAgNDjZMDzAAYmhZMGNA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzgZGzYWGMzyMSMMmZGGzWGAGwwGYzsMMzysNzMbNAAgAWAgNDjZMDzAAYmhZMGNA",
                     ["n"] = 1,
                 },
             },
@@ -30506,10 +30501,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGzYmZYMbZAYADbgNWmxMLz2Mzs1AAACYBA2YMmxMMDAgZGmxY0A",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGGmZYMbZAYADbgNWmxMLz2Mzs1AAACYBA2MMmxMjZAAMzwMGjGA",
                     ["n"] = 1,
                 },
@@ -30542,6 +30533,14 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyMzMjZMzMYMGzywMzyMaiZzYmZYMbZAYADbgNWmxMLz2Mzs1AAACYBA2gxMmZYAAMzwMGjGA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYBmZYZwMLmJxsNjZmhxslBgBMsB2YZmZmlZbmZ2aAAABswCgNPAjZMDzAAYmhZMGNA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAwyMzMjZMzgZGGzygZWmZSMMmZGGzWGAGwwGYzsMMzysNzMbNAAgAWAgNDjZMDzAAYmhZMGNA",
                     ["n"] = 1,
                 },
@@ -30551,10 +30550,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYBmZYZwMLmJxsNjZmhxslBgBMsB2YZmZmlZbmZ2aAAABswCgNMjZMDzAAYmhZMGNA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAw2MzMjZMzYxYmZYZwMLmpJGzYmZYMbZAYADbgNWmxMLz2Mzs1AAACYBA2gxMmZMDAgZGmxY0A",
                     ["n"] = 1,
                 },
             },
@@ -31015,11 +31010,11 @@ RecommendedStatsData_TalentsBoss = {
             ["difficulty"] = "mythic",
         },
         ["ulatek"] = {
-            ["n"] = 19,
+            ["n"] = 18,
             ["builds"] = {
                 {
                     ["code"] = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYGjZ2mZxgZZZgZDGNRzMzyMzMzYMjZAAAAAAzMbzA22mZwY2GATBAAA2wMDwiBGwiFDwMDgB",
-                    ["n"] = 4,
+                    ["n"] = 3,
                 },
                 {
                     ["code"] = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMPwMLLDMbGGNRzMzyMzMzYMjZAAAAAAGbGwy2MDGzyAYKAAAwGmZAWMwAWsAwMDgB",
@@ -31356,7 +31351,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzohG2AAwMmZmZ5BmhZmZGzMYmxMDzMmZmZxMzYGzgx0MAAAAAAAAYMmBYmNCDzCYbAYA",
+                    ["code"] = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzohG2AAwMmZmZ5BmhZmZGzMYmxMDzMmZmZxMGzYGMmmBAAAAAAAAzDMmBYmNCDzCYbAYA",
                     ["n"] = 1,
                 },
             },
@@ -31942,6 +31937,10 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhBAAAAsYmNYADY2YCZWAgZZmZmZstYCzMGLzMzMGWmlxs8AMmZWGAYGAYmxwMGA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZZZMmhBAAAAsYmNYADY2YCZWAgZZmZGjtFTbMzYsMzMzYYZWwyMzYmZBAYGDgZGDDD",
                     ["n"] = 1,
                 },
@@ -31955,6 +31954,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhBAAAAsYmNYADY2YCZWAAbzMzYstMTLMzsxyMzMjZYWGzywYmZbAADDgZGDz4DA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZZZMmhBAAAAsYmNYADY2YCZWAALzMzMzstMTMzMbsMzMzYglZmlhxMzyAAGAYmxwM+AA",
                     ["n"] = 1,
                 },
                 {
@@ -31985,14 +31988,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZZZMmhBAAAAsYmNYADY2YCZWAAbzMzMjlFTYmxYZmZmxMWmlZmlhxMzyAAGAYmxwM+AA",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZbZMmhBAAAAsYmNYADY2YCZWAgZbmZGjtFTYmxYZmZmxMWmlZmlhxMzyAAGAYmxwM+AA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMGjZZZZMmhBAAAAsYmNYADY2YCZWAgZbmZGjtFTLMzYsMzMzYGLzyMzywYmZZAAAgZGDz4DA",
-                    ["n"] = 1,
-                },
             },
             ["difficulty"] = "mythic",
         },
@@ -32021,6 +32016,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZbmZGzstYiZmZZsMzYGDLzywiZGmZZAADAMzYYYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZmZstYajZGjlZGzYYZWGWMzwMLDAMDAMzYYYA",
                     ["n"] = 1,
                 },
                 {
@@ -32065,10 +32064,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGjtFTYmZZsMzMzYYZWmxiZGmZZAADAMzYYYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZbmZGjtFTbMzsMWmZmZMsMLDLmZYmlBAMAwMjhhB",
                     ["n"] = 1,
                 },
             },
@@ -32176,7 +32171,11 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhBAAAAsYmNYADY2YCZWAgZbmZGjtFTYmZZsMzMzYYZWmZWGGzMbDAYAgZGDz4DA",
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGjtFTYmZZsMzMzYYZWmxiZGmZbAADAMzYYYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZmZstYCzMGLz8AzMGWmlZsYmhZWGAYGAYmxwwA",
                     ["n"] = 1,
                 },
                 {
@@ -32227,16 +32226,16 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZbmZGjtFTLMzsMWmZmZMsMLDLmZYmlBAMAwMjhhB",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGjtFTbMzsMWmZmZMsMLDLmZYmlBAMAwMjhhB",
-                    ["n"] = 1,
-                },
             },
             ["difficulty"] = "mythic",
         },
         ["the-coiled-altar"] = {
             ["n"] = 20,
             ["builds"] = {
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGjtlZahZmNziZmZMDWGWMzwMLDAYGAMzYYYA",
+                    ["n"] = 2,
+                },
                 {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZbmZGjtFTLMzsMWmZmZMsMLDLmZYmlBAMAwMjhhB",
                     ["n"] = 2,
@@ -32250,15 +32249,15 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGzstMTLmZmFWmxMjBzywiZGmZZAgZAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGjtFTbMzsMWmZmZMsMLDLmZYmlBAMAwMjhhB",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZbmZGjtFTLMzsMWmZmZMsMLDLmZYmlBAMAwMjhhB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZZmZGjtlZahZmNziZmZMDWGWMzwMLDAYGAMzYYYA",
                     ["n"] = 1,
                 },
                 {
@@ -32305,14 +32304,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAAbzMzYmtlZazMzswyMzMjBWGWMzwMLDAMDAMzYYYA",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZbmZGjtlZahZmNWmZmZMDWGWMzwMbDAYYAMzYYYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbLzMmZmZZbZMMjBAAAAsYmNYADY2YCZWAgZbmZGjtlZahZmFzmZmZMDWGWMzwMLDAYGAMzYYYA",
-                    ["n"] = 1,
-                },
             },
             ["difficulty"] = "mythic",
         },
@@ -32320,12 +32311,12 @@ RecommendedStatsData_TalentsBoss = {
             ["n"] = 20,
             ["builds"] = {
                 {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstMTbMzsxyMzMjZwyMzywYmZBAYAgZGDDD",
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstYajZmlx2MzMjhlZZMLDjZmFAgBAmZMMMA",
                     ["n"] = 3,
                 },
                 {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstYajZmlx2MzMjhlZZMLDjZmFAgBAmZMMMA",
-                    ["n"] = 3,
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYstMTbMzsxyMzMjZwyMzywYmZBAYAgZGDDD",
+                    ["n"] = 2,
                 },
                 {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYsx0GzMbjlZmZmHYYZWGzywYmZBAYAgZGDDD",
@@ -32333,6 +32324,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstMTbMzsxyMzMjZwyMzywYmZBAYAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAYZmZmZmtlZazMzglZegZGDmlxsMMmZWAAzAAzMGGGA",
                     ["n"] = 1,
                 },
                 {
@@ -32368,15 +32363,15 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstYajZGjlZmZGDLWmZWGGzMLAAzAgZGDDD",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstMTYmBLzMzMmZWsMzsMMmZWAAGAYmxwwA",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMLzMzYmtlZazMzgtZmZGDmlxsMMmZWAAGAYmxwwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstYajZGjlZmZGDLWmZWGGzMLAAzAgZGDDD",
                     ["n"] = 1,
                 },
             },
@@ -32528,10 +32523,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CsQAAAAAAAAAAAAAAAAAAAAAAwMzMzMNbMMzMmlZZmZmZxYWW8ADAAmxYmZWsADMLGNmBwsFbMAAwYgxGAwMDmZGMAAAMzMzAAYMM",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZmZWmlZmZmFjZZxMAAYGjZmZxGMwsY0YGAzWsxAAAjBYDAYmBzMjxAAAwMzMAAMGG",
                     ["n"] = 1,
                 },
@@ -32593,6 +32584,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZmpZjxyMzMz2sMzMzsYMLLmBAAzYMzMLWgBmFjGzAY2iNGAAYMAbAAzMYmZwAAAwMzMAAMGG",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNLMz2MzMzysMzMzsYMLLmBAAzYMzMLWgBmFjGzAY2iNGAAYMAbAAzMYMjZAAAwMzMAAMGG",
                     ["n"] = 1,
                 },
             },
@@ -32709,7 +32704,7 @@ RecommendedStatsData_TalentsBoss = {
             ["difficulty"] = "heroic",
         },
         ["nekzali-the-soulcoiler"] = {
-            ["n"] = 7,
+            ["n"] = 8,
             ["builds"] = {
                 {
                     ["code"] = "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNLMjZmZmlZZmZmZxY2WYAAwMzYmZWsADMLGNmBwsFbMAAwYgxGAwMDmZGzAAAgZmZAAYMM",
@@ -32717,6 +32712,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbmx2MzMzysMzMzsYMbLmBAAzYMzMLWgBmFjGzAY2iNGAAYMAbAAzMYMjxAAAwMzMAAMGG",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CsQAAAAAAAAAAAAAAAAAAAAAAYmxMzoZjhZmZmlZZmZmZxY2WMDAAmxYmZWsBDMLGNmBwsFbMAAwYA2AAmZwMzYMAAAMzMDAAjhB",
                     ["n"] = 1,
                 },
                 {
@@ -32743,7 +32742,7 @@ RecommendedStatsData_TalentsBoss = {
             ["difficulty"] = "mythic",
         },
         ["the-coiled-altar"] = {
-            ["n"] = 9,
+            ["n"] = 8,
             ["builds"] = {
                 {
                     ["code"] = "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNLMjZmZmlZZmZmZxYWWYAAwMzYmZWsADMLGNmBwsFbMAAwYgxGAwMDmZGzAAAgZmZAAYMM",
@@ -32751,10 +32750,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMzsMLzMzMLGz2iHYAAwMzYmZWsADMLGNmBwsFbMAAwYA2AAmZwMzYMbAAAmZmBAgxwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CsQAAAAAAAAAAAAAAAAAAAAAAwMmZmpZjx2MzYWmlZmZmFjZZxDMAAYGjZmZxGMwsY0YGAzWsxAAAjBGbAAzMYmZMGAAAmZmBAgxwA",
                     ["n"] = 1,
                 },
                 {
@@ -33052,15 +33047,19 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzYmZMzGAAAAAmBAAmBMYM1MzMzAAAAgZMzMmZWGzMwMLGYMjFWIDMDDNiFMGzMAwA",
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZGjZMzGAAAAAAAAmhx8AYM1YmZGAAAAMzMzMmZWGzMwMMwYGLsQGYGGaELYmxMDAM",
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZmZMjZAAAAAAAAYmZGYwYqxMzMAAAAYGzMjZmlxMDMDDMmxCLkBmhhGxCmZMzAAD",
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZGjZMzGAAAAAMAAwMDMYM1MzMzAAAAgZMzMmZWGzMwMMwYGLsQGYGGaELYmxMDAM",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZmZMjZAAAAAAAAwMDjZwYqxMzMAAAAYGzYMzsMmZgZYgxMWYhMwMM0IWwMjZGAYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmxMbzMzgBzMLzMjZMDAAAAAAAAmZGYwYqZmZmBAAAAzYmZMzsMmZgZMDMmxCLkBmhhGxCmZMzAAD",
                     ["n"] = 1,
                 },
                 {
@@ -33092,6 +33091,10 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMmZbmZGMYmZZmZmZMzGAAAAAmBAAMDMYM1MzMzAAAAgZMzMmZWGzMwMLGYMjFWIDMDDNiFMGzMAwA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzYmZMzGAAAAAAAAmhxMYM1MzMzAAAAgZMjxMzyYmBmZxAjZswCZgZYoRsgxYmBAG",
                     ["n"] = 1,
                 },
@@ -33109,14 +33112,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZmZMjZAAAAAAAAAz4BMDGTNzMzMAAAAYGzMjZmlxMDMDDMmxCLkBmhhGxCmZMzAAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZmZmZMDAAAAAAAAMDjZw4BqxMzMAAAAYmZGjZmlxMDMDDMmxCLkBmhhGxCGzMzAAD",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzMzMjZAAAAAAAAgZGPgZwYqZmZmBAAAAzYGjZmlxMDMziBGzYhFyAzwQjYBjxMDAM",
                     ["n"] = 1,
                 },
             },
@@ -33138,15 +33133,19 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZGjZMzGAAAAAAAAmhx8AYM1YmZGAAAAMzMzMmZWGzMwMMwYGLsQGYGGaELYmxMDAM",
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZGzMjZ2AAAAAAAAwMMmHAjpGzMzAAAAgZmZmxMzyYmBmhBGzYhFyAzwQjYBjxMDAM",
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzYmZMzGAAAAAMAAwMDMYM1MzMzAAAAgZMzMmZWGzMwMLGYMjFWIDMDDNiFMGzMAwA",
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZGzMjZ2AAAAAgBAAmZgBjpmZmZGAAAAMjZmxMzyYmBmhBGzYhFyAzwQjYBjxMDAM",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZmZmZMDAAAAAAAAmZYMDGTNmZmBAAAAzYGjZmlxMDMDDMmxCLkBmhhGxCGjZGAYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMmZbmZGMDzMLzMzMjZAAAAAAAAwMzADGTNzMzMAAAAYGzMjZmlxMDMjZgxMWYhMwMM0IWwYMzAAD",
                     ["n"] = 1,
                 },
                 {
@@ -33195,10 +33194,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZGjZMzGAAAAAAAAzM8AmxYM1YmZGAAAAMjZMmZ2GzMwMMwYGLsQGYGGaELYmxMDAM",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzMzMjZAAAAAAAAgZGPgZwYqZmZmBAAAAzYGjZmlxMDMziBGzYhFyAzwQjYBjxMDAM",
                     ["n"] = 1,
                 },
             },
@@ -33302,15 +33297,19 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzYmZMzGAAAAAmBAAmBMYM1MzMzAAAAgZMzMmZWGzMwMLGYMjFWIDMDDNiFMGzMAwA",
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzYmZMzGAAAAAAAAmhx8AYM1YmZGAAAAMzMzMmZWGzMwMLGYMjFWIDMDDNiFMGzMAwA",
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzMzMjZAAAAAAAAYmZGYwYqxMzMAAAAYGzMjZmlxMDMziBGzYhFyAzwQjYBjxMDAM",
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzYmZMzGAAAAAMAAwMDMYM1MzMzAAAAgZMzMmZWGzMwMLGYMjFWIDMDDNiFMGzMAwA",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzMzMjZAAAAAAAAwMDjZwYqxMzMAAAAYGzYMzsMmZgZWMwYGLsQGYGGaELYMmZAgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmxMbzMzgBzMLzMjZMDAAAAAAAAmZGYwYqZmZmBAAAAzYmZMzsMmZgZMDMmxCLkBmhhGxCmZMzAAD",
                     ["n"] = 1,
                 },
                 {
@@ -33342,6 +33341,10 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZmZMjZAAAAAADAAmZ4BMDGTNmZmBAAAAzYGjZmlxMDMDDMmxCLkBmhhGxCmZMzAAD",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzYmZMzGAAAAAAAAmZ8AmBjpGzMzAAAAgZMzMmZWGzMwMLGYMjFWIDMDDNiFMGzMAwA",
                     ["n"] = 1,
                 },
@@ -33361,14 +33364,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMmZmZbmZGMYmZZmZMjZAAAAAAAAAz4BMDGTNzMzMAAAAYGzMjZmlxMDMDDMmxCLkBmhhGxCmZMzAAD",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzMzMjZAAAAAAAAgZGmZwYqxMzMAAAAYGzMjZmlxMDMziBGzYhFyAzwQjYBjxMDAM",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAwMzMbzMzMWGYmlZMmxMAAAAAgBAAmBMYM1YmZGAAAAMjZmxMzyMzMwMmBGzYhFyAzwQjYBzMmZAGM",
-                    ["n"] = 1,
-                },
             },
             ["difficulty"] = "mythic",
         },
@@ -33384,15 +33379,19 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzYmZMzGAAAAAmBAAmBMYM1MzMzAAAAgZMzMmZWGzMwMLGYMjFWIDMDDNiFMGzMAwA",
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzYmZMzGAAAAAAAAmhx8AYM1YmZGAAAAMzMzMmZWGzMwMLGYMjFWIDMDDNiFMGzMAwA",
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzMzMjZAAAAAAAAYmZGYwYqxMzMAAAAYGzMjZmlxMDMziBGzYhFyAzwQjYBjxMDAM",
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzYmZMzGAAAAAMAAwMDMYM1MzMzAAAAgZMzMmZWGzMwMLGYMjFWIDMDDNiFMGzMAwA",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzMzMjZAAAAAAAAwMDjZwYqxMzMAAAAYGzYMzsMmZgZWMwYGLsQGYGGaELYMmZAgB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMmZbmZGMYmZZmZmZMDAAAAAAAAmZGYwYqZmZmBAAAAzYmZMzsMmZgZWmBGzYhFyAzwQjYBjxMDAM",
                     ["n"] = 1,
                 },
                 {
@@ -33412,7 +33411,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzMzMjZAAAAAAAAwMz4BMDGTNmZmBAAAAzYGjZmlxMDMziBGzYhFyAzwQjYBjxMDAM",
+                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzMzMjZAAAAAAAAgZGYYGTNzMzMAAAAYGzMjZmlxMDMziBGzYhFyAzwQjYBjxMDAM",
                     ["n"] = 1,
                 },
                 {
@@ -33449,10 +33448,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAgxMbzMzMWGYmlZmZmxMAAAAAgBAAmZgBjpmZmZGAAAAMjZmxMzyYmxwMLGYMjFWIDMDDNiFMGzMAwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgBzMLzYmZMzGAAAAAAAAmhHwMMjpmZmZGAAAAMjZMmZWGzMwMLGYMjFWIDMDDNiFMGzMAwA",
                     ["n"] = 1,
                 },
             },
@@ -33772,11 +33767,11 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZGmxMjhZbmZmmZzMjZmxAAAAAmZmZGzMDzYMAYmZmZGAAADMwMW0YZDktBsBYGzAAAmZghB",
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyYmxMmZMMbzMz0MbmZMmxMAAAAwgZmZmZMzMjBAzMzMzMAAADMwMW0YZDktBsBYGAAAmZwgB",
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyYmxMmZmhZbmZmmZzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDGMA",
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMbzMz0MLmZMzMAAAAAmZmZmZmZYGjBAjZmZGAAADMwMW0YZDktBsBYGzAAAmZwgB",
                     ["n"] = 1,
                 },
                 {
@@ -34014,7 +34009,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMjhZbmZmmZbmZMmxAAAAAmZmZmZmZYGjBAjZmZGAAADMwMW0YZDktBsBYGzAAAmZAjB",
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZmxMmZMMbzMz0MbzYMmxAAAAAmZmZmZmZYGjBAjZmZGAAADMwMW0YZDktBsBYGzAAAmZAjB",
                     ["n"] = 1,
                 },
                 {
@@ -34030,7 +34025,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyYmxMmZmhZbmZmmZzMjZmBAAAAwMMzMzMjZGDAYmZmZGAAADMwMW0YZDktBsBYGDAAwMDGMA",
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzMmxMjhZbmZmmZbmZMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
                     ["n"] = 1,
                 },
                 {
@@ -34092,7 +34087,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMjhZbmZmmZbmZMmxAAAAAmZmZmZmZYGjBAjZmZGAAADMwMW0YZDktBsBYGzAAAmZAjB",
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZmxMmZMMbzMz0MbzYMmxAAAAAmZmZmZmZYGjBAjZmZGAAADMwMW0YZDktBsBYGzAAAmZAjB",
                     ["n"] = 1,
                 },
                 {
@@ -34104,7 +34099,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMbzMz0MbmZMzMAAAAAmZmZmZmZYGjBAjZmZGAAADMwMW0YZDktBsBYGzAAAmZwgB",
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMbzMz0MLmZMzMAAAAAmZmZmZmZYGjBAjZmZGAAADMwMW0YZDktBsBYGzAAAmZwgB",
                     ["n"] = 1,
                 },
                 {
@@ -34174,7 +34169,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMjhZbmZmmZbmZMmxAAAAAmZmZmZmZYGjBAjZmZGAAADMwMW0YZDktBsBYGzAAAmZAjB",
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWmZmxMmZMMbzMz0MbzYMmxAAAAAmZmZmZmZYGjBAjZmZGAAADMwMW0YZDktBsBYGzAAAmZAjB",
                     ["n"] = 1,
                 },
                 {
@@ -34186,7 +34181,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMbzMz0MbmZMzMAAAAAmZmZmZmZYGjBAjZmZGAAADMwMW0YZDktBsBYGzAAAmZwgB",
+                    ["code"] = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbmZmmZbmZMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
                     ["n"] = 1,
                 },
                 {
@@ -34415,7 +34410,7 @@ RecommendedStatsData_TalentsBoss = {
     },
     ["PRIEST_DISCIPLINE_RAID"] = {
         ["the-lost-explorers"] = {
-            ["n"] = 15,
+            ["n"] = 17,
             ["builds"] = {
                 {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmxYmHwgZbmZmZmZAAAAAAAAAAYGWmBzMzwMmZATz0YwMDACgZb2WAjNDAAjxMjBzgZGMTwA",
@@ -34423,6 +34418,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzwMbmtZmZmZmBAAAAAAAAAgZYZGMzMDzwMGMNTjBzMAIAmtZbDM2MAAMmZmxgZwMDMBD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBz8AmhZbmZmZmZAAAAAAAAAAYGWmBzMzwMmZATz0YwMDACgZb22AjNDAAjxMjBzgZGMTwA",
                     ["n"] = 1,
                 },
                 {
@@ -34435,6 +34434,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmxYmHwgZbmZmZmZAAAAAAAAAAYGWmBzMzwMzMDYamYwMDACgZb22AjNDAAjZmZMYGMzATwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYMGzgZbmtZmZGzMDAAAAAAAAAgZYZGMzMDzMmBMNTMYmBABwsNbbgxmBAgxMzMGMDmZwMBD",
                     ["n"] = 1,
                 },
                 {
@@ -34481,7 +34484,7 @@ RecommendedStatsData_TalentsBoss = {
             ["difficulty"] = "mythic",
         },
         ["sszorak"] = {
-            ["n"] = 12,
+            ["n"] = 11,
             ["builds"] = {
                 {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmxYmHwgZbmZmZmZAAAAAAAAAAYGWmBzMzwMmZATz0YwMDACgZb2WAjNDAAjxMjBzgZGMTwA",
@@ -34509,10 +34512,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzMGMbzMzMzMDAAAAAAAAAAzwyMYmZGmZmZATzEDmZAQAMbz2GYsZAAYMzMjBzgZGYCG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYMYGMbzsNzMzMzMDAAAAAAAAAgZYZGMzMDzMmBMNTMYmBABwsNbbgxmBAgxMzMGMDmZwMBD",
                     ["n"] = 1,
                 },
                 {
@@ -34570,7 +34569,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmxYmHwgZbmZmZmZAAAAAAAAAAYGWmBzMzwMMDYamGDmZAQAMbz2CYsZAAYMmZMMzgZGMTwA",
+                    ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzgZbmtZmZmZmBAAAAAAAAAgZYZGMzMDzYmBMNTzMYmBABwsNbbgxmBAgxYmxgZwMDMBD",
                     ["n"] = 1,
                 },
                 {
@@ -34593,7 +34592,7 @@ RecommendedStatsData_TalentsBoss = {
             ["difficulty"] = "mythic",
         },
         ["nekzali-the-soulcoiler"] = {
-            ["n"] = 11,
+            ["n"] = 12,
             ["builds"] = {
                 {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzMGMbzMzMzMDAAAAAAAAAAzwyMYmZGmxMDYamGDmZAQAMbz2CYsZAAYMmZMYGMzgZCG",
@@ -34601,6 +34600,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzwMbmtZmZmZmBAAAAAAAAAgZYZGMzMDzwMGMNTjBzMAIAmtZbDM2MAAMmZmxgZwMDMBD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBz8AmhZbmZmZmZAAAAAAAAAAYGWmBzMzwMmZATz0YwMDACgZb22AjNDAAjxMjBzgZGMTwA",
                     ["n"] = 1,
                 },
                 {
@@ -34639,7 +34642,7 @@ RecommendedStatsData_TalentsBoss = {
             ["difficulty"] = "mythic",
         },
         ["the-coiled-altar"] = {
-            ["n"] = 18,
+            ["n"] = 19,
             ["builds"] = {
                 {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzgZbmtZmZmZmBAAAAAAAAAgZYZGMzMDzYmBMNTzMYmBABwsNbLgxmBAgxYmxgZwMDGBD",
@@ -34690,6 +34693,10 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzwMmZbmZmZmZAAAAAAAAAAYGWmBzMzwMMDMTz0MDmZAQAMbz2GYsZAAYMmZMYGMzgRwA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBz8AMmZbmZmZmZAAAAAAAAAAYGWmBzMzwMMDMTz0YwMDACgZb22AjNDAAjxMjBzgZGMTwA",
                     ["n"] = 1,
                 },
@@ -34705,7 +34712,7 @@ RecommendedStatsData_TalentsBoss = {
             ["difficulty"] = "mythic",
         },
         ["entombed-sentinels"] = {
-            ["n"] = 14,
+            ["n"] = 15,
             ["builds"] = {
                 {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzwMmZbmZmZmZAAAAAAAAAAYGWmBzMzwMMDYammZwMDACgZb2WAjNDAAjxMjBzgZGMTwA",
@@ -34725,6 +34732,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzMGMbzMzMzMDAAAAAAAAAAzwyMYmZGmZmZATzEDmZAQAMbz2GYsZAAYMzMjBzgZGYCG",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYMYGMbzsNzMzMzMDAAAAAAAAAgZYZGMzMDzMmBMNTMYmBABwsNbbgxmBAgxMzMGMDmZwMBD",
                     ["n"] = 1,
                 },
                 {
@@ -34767,7 +34778,7 @@ RecommendedStatsData_TalentsBoss = {
             ["difficulty"] = "mythic",
         },
         ["vashnik-the-malignant"] = {
-            ["n"] = 14,
+            ["n"] = 15,
             ["builds"] = {
                 {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzwMmZbmZmZmZAAAAAAAAAAYGWmBzMzwMMDYammZwMDACgZb2WAjNDAAjxMjBzgZGMTwA",
@@ -34795,6 +34806,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYmBzMGMbzMzMzMDAAAAAAAAAAzwyMYmZGmZmZATzEDmZAQAMbz2GYsZAAYMzMjBzgZGYCG",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CAQAAAAAAAAAAAAAAAAAAAAAAADsMmxyYMYGMbzsNzMzMzMDAAAAAAAAAgZYZGMzMDzMmBMNTMYmBABwsNbbgxmBAgxMzMGMDmZwMBD",
                     ["n"] = 1,
                 },
                 {
@@ -34995,11 +35010,11 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZgZmZGzMbzYGbbzMzMzMjBjZ2GAAAAGMGwY2MMwAziWoFbYGwMDmxA",
-                    ["n"] = 3,
+                    ["n"] = 4,
                 },
                 {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZgZmZGzMbzYmZbbMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
-                    ["n"] = 3,
+                    ["n"] = 2,
                 },
                 {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGbTMbLjxMjZgZmZGzMbzYGbbzMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
@@ -35045,11 +35060,11 @@ RecommendedStatsData_TalentsBoss = {
             ["builds"] = {
                 {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZgZmZGzMbzYGbbzMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
-                    ["n"] = 6,
+                    ["n"] = 7,
                 },
                 {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZgZmZGzMbzYmZbbMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
-                    ["n"] = 4,
+                    ["n"] = 3,
                 },
                 {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZgZmZGzMbzYGbbzMzMzMjBjZ2GAAAAGMGwY2MMwAziWoFbYGwMDmxA",
@@ -35095,14 +35110,14 @@ RecommendedStatsData_TalentsBoss = {
             ["builds"] = {
                 {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZgZmZGzMbzYGbbzMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
-                    ["n"] = 6,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZgZmZGzMbzYGbbzMzMzMjBjZ2GAAAAGMGwY2MMwAziWoFbYGwMDmxA",
-                    ["n"] = 2,
+                    ["n"] = 5,
                 },
                 {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZgZmZGzMbzYGbbzMzMzMjBjZ2GAAAAGMGwY2MMwAziWoFbYGwMDmxA",
+                    ["n"] = 3,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMjZgZmZGzMbzYGbbzMzMzMjBjZ2GAAAAGMGwY2MMwAziWoFbYGwMDmxA",
                     ["n"] = 2,
                 },
                 {
@@ -35318,15 +35333,11 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 2,
                 },
                 {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZgZmZGzMbzYmx2YmZmZGDGzsNAAAAMYMgxsZYgBmFtQL2wMgZGMzMA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDGzA",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZgZmZGzMbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
+                    ["n"] = 2,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZgZmZGzMbzYmx2YmZmZGDGzsNAAAAMYMgxsZYgBmFtQL2wMgZGMzMA",
                     ["n"] = 1,
                 },
                 {
@@ -35368,10 +35379,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDGzA",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZgZmZGzMbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
                     ["n"] = 1,
                 },
@@ -35393,6 +35400,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMjZgZmZGzMbzYGbbzMzMzMjBjZ2GAAAAGMGwYWMMwAzmWoFbYGwMDmxA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbLjxMMjhZmZGzMbzYmZbZMzMzMjBjZ2GAAAAGMGwYWMMwAziWoFbYGwMDmxA",
                     ["n"] = 1,
                 },
             },
@@ -35912,7 +35923,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAAMjZmZmxMjhZAAAAAAAYMbjxMAAAAAAAAMjZYmZmZmZmZGmZZmxYTLLAIgBAzMz2Mz0sNziZYMjB",
+                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAAMjZmZmxMjhZAAAAAAAYMbjxMAAAAAAAAMjZYmZmZmZmZGmZZmxYTLLAIgBAzMz2Mz0sNzmZYMjB",
                     ["n"] = 1,
                 },
                 {
@@ -35930,15 +35941,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 2,
                 },
                 {
-                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzYmxwMAAAAAAAMmthZGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAQgHYMDjZA",
-                    ["n"] = 2,
-                },
-                {
                     ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmxwMAAAAAAAegxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAQgHYMDjZA",
-                    ["n"] = 2,
-                },
-                {
-                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAQgHYMDjZA",
                     ["n"] = 2,
                 },
                 {
@@ -35978,7 +35981,11 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAAMjZmZmxMjhZAAAAAAAYMbjxMAAAAAAAAMjZYmZmZmZmZGmZZmxYTLLAIgBAzMz2Mz0sNziZYMjB",
+                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAAMjZmZmxMjhZAAAAAAAYMbjxMAAAAAAAAMjZYmZmZmZmZGmZZmxYTLLAIgBAzMz2Mz0sNzmZYMjB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAAWMzMzMzMzMwMAAAAAAALzYMYGAAAAAAAAmxMMmZmZGzMDzsMDjNtsAgAGAjZmZZmZa2mZbmZwMGA",
                     ["n"] = 1,
                 },
                 {
@@ -35987,6 +35994,18 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmBzMAAAAAAAegxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAQgHYMDjZA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAQgHYMDjZA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzYmxwMAAAAAAAMmthZGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAQgHYMDjZA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2MmZmZmZmBmBAAAAAAY5BGz2gZAAAAAAAAYGzwMzMzMzMzMMziZMWkFmZmZ2abmZGADDABegxMMmB",
                     ["n"] = 1,
                 },
             },
@@ -35999,7 +36018,7 @@ RecommendedStatsData_TalentsBoss = {
             ["builds"] = {
                 {
                     ["code"] = "CkQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMzsMAAAzMLzyMzsMGAwCMwsY0YGQmFwyAAAwMAAwMDmZGjZzMDzMmZGDmZmBAYGYA",
-                    ["n"] = 6,
+                    ["n"] = 7,
                 },
                 {
                     ["code"] = "CkQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjxyMzYWGAAgZmlZZmZWGDAYBGYWMaMDIzCYZAAAYGAAYmBmZMGmZYmxMzYwMzMDAYGYA",
@@ -36015,10 +36034,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CkQAAAAAAAAAAAAAAAAAAAAAAwMzMzoZjhZmZmtBAAYmZZWmZmlxAAWgBmFjGzAysAWGAAAmBAAmZgZGjhZGmZMzMGMzMzAAmBG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CkQAAAAAAAAAAAAAAAAAAAAAAwMmZGNLMMzMzsNAAAzMLzyMzsMGAwCMwsY0YGQmFwyAAAwMAAwMDmZGjZzMDzMmZGDmZmBAYGYA",
                     ["n"] = 1,
                 },
                 {
@@ -36053,7 +36068,7 @@ RecommendedStatsData_TalentsBoss = {
             ["builds"] = {
                 {
                     ["code"] = "CkQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMzsMAAAzMLzyMzsMGAwCMwsY0YGQmFwyAAAwMAAwMDmZGjZzMDzMmZGDmZmBAYGYA",
-                    ["n"] = 6,
+                    ["n"] = 7,
                 },
                 {
                     ["code"] = "CkQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMzsMAAAzMLzyMzsMGAwCMwsY0YGQmFwyAAAgBAAmZwMzYMbzMDzMmZGDmZmBAYGYA",
@@ -36061,10 +36076,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CkQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMzsMAAAzMLzyMzsMGAwCMwsY0YGQmFwyAAAwMAAwMDmZmZMMzwMjZmxgZmZAAmBG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CkQAAAAAAAAAAAAAAAAAAAAAAwMmZmpZjhZmZmlBAAYmZZWmZmlxAAWgBmFjGzAysAWGAAAmBAAmZgZGjZzMDzMmZGDmZmBAYGYA",
                     ["n"] = 1,
                 },
                 {
@@ -36336,10 +36347,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CkQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMjZmxsNAAAzMLzyMzsMGAwCMwsY0YGQmFwyAAAwMAAwMDmZmZGMzwMjZmxgZmZAAmBG",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CkQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMMzMzsMAAAzMLzyMzsMGAwCMwsY0YGQmFwyAAAwMAAwMDmZGzMMzwMjZmxgZmZAAmBG",
                     ["n"] = 1,
                 },
@@ -36381,6 +36388,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CkQAAAAAAAAAAAAAAAAAAAAAAwMmZmpZjhZmZmlBAAYmZZWmZmlxAAWgBmFjGzAysAWGAAAmBAAmZwMzYMMzwMjZmxgZmZAAmBG",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CkQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbM2mZmZWGAAgZmlZZmZWGDAYBGYWMaMDIzCYZAAAYGAAYmBzMjxwMDzMmZGDmZmBAYGYA",
                     ["n"] = 1,
                 },
             },
@@ -36726,15 +36737,15 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CAEAAAAAAAAAAAAAAAAAAAAAAYGmZZmZmlxDMjYmZGzMzMziZmZMjZgAAAzMzssMz0GAAAAAAsBw2yYmZmhZbYMDLAAAMzGwMhBMDGA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMegZmYmZGzMzMziZmZMjZgAAAzMzssMz0GAAAAAAsBw2yYmZGMbDjZYBAAgZ2AmJjBMDGGA",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmxMzMzMziZmZMjZgAAAzMzssMz0GAAAAAAsBw2yYmZGMbDjZYBAAgZ2AmJjBMDGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsMmZmYmZGzMzMziZmZMjZgAAAzMzssMz0GAAAAAAsBw2yYGz8AMbDjZYBAAgZ2AmJjBMDGA",
                     ["n"] = 1,
                 },
             },
@@ -36930,7 +36941,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMD8AmFzMzMAzYMzyMbmZGbsMzyYMzYBDDwYbbmBjZbEYCAAAwiZmZmBbGGjZAAMzADA",
+                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDMmlZmZmBYGjZWmZzMzYhlZWGjZGLYYAGbbzMYMLjATAAAAWYmZmBbGYMDAgZGYA",
                     ["n"] = 1,
                 },
                 {
@@ -37176,10 +37187,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMaGjZGYMLmZmZAmxYmlZWMzM2YZmlxYmxCGGgx22MDGz2IwEAAAgFzMzMD2MMGzAAYmBGA",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDMmFzMzMADjZWmZxMzYjlZWGjZGLYYAGbbzMYMbjATAAAAWYmZmBbGzYMDAgZGYA",
                     ["n"] = 1,
                 },
@@ -37227,6 +37234,10 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbZMmZgHwsYmZmBDDjZWmZxMzYjlZWGjZGLYYAGbbzMYMbjATAAAAWMzMzMYzYGjZAAMzADA",
                     ["n"] = 1,
                 },
+                {
+                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsNzMzMYYGjZWmZhZGLsMzyYMzYBDAGbbzMYMbjATAAAAWMzMzMYzwYMDAgZGsMA",
+                    ["n"] = 1,
+                },
             },
             ["difficulty"] = "mythic",
         },
@@ -37255,10 +37266,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbZMmZgxsMzMzMYYGMz2MmxMWmZZGzMGzshhBYAW2GLYamZZEAAAgNmZmZwmBGzAYmBAGA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMD8AmlZmZmBDzgZ2mxMmxyMLzYmxYmNMAYAW2GLYamZZEAAAgNzMzMD2MwYGAzMAwA",
                     ["n"] = 1,
                 },
                 {
@@ -37309,6 +37316,10 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsYmZmBDzY2mZZsNjZsZWmxYmZGbYYAGgttxGmmZWGBAAAYzMzMzgNDjxAwMDAMA",
                     ["n"] = 1,
                 },
+                {
+                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbZMmZgHwsYmZmBDDjZWmhxMWYZmlZGjZ2wwAM2WmZwY2GBmAAAAsYmZmZwmxMGzAAYmBLDA",
+                    ["n"] = 1,
+                },
             },
             ["difficulty"] = "mythic",
         },
@@ -37316,7 +37327,7 @@ RecommendedStatsData_TalentsBoss = {
             ["n"] = 20,
             ["builds"] = {
                 {
-                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2oMbZMmZgHwsMzMzMYYGjZWmZxMzYhlZWGjZGLYYAGbbzMYMbjATAAAAWYmZmBbGGjZAAMzADA",
+                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbZMmZgHwsMzMzMYYGjZWmZxMzYhlZWGjZGLYYAGbbzMYMbjATAAAAWYmZmBbGGjZAAMzADA",
                     ["n"] = 2,
                 },
                 {
@@ -37332,11 +37343,11 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsMzMzMYYGjZWmZxMzYhlZWGjZGLYAwYbbmBjZbEYCAAAwiZmZmBbGGjZAAMzADA",
+                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMaGjZGYMLzMzMDwMGzsMziZmxGLzsMGzMWwwAM22mZwY2GBmAAAAswMzMD2MMGzAAYmBGA",
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMaGjZGYMLzMzMDwMGzsMziZmxGLzsMGzMWwwAM22mZwY2GBmAAAAswMzMD2MMGzAAYmBGA",
+                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2oMbZMmZgHwsMzMzMYYGjZWmZxMzYhlZWGjZGLYYAGbbzMYMbjATAAAAWYmZmBbGGjZAAMzADA",
                     ["n"] = 1,
                 },
                 {
@@ -37380,11 +37391,11 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbZMmZgHwsMzMzMYYGjZWmZxMzYhlZWGjZGLYYAGbbzMYMbjATAAAAWYmZmBbGGjZAAMzADA",
+                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2oMbNjxMDwsNzMzMYYGjZWmZxMzYhlZWGjZGLYAwYbbmBjZbEYCAAAwiZmZmBbGGjZAAMzADA",
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2oMbNjxMDwsNzMzMYYGjZWmZxMzYhlZWGjZGLYAwYbbmBjZbEYCAAAwiZmZmBbGGjZAAMzADA",
+                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2oMbNjxMDwsYmZmZhhhxMLzsYmZswyMLjxMjFMMAjttZGMmtRgJAAAALmZmZGsZYMmBAwMDMA",
                     ["n"] = 1,
                 },
             },
@@ -37406,7 +37417,11 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsMzMzMYYY2mZZsMMjNzyMLjZmhNMMADw22YDTzMLjAAAAsxMzMD2MmxYGAzMAwA",
+                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2oMbNjxMDwsMzMzMMDzY2mZZsMMjNzyMLjZmhNMAYA22GbYamZZEAAAgNzMzMD2MwYGAzMAwA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMD8AmlZmZmBDzY2mZZsMMjNzyMLjZmhNMAYA22GLYamZZEAAAgNzMzMD2MwYGAzMAwA",
                     ["n"] = 1,
                 },
                 {
@@ -37463,10 +37478,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbZMmZgHwsNzMzMYYYMzyMMmxGLzsMzMjZ2wwAM22mZwY2GBmAAAAsYmZmZwmhxYAAYmBLDA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMD8AmlZmZmBDzY2mZZsMMjtZWmxYmZYDDDwAstN2w0MzyIAAAAbMzMzgNDMmBwMDAMA",
                     ["n"] = 1,
                 },
             },
@@ -37624,15 +37635,15 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGz2MMzMbDAAwMzMjZwYGZmHYAAAAmZGZGzMzsMmBAzYGYBsAmhJkNYzwAYmhB",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYmZ2MMzMbPADAAMjZMDGmJzMzAAAAmZGZGzMmlZmBAzYGYBsAmhJkNYzwAYmZMA",
                     ["n"] = 1,
                 },
                 {
                     ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYmZ2MjxMbPADAAMjZMPAmZGNmZAAAAmZGZGzMmlZmBAzYGYBsAmhJkNYzwAYmZMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbYAAgZmZMDmZGNGDAAAwMzIzYmZmlxMAYGzALgFwMMhsZYzwAYmhB",
                     ["n"] = 1,
                 },
             },
@@ -37670,7 +37681,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZwMjZYGzmhZmZbYAAgZMjZMGzIMDAAAwMzIzYm5BmlZmBAzYGYBsAmhJkNDbGGAzMjB",
+                    ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZwMjZYGz2MMmZbYAAgZMjZMGzIMDAAAwMzIzYm5BmlZmBAzYGYDsAmhJkNDbGGAzMjB",
                     ["n"] = 1,
                 },
                 {
@@ -37900,10 +37911,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYmHY2MMzMbDDAAMjZMDGzoxMDAAAwMzIzYmxsMzMAYGzALgFwMMhsBbGGAzMjB",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYmZ2MMzMbPADAAMjZMjxYGhZAAAAmZGZGzMPwsMzMAYGzALgFwMMhsBbGGAzMjB",
                     ["n"] = 1,
                 },
@@ -37912,7 +37919,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbYAAgZMjZMGzIMDAAAwMzIzYm5BmlZmBAzYGYBsAmhJkNDbGGAzMjB",
+                    ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZwMjBzY2mhxMbzYAAwMjZMjxYGhZAAAAmZGZGzMzsMzAAzYGYBsAmhJkNDbGGAzMjB",
                     ["n"] = 1,
                 },
                 {
@@ -37947,6 +37954,10 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbYAAgZmZMDmZGNGDAAAwMzIzYmZmlxMAYGzALgFwMMhsZYzwAYmhB",
                     ["n"] = 1,
                 },
+                {
+                    ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGz2MMmZbYAAgZmZMjxYGhZAAAAmZGZGzMmlZmBAzYGYDsAmhJkNDbGGAzMjB",
+                    ["n"] = 1,
+                },
             },
             ["difficulty"] = "mythic",
         },
@@ -37959,10 +37970,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGz2MMmZbYAAgZMjZwYGZmZAAAAmZGZGzMmlZmBAzYGYBsAmhJkNDbGGAzMjB",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYmHY2MMzMbDDAAMjZMDGzoxMDAAAwMzIzYmxsMzMAYGzALgFwMMhsBbGGAzMjB",
                     ["n"] = 1,
                 },
                 {
@@ -38029,6 +38036,10 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbYAAgZMj5BwYGNmZAAAAmZGZGzMPwsMzMAYGzALgFwMMhsZYzwAYmZMA",
                     ["n"] = 1,
                 },
+                {
+                    ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGz2MMmZbAAAMjZMYGzoxMDAAAwMzMZmZmxsMzMAYGzAbgFwMMhsZYzwAYmZMA",
+                    ["n"] = 1,
+                },
             },
             ["difficulty"] = "mythic",
         },
@@ -38037,7 +38048,7 @@ RecommendedStatsData_TalentsBoss = {
             ["builds"] = {
                 {
                     ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbAAAMjZMYGzIzMDAAAwMzMZmZmxsMzMAYGzAbgFwMMhsZYzwAYmZMA",
-                    ["n"] = 2,
+                    ["n"] = 1,
                 },
                 {
                     ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZwMjZYGzmhZmZbYAAgZmZMjxYGhZAAAAmZGZGzMmlZmBAzYGYBsAmhJkNDbGGAzMjB",
@@ -38048,7 +38059,11 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZwMjZYGzmhZmZbYAAgZMjZMGzIMDAAAwMzIzYm5BmlZmBAzYGYBsAmhJkNDbGGAzMjB",
+                    ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAYmZwMjZYGz2MMmZbYAAgZMjZMGzIMDAAAwMzIzYm5BmlZmBAzYGYDsAmhJkNDbGGAzMjB",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbAAAmZMjBzYmpxMDAAAwMzIzYmxsMzMAYGzALgNwMMhsZYzwAYmZMA",
                     ["n"] = 1,
                 },
                 {
@@ -38124,10 +38139,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAjZGzMzYGziZmlhxY0wMjtlZmZmhhZGAAAAsMzAMjBYgNYZxoxMAmtYmNYMzMYAAzMAAMDMG",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAmZmxMzMmxsZmZZYMmphZGbLzMzMDGzMAAAAYZmBYGDwAbwyiRjZAMbxYDzwMDGAwMDAAzAjB",
                     ["n"] = 1,
                 },
@@ -38199,16 +38210,16 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzY2mxsMjxY0wMzstMzMzMmhZGAAAAsMAMjBYgNYZxoxMAmtYsBzwMYAAzMAAMDMG",
                     ["n"] = 1,
                 },
+                {
+                    ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAmZmxMzMmxsZmZZGjxohZGWmZmZGmxMDAAAAWGDwMGgB2gtFjGzAY2iZ2gZMzgZDAmZAAYAjB",
+                    ["n"] = 1,
+                },
             },
             ["difficulty"] = "mythic",
         },
         ["entombed-sentinels"] = {
             ["n"] = 20,
             ["builds"] = {
-                {
-                    ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzY2mxsMMGjGmZGLzMzMDGzMAAAAYZAYGDwAbw2iRjZAMbxMbMmhZYmNAYmBAADMG",
-                    ["n"] = 2,
-                },
                 {
                     ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzY2MzsMjxYmGmZYZMzMDzYmBAAAALDAzYAGYD2WMaMDgZLmZDmxMDmNAYmBAgBMG",
                     ["n"] = 1,
@@ -38279,6 +38290,14 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzY2MmlhxY0wMjtlZmZmBjZGAAAAsMGgZMADsBLLGNmBwsFzshZGzMYAAzMAAMDMG",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAzMzYmZGzY2mxsMMGjGmZGLzMzMDGzMAAAAYZAYGDwAbw2iRjZAMbxMbMmhZYmNAYmBAADMG",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA02AAAzMzYmZGzY2MzsMMGjGmZYZmZmZwYmBAAAALjBYGDwAbwyiRjZAMLxMbwMmZwsBAzMAAMDMG",
                     ["n"] = 1,
                 },
             },
@@ -38534,10 +38553,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA02AAAzMzYmZGzMz2MmlhxY0wYssMzMzMMjZGAAAAsMAMjBYgNYZxoxMAmtYsxwYmBzGAMzAAwMwYA",
-                    ["n"] = 1,
-                },
-                {
                     ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA02AAAzMzYmZGzMzmxsMMGjGzMzssMzMzMMMzAAAAglxAMjBYgNYbxoxMAmlYsxwwMYAAzMAAMDMG",
                     ["n"] = 1,
                 },
@@ -38609,19 +38624,23 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA02AAAzMzYmZGzY2MzsMMGjGGzYZmZmZYGzMAAAAYZmBYGDwAbw2iRjZAMbxMbwgZYmNAYmBAADMG",
                     ["n"] = 1,
                 },
+                {
+                    ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA02AAAzMzYmZGzY2MzsMMGjGmZGLzMzMDGzMAAAAYZMAzYAGYDWWMaMDgZJmZDmhZwsBAzMAAMDMG",
+                    ["n"] = 1,
+                },
             },
             ["difficulty"] = "mythic",
         },
         ["ulatek"] = {
-            ["n"] = 17,
+            ["n"] = 16,
             ["builds"] = {
                 {
                     ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAGzMmZmxMmFzMLDjxohZGbLzMzMDDzMAAAAYZmBYmlBYgNYZxoxMAmtYmNYMzMYAAzMAAMDMG",
-                    ["n"] = 5,
+                    ["n"] = 4,
                 },
                 {
                     ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAjZGzMzYGziZmlhxY0wMjtlZmZmhhZGAAAAsMzAMjBYgNYZxoxMAmtYmNYMzMYAAzMAAMDMG",
-                    ["n"] = 3,
+                    ["n"] = 2,
                 },
                 {
                     ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAmZmxMzMmxsZmZZYMGNmZGbLzMzMDDzMAAAAYZMAzsMADsBbLGNmBwsEjNYGzMYAAzMAAMDMG",
@@ -38637,6 +38656,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAmZmxMzMmxsZMLDPgxMNMzYxMzMzwMmZAAAAwyYAmZbAGYDWWMaMDgZLmZDzMmZwAAmZAAYGYMA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CkEAAAAAAAAAAAAAAAAAAAAAA02AAAzMzwMzYGzmxsMjxYmGmZYZMzMDzYmBAAAALjBYGDwAbw2iRjZAMbxMbYmxMDmNAYmBAgBMG",
                     ["n"] = 1,
                 },
                 {
@@ -39234,6 +39257,10 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CkGAAAAAAAAAAAAAAAAAAAAAAYMmZZmZMzMmthZwsZsNmBAAAAAAAAAAbGa2MjpZGgZZMzMDTmBAAAAgBAAAACAAY2mZpZbmNbMmZGMzGGNDAwMDADA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CkGAAAAAAAAAAAAAAAAAAAAAAYMmZZmZMzMmthZwsZsNmBAAAAAAAAAAbzQzGjpZGDMLzMzYWMZGAAAAAGAAAAIAAgZbmlmtZ2sxYmZwMANDAwMDADA",
                     ["n"] = 1,
                 },
@@ -39287,10 +39314,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CkGAAAAAAAAAAAAAAAAAAAAAAYMmZZmZMzMmthZwsZsNmBAAAAAAAAAAbzQzGjpZYYMLzMzMMTmBAAAAgBAAAACAAY2mZpZbmNbMzMGMDQzAAMzAwA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CkGAAAAAAAAAAAAAAAAAAAAAAYMmZZmZMzMmthZwsZsNmBAAAAAAAAAALzQzGjpZGDMLzMzMDTmBAAAAgBAAAACAAY2mZpZbmNbMmZGMDQzAAMzAwA",
                     ["n"] = 1,
                 },
             },
@@ -39536,10 +39559,6 @@ RecommendedStatsData_TalentsBoss = {
             ["n"] = 20,
             ["builds"] = {
                 {
-                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzYGAAAAAAzUGzwMjtxsNMz2MmZMGmxCbAYWmtZmZrBBAAsAYAwYGGYGzMbAzMjZMMYA",
-                    ["n"] = 2,
-                },
-                {
                     ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzYGAAAAAAjyYGmZsNmthZ2mxYMGzMWYDAzysNzMbNIAAgFADAGzwMYGzMbAzMjZMMYA",
                     ["n"] = 2,
                 },
@@ -39592,6 +39611,10 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzYGAAAAAAzUGzwMjtxsNMz2MmZMGmxCbAYWmtZmZrBBAAsAYAwYGGYGzMbAzMjZMMYA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzYGAAAAAAjysMDzM2Gz2wMbzYMGDzYhNAMLz2Mzs1gAAAWAMAMjZYGMjZmNgZmhxwgB",
                     ["n"] = 1,
                 },
@@ -39601,6 +39624,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzYGAAAAAAzUGzwMjtxsNMz2MmZMGzMWYDAzysNzMbNIAAgFADAGzwAzYmZDYmZYMMYA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzYGAAAAAAjyYGmZsNmthZ2mxMjxwMWYDAzysNzMbNIAAgFADAzYGmBzYmZDYmZYMMYA",
                     ["n"] = 1,
                 },
             },
@@ -39615,10 +39642,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzYGAAAAAAzUmlZYmx2Y2GmZbGjxYYGLsBgZZ2mZmtGEAAwCgBAjZ2AmxMzGwMzwYGDG",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGGDAAAAAAzUGzwMjtxsNMz2MmZMGmxCbDAzysNzMbNIAAgFADAGzwAzYmZDYmZMjhBD",
                     ["n"] = 1,
                 },
                 {
@@ -39671,6 +39694,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGmZAAAAAAYUGzwMjtxsNMz2MmZMGmxCbDAzysNzMbNIAAgFADAGzwMYGzMbAzMDjhBD",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAANbbzMzywMDAAAAAAzUGzwMjtxsNMz2MGjxwMWYbAYWmtZmZrBBAAsAYAwYGmBzYmZDYmZYMjBD",
                     ["n"] = 1,
                 },
             },
@@ -39766,6 +39793,10 @@ RecommendedStatsData_TalentsBoss = {
             ["n"] = 20,
             ["builds"] = {
                 {
+                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzYGAAAAAAjyYGmZsNmthZ2mxYMGzMWYDAzysNzMbNIAAgFADAGzwMYGzMbAzMjZMMYA",
+                    ["n"] = 2,
+                },
+                {
                     ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGDzAAAAAAYmyYGMjtxsNMz2MGjZGmxCbAYWmtZmZrBBAAsAYAMGzwAzYmZDYmZMjZMYA",
                     ["n"] = 1,
                 },
@@ -39775,10 +39806,6 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAANbbzMzyYGzAAAAAAYUGzwMjtxsNMz2MmZMGzMWYDAzysNzMbNIAAgFADAzYGmBzYmZDYmZYMMYA",
-                    ["n"] = 1,
-                },
-                {
-                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzYGAAAAAAzUGzwMjtxsNMz2MmZMGmxCbAYWmtZmZrBBAAsAYAwYwMYGzMbAzMDjZMYA",
                     ["n"] = 1,
                 },
                 {
@@ -39841,10 +39868,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmyYGmZsNmthZ2mxYMGzMWYDAzysNzMbNIAAgFADAGzwAzYmZDYmZYMMYA",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAANbbzMzyYmZGAAAAAAjyYGmZsNmthZ2mxMjxwMWYDAzysNzMbNIAAgFADAzYGmBzYmZDYmZYMMYA",
-                    ["n"] = 1,
-                },
             },
             ["difficulty"] = "mythic",
         },
@@ -39892,6 +39915,10 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
+                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzYGAAAAAAzUGzwMjtxsNMz2MmZMGmxCbAYWmtZmZrBBAAsAYAwYGmBzYmZDYmZYMMYA",
+                    ["n"] = 1,
+                },
+                {
                     ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzYGAAAAAAjyYGmZsNmthZ2mxMjxYmxCbAYWmtZmZrBBAAsAYAwYGmBzYmZDYmZYMMYA",
                     ["n"] = 1,
                 },
@@ -39927,10 +39954,6 @@ RecommendedStatsData_TalentsBoss = {
                     ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzYGAAAAAAjyYGmZsNmthZ2mxMjxYmxCbAYWmtZmZrBBAAsAYAwYGGYGzMbAzMjZMMYA",
                     ["n"] = 1,
                 },
-                {
-                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzYGAAAAAAjysNDzM2Gz2wMbzYMGDzYhNAMLz2Mzs1gAAAWAMAMjZYGMjZmNgZmhxwgB",
-                    ["n"] = 1,
-                },
             },
             ["difficulty"] = "mythic",
         },
@@ -39946,7 +39969,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzYGAAAAAAzUGzwMjtxsNMz2MmZMGmxCbAYWmtZmZrBBAAsAYAwYwMYGzMbAzMDjZMYA",
+                    ["code"] = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzYGAAAAAAjyYGmZsNmthZ2mxYMGzMWYDAzysNzMbNIAAgFADAGzwMYGzMbAzMjZMMYA",
                     ["n"] = 1,
                 },
                 {
@@ -40150,7 +40173,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMmZkZmBziZmZgZMzYGzMzYYmZmxmZmtxwAAAAAAAIgZmxGAAAAGYmZmZ2abmZGAYAAAAMA",
+                    ["code"] = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMmZkZmBziZmZMYMzYGzMzYYmZmxmZmtxwAAAAAAAIgZmxGAAAAGYmZmZ2abmZGAYAAAAMA",
                     ["n"] = 1,
                 },
                 {
@@ -40277,11 +40300,15 @@ RecommendedStatsData_TalentsBoss = {
             ["difficulty"] = "mythic",
         },
         ["nekzali-the-soulcoiler"] = {
-            ["n"] = 14,
+            ["n"] = 15,
             ["builds"] = {
                 {
                     ["code"] = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZmxMjMzMYWMzMjBjZGzYmZGDzMzM2MzsNGAAAAAAAIgZmxGAAAAGYmZmZ2abmZGAYAAAAMA",
                     ["n"] = 2,
+                },
+                {
+                    ["code"] = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMmZkZmBziZmZMYMzYGzMzYYmZmxmZmtxwAAAAAAAIgZmxGAAAAGYmZmZ2abmZGAYAAAAMA",
+                    ["n"] = 1,
                 },
                 {
                     ["code"] = "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMzMzMjMzMYWMzMDMjZGzYmZGDzMzM2mZGjBAAAAAAACYmZsBAAAgBjZmZml2mZmBAAAAAYA",
@@ -40335,11 +40362,15 @@ RecommendedStatsData_TalentsBoss = {
             ["difficulty"] = "mythic",
         },
         ["the-coiled-altar"] = {
-            ["n"] = 10,
+            ["n"] = 11,
             ["builds"] = {
                 {
                     ["code"] = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZmxMjMzMYWMzMjBjZGzYmZGDzMzM2MzsNGAAAAAAAIgZmxGAAAAGYmZmZ2abmZGAYAAAAMA",
                     ["n"] = 2,
+                },
+                {
+                    ["code"] = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMmZkZmBziZmZMYMzYGzMzYYmZmxmZmtxwAAAAAAAIgZmxGAAAAGYmZmZ2abmZGAYAAAAMA",
+                    ["n"] = 1,
                 },
                 {
                     ["code"] = "CUkAAAAAAAAAAAAAAAAAAAAAAAAYMzMjZmZkZmZYWMzMDMjZGz8AzYmZYGmx2DMzsNGAAAAAAAIgZmxGAAAAGMmZmZWabmZGAYAAAAMA",
@@ -40377,11 +40408,15 @@ RecommendedStatsData_TalentsBoss = {
             ["difficulty"] = "mythic",
         },
         ["ulatek"] = {
-            ["n"] = 10,
+            ["n"] = 11,
             ["builds"] = {
                 {
                     ["code"] = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZmxMjMzMYWMzMjBjZGzYmZGDzMzM2MzsNGAAAAAAAIgZmxGAAAAGYmZmZ2abmZGAYAAAAMA",
                     ["n"] = 2,
+                },
+                {
+                    ["code"] = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMzMjMzMYWMzMDMjZGzYmZGDzMzM2MzsNGAAAAAAAIgZmxGAAAAGYmZmZ2abmZGAYAAAAMA",
+                    ["n"] = 1,
                 },
                 {
                     ["code"] = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMzMjMzMYWMzMjBjZGzYmZGDzMzM2MzsNGAAAAAAAIgZmxGAAAAGYmZmZ2abmZGAYAAAAMA",
@@ -41050,7 +41085,7 @@ RecommendedStatsData_TalentsBoss = {
                     ["n"] = 1,
                 },
                 {
-                    ["code"] = "CwPAAAAAAAAAAAAAAAAAAAAAAAYmZMzMDY2mZmZa2MzYMjZAAAAAAAAMPwwYAwyMY2MzYmZMwAzYTjlFAbTshBMDgZmZmxMYmBGjB",
+                    ["code"] = "CwPAAAAAAAAAAAAAAAAAAAAAAAwMjZMDDz2MzMTzyMzYMjBAAAAAAAg5BGGDAWmBzmZGzMjBGYGbassBYbiNMgZAMzMzMmBzMwMjB",
                     ["n"] = 1,
                 },
             },
@@ -41439,7 +41474,7 @@ RecommendedStatsData_TalentsBoss = {
             ["difficulty"] = "mythic",
         },
         ["entombed-sentinels"] = {
-            ["n"] = 12,
+            ["n"] = 13,
             ["builds"] = {
                 {
                     ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZmZMzMzMzYmlZMmZMbmZmBAAixy2ALgJYGmAzwGwMzmBAAYmhxsMwgxA",
@@ -41455,6 +41490,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMz2yMzMzMMmZmZMmZWmZGzMzsZmZGAAIGLbDsAmgZYCMDbAzMM2AAgZGGjhxgxA",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZmZMzMzMzYmlZMmZmZzMzMAAQMW2GYBMBzwEYG2AmZYAAAmZYMGGDGD",
                     ["n"] = 1,
                 },
                 {
@@ -41619,7 +41658,7 @@ RecommendedStatsData_TalentsBoss = {
             ["difficulty"] = "mythic",
         },
         ["nekzali-the-soulcoiler"] = {
-            ["n"] = 8,
+            ["n"] = 9,
             ["builds"] = {
                 {
                     ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmZ2MzMzMDjZmZmZGzsMzMmZMbmZmBAAixy2ALgJYGmAzwGwMDjNAAYmhxYYMYM",
@@ -41631,6 +41670,10 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDDmZ2WmZmZmZmxMzMzMjZWmZGzMmNzMzAAAxYZbgFwEMDTgZYDYmhBAAYmhxYYMYM",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmZ2MzMzMDjZmZmZGzsMjxMzMbmZmBAAixy2ALgJYGmAzwGwMDjNAAYmhxYYMYM",
                     ["n"] = 1,
                 },
                 {
@@ -41647,6 +41690,32 @@ RecommendedStatsData_TalentsBoss = {
                 },
                 {
                     ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmZ2WmZmZmhxMzMzMzMzyMGzMmNzMzAAAxYZbgFwEMDTgZYDYmhBAAYmhxYYMYM",
+                    ["n"] = 1,
+                },
+            },
+            ["difficulty"] = "mythic",
+        },
+        ["the-coiled-altar"] = {
+            ["n"] = 5,
+            ["builds"] = {
+                {
+                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzwMzmZmZmZMjZmZmZGzsMjxMzMbmZmBAAixy2ALgJYGmAzwGwMDjNAAYmhxYYMYM",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzMmZ2MzMzMDjZmZmZGzsMzMmZMbmZmBAAixy2ALgJYGmAzwGwMDjNAAYmhxYYMYM",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDDmZsMzMzMzMjZmZmZGzsMzMmZMbmZmBAAixy2ALgJYGmAzwGwMDjNAAYmhxYYMYM",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDzwMz2yMzMzMmxMzMzMzMzyMGzMmNzMzAAAxYZbgFwEMDTgZYDYmhBAAYmhxYYMYM",
+                    ["n"] = 1,
+                },
+                {
+                    ["code"] = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjZmZ2MzMzMjZMzMzMzMzsMzMGjZZMzMAAQYgNYZxoxMgMLYGLAmhZAAzMAGsYwgxA",
                     ["n"] = 1,
                 },
             },
