@@ -1,4 +1,4 @@
--- GENERATED 2026-11-27 - do not hand-edit
+-- GENERATED 2026-11-28 - do not hand-edit
 RecommendedStatsData_StatWeights = {
     ["DEATHKNIGHT_BLOOD_RAID"] = {
         ["haste"] = -0.4429,
